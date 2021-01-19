@@ -8,7 +8,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 <!-- ▼ フッター -->
 <footer class="footer">
 
-  <div class="footer__main d-block d-md-flex justify-content-between">
+  <div class="footer__main d-block d-md-flex justify-content-between align-items-center">
     <!-- ▼ メインページリンク -->
     <div class="">
       <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4" href="<?php echo $home; ?>/features/">

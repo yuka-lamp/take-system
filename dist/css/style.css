@@ -13693,16 +13693,20 @@ p {
 /*===================================================
  下層ページ - ページタイトル
 ====================================================*/
-.sub__ttl {
-  margin-bottom: 2rem; }
-  .sub__ttl h2 {
-    font-size: 1.4rem;
-    font-weight: bold; }
-  .sub__ttl img {
-    display: block;
-    margin: 0 auto 1rem;
-    width: 30px;
-    height: auto; }
+.mv__sub {
+  width: 93%;
+  height: 170px;
+  border-radius: 20px;
+  background: #FFFAEB;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 991.98px) {
+    .mv__sub {
+      margin: 0 auto; } }
+  .mv__sub h1 {
+    text-align: center; }
 
 /*===================================================
  お問い合わせ・資料請求ボタン
@@ -13743,7 +13747,7 @@ p {
   width: 56px;
   height: 60px;
   top: 0;
-  right: .5rem;
+  right: 0.5rem;
   margin: 0;
   z-index: 99; }
   .drawer__icon-parts, .drawer__icon-parts:after, .drawer__icon-parts:before {
@@ -13802,6 +13806,19 @@ p {
   top: 0; }
 
 /*===================================================
+ 画面下固定
+====================================================*/
+.fix-under {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #F0F0F0;
+  padding: 10px; }
+  .fix-under .ctabtn__item {
+    padding: 1rem 0; }
+
+/*===================================================
  フッター
 ====================================================*/
 .footer {
@@ -13830,6 +13847,9 @@ p {
     #breadcrumbs {
       padding: 0.5rem 1rem; } }
 
+/*===================================================
+ ホーム - MV
+====================================================*/
 .features h3 {
   display: block;
   text-align: center;

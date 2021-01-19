@@ -98,13 +98,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </header>
 
+<!-- ▼ [画面下固定] お問い合わせ ・ 資料請求 -->
+<div class="fix-under ctabtn">
+  <div class="ctabtn__wrap d-flex w-100">
+    <a class="ctabtn__item col-6 bg-primary text-white font-weight-bold" href="<?php echo $home; ?>/contact/">
+      <img class="mr-2" src="<?php echo $img_url; ?>/icon_contact.svg" alt="お問い合わせアイコン">
+      お問い合わせ
+    </a>
+    <a class="ctabtn__item col-6 bg-secondary text-white font-weight-bold" href="<?php echo $home; ?>/contact/">
+      <img class="mr-2" src="<?php echo $img_url; ?>/icon_doc.svg" alt="資料請求アイコン">
+      資料請求
+    </a>
+  </div>
+</div>
+<!-- ▲ [画面下固定] お問い合わせ ・ 資料請求 -->
+
 <main>
 
 <!-- ▼ 下層メインビジュアル -->
 <?php if (!is_home() && !is_front_page() && !is_single() && !is_archive() && !is_page(['column'])): // 下層ページ ?>
 <section class="sec mv__sub">
   <div class="container">
-  <h1><?php the_title(); ?></h1>
+  <h1 class="f-26 font-weight-bold w-100"><?php the_title(); ?></h1>
   </div>
 </section>
 <!-- ▲ 下層メインビジュアル -->

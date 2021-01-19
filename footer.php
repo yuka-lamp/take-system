@@ -11,23 +11,23 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
   <div class="footer__main d-block d-md-flex justify-content-between align-items-center">
     <!-- ▼ メインページリンク -->
     <div class="">
-      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4" href="<?php echo $home; ?>/features/">
+      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/features/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         機能紹介
       </a>
-      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4" href="<?php echo $home; ?>/price/">
+      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/price/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         料金
       </a>
-      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4" href="<?php echo $home; ?>/marketing/">
+      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/marketing/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         集客・販売促進
       </a>
-      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4" href="<?php echo $home; ?>/work/">
+      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/work/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         導入事例
       </a>
-      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4" href="<?php echo $home; ?>/column/">
+      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/column/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         お役立ちガイド
       </a>
@@ -36,11 +36,11 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
     <!-- ▼ お問い合わせ ・ 資料請求 -->
     <div class="ctabtn">
       <div class="ctabtn__wrap d-flex w-100">
-        <a class="ctabtn__item col-6 bg-primary text-white" href="<?php echo $home; ?>/contact/">
+        <a class="ctabtn__item col-6 bg-primary text-white font-weight-bold" href="<?php echo $home; ?>/contact/">
           <img class="mr-2" src="<?php echo $img_url; ?>/icon_contact.svg" alt="お問い合わせアイコン">
           お問い合わせ
         </a>
-        <a class="ctabtn__item col-6 bg-secondary text-white" href="<?php echo $home; ?>/contact/">
+        <a class="ctabtn__item col-6 bg-secondary text-white font-weight-bold" href="<?php echo $home; ?>/contact/">
           <img class="mr-2" src="<?php echo $img_url; ?>/icon_doc.svg" alt="資料請求アイコン">
           資料請求
         </a>
@@ -70,6 +70,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 
 <script src="<?php echo $wp_url; ?>/dist/js/bundle.js?ver=1.0.1" defer></script>
 <?php wp_footer(); ?>
+
 <script>
 const toform = document.getElementById("toform");
 
@@ -100,5 +101,6 @@ toform.style.bottom = 0;
 observer.observe(document.getElementById("lpform"));
 });
 </script>
+
 </body>
 </html>

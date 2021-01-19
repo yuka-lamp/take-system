@@ -1,6 +1,10 @@
+/*===================================================
+ 全体
+====================================================*/
 body {
   font-family: "Quicksand", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   letter-spacing: 1px;
+  font-size: .875rem;
 }
 
 * {
@@ -20,17 +24,6 @@ section {
   overflow: hidden;
 }
 
-[data-toggle="modal"] {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-p {
-  @include media-breakpoint-down(md) {
-    font-size: $font-size-sm;
-  }
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -47,6 +40,91 @@ table {
   }
 }
 
+p {
+  font-size: 14px;
+}
+/*===================================================
+ 余白
+====================================================*/
+.sec {
+  padding: 4rem 0;
+  @include media-breakpoint-down(md) {
+    padding: 2.5rem 0;
+  }
+}
+
+.space-t {
+  padding-top: 6.5rem;
+  @include media-breakpoint-down(md) {
+    padding-top: 3.5rem;
+  }
+}
+
+.space-b {
+  padding-bottom: 6.5rem;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 3.5rem;
+  }
+}
+/*===================================================
+ テキスト
+====================================================*/
+.f-10,
+.f-14,
+.f-18,
+.f-24,
+.f-26,
+.f-32,
+.f-36 {
+  line-height: 145%;
+}
+
+.f-36 {
+  font-size: 36px;
+  @include media-breakpoint-down(md) {
+    font-size: 29px;
+  }
+}
+
+.f-32 {
+  font-size: 32px;
+  @include media-breakpoint-down(md) {
+    font-size: 26px;
+  }
+}
+
+.f-26 {
+  font-size: 26px;
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+  }
+}
+
+.f-24 {
+  font-size: 24px;
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
+}
+
+.f-18 {
+  font-size: 18px;
+  @include media-breakpoint-down(md) {
+    font-size: 16px;
+  }
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-10 {
+  font-size: 10px;
+}
+
+/*===================================================
+ リンク
+====================================================*/
 .btn {
   line-height: 1;
   padding: 1em 3em;
@@ -92,13 +170,6 @@ table {
   }
 }
 
-.sec {
-  padding: 4rem 0;
-  @include media-breakpoint-down(md) {
-    padding: 2.5rem 0;
-  }
-}
-
 .ttl {
   &-h2 {
     margin-bottom: 3rem;
@@ -127,68 +198,39 @@ table {
     }
   }
 }
-
-.slick {
-  &-list {
-    box-sizing: border-box;
-  }
-
-  &-dots {
-    position: static;
-    bottom: auto;
-    left: auto;
-    margin-top: 1rem;
-  }
-}
-
-.txt-sm {
-  font-size: 12px;
-  font-weight: normal;
-}
-
-.modal {
-  &-title {
-    font-weight: bold;
-    font-size: 1.125rem;
-  }
-
-  &-body {
-    font-size: $font-size-sm;
-    line-height: 1.7;
-
-    h3 {
-      font-size: 1rem;
-      font-weight: bold;
-      margin: 2em 0 1em;
-    }
-
-    p {
-      margin-bottom: 1em;
-    }
-  }
-}
-
-.h5,
-h5 {
-  font-size: 1.125rem !important;
-  line-height: 1.5;
-  @include media-breakpoint-down(md) {
-    font-size: 1rem !important;
-  }
-}
-
+/*===================================================
+ 下層ページ - ページタイトル
+====================================================*/
 .sub {
   &__ttl {
     margin-bottom: 2rem;
+
     h2 {
       font-size: 1.4rem;
       font-weight: bold;
     }
+
     img {
       display: block;
-      margin: 0 auto 1rem auto;
+      margin: 0 auto 1rem;
       width: 30px;
       height: auto;
     }
+  }
+}
+/*===================================================
+ お問い合わせ・資料請求ボタン
+====================================================*/
+
+.ctabtn {
+  display: flex;
+  &__wrap {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  &__item {
+    text-align: center;
+    padding: 1.5rem 2rem;
+    white-space: nowrap;
   }
 }

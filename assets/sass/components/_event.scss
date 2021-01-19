@@ -1,0 +1,103 @@
+.event {
+  .ttl {
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-up(md) {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    p {
+      padding: 10px 0;
+      text-align: center;
+      font-size: 0.8rem;
+      background: #FEFEEF;
+      color: #666660;
+      border-radius: 5rem;
+
+      &:nth-child(1) {
+        width: 20%;
+      }
+
+      &:nth-child(2) {
+        width: 78%;
+      }
+    }
+  }
+
+  .tag {
+    color: $white;
+    padding: 1px 1rem;
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold;
+    background: #CCCCCC;
+    display: inline-block;
+
+    &.active {
+      background: $secondary;
+    }
+  }
+
+  &__lists {
+    @include media-breakpoint-up(md) {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    &__post {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #F4F4F4;
+      padding: 1rem 0;
+
+      :hover {
+        opacity: 0.6;
+      }
+
+      a {
+        color: $body-color;
+        text-decoration: none!important;
+        transition: 0.3s;
+      }
+
+      &-left {
+        width: 20%;
+
+        .year {
+          font-size: 12px;
+          font-weight: bold;
+          text-align: center;
+          display: block;
+        }
+
+        .date {
+          display: block;
+          text-align: center;
+
+          span {
+            font-size: 1.25rem;
+            font-weight: bold;
+          }
+        }
+      }
+
+      &-right {
+        width: 78%;
+        padding: 0 0 0 1rem;
+
+        h3 {
+          font-size: 1rem;
+          font-weight: bold;
+          margin: 1rem 0;
+        }
+
+        p {
+          font-size: 0.8rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

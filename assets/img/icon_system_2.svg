@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.342" height="26" viewBox="0 0 26.342 26">
+  <g id="icon_system_2" transform="translate(-3 -3)">
+    <line id="線_525" data-name="線 525" x2="24" transform="translate(4 28)" fill="none" stroke="#ff4800" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="パス_3312" data-name="パス 3312" d="M3,8.333V9.667a4,4,0,1,0,8,0V8.333m0,1.333a4,4,0,0,0,8,0V8.333m0,1.333a4,4,0,0,0,8,0V8.333H3L5.667,3H24.333L27,8.333" transform="translate(1 1)" fill="none" stroke="#ff4800" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="線_526" data-name="線 526" y1="13.533" transform="translate(6.667 14.467)" fill="none" stroke="#ff4800" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="線_527" data-name="線 527" y1="13.533" transform="translate(25.333 14.467)" fill="none" stroke="#ff4800" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="パス_3313" data-name="パス 3313" d="M9,23V17.667A2.667,2.667,0,0,1,11.667,15h2.667A2.667,2.667,0,0,1,17,17.667V23" transform="translate(3 5)" fill="none" stroke="#ff4800" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

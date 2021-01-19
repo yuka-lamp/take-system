@@ -1,0 +1,194 @@
+body {
+  font-family: "Quicksand", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  letter-spacing: 1px;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+main {
+  position: relative;
+}
+
+section {
+  overflow: hidden;
+}
+
+[data-toggle="modal"] {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+p {
+  @include media-breakpoint-down(md) {
+    font-size: $font-size-sm;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+table {
+  border-collapse: collapse;
+
+  td,
+  th {
+    font-size: $font-size-sm;
+    padding: 1rem;
+  }
+}
+
+.btn {
+  line-height: 1;
+  padding: 1em 3em;
+  border-radius: 5em;
+  font-weight: bold;
+  font-size: 0.9rem;
+
+  &-outline {
+    &-primary {
+      position: relative;
+      background-color: $secondary;
+      color: $white;
+      box-sizing: border-box;
+      padding: 20px 0 20px 20px;
+      width: 200px;
+      text-align: center;
+      border-radius: 5px;
+      border-width: 2px;
+      border: none;
+      font-size: 1rem;
+
+      &::after {
+        content: "\f138";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 15px;
+        bottom: calc(50% - 10px);
+        font-size: 20px;
+        color: $white;
+      }
+    }
+
+    &-danger {
+      border-radius: 0.5rem;
+      border-width: 2px;
+    }
+
+    &-dark {
+      border-radius: 0.5rem;
+      border-width: 2px;
+    }
+  }
+}
+
+.sec {
+  padding: 4rem 0;
+  @include media-breakpoint-down(md) {
+    padding: 2.5rem 0;
+  }
+}
+
+.ttl {
+  &-h2 {
+    margin-bottom: 3rem;
+
+    span {
+      &:first-child {
+        display: block;
+        color: #cccccc;
+        font-size: 1.125rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        @include media-breakpoint-down(md) {
+          font-size: 1rem;
+        }
+      }
+
+      &:last-child {
+        display: block;
+        font-weight: bold;
+        font-size: 1.5rem;
+        @include media-breakpoint-down(md) {
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+}
+
+.slick {
+  &-list {
+    box-sizing: border-box;
+  }
+
+  &-dots {
+    position: static;
+    bottom: auto;
+    left: auto;
+    margin-top: 1rem;
+  }
+}
+
+.txt-sm {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.modal {
+  &-title {
+    font-weight: bold;
+    font-size: 1.125rem;
+  }
+
+  &-body {
+    font-size: $font-size-sm;
+    line-height: 1.7;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 2em 0 1em;
+    }
+
+    p {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+.h5,
+h5 {
+  font-size: 1.125rem !important;
+  line-height: 1.5;
+  @include media-breakpoint-down(md) {
+    font-size: 1rem !important;
+  }
+}
+
+.sub {
+  &__ttl {
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    img {
+      display: block;
+      margin: 0 auto 1rem auto;
+      width: 30px;
+      height: auto;
+    }
+  }
+}

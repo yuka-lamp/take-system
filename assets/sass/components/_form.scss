@@ -1,0 +1,67 @@
+.form {
+  .wpcf7 {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  &-must {
+    &::after {
+      content: "※";
+      color: #ff8811;
+      font-size: 10px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 5px;
+    }
+  }
+  &__table {
+    tr {
+      th,
+      td {
+        @include media-breakpoint-down(md) {
+          display: block;
+          padding: 0;
+          margin-bottom: 0.5rem;
+        }
+      }
+      td {
+        @include media-breakpoint-down(md) {
+          margin-bottom: 1.5rem;
+        }
+      }
+      &:last-child {
+        td {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+div.acceptance {
+  background-color: $light;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  text-align: center;
+  .wpcf7-list-item,
+  label {
+    margin: 0;
+  }
+}
+
+.google {
+  &-form {
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
+    overflow: auto;
+    iframe {
+      display: block;
+      margin: 0 auto;
+      height: 1540px;
+      @include media-breakpoint-down(md) {
+        width: 100% !important;
+        height: 1700px;
+      }
+    }
+  }
+}

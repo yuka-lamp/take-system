@@ -1,0 +1,89 @@
+.header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .navbar {
+    padding: 0.5rem 2rem;
+    transition: all 0.3s;
+    @include media-breakpoint-down(md) {
+      padding: 0.25rem 1rem;
+      background-color: $white;
+      box-shadow: 0 0 3px rgba($body-color, 0.1);
+    }
+    &.scroll {
+      background-color: $white;
+      box-shadow: 0 0 3px rgba($body-color, 0.1);
+    }
+    &-brand {
+      font-size: 0;
+      img {
+        @include media-breakpoint-down(md) {
+          width: 170px;
+          height: auto;
+          margin-bottom: 6px;
+        }
+      }
+    }
+    &-toggler {
+      padding: 0;
+      &-icon {
+        width: auto;
+        height: auto;
+        background: $primary;
+        color: $white;
+        line-height: 1;
+        box-sizing: border-box;
+        padding: $font-size-sm;
+      }
+    }
+    &-collapse {
+      @include media-breakpoint-down(md) {
+        box-sizing: border-box;
+        padding: 1rem 0;
+      }
+    }
+    .btn,
+    .nav-link {
+      font-size: $font-size-sm;
+    }
+    .nav-link {
+      padding: 0.5rem 1rem;
+      @include media-breakpoint-down(md) {
+        text-align: center;
+        font-size: 1rem;
+        padding: 1rem;
+      }
+    }
+    .btn {
+      @include media-breakpoint-down(md) {
+        margin-top: 1rem;
+        display: block;
+        font-size: 1rem;
+      }
+    }
+  }
+  &-cta {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    background-color: $danger;
+    color: $white;
+    font-weight: bold;
+    padding: 1.5rem 2.5rem;
+    border-bottom-left-radius: 0.5rem;
+    &:hover {
+      text-decoration: none;
+      color: $white;
+      opacity: 0.8;
+    }
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}

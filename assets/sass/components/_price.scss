@@ -1,0 +1,25 @@
+.price {
+  &__card {
+    margin: 2rem 0;
+    text-align: center;
+    @include media-breakpoint-down(md) {
+      text-align: left;
+    }
+    img {
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+  }
+  &-ttl {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    background-color: $light;
+    padding: 0.5em 1em;
+    margin: 3em 0 1em;
+    font-weight: bold;
+    @include media-breakpoint-down(md) {
+      font-size: 1.3rem;
+    }
+  }
+}

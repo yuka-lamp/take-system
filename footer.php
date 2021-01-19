@@ -8,26 +8,26 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 <!-- ▼ フッター -->
 <footer class="footer">
 
-  <div class="footer__main d-block d-md-flex justify-content-between align-items-center">
+  <div class="footer__main d-block d-lg-flex flex-wrap  justify-content-between align-items-center">
     <!-- ▼ メインページリンク -->
     <div class="">
-      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/features/">
+      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/features/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         機能紹介
       </a>
-      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/price/">
+      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/price/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         料金
       </a>
-      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/marketing/">
+      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/marketing/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         集客・販売促進
       </a>
-      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/work/">
+      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/work/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         導入事例
       </a>
-      <a class="footer__main-item d-block d-md-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/column/">
+      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/column/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         お役立ちガイド
       </a>
@@ -49,12 +49,13 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
     <!-- ▲ お問い合わせ ・ 資料請求 -->
   </div>
 
-  <div class="d-block d-md-flex justify-content-between py-4">
+  <div class="d-block d-lg-flex justify-content-between py-4">
     <!-- ▼ 会社情報リンク -->
     <div class="footer__link__inner">
     <p class="font-weight-bold mb-2">企業情報</p>
     <a class="text-dark mr-4" href="<?php echo $home; ?>/company/">運営会社</a>
     <a class="text-dark mr-4" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
+    <br class="d-block d-md-none">
     <a class="text-dark mr-4" href="<?php echo $home; ?>/law/">特定商取引法に基づく表記</a>
     <a class="text-dark mr-4" href="<?php echo $home; ?>/term/">利用規約</a>
     </div>

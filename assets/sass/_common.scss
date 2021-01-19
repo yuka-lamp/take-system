@@ -53,14 +53,14 @@ p {
   }
 }
 
-.space-t {
+.py-main {
   padding-top: 6.5rem;
   @include media-breakpoint-down(md) {
     padding-top: 3.5rem;
   }
 }
 
-.space-b {
+.py-main {
   padding-bottom: 6.5rem;
   @include media-breakpoint-down(md) {
     padding-bottom: 3.5rem;
@@ -120,6 +120,10 @@ p {
 
 .f-14 {
   font-size: 14px;
+}
+
+.f-12 {
+  font-size: 12px;
 }
 
 .f-10 {

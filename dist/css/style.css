@@ -13570,16 +13570,16 @@ p {
     .sec {
       padding: 2.5rem 0; } }
 
-.space-t {
+.py-main {
   padding-top: 6.5rem; }
   @media (max-width: 991.98px) {
-    .space-t {
+    .py-main {
       padding-top: 3.5rem; } }
 
-.space-b {
+.py-main {
   padding-bottom: 6.5rem; }
   @media (max-width: 991.98px) {
-    .space-b {
+    .py-main {
       padding-bottom: 3.5rem; } }
 
 /*===================================================
@@ -13629,6 +13629,9 @@ p {
 
 .f-14 {
   font-size: 14px; }
+
+.f-12 {
+  font-size: 12px; }
 
 .f-10 {
   font-size: 10px; }
@@ -13823,17 +13826,17 @@ p {
 ====================================================*/
 .footer {
   width: 90%;
-  margin: 3rem auto 0 auto; }
+  margin: 3rem auto 90px auto; }
   .footer__main {
     padding: 4rem 0;
     border-bottom: 1px solid #F0F0F0; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 1199.98px) {
       .footer__main {
         padding: 2.5rem 0; } }
-    @media (max-width: 991.98px) {
+    @media (max-width: 1199.98px) {
       .footer__main-item {
         margin-bottom: 1.5rem; } }
-    @media (max-width: 991.98px) {
+    @media (max-width: 1199.98px) {
       .footer__main .ctabtn {
         margin-top: 2rem; } }
 
@@ -13850,6 +13853,101 @@ p {
 /*===================================================
  ホーム - MV
 ====================================================*/
+/*===================================================
+ ホーム - TakeEatsが選ばれる理由
+====================================================*/
+.home__reason__wrap {
+  width: 830px;
+  margin: 0 auto; }
+  @media (max-width: 991.98px) {
+    .home__reason__wrap {
+      width: 100%; } }
+  @media (max-width: 767.98px) {
+    .home__reason__wrap {
+      width: 90%; } }
+
+.home__reason__item {
+  margin-bottom: 1.3rem; }
+  @media (max-width: 991.98px) {
+    .home__reason__item {
+      margin-bottom: 1rem; } }
+  .home__reason__item-ttl span {
+    border-bottom: 2px solid #EF5D1D;
+    color: #EF5D1D; }
+
+/*===================================================
+ ホーム - 商品お渡しまでの流れ
+====================================================*/
+.home__about__item {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  width: 48%;
+  margin-top: 3rem; }
+  @media (max-width: 991.98px) {
+    .home__about__item {
+      margin-bottom: 1rem;
+      width: 100%;
+      margin-top: 4rem; } }
+  .home__about__item:nth-child(2):before {
+    content: "02"; }
+  @media (min-width: 768px) {
+    .home__about__item:nth-child(2):after {
+      transform: rotate(-45deg);
+      top: auto;
+      bottom: -37px;
+      left: -76px; } }
+  .home__about__item:nth-child(3):before {
+    content: "03"; }
+  .home__about__item:nth-child(4):before {
+    content: "04"; }
+  .home__about__item:nth-child(4):after {
+    display: none; }
+  .home__about__item:before {
+    content: "01";
+    position: absolute;
+    top: -35px;
+    left: calc(50% - 39px);
+    color: #fff;
+    background: #EF5D1D;
+    border-radius: 50% 50% 0 0;
+    width: 78px;
+    height: 78px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 7px;
+    z-index: -1; }
+  .home__about__item:after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 11px;
+    top: calc(50% - 5.5px);
+    right: -60px;
+    background: #f0f0f0;
+    z-index: -1; }
+    @media (max-width: 991.98px) {
+      .home__about__item:after {
+        transform: rotate(90deg);
+        top: auto;
+        bottom: -60px;
+        left: 35%; } }
+  .home__about__item-text {
+    padding: 0 2rem; }
+  .home__about__item-ttl {
+    border-bottom: 1px solid #F0EBDD; }
+
+/*===================================================
+ ホーム - 導入事例
+====================================================*/
+.home__case__item {
+  margin: 0 15px 15px 0; }
+  @media (max-width: 991.98px) {
+    .home__case__item {
+      width: 30%;
+      margin: 0 3px 10px 0; } }
+
 .features h3 {
   display: block;
   text-align: center;

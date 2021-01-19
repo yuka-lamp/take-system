@@ -1,6 +1,135 @@
 /*===================================================
  ホーム - MV
 ====================================================*/
-.home__mv {
+.home__mv {}
+/*===================================================
+ ホーム - TakeEatsが選ばれる理由
+====================================================*/
+.home__reason {
+  &__wrap {
+    width: 830px;
+    margin: 0 auto;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 90%;
+    }
+  }
 
+  &__item {
+    margin-bottom: 1.3rem;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 1rem;
+    }
+
+    &-ttl {
+      span {
+        border-bottom: 2px solid $primary;
+        color: $primary;
+      }
+    }
+  }
+}
+/*===================================================
+ ホーム - 商品お渡しまでの流れ
+====================================================*/
+.home__about {
+  &__item {
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 48%;
+    margin-top: 3rem;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 1rem;
+      width: 100%;
+      margin-top: 4rem;
+    }
+
+    &:nth-child(2) {
+      &:before {
+        content: "02";
+      }
+
+      &:after {
+        @include media-breakpoint-up(md) {
+          transform: rotate(-45deg);
+          top: auto;
+          bottom: -37px;
+          left: -76px;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      &:before {
+        content: "03";
+      }
+    }
+
+    &:nth-child(4) {
+      &:before {
+        content: "04";
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:before {
+      content: "01";
+      position: absolute;
+      top: -35px;
+      left: calc(50% - 39px);
+      color: $white;
+      background: $primary;
+      border-radius: 50% 50% 0 0;
+      width: 78px;
+      height: 78px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 7px;
+      z-index: -1;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 11px;
+      top: calc(50% - 5.5px);
+      right: -60px;
+      background: #f0f0f0;
+      z-index: -1;
+      @include media-breakpoint-down(md) {
+        transform: rotate(90deg);
+        top: auto;
+        bottom: -60px;
+        left: 35%;
+      }
+    }
+
+    &-text {
+      padding: 0 2rem;
+    }
+
+    &-ttl {
+      border-bottom: 1px solid #F0EBDD;
+    }
+  }
+}
+/*===================================================
+ ホーム - 導入事例
+====================================================*/
+.home__case {
+  &__item {
+    margin: 0 15px 15px 0;
+    @include media-breakpoint-down(md) {
+      width: 30%;
+      margin: 0 3px 10px 0;
+    }
+  }
 }

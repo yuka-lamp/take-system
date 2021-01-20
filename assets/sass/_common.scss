@@ -55,12 +55,21 @@ p {
 
 .py-main {
   padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+  @include media-breakpoint-down(md) {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
+.pt-main {
+  padding-top: 6.5rem;
   @include media-breakpoint-down(md) {
     padding-top: 3.5rem;
   }
 }
 
-.py-main {
+.pb-main {
   padding-bottom: 6.5rem;
   @include media-breakpoint-down(md) {
     padding-bottom: 3.5rem;
@@ -225,6 +234,22 @@ p {
     text-align: center;
   }
 }
+
+.sub {
+  &__ttl {
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    img {
+      display: block;
+      margin: 0 auto 1rem auto;
+      width: 30px;
+      height: auto;
+    }
+  }
+}
 /*===================================================
  お問い合わせ・資料請求ボタン
 ====================================================*/
@@ -236,6 +261,7 @@ p {
     overflow: hidden;
   }
   &__item {
+    text-decoration: none!important;
     text-align: center;
     padding: 1.5rem 2rem;
     white-space: nowrap;

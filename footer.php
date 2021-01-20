@@ -5,6 +5,69 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 
 </main>
 
+<!-- ▼ いますぐTakeEatsを始めよう！ -->
+<?php if (!is_page('contact') && !is_page('request')): //フォーム追加ページ以外 ?>
+
+<!-- ▼ 背景 -->
+<img class="d-block d-md-none mt-4" src="<?php echo $img_url; ?>cta_bg_sp.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_sp.png 1x, <?php echo $img_url; ?>cta_bg_sp@2x.png 2x">
+<img class="d-none d-md-block mt-4" src="<?php echo $img_url; ?>cta_bg_pc.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_pc.png 1x, <?php echo $img_url; ?>cta_bg_pc@2x.png 2x">
+<!-- ▲ 背景 -->
+
+<div class="cta pt-5 pb-5 bg-light">
+  <div class="container">
+    <h2 class="f-32 font-weight-bold text-center mb-4">いますぐ<br>TakeEatsを始めよう！</h2>
+    <p class="mb-5 text-center">あなたのお店オリジナルの<br>モバイルオーダーサイトを無料で簡単に開設。</p>
+    <div class="cta__btn d-md-flex justify-content-between">
+      <!-- ▼ お問い合わせ -->
+      <a class="cta__btn-item contact text-white bg-primary" href="<?php echo $home; ?>/contact/">
+        <h3 class="cta__btn-item-ttl f-26 font-weight-bold mb-3">お問い合わせ</h3>
+        <p class="f-12 m-0">お悩みごとや導入の質問など<br>お気軽にご相談ください！</p>
+      </a>
+      <!-- ▲ お問い合わせ -->
+      <!-- ▼ 資料請求 -->
+      <a class="cta__btn-item doc text-primary" href="<?php echo $home; ?>/seminar/">
+        <h3 class="cta__btn-item-ttl f-26 font-weight-bold mb-3">無料相談会</h3>
+        <p class="f-12 m-0">導入を検討されている方のために<br>無料で相談会を行います！</p>
+      </a>
+      <!-- ▲ 資料請求 -->
+    </div>
+    <!-- ▼ 電話番号 -->
+    <div class="text-center mt-5">
+      <p class="f-16 text-primary font-weight-bold mb-1">カスタマーサポートセンター</p>
+      <a class="cta__phone f-32 font-weight-bold" href="tel:0756002721">075-600-2721</a>
+      <p class="f-12 text-muted mt-2">受付時間｜10:00~18:00（土日・祝除く）</p>
+    </div>
+    <!-- ▲ 電話番号 -->
+  </div>
+</div>
+
+<?php endif; ?>
+<!-- ▲ いますぐTakeEatsを始めよう！ -->
+
+<!-- ▼ seoテキスト -->
+<?php if (  is_front_page() ||  is_home() ) : ?>
+
+<section class="seo pt-main">
+  <div class="container">
+    <h2 class="f-32 font-weight-bold text-center mb-4">よくあるご質問</h2>
+    <p class="mb-5 text-center">お客様から多く寄せられるご質問を<br>ご紹介いたします。</p>
+    <div class="seo__table">
+      <dl class="seo__table-item ac bg-light mb-2">
+        <dt class="seo__table-item-q font-weight-bold">テイクアウトって？</dt>
+        <dd class="seo__table-item-a">カフェやレストランを始め、専門店やスイーツ店など幅広いお店でご利用いただいております。</dd>
+      </dl>
+      <dl class="seo__table-item ac bg-light mb-2">
+        <dt class="seo__table-item-q font-weight-bold">テイクアウトって？</dt>
+        <dd class="seo__table-item-a">カフェやレストランを始め、専門店やスイーツ店など幅広いお店でご利用いただいております。</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<?php endif; ?>
+<!-- ▲ seoテキスト -->
+
+
 <!-- ▼ フッター -->
 <footer class="footer">
 
@@ -31,22 +94,12 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         お役立ちガイド
       </a>
+      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/request/">
+        <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
+        お申し込み
+      </a>
     </div>
     <!-- ▲ メインページリンク -->
-    <!-- ▼ お問い合わせ ・ 資料請求 -->
-    <div class="ctabtn">
-      <div class="ctabtn__wrap d-flex w-100">
-        <a class="ctabtn__item col-6 bg-primary text-white font-weight-bold" href="<?php echo $home; ?>/contact/">
-          <img class="mr-2" src="<?php echo $img_url; ?>/icon_contact.svg" alt="お問い合わせアイコン">
-          お問い合わせ
-        </a>
-        <a class="ctabtn__item col-6 bg-secondary text-white font-weight-bold" href="<?php echo $home; ?>/contact/">
-          <img class="mr-2" src="<?php echo $img_url; ?>/icon_doc.svg" alt="資料請求アイコン">
-          資料請求
-        </a>
-      </div>
-    </div>
-    <!-- ▲ お問い合わせ ・ 資料請求 -->
   </div>
 
   <div class="d-block d-lg-flex justify-content-between py-4">

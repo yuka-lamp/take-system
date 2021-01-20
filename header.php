@@ -79,6 +79,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           お役立ちガイド
         </a>
+        <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/request/">
+          <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
+          お申し込み
+        </a>
         <!-- ▲ ページリンク -->
         <!-- ▼ 会社情報リンク -->
         <div class="footer__link__inner pt-3">
@@ -98,20 +102,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </header>
 
-<!-- ▼ [画面下固定] お問い合わせ ・ 資料請求 -->
+<!-- ▼ [画面下固定] お問い合わせ ・ 無料相談会 -->
+<?php if (!is_page('contact') && !is_page('request')): //フォーム追加ページ以外 ?>
+
 <div class="fix-under ctabtn">
   <div class="ctabtn__wrap d-flex w-100">
     <a class="ctabtn__item col-6 bg-primary text-white font-weight-bold" href="<?php echo $home; ?>/contact/">
-      <img class="mr-2" src="<?php echo $img_url; ?>/icon_contact.svg" alt="お問い合わせアイコン">
       お問い合わせ
     </a>
-    <a class="ctabtn__item col-6 bg-secondary text-white font-weight-bold" href="<?php echo $home; ?>/contact/">
-      <img class="mr-2" src="<?php echo $img_url; ?>/icon_doc.svg" alt="資料請求アイコン">
-      資料請求
+    <a class="ctabtn__item col-6 bg-secondary text-white font-weight-bold" href="<?php echo $home; ?>/seminar/">
+      無料相談会
     </a>
   </div>
 </div>
-<!-- ▲ [画面下固定] お問い合わせ ・ 資料請求 -->
+
+<?php endif; ?>
+<!-- ▲ [画面下固定] お問い合わせ ・ 無料相談会 -->
 
 <main>
 

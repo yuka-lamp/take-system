@@ -19,6 +19,7 @@
 
   &__item {
     margin-bottom: 1.3rem;
+    padding: 0;
     @include media-breakpoint-down(md) {
       margin-bottom: 1rem;
     }
@@ -125,11 +126,249 @@
  ホーム - 導入事例
 ====================================================*/
 .home__case {
+  &__wrap {
+    width: 75%;
+    @include media-breakpoint-down(md) {
+      width: 94%;
+    }
+  }
+
+  &__ttl {
+    color: $primary;
+
+    &:before {
+      content: url("../images/case_leaf_r.png");
+      display: block;
+      margin-top: 10px;
+      margin-right: 7px;
+    }
+
+    &:after {
+      content: url("../images/case_leaf_l.png");
+      display: block;
+      margin-top: 10px;
+      margin-left: 7px;
+    }
+
+    span {
+      font-size: 50px;
+      padding: 0 3px;
+      @include media-breakpoint-down(md) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &__inner {
+    width: 90%;
+    margin: 0 auto;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+
   &__item {
     margin: 0 15px 15px 0;
     @include media-breakpoint-down(md) {
+      width: 28%;
+      margin: 0 5px 2rem;
+    }
+  }
+}
+/*===================================================
+ ホーム - 料金
+====================================================*/
+.home__price {
+  &__nav {
+    &-item {
+      width: 170px;
+      border-radius: 10px 10px 0 0;
+      margin: 0 5px 0 0;
+      @include media-breakpoint-down(md) {
+        width: 49%;
+        margin: 0 1% 0 0;
+      }
+
+      &:nth-child(1) {
+        .home__price__nav-link {
+          &.active {
+            background: $secondary;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        .home__price__nav-link {
+          &.active {
+            background: $info;
+          }
+        }
+      }
+
+      img {
+        transform: rotate(90deg);
+      }
+    }
+
+    &-link {
+      border-radius: 0!important;
+      border-bottom: 2px solid $white;
+
+      &.active {
+        border-radius: 10px 10px 0 0!important;
+        border-bottom: none;
+      }
+    }
+  }
+
+  &__content {
+    &-item {
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      padding: 2rem;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        padding: 1.5rem 1rem 1rem;
+      }
+
+      &#pills-plan1 {
+        border: 8px solid $secondary;
+      }
+
+      &#pills-plan2 {
+        border: 8px solid $info;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 1.5rem;
+        bottom: 0;
+        background: url("../images/price_woman.png");
+        background-size: cover;
+        width: 118.7px;
+        height: 146px;
+        @include media-breakpoint-down(md) {
+          width: 98px;
+          height: 120px;
+        }
+      }
+    }
+
+    &-wrap {}
+
+    &-line {
       width: 30%;
-      margin: 0 3px 10px 0;
+      margin: 0 5px;
+      padding: 2.5rem 0 2rem;
+      border-radius: 30px;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        padding: 0.5rem 1.5rem;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 40px;
+      }
+
+      &:last-child {
+        border: 3px solid $light;
+      }
+    }
+  }
+}
+/*===================================================
+ ホーム - 導入までの流れ
+====================================================*/
+.home__flow {
+  &__figre {
+    width: 70%;
+    margin: 0 auto;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    &-day {
+      background: url("../images/flow_day_bg.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      p {
+        line-height: 10px;
+      }
+    }
+
+    &-step {
+      &-item {
+        position: relative;
+        text-align: center;
+        background: #E0F1FF;
+        border: 2px solid $warning;
+        border-radius: 10px;
+        padding: 10px 0;
+        margin-bottom: 8px;
+
+        &:last-child {
+          &::after {
+            display: none;
+          }
+        }
+
+        &::after {
+          content: "";
+          width: 11px;
+          height: 8px;
+          position: absolute;
+          left: calc(50% - 5.5px);
+          bottom: -10px;
+          background: #B1DBFF;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+/*===================================================
+ ホーム - SEOテキスト
+====================================================*/
+.seo {
+  &__table {
+    width: 80%;
+    margin: 0 auto;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    &-item {
+      margin: 0;
+      cursor: pointer;
+      position: relative;
+      border-radius: 30px;
+
+      &-q {
+        padding: 1.5rem 3.5rem;
+
+        &::before {
+          content: 'Q';
+          position: absolute;
+          left: 14px;
+          top: 18px;
+          font-size: 16px;
+          color: $white;
+          background: $secondary;
+          border-radius: 20px;
+          padding: 3px 10px 5px 10px;
+        }
+      }
+
+      &-a {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+        display: none;
+        font-size: 0.9rem;
+      }
     }
   }
 }

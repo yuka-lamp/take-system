@@ -60,7 +60,7 @@ get_header(); ?>
 <!-- ▼ 商品お渡しまでの流れ -->
 <div class="home__about">
   <div class="container py-main">
-    <h2 class="f-32 font-weight-bold text-center mb-5">TakeEatsが選ばれる理由</h2>
+    <h2 class="f-32 font-weight-bold text-center mb-4">TakeEatsが選ばれる理由</h2>
     <p class="mb-5 text-center">お客様が注文してから店舗受取に来るまでの<br>全体の流れを紹介いたします。</p>
 
     <div class="home__about__wrap d-md-flex flex-wrap justify-content-between">
@@ -134,26 +134,115 @@ get_header(); ?>
 
 <!-- ▼ 導入店舗 -->
 <div class="home__case bg-success py-5">
-  <div class="container py-main w-75 bg-white">
-    <h2 class="f-32 font-weight-bold text-center mb-5">全国<span>350</span>店舗で導入</h2>
-    <p class="mb-5 text-center">カフェやレストランを始め、専門店やスイーツ店など幅広いお店で<br>ご利用いただいております。</p>
+  <div class="home__case__wrap container pt-5 bg-white pl-0 pr-0 text-center">
+    <h2 class="home__case__ttl f-32 font-weight-bold  mb-3 d-flex align-items-center justify-content-center">全国<span>350</span>店舗で導入</h2>
+    <p class="mb-5">カフェやレストランを始め、<br class="d-block d-md-none">専門店やスイーツ店など幅広いお店で<br>ご利用いただいております。</p>
     <!-- ▼ ロゴ -->
-    <div class="home__case__wrap d-flex flex-wrap justify-content-center">
+    <div class="home__case__inner d-flex flex-wrap justify-content-center">
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_shigeyoshi.png" alt="しげよし" srcset="<?php echo $img_url; ?>lp_logo_shigeyoshi.png 1x, <?php echo $img_url; ?>lp_logo_shigeyoshi@2x.png 2x">
+      <!-- しげよし -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_mb.png" alt="マールブランシュ" srcset="<?php echo $img_url; ?>lp_logo_mb.png 1x, <?php echo $img_url; ?>lp_logo_mb@2x.png 2x">
+      <!-- マールブランシュ -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_musashi.png" alt="寿司のむさし" srcset="<?php echo $img_url; ?>lp_logo_musashi.png 1x, <?php echo $img_url; ?>lp_logo_musashi@2x.png 2x">
+      <!-- 寿司のむさし -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_daidomon.png" alt="大同門" srcset="<?php echo $img_url; ?>lp_logo_daidomon.png 1x, <?php echo $img_url; ?>lp_logo_daidomon@2x.png 2x">
+      <!-- 大同門 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_umezono.png" alt="梅園" srcset="<?php echo $img_url; ?>lp_logo_umezono.png 1x, <?php echo $img_url; ?>lp_logo_umezono@2x.png 2x">
+      <!-- 梅園 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_pourqui.png" alt="pourquoi" srcset="<?php echo $img_url; ?>lp_logo_pourqui.png 1x, <?php echo $img_url; ?>lp_logo_pourqui@2x.png 2x">
+      <!-- pourquoi -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_saiki.png" alt="さいき家" srcset="<?php echo $img_url; ?>lp_logo_saiki.png 1x, <?php echo $img_url; ?>lp_logo_saiki@2x.png 2x">
+      <!-- さいき家 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_banana.png" alt="バナナの神様" srcset="<?php echo $img_url; ?>lp_logo_banana.png 1x, <?php echo $img_url; ?>lp_logo_banana@2x.png 2x">
+      <!-- バナナの神様 -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_eirakuya.png" alt="永楽屋" srcset="<?php echo $img_url; ?>lp_logo_eirakuya.png 1x, <?php echo $img_url; ?>lp_logo_eirakuya@2x.png 2x">
+      <!-- 永楽屋 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_hana.png" alt="花たぬき" srcset="<?php echo $img_url; ?>lp_logo_hana.png 1x, <?php echo $img_url; ?>lp_logo_hana@2x.png 2x">
+      <!-- 花たぬき -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_200.png" alt="200円カレー" srcset="<?php echo $img_url; ?>lp_logo_200.png 1x, <?php echo $img_url; ?>lp_logo_200@2x.png 2x">
+      <!-- 200円カレー -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_mughal.png" alt="MUGHAL" srcset="<?php echo $img_url; ?>lp_logo_mughal.png 1x, <?php echo $img_url; ?>lp_logo_mughal@2x.png 2x">
+      <!-- MUGHAL -->
     </div>
     <!-- ▲ ロゴ -->
+    <img class="d-block d-md-none m-0 w-100" src="<?php echo $img_url; ?>case_bg_sp.png" alt="導入店舗紹介背景" srcset="<?php echo $img_url; ?>case_bg_sp.png 1x, <?php echo $img_url; ?>case_bg_sp@2x.png 2x">
+    <img class="d-none d-md-block m-0 w-100" src="<?php echo $img_url; ?>case_bg_pc.png" alt="導入店舗紹介背景" srcset="<?php echo $img_url; ?>case_bg_pc.png 1x, <?php echo $img_url; ?>case_bg_pc@2x.png 2x">
   </div>
 </div>
 <!-- ▲ 導入店舗 -->
+
+<!-- ▼ 料金 -->
+<div class="home__price">
+  <div class="container pt-main">
+    <h2 class="f-32 font-weight-bold text-center mb-4">料金</h2>
+    <p class="mb-5 text-center">お客様の店舗数やご利用状況に合わせた<br>2つのプランをご用意しております。</p>
+    <!-- ▼ タブメニュー -->
+    <ul class="home__price__nav nav nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">
+      <li class="home__price__nav-item nav-item bg-secondary">
+        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold active" id="pills-plan1-tab" data-toggle="pill" href="#pills-plan1" role="tab" aria-controls="pills-plan1" aria-selected="true">
+          小規模向け
+          <img class="home__price__nav-arrow" src="<?php echo $img_url; ?>arrow_wh.svg" alt="矢印">
+        </a>
+      </li>
+      <li class="home__price__nav-item nav-item bg-info">
+        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold" id="pills-plan2-tab" data-toggle="pill" href="#pills-plan2" role="tab" aria-controls="pills-plan2" aria-selected="false">
+          中大規模向け
+          <img class="home__price__nav-arrow" src="<?php echo $img_url; ?>arrow_wh.svg" alt="矢印">
+        </a>
+      </li>
+    </ul>
+    <!-- ▲ タブメニュー -->
+    <!-- ▼ タブコンテンツ -->
+    <div class="home__price__content tab-content" id="pills-tabContent">
+      <div class="home__price__content-item tab-pane fade show active" id="pills-plan1" role="tabpanel" aria-labelledby="pills-plan1-tab">
+        <div class="home__price__content-wrap d-block d-md-flex justify-content-center">
+          <p class="home__price__content-line f-18 font-weight-bold text-center bg-light">
+            月額費用
+            <br class="d-none d-md-block"><span class="text-primary f-36">¥0</span>
+          </p>
+          <p class="home__price__content-line f-18 font-weight-bold text-center bg-light">
+            初期費用
+            <br class="d-none d-md-block"><span class="text-primary f-36">¥0</span>
+          </p>
+          <p class="home__price__content-line f-18 font-weight-bold text-center">
+            サービス手数料
+            <br class="d-none d-md-block"><span class="f-36">8%</span>
+          </p>
+        </div>
+        <p class="f-10 text-muted mt-4 mb-0 col-8 col-md-12">※ サービス手数料は１回の注文につき手数料が発生します。
+          <br>※ オプションをご選択の場合は別途費用がかかります。
+          <br>※ クレジットカードでの決済の場合手数料3.6%が別途発生します。</p>
+      </div>
+      <div class="home__price__content-item tab-pane fade" id="pills-plan2" role="tabpanel" aria-labelledby="pills-plan2-tab">
+
+      </div>
+    </div>
+    <!-- ▲ タブコンテンツ -->
+  </div>
+</div>
+<!-- ▲ 料金 -->
+
+<!-- ▼ 導入までの流れ -->
+<div class="home__flow pt-main">
+  <div class="container">
+    <h2 class="f-32 font-weight-bold text-center mb-4">導入までの流れ</h2>
+    <p class="mb-5 text-center">お客様の店舗数やご利用状況に合わせた<br>2つのプランをご用意しております。</p>
+    <!-- ▼ 図 -->
+    <div class="home__flow__figre d-flex p-0">
+      <div class="home__flow__figre-day col-2 p-0 d-flex align-items-center">
+        <p class="f-18 font-weight-bold text-center m-0 d-block w-100">最短<br><span class="f-32 text-warning">7</span>日</p>
+      </div>
+      <div class="home__flow__figre-step col-10 p-0">
+        <p class="home__flow__figre-step-item f-16 font-weight-bold">お申し込み</p>
+        <p class="home__flow__figre-step-item f-16 font-weight-bold">ヒアリング</p>
+        <p class="home__flow__figre-step-item f-16 font-weight-bold">アカウント発行</p>
+        <p class="home__flow__figre-step-item f-16 font-weight-bold">メニュー・オプション登録</p>
+        <p class="home__flow__figre-step-item f-16 font-weight-bold">ご利用スタート</p>
+      </div>
+    </div>
+    <!-- ▲ 図 -->
+  </div>
+</div>
+<!-- ▲ 導入までの流れ -->
 
 <?php get_footer();

@@ -1,9 +1,115 @@
 /*===================================================
+  いますぐTakeEatsを始めよう！
+====================================================*/
+.cta {
+  &__btn {
+    width: 90%;
+    margin: 0 auto;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    &-item {
+      display: inline-block;
+      border-radius: 20px;
+      width: 49%;
+      padding: 2.5rem 1rem 2.5rem 3rem;
+      text-decoration: none!important;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+
+      &-ttl {
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 28px;
+          height: 28px;
+          position: absolute;
+          top: 4px;
+          left: -35px;
+          @include media-breakpoint-down(sm) {
+            top: 0;
+          }
+        }
+      }
+
+      &.contact {
+        position: relative;
+        background: $primary;
+        border-bottom: 10px solid #C74F1B;
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 1rem;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 105px;
+          height: 127px;
+          background: url("../images/cta_doc.png");
+          background-size: cover;
+        }
+
+        .cta__btn-item-ttl {
+          &::before {
+            background: url("../images/arrow_wh.svg");
+            background-size: cover;
+          }
+        }
+      }
+
+      &.doc {
+        position: relative;
+        background: $white;
+        border-bottom: 10px solid #F0F0F0;
+
+        &:hover {
+          background-color: #f0f0f0;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 103px;
+          height: 110px;
+          background: url("../images/cta_woman.png");
+          background-size: cover;
+        }
+
+        .cta__btn-item-ttl {
+          &::before {
+            background: url("../images/arrow_or.svg");
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+
+  &__phone {
+    position: relative;
+    font-size: 32px;
+
+    &:before {
+      content: url("../images/icon_phone.svg");
+      position: absolute;
+      top: 0;
+      left: -2rem;
+    }
+  }
+}
+/*===================================================
  フッター
 ====================================================*/
 .footer {
   width: 90%;
-  margin: 3rem auto 90px auto;
+  margin: 3rem auto 90px;
 
   &__main {
     padding: 4rem 0;
@@ -13,6 +119,7 @@
     }
 
     &-item {
+      text-decoration: none!important;
       @include media-breakpoint-down(lg) {
         margin-bottom: 1.5rem;
       }

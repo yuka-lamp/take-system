@@ -3,15 +3,21 @@
 ====================================================*/
 .header {
   &__wrap {
-    padding: 0 1rem;
-    min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: left;
+    margin: 0;
+    padding: 0 1rem;
+    min-height: 60px;
   }
 
   &__inner {
-    display: contents;
+    display: flex;
+    align-items: center;
+    span {
+      margin-top: 7px;
+    }
+
   }
 }
 /*===================================================
@@ -118,10 +124,13 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  background: $white;
   border-top: 1px solid #F0F0F0;
   padding: 10px;
+  z-index: 98;
 
   .ctabtn__item {
     padding: 1rem 0;
+    text-decoration: none;
   }
 }

@@ -101,6 +101,11 @@ $(function ($) {
     }
   });
 
+  // seo
+  $(".ac dt").on("click", function() {
+    $(this).next().slideToggle();
+  });
+
   // faq
   $(".faq__list__inner-ttl").on("click", function () {
     $(this).next(".faq__list__inner-ans").slideToggle();
@@ -108,25 +113,6 @@ $(function ($) {
   });
 });
 
-// 特徴ページ　スライド
-function checkBreakPoint() {
-	w = $(window).width();
-	if (w <= 767) {
-		// スマホ向け（767px以下のとき）
-    $("#system-flow").slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 300,
-      arrows: false,
-      dots: false,
-      centerMode: true,
-    });
-	} else {
-		// PC向け
-		$("#system-flow").slick('unslick');
-	}
-}
 // ウインドウがリサイズする度にチェック
 $(window).resize(function(){
 	checkBreakPoint();

@@ -88,7 +88,7 @@
     z-index: 98;
 
     &__wrap {
-      margin: 0 auto;
+      margin: 0 auto 3rem auto;
     }
   }
   // ハンバーガーメニュー
@@ -127,7 +127,7 @@
   background: $white;
   border-top: 1px solid #F0F0F0;
   padding: 10px;
-  z-index: 98;
+  z-index: 97;
 
   .ctabtn__item {
     padding: 1rem 0;

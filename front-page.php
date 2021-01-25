@@ -230,7 +230,8 @@ get_header(); ?>
         </div>
         <p class="f-10 text-muted mt-4 mb-0 col-8 col-md-12">※ サービス手数料は１回の注文につき手数料が発生します。
           <br>※ オプションをご選択の場合は別途費用がかかります。
-          <br>※ クレジットカードでの決済の場合手数料3.6%が別途発生します。</p>
+          <br>※ クレジットカードでの決済の場合手数料3.6%が別途発生します。
+          <br>※ 売上金を振り込む際に振込手数料¥440が発生いたします。</p>
       </div>
       <div class="home__price__content-item tab-pane fade" id="pills-plan2" role="tabpanel" aria-labelledby="pills-plan2-tab">
 

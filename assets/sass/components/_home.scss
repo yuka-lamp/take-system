@@ -1,7 +1,108 @@
 /*===================================================
  ホーム - MV
 ====================================================*/
-.home__mv {}
+.home__mv {
+  &-wrap {
+    display: flex;
+    @include media-breakpoint-down(sm) {
+      display: block;
+    }
+  }
+
+  &__text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 570px;
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      min-height: auto;
+      margin-bottom: 0;
+      justify-content: left;
+      padding: 1rem 1.5rem 1.5rem;
+    }
+
+    &-ttl {
+      margin-bottom: 1rem;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 0;
+      }
+
+      span {
+        border-bottom: 4px solid $success;
+      }
+    }
+
+    p {
+      width: 323px;
+    }
+
+    &::after {
+      content: '';
+      background: url("../images/mv_stamp_pc.png");
+      background-size: cover;
+      position: absolute;
+      right: 1.5rem;
+      bottom: 1.5rem;
+      width: 140px;
+      height: 141px;
+      @include media-breakpoint-down(sm) {
+        left: 1.5rem;
+        right: auto;
+        bottom: -6rem;
+        width: 100px;
+        height: 101px;
+        z-index: 97;
+      }
+    }
+  }
+
+  &__photo {
+    width: 50%;
+    min-height: 570px;
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      width: 100%;
+      min-height: 320px;
+      padding-top: 1.5rem;
+    }
+
+    &::after {
+      @include media-breakpoint-down(sm) {
+        content: '';
+        background: url("../images/mv_iphone_pc.png");
+        background-size: cover;
+        position: absolute;
+        right: 1rem;
+        bottom: 1.5rem;
+        width: 161px;
+        height: 320px;
+      }
+    }
+
+    &-bg {
+      width: 100%;
+      height: 100%;
+      background: url("../images/mv_bg_pc.png");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include media-breakpoint-down(sm) {
+        justify-content: flex-end;
+        height: 216px;
+      }
+    }
+
+    img {
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+}
 /*===================================================
  ホーム - TakeEatsが選ばれる理由
 ====================================================*/
@@ -360,12 +461,12 @@
           color: $white;
           background: $secondary;
           border-radius: 20px;
-          padding: 3px 10px 5px 10px;
+          padding: 3px 10px 5px;
         }
       }
 
       &-a {
-        padding: 0 1.5rem 1.5rem 1.5rem;
+        padding: 0 1.5rem 1.5rem;
         display: none;
         font-size: 0.9rem;
       }

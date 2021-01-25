@@ -38,14 +38,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header id="header" class="lp__header">
 <nav class="lp__nav">
 
-  <!-- ▼ 常に表示される -->
-  <h1 class="header__wrap">
-    <a class="header__inner"href="<?php echo $home; ?>">
-      <img src="<?php echo $img_url; ?>logo.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>logo.png 1x, <?php echo $img_url; ?>logo@2x.png 2x">
-      <span class="text-body f-14 font-weight-bold ml-2">飲食店向け</span>
-    </a>
-  </h1>
-  <!-- ▲ 常に表示される -->
+  <div class="lp__header__wrap">
+    <!-- ▼ ロゴ -->
+    <h1 class="">
+      <a class="header__inner"href="<?php echo $home; ?>">
+        <img src="<?php echo $img_url; ?>logo.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>logo.png 1x, <?php echo $img_url; ?>logo@2x.png 2x">
+        <span class="text-body f-14 font-weight-bold ml-2">飲食店向け</span>
+      </a>
+    </h1>
+    <!-- ▲ ロゴ -->
+
+    <!-- ▼ PCのみリンクボタン -->
+    <div class="lp__header__btn">
+      <a class="d-inline btn-secondary font-weight-bold text-white f-14" href="<?php echo $home; ?>/request/">資料請求</a>
+      <a class="d-inline btn-primary font-weight-bold text-white f-14" href="<?php echo $home; ?>/contaft/">お問い合わせ</a>
+    </div>
+    <!-- ▲ PCのみリンクボタン -->
+  </div>
 
   <!-- ▼ メニュー -->
   <div class="drawer">

@@ -6,7 +6,26 @@ get_header(); ?>
 
 <!-- ▼ メインビジュアル -->
 <div class="home__mv">
-  <div class="container">
+  <div class="home__mv-wrap">
+    <div class="home__mv__text">
+      <div class="home__mv__text-wrap">
+        <h2 class="home__mv__text-ttl font-weight-bold f-36">
+          お店独自の
+          <br>モバイルオーダーで
+          <br><span>売上アップ！</span>
+        </h2>
+        <p class="d-none d-md-block mt-5">
+          高機能なTakeEastsは初期費用・導入費無料！
+          <br>あなたのお店でもいますぐモバイルオーダーをスタート。
+        </p>
+      </div>
+    </div>
+    <div class="home__mv__photo">
+      <div class="home__mv__photo-bg">
+        <img class="" src="<?php echo $img_url; ?>mv_iphone_pc.png" alt="タブレット不要！スマホだけでも運用可能" srcset="<?php echo $img_url; ?>mv_iphone_pc.png 1x, <?php echo $img_url; ?>mv_iphone_pc@2x.png 2x">
+      </div>
+    </div>
+
   </div>
 </div>
 <!-- ▲ メインビジュアル -->

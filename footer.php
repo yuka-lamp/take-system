@@ -15,7 +15,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 <?php endif; ?>
 <!-- ▲ 背景 -->
 
-<div id="contact" class="cta pt-5 pb-5 bg-light">
+<div id="toform" class="cta pt-5 pb-5 bg-light">
   <div class="container">
     <h2 class="f-32 font-weight-bold text-center mb-4">いますぐ<br class="d-block d-md-none">TakeEatsを始めよう！</h2>
     <!-- <p class="mb-5 text-center">あなたのお店オリジナルの<br>モバイルオーダーサイトを無料で簡単に開設。</p> -->

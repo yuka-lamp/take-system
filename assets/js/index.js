@@ -42,45 +42,6 @@ $(function ($) {
     ],
   });
 
-  $("#lpcase").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 0,
-    speed: 10000,
-    arrows: false,
-    dots: false,
-    centerMode: true,
-    centerPadding: "20vw",
-    cssEase: 'linear',
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-
-  // // 動画処理
-  // if ($("#pv").length) {
-  //   videojs("pv", {
-  //     controls: true,
-  //     autoplay: false,
-  //     preload: "auto",
-  //   });
-  // }
-
-  // // デモ画面
-  // $(".features__demos__btns-btn").on("click", function () {
-  //   $(".features__demos__btns-btn").removeClass("active");
-  //   $(this).addClass("active");
-  //   $("#demo-img").attr("src", $(this).attr("data-src"));
-  //   $("#demo-txt>.txt-data").html($(this).attr("data-txt"));
-  //   $("#demo-txt>.txt-icon").html($(this).children("p:first-child").html());
-  // });
-
   // スムーススクロール
   $(".smooth").on("click", function () {
     var speed = 500;

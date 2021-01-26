@@ -74,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <i class="fas fa-chalkboard"></i>
         無料相談会
       </a>
-      <a class="d-inline btn-primary font-weight-bold text-white" href="<?php echo $home; ?>#contact">
+      <a class="d-inline btn-primary font-weight-bold text-white" href="<?php echo $home; ?>#toform">
         <i class="fas fa-headset"></i>
         お問い合わせ
       </a>
@@ -146,7 +146,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <i class="fas fa-chalkboard"></i>
       無料相談会
     </a>
-    <a class="ctabtn__item col-6 bg-primary text-white font-weight-bold" href="<?php echo $home; ?>#contact/">
+    <a class="ctabtn__item col-6 bg-primary text-white font-weight-bold" href="<?php echo $home; ?>#toform/">
       <i class="fas fa-headset"></i>
       お問い合わせ
     </a>

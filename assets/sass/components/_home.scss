@@ -378,6 +378,16 @@
         border: 3px solid $light;
       }
     }
+
+    .sub {
+      background: $light;
+      border-radius: 40px;
+      margin: 3rem 0;
+      padding: 2rem 0;
+      @include media-breakpoint-down(md) {
+        margin: 3rem 0 5rem 0;
+      }
+    }
   }
 }
 /*===================================================

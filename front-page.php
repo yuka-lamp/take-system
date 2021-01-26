@@ -234,7 +234,7 @@ get_header(); ?>
         </p>
       </div>
       <div class="home__price__content-item tab-pane fade" id="pills-plan2" role="tabpanel" aria-labelledby="pills-plan2-tab">
-        <p class="f-18 py-5 my-3 text-center font-weight">
+        <p class="sub f-18 text-center font-weight">
           特別プランをご提案いたします。
           <br>詳しくは<a href="">お問い合わせ</a>下さい。
         </p>

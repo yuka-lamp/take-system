@@ -14241,6 +14241,16 @@ p {
     border: 8px solid #FF8811; }
   .home__price__content-item#pills-plan2 {
     border: 8px solid #38ACC1; }
+    .home__price__content-item#pills-plan2 p {
+      background: #FFFAEB;
+      border-radius: 40px;
+      margin: 0 0 3rem;
+      padding: 2rem 0; }
+      @media (max-width: 991.98px) {
+        .home__price__content-item#pills-plan2 p {
+          margin: 0 0 5rem; } }
+      .home__price__content-item#pills-plan2 p a {
+        text-decoration: underline; }
   .home__price__content-item:after {
     content: "";
     position: absolute;
@@ -14271,15 +14281,6 @@ p {
       border-radius: 40px; } }
   .home__price__content-line:last-child {
     border: 3px solid #FFFAEB; }
-
-.home__price__content .sub {
-  background: #FFFAEB;
-  border-radius: 40px;
-  margin: 3rem 0;
-  padding: 2rem 0; }
-  @media (max-width: 991.98px) {
-    .home__price__content .sub {
-      margin: 3rem 0 5rem 0; } }
 
 /*===================================================
  ホーム - 導入までの流れ

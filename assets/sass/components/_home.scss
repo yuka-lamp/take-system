@@ -339,6 +339,19 @@
 
       &#pills-plan2 {
         border: 8px solid $info;
+
+        p {
+          background: $light;
+          border-radius: 40px;
+          margin: 0 0 3rem;
+          padding: 2rem 0;
+          @include media-breakpoint-down(md) {
+            margin: 0 0 5rem;
+          }
+          a {
+            text-decoration: underline;
+          }
+        }
       }
 
       &:after {
@@ -376,16 +389,6 @@
 
       &:last-child {
         border: 3px solid $light;
-      }
-    }
-
-    .sub {
-      background: $light;
-      border-radius: 40px;
-      margin: 3rem 0;
-      padding: 2rem 0;
-      @include media-breakpoint-down(md) {
-        margin: 3rem 0 5rem 0;
       }
     }
   }

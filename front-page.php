@@ -234,9 +234,9 @@ get_header(); ?>
         </p>
       </div>
       <div class="home__price__content-item tab-pane fade" id="pills-plan2" role="tabpanel" aria-labelledby="pills-plan2-tab">
-        <p class="sub f-18 text-center font-weight">
+        <p class="f-18 text-center font-weight-bold">
           特別プランをご提案いたします。
-          <br>詳しくは<a href="">お問い合わせ</a>下さい。
+          <br>詳しくは<a href="<?php echo $home; ?>#toform">お問い合わせ</a>下さい。
         </p>
       </div>
     </div>

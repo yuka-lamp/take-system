@@ -6,11 +6,13 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 </main>
 
 <!-- ▼ いますぐTakeEatsを始めよう！ -->
-<?php if (!is_page('contact') && !is_page('request')): //フォーム追加ページ以外 ?>
+<?php if (!is_page('contact') && !is_page('request')) : //フォーム追加ページ以外 ?>
 
 <!-- ▼ 背景 -->
+<?php if (  is_front_page() ||  is_home() ) : ?>
 <img class="d-block d-md-none mt-4 w-100" src="<?php echo $img_url; ?>cta_bg_sp.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_sp.png 1x, <?php echo $img_url; ?>cta_bg_sp@2x.png 2x">
 <img class="d-none d-md-block mt-4 w-100" src="<?php echo $img_url; ?>cta_bg_pc.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_pc.png 1x, <?php echo $img_url; ?>cta_bg_pc@2x.png 2x">
+<?php endif; ?>
 <!-- ▲ 背景 -->
 
 <div id="contact" class="cta pt-5 pb-5 bg-light">

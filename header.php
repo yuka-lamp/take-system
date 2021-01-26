@@ -59,9 +59,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/marketing/">
         集客・販売促進
       </a>
-      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/marketing/">
-        集客・販売促進
-      </a>
       <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/work/">
         導入事例
       </a>
@@ -162,7 +159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
 
 <!-- ▼ 下層メインビジュアル -->
-<?php if (!is_home() && !is_front_page() && !is_single() && !is_archive() && !is_page(['column'])): // 下層ページ ?>
+<?php if (!is_home() && !is_front_page() && !is_single() && !is_archive()): // 下層ページ ?>
 <section class="sec mv__sub">
   <div class="container">
   <h1 class="f-26 font-weight-bold w-100"><?php the_title(); ?></h1>

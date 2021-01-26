@@ -122,7 +122,10 @@
 ====================================================*/
 .footer {
   width: 90%;
-  margin: 3rem auto 90px;
+  margin: 0;
+  @include media-breakpoint-down(lg) {
+    margin: 0 auto 60px;
+  }
 
   &__main {
     padding: 4rem 0;

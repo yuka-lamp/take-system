@@ -4,7 +4,6 @@ $wp_url = get_template_directory_uri();
 get_header(); ?>
 <section class="sec mv__sub bg-white">
 <div class="container">
-<h1><?php the_title(); ?></h1>
 <div class="column__step">
 <a href="#step1" class="smooth-scroll">
 <span class="column__step-no">STEP 01</span>

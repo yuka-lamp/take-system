@@ -5,7 +5,7 @@ body {
   font-family: "Quicksand", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   letter-spacing: 1px;
   font-size: .875rem;
-  margin-top: 60px;
+  margin-top: 80px;
   @include media-breakpoint-down(xl) {
     margin-top: 0;
   }

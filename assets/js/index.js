@@ -74,9 +74,9 @@ $(function ($) {
   });
 });
 
-// ウインドウがリサイズする度にチェック
-$(window).resize(function(){
-	checkBreakPoint();
-});
-// 初回チェック
-checkBreakPoint();
+// // ウインドウがリサイズする度にチェック
+// $(window).resize(function(){
+// 	checkBreakPoint();
+// });
+// // 初回チェック
+// checkBreakPoint();

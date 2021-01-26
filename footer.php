@@ -148,37 +148,5 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 
 <script src="<?php echo $wp_url; ?>/dist/js/bundle.js?ver=1.0.1" defer></script>
 <?php wp_footer(); ?>
-
-<script>
-const toform = document.getElementById("toform");
-
-document.addEventListener("click", e => {
-const target = e.target;
-if (!target.classList.contains("smooth-scroll")) return;
-e.preventDefault();
-const targetId = target.hash;
-document.querySelector(targetId).scrollIntoView({
-behavior: "smooth",
-block: "start"
-});
-});
-
-window.addEventListener("scroll", () => {
-const srollVal = window.pageYOffset;
-const observer = new IntersectionObserver((entries) => {
-if (srollVal < 500) {
-toform.style.bottom = '-100%';
-} else {
-if (entries[0].isIntersecting == true) {
-toform.style.bottom = '-100%';
-} else {
-toform.style.bottom = 0;
-}
-}
-});
-observer.observe(document.getElementById("lpform"));
-});
-</script>
-
 </body>
 </html>

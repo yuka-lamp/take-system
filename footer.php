@@ -37,7 +37,6 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
       <!-- ▲ 資料請求 -->
     </div>
     <!-- ▼ お問合せフォーム -->
-    <?php if (  is_front_page() ||  is_home() ) : ?>
       <div class="cta__form bg-white mt-4">
         <h2 class="f-26 font-weight-bold text-center my-4">お問い合わせ</h2>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
@@ -48,7 +47,6 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
         });
         </script>
       </div>
-    <?php endif; ?>
     <!-- ▲ お問合せフォーム -->
   </div>
 </div>

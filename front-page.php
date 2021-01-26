@@ -36,15 +36,6 @@ get_header(); ?>
     <h2 class="f-32 font-weight-bold text-center mb-5">TakeEatsが選ばれる理由</h2>
     <div class="home__reason__wrap d-md-flex flex-wrap">
       <!-- ▼ 理由① -->
-      <div class="home__reason__item d-flex align-items-center col-md-6">
-        <img class="" src="<?php echo $img_url; ?>reason_tablet.png" alt="タブレット不要！スマホだけでも運用可能" srcset="<?php echo $img_url; ?>reason_tablet.png 1x, <?php echo $img_url; ?>reason_tablet@2x.png 2x">
-        <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
-          タブレット不要！
-          <br><span>スマホだけ</span>でも運用可能
-        </h3>
-      </div>
-      <!-- ▲ 理由① -->
-      <!-- ▼ 理由② -->
       <div class="home__reason__item d-flex align-items-center col-md-6 mt-4">
         <img class="" src="<?php echo $img_url; ?>reason_free.png" alt="初期費用・月額費用が無料で利用できる" srcset="<?php echo $img_url; ?>reason_free.png 1x, <?php echo $img_url; ?>reason_free@2x.png 2x">
         <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
@@ -52,13 +43,22 @@ get_header(); ?>
           <br><span>無料</span>で利用できる
         </h3>
       </div>
-      <!-- ▲ 理由② -->
-      <!-- ▼ 理由③ -->
+      <!-- ▲ 理由① -->
+      <!-- ▼ 理由② -->
       <div class="home__reason__item d-flex align-items-center col-md-6 mt-4">
         <img class="" src="<?php echo $img_url; ?>reason_up.png" alt="注文のデジタル化で売上アップ！" srcset="<?php echo $img_url; ?>reason_up.png 1x, <?php echo $img_url; ?>reason_up@2x.png 2x">
         <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
           注文のデジタル化で
           <br><span>売上アップ</span>！
+        </h3>
+      </div>
+      <!-- ▲ 理由② -->
+      <!-- ▼ 理由③ -->
+      <div class="home__reason__item d-flex align-items-center col-md-6">
+        <img class="" src="<?php echo $img_url; ?>reason_tablet.png" alt="タブレット不要！スマホだけでも運用可能" srcset="<?php echo $img_url; ?>reason_tablet.png 1x, <?php echo $img_url; ?>reason_tablet@2x.png 2x">
+        <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
+          タブレット不要！
+          <br><span>スマホだけ</span>でも運用可能
         </h3>
       </div>
       <!-- ▲ 理由③ -->
@@ -79,7 +79,7 @@ get_header(); ?>
 <!-- ▼ 商品お渡しまでの流れ -->
 <div class="home__about">
   <div class="container py-main">
-    <h2 class="f-32 font-weight-bold text-center mb-4">TakeEatsが選ばれる理由</h2>
+    <h2 class="f-32 font-weight-bold text-center mb-4">商品お渡しまでの流れ</h2>
     <p class="mb-5 text-center">お客様が注文してから店舗受取に来るまでの<br>全体の流れを紹介いたします。</p>
 
     <div class="home__about__wrap d-md-flex flex-wrap justify-content-between">
@@ -154,7 +154,7 @@ get_header(); ?>
 <!-- ▼ 導入店舗 -->
 <div class="home__case bg-success py-5">
   <div class="home__case__wrap container pt-5 bg-white pl-0 pr-0 text-center">
-    <h2 class="home__case__ttl f-32 font-weight-bold  mb-3 d-flex align-items-center justify-content-center">全国<span>350</span>店舗で導入</h2>
+    <h2 class="home__case__ttl f-32 font-weight-bold  mb-3 d-flex align-items-center justify-content-center">全国<span>500</span>店舗で導入</h2>
     <p class="mb-5">カフェやレストランを始め、<br class="d-block d-md-none">専門店やスイーツ店など幅広いお店で<br>ご利用いただいております。</p>
     <!-- ▼ ロゴ -->
     <div class="home__case__inner d-flex flex-wrap justify-content-center">
@@ -199,13 +199,13 @@ get_header(); ?>
     <ul class="home__price__nav nav nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">
       <li class="home__price__nav-item nav-item bg-secondary">
         <a class="home__price__nav-link nav-link text-center text-white font-weight-bold active" id="pills-plan1-tab" data-toggle="pill" href="#pills-plan1" role="tab" aria-controls="pills-plan1" aria-selected="true">
-          小規模向け
+          小・中規模向け
           <img class="home__price__nav-arrow" src="<?php echo $img_url; ?>arrow_wh.svg" alt="矢印">
         </a>
       </li>
       <li class="home__price__nav-item nav-item bg-info">
         <a class="home__price__nav-link nav-link text-center text-white font-weight-bold" id="pills-plan2-tab" data-toggle="pill" href="#pills-plan2" role="tab" aria-controls="pills-plan2" aria-selected="false">
-          中大規模向け
+          大規模向け
           <img class="home__price__nav-arrow" src="<?php echo $img_url; ?>arrow_wh.svg" alt="矢印">
         </a>
       </li>
@@ -214,13 +214,13 @@ get_header(); ?>
     <!-- ▼ タブコンテンツ -->
     <div class="home__price__content tab-content" id="pills-tabContent">
       <div class="home__price__content-item tab-pane fade show active" id="pills-plan1" role="tabpanel" aria-labelledby="pills-plan1-tab">
-        <div class="home__price__content-wrap d-block d-md-flex justify-content-center">
+        <div class="home__price__content-wrap d-block d-md-flex justify-content-center mb-5">
           <p class="home__price__content-line f-18 font-weight-bold text-center bg-light">
-            月額費用
+            初期費用
             <br class="d-none d-md-block"><span class="text-primary f-36">¥0</span>
           </p>
           <p class="home__price__content-line f-18 font-weight-bold text-center bg-light">
-            初期費用
+            月額費用
             <br class="d-none d-md-block"><span class="text-primary f-36">¥0</span>
           </p>
           <p class="home__price__content-line f-18 font-weight-bold text-center">
@@ -228,13 +228,16 @@ get_header(); ?>
             <br class="d-none d-md-block"><span class="f-36">8%</span>
           </p>
         </div>
-        <p class="f-10 text-muted mt-4 mb-0 col-8 col-md-12">※ サービス手数料は１回の注文につき手数料が発生します。
-          <br>※ オプションをご選択の場合は別途費用がかかります。
-          <br>※ クレジットカードでの決済の場合手数料3.6%が別途発生します。
-          <br>※ 売上金を振り込む際に振込手数料¥440が発生いたします。</p>
+        <p class="f-10 text-muted mt-4 mb-0 col-8 col-md-12">
+          ※ クレジットカードでの決済の場合手数料3.6%が別途発生します。
+          <br>※ 売上金を振り込む際に振込手数料¥440が発生いたします。
+        </p>
       </div>
       <div class="home__price__content-item tab-pane fade" id="pills-plan2" role="tabpanel" aria-labelledby="pills-plan2-tab">
-
+        <p class="f-18 py-5 my-3 text-center font-weight">
+          特別プランをご提案いたします。
+          <br>詳しくは<a href="">お問い合わせ</a>下さい。
+        </p>
       </div>
     </div>
     <!-- ▲ タブコンテンツ -->
@@ -249,13 +252,18 @@ get_header(); ?>
     <p class="mb-5 text-center">お客様の店舗数やご利用状況に合わせた<br>2つのプランをご用意しております。</p>
     <!-- ▼ 図 -->
     <div class="home__flow__figre d-flex p-0">
-      <div class="home__flow__figre-day col-2 p-0 d-flex align-items-center">
-        <p class="f-18 font-weight-bold text-center m-0 d-block w-100">最短<br><span class="f-32 text-warning">7</span>日</p>
+      <div class="home__flow__figre-day col-2 p-0 d-flex justify-contant-center">
+        <div class="w-100">
+          <p class="f-18 font-weight-bold text-center m-0 d-block w-100">
+            最短
+            <br class="d-block d-md-none">
+            <span class="f-32 text-warning px-1">1</span>日</p>
+        </div>
       </div>
       <div class="home__flow__figre-step col-10 p-0">
         <p class="home__flow__figre-step-item f-16 font-weight-bold">お申し込み</p>
-        <p class="home__flow__figre-step-item f-16 font-weight-bold">ヒアリング</p>
         <p class="home__flow__figre-step-item f-16 font-weight-bold">アカウント発行</p>
+        <p class="home__flow__figre-step-item f-16 font-weight-bold">初期設定</p>
         <p class="home__flow__figre-step-item f-16 font-weight-bold">メニュー・オプション登録</p>
         <p class="home__flow__figre-step-item f-16 font-weight-bold">ご利用スタート</p>
       </div>

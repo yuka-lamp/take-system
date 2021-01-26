@@ -8,7 +8,7 @@
   left: 0;
   width: 100%;
   z-index: 99;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xl) {
     position: relative;
   }
 
@@ -23,9 +23,9 @@
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    padding: 0 4.5rem 0 1rem;
+    padding: 0 1rem;
     min-height: 60px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(xl) {
       padding: 0 1rem;
     }
 
@@ -46,7 +46,8 @@
   }
 
   &__btn {
-    @include media-breakpoint-down(sm) {
+    display: block;
+    @include media-breakpoint-down(lg) {
       display: none;
     }
 
@@ -177,5 +178,6 @@
   .ctabtn__item {
     padding: 1rem 0;
     text-decoration: none;
+    font-size: 16px;
   }
 }

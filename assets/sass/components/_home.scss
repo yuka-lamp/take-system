@@ -392,10 +392,32 @@
     }
 
     &-day {
-      background: url("../images/flow_day_bg.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        height: 105px;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 25px;
+          border-top: 2px dashed #f0f0f0;
+          border-left: 2px dashed #f0f0f0;
+          @include media-breakpoint-down(md) {}
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 25px;
+          border-left: 2px dashed #f0f0f0;
+          border-bottom: 2px dashed #f0f0f0;
+          @include media-breakpoint-down(md) {}
+        }
+      }
 
       p {
         line-height: 10px;

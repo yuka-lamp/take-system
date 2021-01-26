@@ -6,7 +6,7 @@ body {
   letter-spacing: 1px;
   font-size: .875rem;
   margin-top: 60px;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(xl) {
     margin-top: 0;
   }
 }

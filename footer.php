@@ -9,35 +9,47 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 <?php if (!is_page('contact') && !is_page('request')): //フォーム追加ページ以外 ?>
 
 <!-- ▼ 背景 -->
-<img class="d-block d-md-none mt-4" src="<?php echo $img_url; ?>cta_bg_sp.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_sp.png 1x, <?php echo $img_url; ?>cta_bg_sp@2x.png 2x">
-<img class="d-none d-md-block mt-4" src="<?php echo $img_url; ?>cta_bg_pc.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_pc.png 1x, <?php echo $img_url; ?>cta_bg_pc@2x.png 2x">
+<img class="d-block d-md-none mt-4 w-100" src="<?php echo $img_url; ?>cta_bg_sp.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_sp.png 1x, <?php echo $img_url; ?>cta_bg_sp@2x.png 2x">
+<img class="d-none d-md-block mt-4 w-100" src="<?php echo $img_url; ?>cta_bg_pc.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_pc.png 1x, <?php echo $img_url; ?>cta_bg_pc@2x.png 2x">
 <!-- ▲ 背景 -->
 
-<div class="cta pt-5 pb-5 bg-light">
+<div id="contact" class="cta pt-5 pb-5 bg-light">
   <div class="container">
-    <h2 class="f-32 font-weight-bold text-center mb-4">いますぐ<br>TakeEatsを始めよう！</h2>
-    <p class="mb-5 text-center">あなたのお店オリジナルの<br>モバイルオーダーサイトを無料で簡単に開設。</p>
-    <div class="cta__btn d-md-flex justify-content-between">
+    <h2 class="f-32 font-weight-bold text-center mb-4">いますぐ<br class="d-block d-md-none">TakeEatsを始めよう！</h2>
+    <!-- <p class="mb-5 text-center">あなたのお店オリジナルの<br>モバイルオーダーサイトを無料で簡単に開設。</p> -->
+    <!-- ▼ 電話番号 -->
+    <div class="text-center mt-3">
+      <p class="f-16 text-primary font-weight-bold mb-1">カスタマーサポートセンター</p>
+      <a class="cta__phone f-32 font-weight-bold" href="tel:0756002721">075-600-2721</a>
+      <p class="f-12 text-muted mb-4">受付時間｜10:00~18:00（土日・祝除く）</p>
+    </div>
+    <!-- ▲ 電話番号 -->
+    <div class="cta__btn d-md-flex flex-wrap justify-content-center">
       <!-- ▼ お問い合わせ -->
-      <a class="cta__btn-item contact text-white bg-primary" href="<?php echo $home; ?>/contact/">
-        <h3 class="cta__btn-item-ttl f-26 font-weight-bold mb-3">お問い合わせ</h3>
-        <p class="f-12 m-0">お悩みごとや導入の質問など<br>お気軽にご相談ください！</p>
+      <a class="cta__btn-item request text-white bg-primary" href="<?php echo $home; ?>/request/">
+        <h3 class="cta__btn-item-ttl f-18 font-weight-bold text-center mb-0">お申し込み</h3>
       </a>
       <!-- ▲ お問い合わせ -->
       <!-- ▼ 資料請求 -->
       <a class="cta__btn-item doc text-primary" href="<?php echo $home; ?>/seminar/">
-        <h3 class="cta__btn-item-ttl f-26 font-weight-bold mb-3">無料相談会</h3>
-        <p class="f-12 m-0">導入を検討されている方のために<br>無料で相談会を行います！</p>
+        <h3 class="cta__btn-item-ttl f-18 font-weight-bold text-center mb-0">無料相談会を予約</h3>
       </a>
       <!-- ▲ 資料請求 -->
     </div>
-    <!-- ▼ 電話番号 -->
-    <div class="text-center mt-5">
-      <p class="f-16 text-primary font-weight-bold mb-1">カスタマーサポートセンター</p>
-      <a class="cta__phone f-32 font-weight-bold" href="tel:0756002721">075-600-2721</a>
-      <p class="f-12 text-muted mt-2">受付時間｜10:00~18:00（土日・祝除く）</p>
-    </div>
-    <!-- ▲ 電話番号 -->
+    <!-- ▼ お問合せフォーム -->
+    <?php if (  is_front_page() ||  is_home() ) : ?>
+      <div class="cta__form bg-white mt-4">
+        <h2 class="f-26 font-weight-bold text-center my-4">お問い合わせ</h2>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+        <script>
+          hbspt.forms.create({
+        	portalId: "8940987",
+        	formId: "8dabe843-f09e-45dd-a5b5-277dcf314768"
+        });
+        </script>
+      </div>
+    <?php endif; ?>
+    <!-- ▲ お問合せフォーム -->
   </div>
 </div>
 

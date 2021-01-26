@@ -49,15 +49,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ▲ ロゴ -->
 
     <!-- ▼ PCのみリンクボタン -->
+    <div class="d-none d-xl-block">
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/features/">
+        機能紹介
+      </a>
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/price/">
+        料金
+      </a>
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/marketing/">
+        集客・販売促進
+      </a>
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/marketing/">
+        集客・販売促進
+      </a>
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/work/">
+        導入事例
+      </a>
+      <!-- <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/column/">
+        お役立ちガイド
+      </a> -->
+      <a class="d-inline-block font-weight-bold text-dark f-14" href="<?php echo $home; ?>/request/">
+        お申し込み
+      </a>
+    </div>
     <div class="lp__header__btn">
-      <a class="d-inline btn-secondary font-weight-bold text-white f-14" href="<?php echo $home; ?>/request/">資料請求</a>
-      <a class="d-inline btn-primary font-weight-bold text-white f-14" href="<?php echo $home; ?>/contaft/">お問い合わせ</a>
+      <a class="d-inline btn-secondary font-weight-bold text-white mr-2" href="<?php echo $home; ?>/seminar/">
+        <i class="fas fa-chalkboard"></i>
+        無料相談会
+      </a>
+      <a class="d-inline btn-primary font-weight-bold text-white" href="<?php echo $home; ?>#contact">
+        <i class="fas fa-headset"></i>
+        お問い合わせ
+      </a>
     </div>
     <!-- ▲ PCのみリンクボタン -->
   </div>
 
   <!-- ▼ メニュー -->
-  <div class="drawer">
+  <div class="drawer d-xl-none">
     <!-- ▼ ハンバーガーメニュー -->
     <input class="drawer__checkbox" id="drawerCheckbox" type="checkbox">
     <label class="drawer__icon" for="drawerCheckbox">
@@ -116,11 +145,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="fix-under ctabtn">
   <div class="ctabtn__wrap d-flex w-100">
-    <a class="ctabtn__item col-6 bg-primary text-white font-weight-bold" href="<?php echo $home; ?>/contact/">
-      お問い合わせ
-    </a>
     <a class="ctabtn__item col-6 bg-secondary text-white font-weight-bold" href="<?php echo $home; ?>/seminar/">
+      <i class="fas fa-chalkboard"></i>
       無料相談会
+    </a>
+    <a class="ctabtn__item col-6 bg-primary text-white font-weight-bold" href="<?php echo $home; ?>#contact/">
+      <i class="fas fa-headset"></i>
+      お問い合わせ
     </a>
   </div>
 </div>

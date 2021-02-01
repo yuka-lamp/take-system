@@ -11,11 +11,11 @@ get_header(); ?>
       <div class="home__mv__text-wrap">
         <h2 class="home__mv__text-ttl font-weight-bold f-36">
           お店独自の
-          <br>モバイルオーダー導入で
+          <br>モバイルオーダーで
           <br><span>売上アップ！</span>
         </h2>
         <p class="d-none d-md-block mt-5">
-          高機能なTakeEastsは初期費用・導入費無料！
+          高機能なテイクイーツは初期費用・導入費無料！
           <br>あなたのお店でもいますぐモバイルオーダーをスタート。
         </p>
       </div>

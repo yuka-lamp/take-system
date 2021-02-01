@@ -196,13 +196,13 @@ get_header(); ?>
     <!-- ▼ タブメニュー -->
     <ul class="home__price__nav nav nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">
       <li class="home__price__nav-item nav-item bg-secondary">
-        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold active" id="pills-plan1-tab" data-toggle="pill" href="#pills-plan1" role="tab" aria-controls="pills-plan1" aria-selected="true">
+        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold active" id="pills-plan1-tab" data-toggle="tab" href="#pills-plan1" role="tab" aria-controls="pills-plan1" aria-selected="true">
           小・中規模向け
           <img class="home__price__nav-arrow" src="<?php echo $img_url; ?>arrow_wh.svg" alt="矢印">
         </a>
       </li>
       <li class="home__price__nav-item nav-item bg-info">
-        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold" id="pills-plan2-tab" data-toggle="pill" href="#pills-plan2" role="tab" aria-controls="pills-plan2" aria-selected="false">
+        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold" id="pills-plan2-tab" data-toggle="tab" href="#pills-plan2" role="tab" aria-controls="pills-plan2" aria-selected="false">
           大規模向け
           <img class="home__price__nav-arrow" src="<?php echo $img_url; ?>arrow_wh.svg" alt="矢印">
         </a>

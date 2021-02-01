@@ -22,7 +22,7 @@ get_header(); ?>
 <div class="marketing__wrap-inner shadow">
 <img src="<?php echo $img_url; ?>/support_1_2.png" alt="登録作業の代行" srcset="<?php echo $img_url; ?>/support_1_2.png 1x, <?php echo $img_url; ?>/support_1_2@2x.png 2x">
 <h3>登録作業の代行</h3>
-<p>忙しくなかなか時間が取れない飲食店様も安心。<br>導入後の商品登録や初期設定はTakeEatsにお任せください。</p>
+<p>忙しくなかなか時間が取れない飲食店様も安心。<br>導入後の商品登録や初期設定はテイクイーツにお任せください。</p>
 </div>
 <div class="marketing__wrap-inner shadow">
 <img src="<?php echo $img_url; ?>/support_1_3.png" alt="機能の充実した管理画面" srcset="<?php echo $img_url; ?>/support_1_3.png 1x, <?php echo $img_url; ?>/support_1_3@2x.png 2x">

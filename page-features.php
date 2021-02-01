@@ -15,7 +15,7 @@ get_header(); ?>
 <div class="features__about-txt">
 <h3>会員登録なしで<br><span class="marks">いますぐ注文</span>できる！</h3>
 <p>インストールや会員登録がなくすぐに使えて、ユーザーからも高く評価いただいています。</p>
-<a href="https://system.take-eats.jp/demo-shop/" target="_blank">デモページでTakeEatsをお試し</a>
+<a href="https://system.take-eats.jp/demo-shop/" target="_blank">デモページでテイクイーツをお試し</a>
 </div>
 </div>
 <div class="features__flow">
@@ -59,7 +59,7 @@ get_header(); ?>
 <div class="features__about-txt">
 <h3>パソコン・スマホからでも<br><span class="marks">簡単操作</span></h3>
 <p>管理画面はスマホ・パソコンどちらにも対応しており、操作しやすいデザインになっています。</p>
-<a href="https://system.take-eats.jp/demo-admin/" target="_blank">デモページでTakeEatsをお試し</a>
+<a href="https://system.take-eats.jp/demo-admin/" target="_blank">デモページでテイクイーツをお試し</a>
 </div>
 </div>
 

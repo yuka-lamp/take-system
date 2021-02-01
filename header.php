@@ -163,7 +163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <?php if (!is_home() && !is_front_page() && !is_single() && !is_archive()): // 下層ページ ?>
 <section class="sec mv__sub">
   <div class="container">
-  <h1 class="f-26 font-weight-bold w-100"><?php the_title(); ?></h1>
+  <h1 class="f-24 font-weight-bold w-100"><?php the_title(); ?></h1>
   </div>
 </section>
 <!-- ▲ 下層メインビジュアル -->

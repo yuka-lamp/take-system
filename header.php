@@ -43,7 +43,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1 class="">
       <a class="header__inner"href="<?php echo $home; ?>">
         <img src="<?php echo $img_url; ?>logo.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>logo.png 1x, <?php echo $img_url; ?>logo@2x.png 2x">
-        <span class="text-body f-14 font-weight-bold ml-2">飲食店向け</span>
+        <span class="text-body f-14 font-weight-bold ml-1">飲食店向け</span>
       </a>
     </h1>
     <!-- ▲ ロゴ -->
@@ -88,6 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <input class="drawer__checkbox" id="drawerCheckbox" type="checkbox">
     <label class="drawer__icon" for="drawerCheckbox">
       <span class="drawer__icon-parts"></span>
+      <span class="drawer__icon-text">メニュー</span>
     </label>
     <!-- ▲ ハンバーガーメニュー -->
     <!-- ▼ ドロワーするコンテンツ -->

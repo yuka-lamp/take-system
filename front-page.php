@@ -11,7 +11,7 @@ get_header(); ?>
       <div class="home__mv__text-wrap">
         <h2 class="home__mv__text-ttl font-weight-bold f-36">
           お店独自の
-          <br>モバイルオーダーで
+          <br>モバイルオーダー導入で
           <br><span>売上アップ！</span>
         </h2>
         <p class="d-none d-md-block mt-5">
@@ -30,17 +30,17 @@ get_header(); ?>
 </div>
 <!-- ▲ メインビジュアル -->
 
-<!-- ▼ TakeEatsが選ばれる理由 -->
+<!-- ▼ テイクイーツが選ばれる理由 -->
 <div class="home__reason bg-light">
   <div class="container py-main">
-    <h2 class="f-32 font-weight-bold text-center mb-5">TakeEatsが選ばれる理由</h2>
+    <h2 class="f-32 font-weight-bold text-center mb-5">テイクイーツが<br class="d-none d-md-block">選ばれる理由</h2>
     <div class="home__reason__wrap d-md-flex flex-wrap">
       <!-- ▼ 理由① -->
       <div class="home__reason__item d-flex align-items-center col-md-6 mt-4">
         <img class="" src="<?php echo $img_url; ?>reason_free.png" alt="初期費用・月額費用が無料で利用できる" srcset="<?php echo $img_url; ?>reason_free.png 1x, <?php echo $img_url; ?>reason_free@2x.png 2x">
         <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
-          初期費用・月額費用が
-          <br><span>無料</span>で利用できる
+          初期費用・月額費用・導入費が
+          <br><span>完全無料</span>で利用できる
         </h3>
       </div>
       <!-- ▲ 理由① -->
@@ -48,7 +48,7 @@ get_header(); ?>
       <div class="home__reason__item d-flex align-items-center col-md-6 mt-4">
         <img class="" src="<?php echo $img_url; ?>reason_up.png" alt="注文のデジタル化で売上アップ！" srcset="<?php echo $img_url; ?>reason_up.png 1x, <?php echo $img_url; ?>reason_up@2x.png 2x">
         <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
-          注文のデジタル化で
+          WEB予約を導入することで
           <br><span>売上アップ</span>！
         </h3>
       </div>
@@ -57,8 +57,8 @@ get_header(); ?>
       <div class="home__reason__item d-flex align-items-center col-md-6">
         <img class="" src="<?php echo $img_url; ?>reason_tablet.png" alt="タブレット不要！スマホだけでも運用可能" srcset="<?php echo $img_url; ?>reason_tablet.png 1x, <?php echo $img_url; ?>reason_tablet@2x.png 2x">
         <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
-          タブレット不要！
-          <br><span>スマホだけ</span>でも運用可能
+          専用タブレット不要!
+          <br><span>スペースを取らず</span>運用可能
         </h3>
       </div>
       <!-- ▲ 理由③ -->
@@ -66,28 +66,28 @@ get_header(); ?>
       <div class="home__reason__item d-flex align-items-center col-md-6 mt-4">
         <img class="" src="<?php echo $img_url; ?>reason_line.png" alt="お店もお客様も安心の並ばない注文" srcset="<?php echo $img_url; ?>reason_line.png 1x, <?php echo $img_url; ?>reason_line@2x.png 2x">
         <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
-          お店もお客様も安心の
-          <br><span>並ばない</span>注文
+          お客様も安心で嬉しい
+          <br><span>並ばずに</span>受け取り
         </h3>
       </div>
       <!-- ▲ 理由④ -->
     </div>
   </div>
 </div>
-<!-- ▲ TakeEatsが選ばれる理由 -->
+<!-- ▲ テイクイーツが選ばれる理由 -->
 
 <!-- ▼ 商品お渡しまでの流れ -->
 <div class="home__about">
   <div class="container py-main">
-    <h2 class="f-32 font-weight-bold text-center mb-4">商品お渡しまでの流れ</h2>
-    <p class="mb-5 text-center">お客様が注文してから店舗受取に来るまでの<br>全体の流れを紹介いたします。</p>
+    <h2 class="f-32 font-weight-bold text-center mb-4">注文受付から<br>商品お渡しまでの流れ</h2>
+    <p class="mb-5 text-center">お客様からの注文を受付てから店頭で<br>商品をお渡しするまでの流れをご紹介致します。</p>
 
     <div class="home__about__wrap d-md-flex flex-wrap justify-content-between">
       <!-- ▼ 流れ① -->
       <div class="home__about__item bg-light">
         <div class="home__about__item-text">
-          <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0">サイト流入</h3>
-          <p class="text-center py-4 m-0">モールとは違い、店舗様独自のサイトを作成できます。<br>SNSやチラシなどで宣伝し流入を増やしましょう！</p>
+          <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0">店舗独自の<br>予約サイトへ流入</h3>
+          <p class="py-4 m-0">媒体に掲載するのではなく、店舗独自の予約サイトを開設できます。<br>SNSやチラシなどからの流入増加をサポートいたします!</p>
         </div>
         <div class="text-center">
           <img class="" src="<?php echo $img_url; ?>about_1.png" alt="サイト流入" srcset="<?php echo $img_url; ?>about_1.png 1x, <?php echo $img_url; ?>about_1@2x.png 2x">
@@ -97,8 +97,8 @@ get_header(); ?>
       <!-- ▼ 流れ② -->
       <div class="home__about__item bg-light">
         <div class="home__about__item-text">
-          <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0">予約 / 決済</h3>
-          <p class="text-center py-4 m-0">カートから予約完了までは最短30秒！<br>ストレスなく注文いただけます。</p>
+          <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0">メニューを選択して<br>30秒で予約/決済</h3>
+          <p class="text-center py-4 m-0">お客様には会員登録やアプリのインストールをすることなく注文いただけます。</p>
         </div>
         <div class="text-center">
           <img class="" src="<?php echo $img_url; ?>about_2.png" alt="予約 / 決済" srcset="<?php echo $img_url; ?>about_2.png 1x, <?php echo $img_url; ?>about_2@2x.png 2x">
@@ -109,10 +109,8 @@ get_header(); ?>
       <div class="home__about__item bg-light">
         <div class="home__about__item-text">
           <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0">店舗へ通知</h3>
-          <p class="f-24 text-center font-weight-bold pt-4">選べる通知方法で<br>注文スルーを防止！</p>
-          <p class="text-center pb-4 m-0">専用タブレットは必要ありません！
-            <br>店舗やオーナー様の電話番号・メールに
-            <br>直接通知でお知らせします。</p>
+          <p class="f-24 text-center font-weight-bold pt-4">専用タブレットは不要!</p>
+          <p class="text-center pb-4 m-0">店舗の電話番号・メールに直接通知でお知らせします。</p>
             <!-- ▼ 通知方法 -->
             <div class="d-flex pb-4">
               <div class="col-6 pl-0">
@@ -127,7 +125,7 @@ get_header(); ?>
                   <img class="" src="<?php echo $img_url; ?>about_3_2.png" alt="メールで通知" srcset="<?php echo $img_url; ?>about_3_2.png 1x, <?php echo $img_url; ?>about_3_2@2x.png 2x">
                 </div>
                 <h4 class="f-16 font-weight-bold text-center text-primary py-3 m-0">メールで通知</h4>
-                <p class="f-12 m-0">お店の電話が鳴り自動音声でお知らせします。</p>
+                <p class="f-12 m-0">任意のメールアドレスにお知らせします。</p>
               </div>
             </div>
             <!-- ▲ 通知方法 -->
@@ -137,7 +135,7 @@ get_header(); ?>
       <!-- ▼ 流れ② -->
       <div class="home__about__item bg-light">
         <div class="home__about__item-text">
-          <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0">受け渡し</h3>
+          <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0"> 商品のお渡し</h3>
           <p class="text-center py-4 m-0">予定の時間に受け取りにきたお客様に<br>商品をお渡しします。</p>
         </div>
         <div class="text-center">
@@ -158,8 +156,8 @@ get_header(); ?>
     <p class="mb-5">カフェやレストランを始め、<br class="d-block d-md-none">専門店やスイーツ店など幅広いお店で<br>ご利用いただいております。</p>
     <!-- ▼ ロゴ -->
     <div class="home__case__inner d-flex flex-wrap justify-content-center">
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_shigeyoshi.png" alt="しげよし" srcset="<?php echo $img_url; ?>lp_logo_shigeyoshi.png 1x, <?php echo $img_url; ?>lp_logo_shigeyoshi@2x.png 2x">
-      <!-- しげよし -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_200.png" alt="200円カレー" srcset="<?php echo $img_url; ?>lp_logo_200.png 1x, <?php echo $img_url; ?>lp_logo_200@2x.png 2x">
+      <!-- 200円カレー -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_mb.png" alt="マールブランシュ" srcset="<?php echo $img_url; ?>lp_logo_mb.png 1x, <?php echo $img_url; ?>lp_logo_mb@2x.png 2x">
       <!-- マールブランシュ -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_musashi.png" alt="寿司のむさし" srcset="<?php echo $img_url; ?>lp_logo_musashi.png 1x, <?php echo $img_url; ?>lp_logo_musashi@2x.png 2x">
@@ -178,8 +176,8 @@ get_header(); ?>
       <!-- 永楽屋 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_hana.png" alt="花たぬき" srcset="<?php echo $img_url; ?>lp_logo_hana.png 1x, <?php echo $img_url; ?>lp_logo_hana@2x.png 2x">
       <!-- 花たぬき -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_200.png" alt="200円カレー" srcset="<?php echo $img_url; ?>lp_logo_200.png 1x, <?php echo $img_url; ?>lp_logo_200@2x.png 2x">
-      <!-- 200円カレー -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_shigeyoshi.png" alt="しげよし" srcset="<?php echo $img_url; ?>lp_logo_shigeyoshi.png 1x, <?php echo $img_url; ?>lp_logo_shigeyoshi@2x.png 2x">
+      <!-- しげよし -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_mughal.png" alt="MUGHAL" srcset="<?php echo $img_url; ?>lp_logo_mughal.png 1x, <?php echo $img_url; ?>lp_logo_mughal@2x.png 2x">
       <!-- MUGHAL -->
     </div>
@@ -193,8 +191,8 @@ get_header(); ?>
 <!-- ▼ 料金 -->
 <div class="home__price">
   <div class="container pt-main">
-    <h2 class="f-32 font-weight-bold text-center mb-4">料金</h2>
-    <p class="mb-5 text-center">お客様の店舗数やご利用状況に合わせた<br>2つのプランをご用意しております。</p>
+    <h2 class="f-32 font-weight-bold text-center mb-4">料金プラン</h2>
+    <p class="mb-5 text-center">テイクイーツの料金プランをご紹介致します。</p>
     <!-- ▼ タブメニュー -->
     <ul class="home__price__nav nav nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">
       <li class="home__price__nav-item nav-item bg-secondary">
@@ -215,18 +213,20 @@ get_header(); ?>
     <div class="home__price__content tab-content" id="pills-tabContent">
       <div class="home__price__content-item tab-pane fade show active" id="pills-plan1" role="tabpanel" aria-labelledby="pills-plan1-tab">
         <div class="home__price__content-wrap d-block d-md-flex justify-content-center mb-5">
-          <p class="home__price__content-line f-18 font-weight-bold text-center bg-light">
+          <div class="home__price__content-line f-18 font-weight-bold text-center bg-light">
             初期費用
-            <br class="d-none d-md-block"><span class="text-primary f-36">¥0</span>
-          </p>
-          <p class="home__price__content-line f-18 font-weight-bold text-center bg-light">
+            <br class="d-none d-md-block">
+            <p class="text-primary f-36 m-0">¥0</p>
+          </div>
+          <div class="home__price__content-line f-18 font-weight-bold text-center bg-light">
             月額費用
-            <br class="d-none d-md-block"><span class="text-primary f-36">¥0</span>
-          </p>
-          <p class="home__price__content-line f-18 font-weight-bold text-center">
-            サービス手数料
-            <br class="d-none d-md-block"><span class="f-36">8%</span>
-          </p>
+            <br class="d-none d-md-block">
+            <p class="text-primary f-36 m-0">¥0</p>
+          </div>
+          <div class="home__price__content-line f-18 font-weight-bold text-center">
+            <p class="2line m-0">サービス手数料<br><span class="f-10">(注文金額に対して)</span></p>
+            <p class="f-36 m-0">8%</p>
+          </div>
         </div>
         <p class="f-10 text-muted mt-4 mb-0 col-8 col-md-12">
           ※ クレジットカードでの決済の場合手数料3.6%が別途発生します。
@@ -249,7 +249,7 @@ get_header(); ?>
 <div class="home__flow pt-main">
   <div class="container">
     <h2 class="f-32 font-weight-bold text-center mb-4">導入までの流れ</h2>
-    <p class="mb-5 text-center">お客様の店舗数やご利用状況に合わせた<br>2つのプランをご用意しております。</p>
+    <p class="f-24 font-weight-bold text-center text-primary mb-4">- 最短<span class="f-32 px-1">1日</span>でスタート！ -</p>
     <!-- ▼ 図 -->
     <div class="home__flow__figre d-flex p-0">
       <div class="home__flow__figre-day col-2 p-0 d-flex justify-contant-center">

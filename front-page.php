@@ -194,15 +194,15 @@ get_header(); ?>
     <h2 class="f-32 font-weight-bold text-center mb-4">料金プラン</h2>
     <p class="mb-5 text-center">テイクイーツの料金プランをご紹介致します。</p>
     <!-- ▼ タブメニュー -->
-    <ul class="home__price__nav nav nav-pills d-flex justify-content-center" id="pills-tab" role="tablist">
-      <li class="home__price__nav-item nav-item bg-secondary">
-        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold active" id="pills-plan1-tab" data-toggle="tab" href="#pills-plan1" role="tab" aria-controls="pills-plan1" aria-selected="true">
+    <ul class="home__price__nav nav nav-pills d-flex justify-content-center">
+      <li class="home__price__nav-item nav-item bg-secondary tab active">
+        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold">
           小・中規模向け
           <img class="home__price__nav-arrow" src="<?php echo $img_url; ?>arrow_wh.svg" alt="矢印">
         </a>
       </li>
-      <li class="home__price__nav-item nav-item bg-info">
-        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold" id="pills-plan2-tab" data-toggle="tab" href="#pills-plan2" role="tab" aria-controls="pills-plan2" aria-selected="false">
+      <li class="home__price__nav-item nav-item bg-info tab">
+        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold">
           大規模向け
           <img class="home__price__nav-arrow" src="<?php echo $img_url; ?>arrow_wh.svg" alt="矢印">
         </a>
@@ -210,22 +210,26 @@ get_header(); ?>
     </ul>
     <!-- ▲ タブメニュー -->
     <!-- ▼ タブコンテンツ -->
-    <div class="home__price__content tab-content" id="pills-tabContent">
-      <div class="home__price__content-item tab-pane fade show active" id="pills-plan1" role="tabpanel" aria-labelledby="pills-plan1-tab">
+    <div class="home__price__content tab-content">
+      <div class="home__price__content-item tab-pane fade content show">
         <div class="home__price__content-wrap d-block d-md-flex justify-content-center mb-5">
           <div class="home__price__content-line f-18 font-weight-bold text-center bg-light">
-            初期費用
-            <br class="d-none d-md-block">
-            <p class="text-primary f-36 m-0">¥0</p>
+            <div class="d-flex d-md-block justify-content-between align-items-center w-100">
+              <p class="m-0">初期費用</p>
+              <p class="text-primary f-36 m-0">¥0</p>
+            </div>
           </div>
           <div class="home__price__content-line f-18 font-weight-bold text-center bg-light">
-            月額費用
-            <br class="d-none d-md-block">
-            <p class="text-primary f-36 m-0">¥0</p>
+            <div class="d-flex d-md-block justify-content-between align-items-center w-100">
+              <p class="m-0">月額費用</p>
+              <p class="text-primary f-36 m-0">¥0</p>
+            </div>
           </div>
           <div class="home__price__content-line f-18 font-weight-bold text-center">
-            <p class="2line m-0">サービス手数料<br><span class="f-10">(注文金額に対して)</span></p>
-            <p class="f-36 m-0">8%</p>
+            <div class="d-flex d-md-block justify-content-between align-items-center w-100">
+              <p class="2line m-0">サービス手数料<br><span class="f-10">(注文金額に対して)</span></p>
+              <p class="f-36 m-0">8%</p>
+            </div>
           </div>
         </div>
         <p class="f-10 text-muted mt-4 mb-0 col-8 col-md-12">
@@ -233,7 +237,7 @@ get_header(); ?>
           <br>※ 売上金を振り込む際に振込手数料¥440が発生いたします。
         </p>
       </div>
-      <div class="home__price__content-item tab-pane fade" id="pills-plan2" role="tabpanel" aria-labelledby="pills-plan2-tab">
+      <div class="home__price__content-item tab-pane fade content">
         <p class="f-18 text-center font-weight-bold">
           特別プランをご提案いたします。
           <br>詳しくは<a href="<?php echo $home; ?>#toform">お問い合わせ</a>下さい。

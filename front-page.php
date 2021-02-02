@@ -156,8 +156,8 @@ get_header(); ?>
     <p class="mb-5">カフェやレストランを始め、<br class="d-block d-md-none">専門店やスイーツ店など幅広いお店で<br>ご利用いただいております。</p>
     <!-- ▼ ロゴ -->
     <div class="home__case__inner d-flex flex-wrap justify-content-center">
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_200.png" alt="200円カレー" srcset="<?php echo $img_url; ?>lp_logo_200.png 1x, <?php echo $img_url; ?>lp_logo_200@2x.png 2x">
-      <!-- 200円カレー -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_gihei.png" alt="八代目儀兵衛" srcset="<?php echo $img_url; ?>lp_logo_gihei.png 1x, <?php echo $img_url; ?>lp_logo_gihei@2x.png 2x">
+      <!-- 八代目儀兵衛 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_mb.png" alt="マールブランシュ" srcset="<?php echo $img_url; ?>lp_logo_mb.png 1x, <?php echo $img_url; ?>lp_logo_mb@2x.png 2x">
       <!-- マールブランシュ -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_musashi.png" alt="寿司のむさし" srcset="<?php echo $img_url; ?>lp_logo_musashi.png 1x, <?php echo $img_url; ?>lp_logo_musashi@2x.png 2x">

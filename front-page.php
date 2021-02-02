@@ -253,17 +253,10 @@ get_header(); ?>
 <div class="home__flow pt-main">
   <div class="container">
     <h2 class="f-32 font-weight-bold text-center mb-4">導入までの流れ</h2>
-    <p class="f-24 font-weight-bold text-center text-primary mb-4">- 最短<span class="f-32 px-1">1日</span>でスタート！ -</p>
+    <p class="f-24 font-weight-bold text-center text-primary mb-4">
+      \ 最短<span class="f-32 px-1">1日</span>でスタート！ /</p>
     <!-- ▼ 図 -->
-    <div class="home__flow__figre d-flex p-0">
-      <div class="home__flow__figre-day col-2 p-0 d-flex justify-contant-center">
-        <div class="w-100">
-          <p class="f-18 font-weight-bold text-center m-0 d-block w-100">
-            最短
-            <br class="d-block d-md-none">
-            <span class="f-32 text-warning px-1">1</span>日</p>
-        </div>
-      </div>
+    <div class="home__flow__figre d-flex justify-content-center p-0">
       <div class="home__flow__figre-step col-10 p-0">
         <p class="home__flow__figre-step-item f-16 font-weight-bold">お申し込み</p>
         <p class="home__flow__figre-step-item f-16 font-weight-bold">アカウント発行</p>

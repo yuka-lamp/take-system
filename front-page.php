@@ -33,13 +33,13 @@ get_header(); ?>
 <!-- ▼ テイクイーツが選ばれる理由 -->
 <div class="home__reason bg-light">
   <div class="container py-main">
-    <h2 class="f-32 font-weight-bold text-center mb-5">テイクイーツが<br class="d-none d-md-block">選ばれる理由</h2>
+    <h2 class="f-32 font-weight-bold text-center mb-5">テイクイーツが<br class="d-block d-md-none">選ばれる理由</h2>
     <div class="home__reason__wrap d-md-flex flex-wrap">
       <!-- ▼ 理由① -->
       <div class="home__reason__item d-flex align-items-center col-md-6 mt-4">
         <img class="" src="<?php echo $img_url; ?>reason_free.png" alt="初期費用・月額費用が無料で利用できる" srcset="<?php echo $img_url; ?>reason_free.png 1x, <?php echo $img_url; ?>reason_free@2x.png 2x">
         <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
-          初期費用・月額費用・導入費が
+          初期・月額・導入費用が
           <br><span>完全無料</span>で利用できる
         </h3>
       </div>
@@ -48,7 +48,7 @@ get_header(); ?>
       <div class="home__reason__item d-flex align-items-center col-md-6 mt-4">
         <img class="" src="<?php echo $img_url; ?>reason_up.png" alt="注文のデジタル化で売上アップ！" srcset="<?php echo $img_url; ?>reason_up.png 1x, <?php echo $img_url; ?>reason_up@2x.png 2x">
         <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
-          WEB予約を導入することで
+          WEB予約を導入で
           <br><span>売上アップ</span>！
         </h3>
       </div>
@@ -58,7 +58,7 @@ get_header(); ?>
         <img class="" src="<?php echo $img_url; ?>reason_tablet.png" alt="タブレット不要！スマホだけでも運用可能" srcset="<?php echo $img_url; ?>reason_tablet.png 1x, <?php echo $img_url; ?>reason_tablet@2x.png 2x">
         <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
           専用タブレット不要!
-          <br><span>スペースを取らず</span>運用可能
+          <br><span>スペースを取らず</span>運用
         </h3>
       </div>
       <!-- ▲ 理由③ -->

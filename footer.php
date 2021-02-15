@@ -6,14 +6,12 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 </main>
 
 <!-- ▼ いますぐTakeEatsを始めよう！ -->
-<?php if (!is_page('contact') && !is_page('contact/thanks') && !is_page('nagoya') && !is_page('request') && !is_page('request/thanks')) : //フォーム追加ページ以外 ?>
+<?php if ( is_front_page() || is_home() || is_page(array('features', 'price', 'marketing')) ): //フォーム追加ページ以外 ?>
 
-<!-- ▼ 背景 -->
-<?php if (  is_front_page() ||  is_home() ) : ?>
+<!-- ▼ カーブ画像 -->
 <img class="d-block d-md-none mt-4 w-100" src="<?php echo $img_url; ?>cta_bg_sp.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_sp.png 1x, <?php echo $img_url; ?>cta_bg_sp@2x.png 2x">
 <img class="d-none d-md-block mt-4 w-100" src="<?php echo $img_url; ?>cta_bg_pc.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_pc.png 1x, <?php echo $img_url; ?>cta_bg_pc@2x.png 2x">
-<?php endif; ?>
-<!-- ▲ 背景 -->
+<!-- ▲ カーブ画像 -->
 
 <div id="toform" class="cta pt-5 pb-5 bg-light">
   <div class="container">

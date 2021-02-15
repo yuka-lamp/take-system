@@ -139,7 +139,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 
 <!-- ▼ [画面下固定] お問い合わせ ・ 無料相談会 -->
-<?php if (!is_page('contact') && !is_page('request')): //フォーム追加ページ以外 ?>
+<?php if ( is_front_page() || is_home() || is_page(array('features', 'price', 'marketing')) ): //フォーム追加ページ以外 ?>
 
 <div class="fix-under ctabtn">
   <div class="ctabtn__wrap d-flex w-100">

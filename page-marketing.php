@@ -53,7 +53,7 @@ get_header(); ?>
 <div class="marketing__wrap-inner shadow">
 <img src="<?php echo $img_url; ?>/support_2_3.png" alt="機能の充実した管理画面" srcset="<?php echo $img_url; ?>/support_2_3.png 1x, <?php echo $img_url; ?>/support_2_3@2x.png 2x">
 <h3>販促物の無料配布</h3>
-<p>店舗のロゴやメニューが入ったポスター ステッカー・チラシ・卓上POPを各店舗に 無料で配布いたします。</p>
+<p>店舗のロゴやメニューが入ったポスター ステッカー・チラシ・卓上POPを各店舗に提供いたします。</p>
 </div>
 </div>
 </div>

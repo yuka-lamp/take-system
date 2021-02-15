@@ -6,7 +6,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 </main>
 
 <!-- ▼ いますぐTakeEatsを始めよう！ -->
-<?php if (!is_page('contact') && !is_page('request')) : //フォーム追加ページ以外 ?>
+<?php if (!is_page('contact') && !is_page('contact/thanks') && !is_page('nagoya') && !is_page('request') && !is_page('request/thanks')) : //フォーム追加ページ以外 ?>
 
 <!-- ▼ 背景 -->
 <?php if (  is_front_page() ||  is_home() ) : ?>

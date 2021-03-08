@@ -33,7 +33,7 @@ $work_terms = get_the_terms(get_the_ID(), 'work_tags');
     <?php endif; ?>
   </div>
   <div class="home__case__list__inner-btn mt-3">
-    <a class="btn btn-light font-weight-bold" href="<?php echo $takeeats_url; ?>" target="_blank">サイトを見る</a>
+    <a class="btn btn-light font-weight-bold" href="<?php echo $takeeats_url; ?>?traffic_type=service" target="_blank">サイトを見る</a>
   </div>
 </div>
 <!-- home__case__list__inner -->

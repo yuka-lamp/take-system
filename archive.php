@@ -38,6 +38,7 @@ $work_terms = get_the_terms(get_the_ID(), 'work_tags');
 </div>
 <!-- home__case__list__inner -->
 <?php endwhile; endif; ?>
+<?php wp_pagenavi(); ?>
 </div>
 </div>
 </section>

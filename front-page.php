@@ -87,7 +87,7 @@ get_header(); ?>
       <div class="home__about__item bg-light">
         <div class="home__about__item-text">
           <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0">店舗独自の<br>予約サイトへ流入</h3>
-          <p class="py-4 m-0">媒体に掲載するのではなく、店舗独自の予約サイトを開設できます。<br>SNSやチラシなどからの流入増加をサポートいたします!</p>
+          <p class="text-center py-4 m-0">店舗独自の予約サイトを開設できます。<br>SNSやチラシなどからの流入増加をサポートいたします!</p>
         </div>
         <div class="text-center">
           <img class="" src="<?php echo $img_url; ?>about_1.png" alt="サイト流入" srcset="<?php echo $img_url; ?>about_1.png 1x, <?php echo $img_url; ?>about_1@2x.png 2x">

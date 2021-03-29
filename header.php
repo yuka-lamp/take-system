@@ -41,7 +41,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="lp__header__wrap">
     <!-- ▼ ロゴ -->
     <h1 class="">
-      <a class="header__inner"href="<?php echo $home; ?>">
+      <a class="header__inner" href="<?php echo $home; ?>">
         <img src="<?php echo $img_url; ?>logo.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>logo.png 1x, <?php echo $img_url; ?>logo@2x.png 2x">
         <span class="text-body f-14 font-weight-bold ml-1">飲食店向け</span>
       </a>
@@ -49,22 +49,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ▲ ロゴ -->
 
     <!-- ▼ PCのみリンクボタン -->
-    <div class="d-none d-xl-block">
-      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/features/">
+    <div class="nav-box d-none d-xl-block">
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/features/">
         機能紹介
       </a>
-      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/price/">
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/price/">
         料金
       </a>
-      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/marketing/">
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/marketing/">
         集客・販売促進
       </a>
-      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/work/">
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/work/">
         導入事例
       </a>
-      <!-- <a class="d-inline-block font-weight-bold text-dark f-14 mr-4" href="<?php echo $home; ?>/column/">
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/column/">
         お役立ちガイド
-      </a> -->
+      </a>
       <a class="d-inline-block font-weight-bold text-dark f-14" href="<?php echo $home; ?>/request/">
         お申し込み
       </a>

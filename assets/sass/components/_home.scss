@@ -161,7 +161,7 @@
       }
 
       &:after {
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
           transform: rotate(-45deg);
           top: auto;
           bottom: -37px;
@@ -216,7 +216,7 @@
         transform: rotate(90deg);
         top: auto;
         bottom: -60px;
-        left: 35%;
+        left: calc(50% - 60px);
       }
     }
 
@@ -271,6 +271,10 @@
     margin: 0 auto;
     @include media-breakpoint-down(md) {
       width: 100%;
+    }
+
+    &-img {
+      border-radius: 20px;
     }
   }
 

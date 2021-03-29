@@ -1,101 +1,142 @@
 .column {
   &__step {
-    margin-top: 3rem;
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-wrap: nowrap;
+
     & > a {
       display: block;
       width: 33%;
       text-align: center;
+      padding: 1.6rem 0 1rem;
+      border: 1px solid #f0f0f0;
+
       &:hover {
         opacity: 0.7;
         text-decoration: none;
       }
+
       & > span {
         display: block;
       }
+
       & > .fas {
-        color: $light;
+        color: $muted;
+        margin-top: 6px;
       }
     }
+
     &-no {
-      color: $danger;
+      color: $secondary;
       font-weight: bold;
+      margin-bottom: 6px;
     }
+
     &-ttl {
       color: $body-color;
       font-weight: bold;
     }
   }
+
   &__cat {
     .container {
       max-width: 768px;
       margin: 0 auto;
     }
+
     &.step1 {
       background-color: #fefff1;
     }
+
     &.step2 {
       background-color: #fdffe2;
     }
+
     &.step3 {
       background-color: #fcffcc;
     }
+
     &-thumbnail {
       text-align: center;
     }
+
     &__step {
       position: relative;
       text-align: center;
       background-color: $white;
       padding: 1rem;
+      border-radius: 20px 20px 0 0;
+
       &-no {
-        color: $danger;
+        color: $secondary;
         font-weight: bold;
         line-height: 1;
         font-size: 1.5rem;
         margin-top: -2rem;
+        margin-bottom: 6px;
+
         & > span {
           display: block;
           font-size: $font-size-sm;
         }
       }
+
       &-ttl {
         font-size: 1rem;
         font-weight: bold;
         margin: 1.5rem auto;
       }
+
       &-txt {
         font-size: $font-size-sm;
         margin: 0;
       }
     }
   }
+
   &__lists {
-    margin-top: 2rem;
+    padding-top: 2rem;
+    background: $white;
+    border-radius: 0 0 20px 20px;
+
     &__post {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: nowrap;
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
+      border-top: solid 1px $light;
       border-bottom: solid 1px $light;
+
+      &-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 1rem;
+        color: $body-color;
+
+        &:hover {
+          color: $body-color;
+          opacity: .3;
+          transition: .3s;
+          text-decoration: none;
+        }
+      }
+
       &:last-child {
         margin-bottom: 0;
       }
+
       &-thumbnail {
         width: 90px;
+
         img {
           width: 100%;
         }
       }
+
       &-ttl {
         width: calc(100% - 110px);
         margin: 0;
         font-size: 1rem;
+
         a {
           color: $body-color;
         }

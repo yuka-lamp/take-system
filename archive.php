@@ -20,7 +20,7 @@ $work_terms = get_the_terms(get_the_ID(), 'work_tags');
 ?>
 <div class="home__case__list__inner col-12 col-md-4 text-center mb-4">
   <a class="home__case__list__inner-img" href="<?php echo $takeeats_url; ?>" target="_blank">
-    <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
+    <img class="rounded" src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
   </a>
   <div class="home__case__list__inner-info">
     <h3><a class="f-16 font-weight-bold" href="<?php echo $takeeats_url; ?>" target="_blank"><?php echo $ttl; ?><small>様</small></a></h3>

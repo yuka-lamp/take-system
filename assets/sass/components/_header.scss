@@ -12,10 +12,18 @@
     position: relative;
   }
 
-  .lp_nav {
+  .lp__header__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .nav-box a {
+    &:hover {
+      text-decoration: none;
+      transition: .5s;
+      color: $primary!important;
+    }
   }
 
   &__wrap {

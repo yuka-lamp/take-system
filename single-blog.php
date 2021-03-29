@@ -17,7 +17,7 @@ $permalink = get_the_permalink();
 <div class="single-thumbnail mb-4">
 <img src="<?php echo $thumbnail ?>" alt="<?php echo $ttl; ?>">
 </div>
-<h1 class="font-weight-bold"><a class="text-body" href="<?php echo $permalink; ?>"><?php echo $ttl; ?></a></h1>
+<h1 class="font-weight-bold"><?php echo $ttl; ?></h1>
 <p class="mt-3 mb-5 small"><?php the_time('Y.m.d'); ?></p>
 <div class="single">
 <?php the_content(); ?>
@@ -28,7 +28,7 @@ $permalink = get_the_permalink();
 <div class="col-lg-4">
 <div id="sidebar">
 <div class="side__blog mb-4">
-<h3><span class="text-danger mr-2">STEP 01</span>まずは知識を身に着けよう</h3>
+<h3><span class="text-secondary mr-2">STEP 01</span>まずは知識を身に着けよう</h3>
 <div class="column__lists mt-3">
 <?php
 $args = [
@@ -63,7 +63,7 @@ $permalink = get_the_permalink();
 <!-- .column__lists -->
 </div>
 <div class="side__blog mb-4">
-<h3><span class="text-danger mr-2">STEP 02</span>提供する準備をしよう</h3>
+<h3><span class="text-secondary mr-2">STEP 02</span>提供する準備をしよう</h3>
 <div class="column__lists mt-3">
 <?php
 $args = [
@@ -98,7 +98,7 @@ $permalink = get_the_permalink();
 <!-- .column__lists -->
 </div>
 <div class="side__blog">
-<h3><span class="text-danger mr-2">STEP 03</span>コツを掴んで集客しよう</h3>
+<h3><span class="text-secondary mr-2">STEP 03</span>コツを掴んで集客しよう</h3>
 <div class="column__lists mt-3">
 <?php
 $args = [

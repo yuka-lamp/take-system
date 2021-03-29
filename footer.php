@@ -122,6 +122,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
       </a>
     </div>
     <!-- ▲ メインページリンク -->
+    <a class="footer__main-sns" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
   </div>
 
   <div class="d-block d-lg-flex justify-content-between py-4">

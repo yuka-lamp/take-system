@@ -53,10 +53,12 @@ $ttl = get_the_title();
 $permalink = get_the_permalink();
 ?>
 <article class="column__lists__post">
-<div class="column__lists__post-thumbnail">
-<a href="<?php echo $permalink; ?>"><img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>"></a>
-</div>
-<h3 class="column__lists__post-ttl"><a href="<?php echo $permalink; ?>"><?php echo $ttl; ?></a></h3>
+  <a class="column__lists__post-link" href="<?php echo $permalink; ?>">
+    <div class="column__lists__post-thumbnail">
+      <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
+    </div>
+    <h3 class="column__lists__post-ttl"><?php echo $ttl; ?></h3>
+  </a>
 </article>
 <?php endforeach; wp_reset_postdata(); ?>
 </div>
@@ -88,10 +90,12 @@ $ttl = get_the_title();
 $permalink = get_the_permalink();
 ?>
 <article class="column__lists__post">
-<div class="column__lists__post-thumbnail">
-<a href="<?php echo $permalink; ?>"><img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>"></a>
-</div>
-<h3 class="column__lists__post-ttl"><a href="<?php echo $permalink; ?>"><?php echo $ttl; ?></a></h3>
+  <a class="column__lists__post-link" href="<?php echo $permalink; ?>">
+    <div class="column__lists__post-thumbnail">
+      <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
+    </div>
+    <h3 class="column__lists__post-ttl"><?php echo $ttl; ?></h3>
+  </a>
 </article>
 <?php endforeach; wp_reset_postdata(); ?>
 </div>
@@ -123,10 +127,12 @@ $ttl = get_the_title();
 $permalink = get_the_permalink();
 ?>
 <article class="column__lists__post">
-<div class="column__lists__post-thumbnail">
-<a href="<?php echo $permalink; ?>"><img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>"></a>
-</div>
-<h3 class="column__lists__post-ttl"><a href="<?php echo $permalink; ?>"><?php echo $ttl; ?></a></h3>
+  <a class="column__lists__post-link" href="<?php echo $permalink; ?>">
+    <div class="column__lists__post-thumbnail">
+      <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
+    </div>
+    <h3 class="column__lists__post-ttl"><?php echo $ttl; ?></h3>
+  </a>
 </article>
 <?php endforeach; wp_reset_postdata(); ?>
 </div>

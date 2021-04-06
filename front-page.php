@@ -162,6 +162,8 @@ get_header(); ?>
       <!-- マールブランシュ -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_musashi.png" alt="寿司のむさし" srcset="<?php echo $img_url; ?>lp_logo_musashi.png 1x, <?php echo $img_url; ?>lp_logo_musashi@2x.png 2x">
       <!-- 寿司のむさし -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_shutoku.png" alt="秀徳" srcset="<?php echo $img_url; ?>lp_logo_shutoku.png 1x, <?php echo $img_url; ?>lp_logo_shutoku@2x.png 2x">
+      <!-- 秀徳 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_daidomon.png" alt="大同門" srcset="<?php echo $img_url; ?>lp_logo_daidomon.png 1x, <?php echo $img_url; ?>lp_logo_daidomon@2x.png 2x">
       <!-- 大同門 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_umezono.png" alt="梅園" srcset="<?php echo $img_url; ?>lp_logo_umezono.png 1x, <?php echo $img_url; ?>lp_logo_umezono@2x.png 2x">

@@ -122,13 +122,18 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
       </a>
     </div>
     <!-- ▲ メインページリンク -->
-    <a class="footer__main-sns" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+    <div class="col-md-2 p-0">
+      <a style="color:#3B5998" class="footer__main-sns" href="https://www.facebook.com/%E3%83%86%E3%82%A4%E3%82%AF%E3%82%A4%E3%83%BC%E3%83%84-100456568372287/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+      <a style="color:#1da1f2" class="footer__main-sns" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+      <a style="color:#c13584" class="footer__main-sns" href="https://www.instagram.com/take.eats_official/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+    </div>
   </div>
 
   <div class="d-block d-lg-flex justify-content-between py-4">
     <!-- ▼ 会社情報リンク -->
     <div class="footer__link__inner">
     <p class="font-weight-bold mb-2">企業情報</p>
+    <a class="text-dark mr-4" href="https://takeeats.zendesk.com/hc/ja/categories/900000324626-%E9%A3%B2%E9%A3%9F%E5%BA%97%E5%90%91%E3%81%91%E3%83%98%E3%83%AB%E3%83%97/" target="_blank">飲食店向けヘルプ</a>
     <a class="text-dark mr-4" href="<?php echo $home; ?>/company/">運営会社</a>
     <a class="text-dark mr-4" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
     <br class="d-block d-md-none">

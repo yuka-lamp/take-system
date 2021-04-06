@@ -170,6 +170,8 @@ get_header(); ?>
       <!-- 梅園 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_pourqui.png" alt="pourquoi" srcset="<?php echo $img_url; ?>lp_logo_pourqui.png 1x, <?php echo $img_url; ?>lp_logo_pourqui@2x.png 2x">
       <!-- pourquoi -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_unatoto.png" alt="宇奈とと" srcset="<?php echo $img_url; ?>lp_logo_unatoto.png 1x, <?php echo $img_url; ?>lp_logo_unatoto@2x.png 2x">
+      <!-- 秀徳 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_saiki.png" alt="さいき家" srcset="<?php echo $img_url; ?>lp_logo_saiki.png 1x, <?php echo $img_url; ?>lp_logo_saiki@2x.png 2x">
       <!-- さいき家 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_banana.png" alt="バナナの神様" srcset="<?php echo $img_url; ?>lp_logo_banana.png 1x, <?php echo $img_url; ?>lp_logo_banana@2x.png 2x">

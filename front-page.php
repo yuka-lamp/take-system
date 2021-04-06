@@ -152,7 +152,7 @@ get_header(); ?>
 <!-- ▼ 導入店舗 -->
 <div class="home__case bg-success py-5">
   <div class="home__case__wrap container pt-5 bg-white pl-0 pr-0 text-center">
-    <h2 class="home__case__ttl f-32 font-weight-bold  mb-3 d-flex align-items-center justify-content-center">全国<span>500</span>店舗で導入</h2>
+    <h2 class="home__case__ttl f-32 font-weight-bold  mb-3 d-flex align-items-center justify-content-center">全国<span>700</span>店舗で導入</h2>
     <p class="mb-5">カフェやレストランを始め、<br class="d-block d-md-none">専門店やスイーツ店など幅広いお店で<br>ご利用いただいております。</p>
     <!-- ▼ ロゴ -->
     <div class="home__case__inner d-flex flex-wrap justify-content-center">

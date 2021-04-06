@@ -10,11 +10,15 @@ $img_url = get_template_directory_uri().'/dist/images/';
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Quicksand:wght@400;700&display=swap">
   <link rel="preload" href="<?php echo $wp_url; ?>/dist/css/style.css" as="style">
   <link rel="stylesheet" href="<?php echo $wp_url; ?>/dist/css/style.css?ver=1.1.0">
   <?php wp_head(); ?>
   <?php if (!is_user_logged_in()): ?>
+  <!-- Start of takeeats Zendesk Widget script -->
+  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f61fce10-28fd-4c27-ab09-1982b6de4d94"> </script>
+  <!-- End of takeeats Zendesk Widget script -->
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

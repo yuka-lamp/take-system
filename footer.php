@@ -116,13 +116,17 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         お役立ちガイド
       </a>
+      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/systeminfo/">
+        <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
+        お知らせ
+      </a>
       <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/request/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         お申し込み
       </a>
     </div>
     <!-- ▲ メインページリンク -->
-    <div class="col-md-2 p-0">
+    <div class="p-0 mt-4">
       <a style="color:#3B5998" class="footer__main-sns" href="https://www.facebook.com/%E3%83%86%E3%82%A4%E3%82%AF%E3%82%A4%E3%83%BC%E3%83%84-100456568372287/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
       <a style="color:#1da1f2" class="footer__main-sns" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
       <a style="color:#c13584" class="footer__main-sns" href="https://www.instagram.com/take.eats_official/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>

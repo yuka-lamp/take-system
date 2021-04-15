@@ -4,7 +4,8 @@ $wp_url = get_template_directory_uri();
 get_header(); ?>
 <section class="sec mv__sub">
 <div class="container">
-<h1 class="f-24 font-weight-bold w-100">導入事例</h1>
+<h1 class="f-28 font-weight-bold w-100">導入事例</h1>
+<p class="text-primary font-weight-bold text-center mb-0">work</p>
 </div>
 </section>
 <section class="sec">

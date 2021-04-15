@@ -17,7 +17,7 @@ $img_url = get_template_directory_uri().'/dist/images/';
   <?php wp_head(); ?>
   <?php if (!is_user_logged_in()): ?>
   <!-- Start of takeeats Zendesk Widget script -->
-  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f61fce10-28fd-4c27-ab09-1982b6de4d94"> </script>
+  <!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f61fce10-28fd-4c27-ab09-1982b6de4d94"> </script> -->
   <!-- End of takeeats Zendesk Widget script -->
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -68,6 +68,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </a>
       <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/column/">
         お役立ちガイド
+      </a>
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/systeminfo/">
+        お知らせ
       </a>
       <a class="d-inline-block font-weight-bold text-dark f-14" href="<?php echo $home; ?>/request/">
         お申し込み
@@ -164,10 +167,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
 
 <!-- ▼ 下層メインビジュアル -->
-<?php if (!is_home() && !is_front_page() && !is_single() && !is_archive()): // 下層ページ ?>
+<?php if (!is_home() && !is_front_page() && !is_single() && !is_archive()): // 下層ページ
+  global $post;
+  $ttl = $post->post_title;
+  $slug = $post->post_name;?>
 <section class="sec mv__sub">
   <div class="container">
-  <h1 class="f-24 font-weight-bold w-100"><?php the_title(); ?></h1>
+  <h1 class="f-28 font-weight-bold w-100"><?php the_title(); ?></h1>
+  <p class="text-primary font-weight-bold text-center mb-0"><?php echo $slug ?></p>
   </div>
 </section>
 <!-- ▲ 下層メインビジュアル -->

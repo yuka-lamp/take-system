@@ -116,13 +116,13 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         お役立ちガイド
       </a>
-      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/systeminfo/">
-        <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-        お知らせ
-      </a>
       <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/request/">
         <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
         お申し込み
+      </a>
+      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/systeminfo/">
+        <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
+        ニュース
       </a>
     </div>
     <!-- ▲ メインページリンク -->

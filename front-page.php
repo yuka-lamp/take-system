@@ -156,34 +156,32 @@ get_header(); ?>
     <p class="mb-5">カフェやレストランを始め、<br class="d-block d-md-none">専門店やスイーツ店など幅広いお店で<br>ご利用いただいております。</p>
     <!-- ▼ ロゴ -->
     <div class="home__case__inner d-flex flex-wrap justify-content-center">
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_fujiya.png" alt="不二家レストラン" srcset="<?php echo $img_url; ?>lp_logo_fujiya.png 1x, <?php echo $img_url; ?>lp_logo_fujiya@2x.png 2x">
+      <!-- 不二家レストラン -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_gihei.png" alt="八代目儀兵衛" srcset="<?php echo $img_url; ?>lp_logo_gihei.png 1x, <?php echo $img_url; ?>lp_logo_gihei@2x.png 2x">
       <!-- 八代目儀兵衛 -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_mb.png" alt="マールブランシュ" srcset="<?php echo $img_url; ?>lp_logo_mb.png 1x, <?php echo $img_url; ?>lp_logo_mb@2x.png 2x">
-      <!-- マールブランシュ -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_musashi.png" alt="寿司のむさし" srcset="<?php echo $img_url; ?>lp_logo_musashi.png 1x, <?php echo $img_url; ?>lp_logo_musashi@2x.png 2x">
       <!-- 寿司のむさし -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_mb.png" alt="マールブランシュ" srcset="<?php echo $img_url; ?>lp_logo_mb.png 1x, <?php echo $img_url; ?>lp_logo_mb@2x.png 2x">
+      <!-- マールブランシュ -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_fujio.png" alt="FUJIO" srcset="<?php echo $img_url; ?>lp_logo_fujio.png 1x, <?php echo $img_url; ?>lp_logo_fujio@2x.png 2x">
+      <!-- FUJIO -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_asahi.png" alt="ASAHI" srcset="<?php echo $img_url; ?>lp_logo_asahi.png 1x, <?php echo $img_url; ?>lp_logo_asahi@2x.png 2x">
+      <!-- ASAHI -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_ss.png" alt="SHAKE SHACK" srcset="<?php echo $img_url; ?>lp_logo_ss.png 1x, <?php echo $img_url; ?>lp_logo_ss@2x.png 2x">
+      <!-- SHAKE SHACK -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_pourqui.png" alt="pourquoi" srcset="<?php echo $img_url; ?>lp_logo_pourqui.png 1x, <?php echo $img_url; ?>lp_logo_pourqui@2x.png 2x">
+      <!-- pourquoi -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_shutoku.png" alt="秀徳" srcset="<?php echo $img_url; ?>lp_logo_shutoku.png 1x, <?php echo $img_url; ?>lp_logo_shutoku@2x.png 2x">
       <!-- 秀徳 -->
+      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_unatoto.png" alt="宇奈とと" srcset="<?php echo $img_url; ?>lp_logo_unatoto.png 1x, <?php echo $img_url; ?>lp_logo_unatoto@2x.png 2x">
+      <!-- 宇奈とと -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_daidomon.png" alt="大同門" srcset="<?php echo $img_url; ?>lp_logo_daidomon.png 1x, <?php echo $img_url; ?>lp_logo_daidomon@2x.png 2x">
       <!-- 大同門 -->
       <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_umezono.png" alt="梅園" srcset="<?php echo $img_url; ?>lp_logo_umezono.png 1x, <?php echo $img_url; ?>lp_logo_umezono@2x.png 2x">
       <!-- 梅園 -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_pourqui.png" alt="pourquoi" srcset="<?php echo $img_url; ?>lp_logo_pourqui.png 1x, <?php echo $img_url; ?>lp_logo_pourqui@2x.png 2x">
-      <!-- pourquoi -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_unatoto.png" alt="宇奈とと" srcset="<?php echo $img_url; ?>lp_logo_unatoto.png 1x, <?php echo $img_url; ?>lp_logo_unatoto@2x.png 2x">
-      <!-- 秀徳 -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_saiki.png" alt="さいき家" srcset="<?php echo $img_url; ?>lp_logo_saiki.png 1x, <?php echo $img_url; ?>lp_logo_saiki@2x.png 2x">
+      <!-- <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_saiki.png" alt="さいき家" srcset="<?php echo $img_url; ?>lp_logo_saiki.png 1x, <?php echo $img_url; ?>lp_logo_saiki@2x.png 2x"> -->
       <!-- さいき家 -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_banana.png" alt="バナナの神様" srcset="<?php echo $img_url; ?>lp_logo_banana.png 1x, <?php echo $img_url; ?>lp_logo_banana@2x.png 2x">
-      <!-- バナナの神様 -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_eirakuya.png" alt="永楽屋" srcset="<?php echo $img_url; ?>lp_logo_eirakuya.png 1x, <?php echo $img_url; ?>lp_logo_eirakuya@2x.png 2x">
-      <!-- 永楽屋 -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_hana.png" alt="花たぬき" srcset="<?php echo $img_url; ?>lp_logo_hana.png 1x, <?php echo $img_url; ?>lp_logo_hana@2x.png 2x">
-      <!-- 花たぬき -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_shigeyoshi.png" alt="しげよし" srcset="<?php echo $img_url; ?>lp_logo_shigeyoshi.png 1x, <?php echo $img_url; ?>lp_logo_shigeyoshi@2x.png 2x">
-      <!-- しげよし -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_mughal.png" alt="MUGHAL" srcset="<?php echo $img_url; ?>lp_logo_mughal.png 1x, <?php echo $img_url; ?>lp_logo_mughal@2x.png 2x">
-      <!-- MUGHAL -->
     </div>
     <!-- ▲ ロゴ -->
     <img class="d-block d-md-none m-0 w-100" src="<?php echo $img_url; ?>case_bg_sp.png" alt="導入店舗紹介背景" srcset="<?php echo $img_url; ?>case_bg_sp.png 1x, <?php echo $img_url; ?>case_bg_sp@2x.png 2x">

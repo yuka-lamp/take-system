@@ -10,7 +10,7 @@ $cat_name = $category[0]->cat_name;
 <!-- ▼ メインビジュアル -->
 <section class="sec mv__sub">
   <div class="container">
-    <h1 class="f-28 font-weight-bold w-100">お知らせ</h1>
+    <h1 class="f-28 font-weight-bold w-100">ニュース</h1>
     <p class="text-primary font-weight-bold text-center mb-0">news</p>
   </div>
 </section>

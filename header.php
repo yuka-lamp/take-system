@@ -70,7 +70,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         お役立ちガイド
       </a>
       <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/systeminfo/">
-        お知らせ
+        ニュース
       </a>
       <a class="d-inline-block font-weight-bold text-dark f-14" href="<?php echo $home; ?>/request/">
         お申し込み
@@ -121,6 +121,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/column/">
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           お役立ちガイド
+        </a>
+        <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/systeminfo/">
+          <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
+          ニュース
         </a>
         <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/request/">
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">

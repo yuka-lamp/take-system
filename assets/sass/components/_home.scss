@@ -45,7 +45,7 @@
     }
 
     &::after {
-      content: '';
+      content: "";
       background: url("../images/mv_stamp_pc.png");
       background-size: cover;
       position: absolute;
@@ -76,7 +76,7 @@
 
     &::after {
       @include media-breakpoint-down(sm) {
-        content: '';
+        content: "";
         background: url("../images/mv_iphone_pc.png");
         background-size: cover;
         position: absolute;
@@ -146,13 +146,13 @@
   &__item {
     position: relative;
     margin-bottom: 1rem;
-    border-radius: 20px;
+    border-radius: 40px;
     width: 48%;
-    margin-top: 3rem;
+    margin-top: 1rem;
     @include media-breakpoint-down(md) {
       margin-bottom: 1rem;
       width: 100%;
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
 
     &:nth-child(2) {
@@ -189,18 +189,19 @@
     &:before {
       content: "01";
       position: absolute;
-      top: -35px;
-      left: calc(50% - 39px);
+      top: -12px;
+      left: 0;
       color: $white;
       background: $primary;
-      border-radius: 50% 50% 0 0;
-      width: 78px;
-      height: 78px;
-      font-size: 20px;
+      border-radius: 50% 50%;
+      width: 68px;
+      height: 68px;
+      font-size: 26px;
       font-weight: bold;
+      line-height: 2.1;
       text-align: center;
       padding-top: 7px;
-      z-index: -1;
+      z-index: 1;
     }
 
     &:after {
@@ -223,10 +224,6 @@
     &-text {
       padding: 0 2rem;
     }
-
-    &-ttl {
-      border-bottom: 1px solid #F0EBDD;
-    }
   }
 }
 /*===================================================
@@ -234,7 +231,8 @@
 ====================================================*/
 .home__case {
   &__wrap {
-    width: 75%;
+    width: 80%;
+    border-radius: 40px;
     @include media-breakpoint-down(md) {
       width: 94%;
     }
@@ -279,10 +277,11 @@
   }
 
   &__item {
-    margin: 0 15px 15px 0;
+    margin: 0 1.375rem 2rem 1.375rem;
     @include media-breakpoint-down(md) {
-      width: 28%;
-      margin: 0 5px 2rem;
+      max-width: 26%;
+      height: auto;
+      margin: 0 0.8125rem 2rem;
     }
   }
 }
@@ -299,7 +298,7 @@
       margin: 0 5px 0 0;
       border-bottom: 2px solid $white;
       @include media-breakpoint-down(md) {
-        width: 49%;
+        width: auto;
         margin: 0 1% 0 0;
       }
 
@@ -313,10 +312,10 @@
     }
 
     &-link {
-      border-radius: 0!important;
+      border-radius: 0 !important;
 
       &.active {
-        border-radius: 10px 10px 0 0!important;
+        border-radius: 10px 10px 0 0 !important;
       }
     }
   }
@@ -335,6 +334,7 @@
 
       &.show {
         display: block;
+        border-radius: 40px;
       }
 
       &:nth-child(1) {
@@ -375,7 +375,8 @@
       }
     }
 
-    &-wrap {}
+    &-wrap {
+    }
 
     &-line {
       width: 30%;
@@ -403,69 +404,68 @@
  ホーム - 導入までの流れ
 ====================================================*/
 .home__flow {
-  &__figre {
-    width: 70%;
-    margin: 0 auto;
+  &__step {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
     @include media-breakpoint-down(md) {
-      width: 100%;
+      margin-top: 1rem;
     }
 
-    &-day {
-      div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        height: 105px;
-
-        &::before {
-          content: "";
-          display: block;
-          width: 30px;
-          height: 25px;
-          border-top: 2px dashed #f0f0f0;
-          border-left: 2px dashed #f0f0f0;
-        }
-
-        &::after {
-          content: "";
-          display: block;
-          width: 30px;
-          height: 25px;
-          border-left: 2px dashed #f0f0f0;
-          border-bottom: 2px dashed #f0f0f0;
-        }
+    &-item {
+      position: relative;
+      text-align: center;
+      width: 19%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-left: 4rem;
+        text-align: left;
       }
 
-      p {
-        line-height: 10px;
-      }
-    }
-
-    &-step {
-      &-item {
-        position: relative;
-        text-align: center;
-        background: #E0F1FF;
-        border: 2px solid $warning;
-        border-radius: 10px;
-        padding: 10px 0;
-        margin-bottom: 8px;
-
-        &:last-child {
-          &::after {
-            display: none;
-          }
-        }
-
-        &::after {
-          content: "";
-          width: 11px;
-          height: 8px;
+      &-num {
+        
+        @include media-breakpoint-down(md) {
           position: absolute;
-          left: calc(50% - 5.5px);
-          bottom: -10px;
-          background: #B1DBFF;
-          z-index: -1;
+        display: block;
+        left: -4rem;
+        text-align: center;
+        }
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -2rem;
+        left: calc(50% - 5px);
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: $success;
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -1.65rem;
+        left: 50%;
+        width: 110%;
+        height: 2px;
+        background-color: $success;
+        @include media-breakpoint-down(md) {
+          top: 3.12rem;
+          left: -2.812rem;
+          width: 2px;
+          height: 40%;
         }
       }
     }
@@ -492,7 +492,7 @@
         padding: 1.5rem 3.5rem;
 
         &::before {
-          content: 'Q';
+          content: "Q";
           position: absolute;
           left: 14px;
           top: 18px;

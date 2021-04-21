@@ -126,6 +126,13 @@ p {
   }
 }
 
+.f-20 {
+  font-size: 20px;
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
+}
+
 .f-18 {
   font-size: 18px;
   @include media-breakpoint-down(md) {
@@ -147,6 +154,10 @@ p {
 
 .f-10 {
   font-size: 10px;
+}
+
+.lh-1 {
+  line-height: 1;
 }
 
 /*===================================================

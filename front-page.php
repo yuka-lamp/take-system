@@ -86,7 +86,7 @@ get_header(); ?>
       <!-- ▼ 流れ① -->
       <div class="home__about__item bg-light">
         <div class="home__about__item-text">
-          <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0">店舗独自の<br>予約サイトへ流入</h3>
+          <h3 class="home__about__item-ttl f-26 text-center pt-5 text-primary font-weight-bold m-0">店舗独自の<br>予約サイトへ流入</h3>
           <p class="text-center py-4 m-0">店舗独自の予約サイトを開設できます。<br>SNSやチラシなどからの流入増加をサポートいたします!</p>
         </div>
         <div class="text-center">
@@ -97,8 +97,8 @@ get_header(); ?>
       <!-- ▼ 流れ② -->
       <div class="home__about__item bg-light">
         <div class="home__about__item-text">
-          <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0">メニューを選択して<br>30秒で予約/決済</h3>
-          <p class="text-center py-4 m-0">お客様には会員登録やアプリのインストールをすることなく注文いただけます。</p>
+          <h3 class="home__about__item-ttl f-26 text-center pt-5 text-primary font-weight-bold m-0">メニューを選択して<br>30秒で予約/決済</h3>
+          <p class="text-center py-4 m-0">お客様には会員登録やアプリの<br class="d-none d-md-block">インストールをすることなく注文いただけます。</p>
         </div>
         <div class="text-center">
           <img class="" src="<?php echo $img_url; ?>about_2.png" alt="予約 / 決済" srcset="<?php echo $img_url; ?>about_2.png 1x, <?php echo $img_url; ?>about_2@2x.png 2x">
@@ -108,7 +108,7 @@ get_header(); ?>
       <!-- ▼ 流れ③ -->
       <div class="home__about__item bg-light">
         <div class="home__about__item-text">
-          <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0">店舗へ通知</h3>
+          <h3 class="home__about__item-ttl f-26 text-center pt-5 text-primary font-weight-bold m-0">店舗へ通知</h3>
           <p class="f-24 text-center font-weight-bold pt-4">専用タブレットは不要!</p>
           <p class="text-center pb-4 m-0">店舗の電話番号・メールに直接通知でお知らせします。</p>
             <!-- ▼ 通知方法 -->
@@ -135,7 +135,7 @@ get_header(); ?>
       <!-- ▼ 流れ② -->
       <div class="home__about__item bg-light">
         <div class="home__about__item-text">
-          <h3 class="home__about__item-ttl f-26 text-center py-4 text-primary font-weight-bold m-0"> 商品のお渡し</h3>
+          <h3 class="home__about__item-ttl f-26 text-center pt-5 text-primary font-weight-bold m-0"> 商品のお渡し</h3>
           <p class="text-center py-4 m-0">予定の時間に受け取りにきたお客様に<br>商品をお渡しします。</p>
         </div>
         <div class="text-center">
@@ -156,36 +156,25 @@ get_header(); ?>
     <p class="mb-5">カフェやレストランを始め、<br class="d-block d-md-none">専門店やスイーツ店など幅広いお店で<br>ご利用いただいております。</p>
     <!-- ▼ ロゴ -->
     <div class="home__case__inner d-flex flex-wrap justify-content-center">
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_fujiya.png" alt="不二家レストラン" srcset="<?php echo $img_url; ?>lp_logo_fujiya.png 1x, <?php echo $img_url; ?>lp_logo_fujiya@2x.png 2x">
-      <!-- 不二家レストラン -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_gihei.png" alt="八代目儀兵衛" srcset="<?php echo $img_url; ?>lp_logo_gihei.png 1x, <?php echo $img_url; ?>lp_logo_gihei@2x.png 2x">
-      <!-- 八代目儀兵衛 -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_musashi.png" alt="寿司のむさし" srcset="<?php echo $img_url; ?>lp_logo_musashi.png 1x, <?php echo $img_url; ?>lp_logo_musashi@2x.png 2x">
-      <!-- 寿司のむさし -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_mb.png" alt="マールブランシュ" srcset="<?php echo $img_url; ?>lp_logo_mb.png 1x, <?php echo $img_url; ?>lp_logo_mb@2x.png 2x">
-      <!-- マールブランシュ -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_fujio.png" alt="FUJIO" srcset="<?php echo $img_url; ?>lp_logo_fujio.png 1x, <?php echo $img_url; ?>lp_logo_fujio@2x.png 2x">
-      <!-- FUJIO -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_asahi.png" alt="ASAHI" srcset="<?php echo $img_url; ?>lp_logo_asahi.png 1x, <?php echo $img_url; ?>lp_logo_asahi@2x.png 2x">
-      <!-- ASAHI -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_ss.png" alt="SHAKE SHACK" srcset="<?php echo $img_url; ?>lp_logo_ss.png 1x, <?php echo $img_url; ?>lp_logo_ss@2x.png 2x">
-      <!-- SHAKE SHACK -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_pourqui.png" alt="pourquoi" srcset="<?php echo $img_url; ?>lp_logo_pourqui.png 1x, <?php echo $img_url; ?>lp_logo_pourqui@2x.png 2x">
-      <!-- pourquoi -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_shutoku.png" alt="秀徳" srcset="<?php echo $img_url; ?>lp_logo_shutoku.png 1x, <?php echo $img_url; ?>lp_logo_shutoku@2x.png 2x">
-      <!-- 秀徳 -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_unatoto.png" alt="宇奈とと" srcset="<?php echo $img_url; ?>lp_logo_unatoto.png 1x, <?php echo $img_url; ?>lp_logo_unatoto@2x.png 2x">
-      <!-- 宇奈とと -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_daidomon.png" alt="大同門" srcset="<?php echo $img_url; ?>lp_logo_daidomon.png 1x, <?php echo $img_url; ?>lp_logo_daidomon@2x.png 2x">
-      <!-- 大同門 -->
-      <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_umezono.png" alt="梅園" srcset="<?php echo $img_url; ?>lp_logo_umezono.png 1x, <?php echo $img_url; ?>lp_logo_umezono@2x.png 2x">
-      <!-- 梅園 -->
-      <!-- <img class="home__case__item" src="<?php echo $img_url; ?>lp_logo_saiki.png" alt="さいき家" srcset="<?php echo $img_url; ?>lp_logo_saiki.png 1x, <?php echo $img_url; ?>lp_logo_saiki@2x.png 2x"> -->
-      <!-- さいき家 -->
+      <?php
+      $args = [
+          'posts_per_page' => -1,
+          'post_type' => 'work_logo',
+          'orderby' => 'date',
+          'order' => 'DESC'
+      ];
+      $my_posts = get_posts($args);
+      foreach ($my_posts as $post):
+      setup_postdata($post);
+      $id = get_the_ID();
+      $company = get_the_title(); 
+      $logo = get_field('logo');
+      $logo_2x = get_field('logo_2x');
+      ?>
+      <img class="home__case__item" src="<?php echo $logo ?>" alt="<?php echo $company ?>" srcset="<?php echo $logo ?> 1x, <?php echo $logo_2x ?> 2x">
+      <?php endforeach; wp_reset_postdata(); ?>
     </div>
     <!-- ▲ ロゴ -->
-    <img class="d-block d-md-none m-0 w-100" src="<?php echo $img_url; ?>case_bg_sp.png" alt="導入店舗紹介背景" srcset="<?php echo $img_url; ?>case_bg_sp.png 1x, <?php echo $img_url; ?>case_bg_sp@2x.png 2x">
-    <img class="d-none d-md-block m-0 w-100" src="<?php echo $img_url; ?>case_bg_pc.png" alt="導入店舗紹介背景" srcset="<?php echo $img_url; ?>case_bg_pc.png 1x, <?php echo $img_url; ?>case_bg_pc@2x.png 2x">
   </div>
 </div>
 <!-- ▲ 導入店舗 -->
@@ -254,17 +243,34 @@ get_header(); ?>
 <!-- ▼ 導入までの流れ -->
 <div class="home__flow pt-main">
   <div class="container">
-    <h2 class="f-32 font-weight-bold text-center mb-4">導入までの流れ</h2>
-    <p class="f-24 font-weight-bold text-center text-primary mb-4">
-      \ 最短<span class="f-32 px-1">1日</span>でスタート！ /</p>
+    <h2 class="f-32 font-weight-bold text-center mb-5">導入までの流れ</h2>
+    <p class="f-18 font-weight-bold text-center mb-2">最短<span class="f-24 px-1">1日</span>でスタート！</p>
     <!-- ▼ 図 -->
-    <div class="home__flow__figre d-flex justify-content-center p-0">
-      <div class="home__flow__figre-step col-10 p-0">
-        <p class="home__flow__figre-step-item f-16 font-weight-bold">お申し込み</p>
-        <p class="home__flow__figre-step-item f-16 font-weight-bold">アカウント発行</p>
-        <p class="home__flow__figre-step-item f-16 font-weight-bold">初期設定</p>
-        <p class="home__flow__figre-step-item f-16 font-weight-bold">メニュー・オプション登録</p>
-        <p class="home__flow__figre-step-item f-16 font-weight-bold">ご利用スタート</p>
+    <div class="home__flow__step p-0">
+      <div class="home__flow__step-item">
+        <p class="home__flow__step-item-num f-24 lh-1 font-weight-bold"><span class="d-block f-16">STEP</span>01</p>
+        <p class="d-block f-20 font-weight-bold pt-2">お申し込み</p>
+        <p class="text-left">お申し込みフォームの必須項目に入力しお申し込みください。</p>
+      </div>
+      <div class="home__flow__step-item">
+        <p class="home__flow__step-item-num f-24 lh-1 font-weight-bold"><span class="d-block f-16">STEP</span>02</p>
+        <p class="d-block f-20 font-weight-bold pt-2">アカウント発行</p>
+        <p class="text-left">お客様専用のオーダーサイトを発行しログインID・PASSをお送りします。</p>
+      </div>
+      <div class="home__flow__step-item">
+        <p class="home__flow__step-item-num f-24 lh-1 font-weight-bold"><span class="d-block f-16">STEP</span>03</p>
+        <p class="d-block f-20 font-weight-bold pt-2">初期設定</p>
+        <p class="text-left">営業時間や店舗の登録など設定を行います。</p>
+      </div>
+      <div class="home__flow__step-item">
+        <p class="home__flow__step-item-num f-24 lh-1 font-weight-bold"><span class="d-block f-16">STEP</span>04</p>
+        <p class="d-block f-20 font-weight-bold pt-2">メニュー登録</p>
+        <p class="text-left">管理画面からメニューやオプションを登録し、公開に向けて準備をします。</p>
+      </div>
+      <div class="home__flow__step-item">
+        <p class="home__flow__step-item-num f-24 lh-1 font-weight-bold"><span class="d-block f-16">STEP</span>05</p>
+        <p class="d-block f-20 font-weight-bold pt-2">ご利用スタート</p>
+        <p class="text-left">準備が整いましたらサイトを公開し注文の受付が始まります！</p>
       </div>
     </div>
     <!-- ▲ 図 -->

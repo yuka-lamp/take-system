@@ -16,9 +16,6 @@ $img_url = get_template_directory_uri().'/dist/images/';
   <link rel="stylesheet" href="<?php echo $wp_url; ?>/dist/css/style.css?ver=1.1.0">
   <?php wp_head(); ?>
   <?php if (!is_user_logged_in()): ?>
-  <!-- Start of takeeats Zendesk Widget script -->
-  <!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=f61fce10-28fd-4c27-ab09-1982b6de4d94"> </script> -->
-  <!-- End of takeeats Zendesk Widget script -->
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -39,10 +36,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <?php wp_body_open(); ?>
 
 <!-- ▼ ヘッダー -->
-<header id="header" class="lp__header">
+<header id="header" class="header">
 <nav class="lp__nav">
 
-  <div class="lp__header__wrap">
+  <div class="header__wrap">
     <!-- ▼ ロゴ -->
     <h1 class="">
       <a class="header__inner" href="<?php echo $home; ?>">
@@ -53,49 +50,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ▲ ロゴ -->
 
     <!-- ▼ PCのみリンクボタン -->
-    <div class="nav-box d-none d-xl-block">
-      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/features/">
+    <div class="nav-box">
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-5 py-3" href="<?php echo $home; ?>/features/">
         機能紹介
       </a>
-      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/price/">
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-5 py-3" href="<?php echo $home; ?>/price/">
         料金
       </a>
-      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/marketing/">
-        集客・販売促進
-      </a>
-      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/work/">
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-5 py-3" href="<?php echo $home; ?>/work/">
         導入事例
       </a>
-      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/column/">
+      <a class="d-inline-block font-weight-bold text-dark f-14 mr-5 py-3" href="<?php echo $home; ?>/column/">
         お役立ちガイド
       </a>
-      <a class="d-inline-block font-weight-bold text-dark f-14 mr-4 py-3" href="<?php echo $home; ?>/systeminfo/">
-        ニュース
-      </a>
-      <a class="d-inline-block font-weight-bold text-dark f-14" href="<?php echo $home; ?>/request/">
-        お申し込み
-      </a>
-    </div>
-    <div class="lp__header__btn">
-      <a class="d-inline btn-secondary font-weight-bold text-white mr-2" href="<?php echo $home; ?>/seminar/">
-        <i class="fas fa-chalkboard"></i>
+      <a class="d-inline-block font-weight-bold text-dark f-14" href="<?php echo $home; ?>/seminar/">
         無料相談会
       </a>
-      <a class="d-inline btn-primary font-weight-bold text-white" href="<?php echo $home; ?>#toform">
-        <i class="fas fa-headset"></i>
-        お問い合わせ
+    </div>
+    <div class="header__btn">
+      <a class="header__btn-item btn-secondary font-weight-bold text-center text-white" href="<?php echo $home; ?>#toform">
+        <span class="d-block">
+        <i class="ri-mail-fill ri-2x d-block"></i>
+          お問い合わせ
+        </span>
+      </a>
+      <a class="header__btn-item btn-primary font-weight-bold text-center text-white" href="<?php echo $home; ?>/request/">
+        <span class="d-block"> 
+        <i class="ri-quill-pen-fill ri-2x d-block"></i>
+          無料お申し込み
+        </span>
       </a>
     </div>
     <!-- ▲ PCのみリンクボタン -->
+
   </div>
 
-  <!-- ▼ メニュー -->
+  <!-- ▼ スマホメニュー -->
   <div class="drawer d-xl-none">
+    <!-- ▼ お申し込みボタン -->
+    <a class="drawer__entry btn-primary font-weight-bold text-center text-white" href="<?php echo $home; ?>/request/">
+      <span class="d-block"> 
+      <i class="ri-quill-pen-fill ri-xl mb-1"></i>
+        <span class="drawer__entry-text d-block font-weight-bold">無料申込</span>
+      </span>
+    </a> 
+    <!-- ▲ お申し込みボタン -->
     <!-- ▼ ハンバーガーメニュー -->
     <input class="drawer__checkbox" id="drawerCheckbox" type="checkbox">
     <label class="drawer__icon" for="drawerCheckbox">
       <span class="drawer__icon-parts"></span>
-      <span class="drawer__icon-text">メニュー</span>
+      <span class="drawer__icon-text font-weight-bold">MENU</span>
     </label>
     <!-- ▲ ハンバーガーメニュー -->
     <!-- ▼ ドロワーするコンテンツ -->
@@ -110,10 +114,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           料金
         </a>
-        <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/marketing/">
-          <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-          集客・販売促進
-        </a>
         <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/work/">
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           導入事例
@@ -122,35 +122,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           お役立ちガイド
         </a>
-        <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/systeminfo/">
+        <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/seminar/">
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-          ニュース
+          無料相談会
         </a>
-        <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/request/">
-          <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-          お申し込み
+        <a class="btn btn-secondary bg-secondary text-white font-weight-bold mt-2" href="<?php echo $home; ?>#toform/">
+          <i class="ri-mail-fill ri-1x mr-2"></i>
+          お問い合わせ
         </a>
+        
         <!-- ▲ ページリンク -->
-        <!-- ▼ 会社情報リンク -->
-        <div class="footer__link__inner pt-3">
-        <a class="d-inline-block mb-2 text-muted mr-4" href="<?php echo $home; ?>/company/">運営会社</a>
-        <a class="d-inline-block mb-2 text-muted mr-4" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
-        <br>
-        <a class="d-inline-block text-muted mr-4" href="<?php echo $home; ?>/law/">特定商取引法に基づく表記</a>
-        <a class="d-inline-block text-muted mr-4" href="<?php echo $home; ?>/term/">利用規約</a>
-        </div>
-        <!-- ▼ 会社情報リンク -->
       </div>
     </div>
     <!-- ▲ ドロワーするコンテンツ -->
   </div>
-  <!-- ▲ メニュー -->
+  <!-- ▲ スマホメニュー -->
 
 </nav>
 </header>
 
 <!-- ▼ [画面下固定] お問い合わせ ・ 無料相談会 -->
-<?php if ( is_front_page() || is_home() || is_page(array('features', 'price', 'marketing')) ): //フォーム追加ページ以外 ?>
+<!-- <?php if ( is_front_page() || is_home() || is_page(array('features', 'price', 'marketing')) ): //フォーム追加ページ以外 ?>
 
 <div class="fix-under ctabtn">
   <div class="ctabtn__wrap d-flex w-100">
@@ -165,7 +157,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<?php endif; ?>
+<?php endif; ?> -->
 <!-- ▲ [画面下固定] お問い合わせ ・ 無料相談会 -->
 
 <main>

@@ -80,7 +80,7 @@ get_header(); ?>
 <div class="home__about">
   <div class="container py-main">
     <h2 class="f-32 font-weight-bold text-center mb-4">注文受付から<br>商品お渡しまでの流れ</h2>
-    <p class="mb-5 text-center">お客様からの注文を受付てから店頭で<br>商品をお渡しするまでの流れをご紹介致します。</p>
+    <p class="mb-5 text-center">お客様からの注文を受付てから店頭で<br>商品をお渡しするまでの流れをご紹介いたします。</p>
 
     <div class="home__about__wrap d-md-flex flex-wrap justify-content-between">
       <!-- ▼ 流れ① -->
@@ -183,7 +183,7 @@ get_header(); ?>
 <div class="home__price">
   <div class="container pt-main">
     <h2 class="f-32 font-weight-bold text-center mb-4">料金プラン</h2>
-    <p class="mb-5 text-center">テイクイーツの料金プランをご紹介致します。</p>
+    <p class="mb-5 text-center">テイクイーツの料金プランをご紹介いたします。</p>
     <!-- ▼ タブメニュー -->
     <ul class="home__price__nav nav nav-pills d-flex justify-content-center">
       <li class="home__price__nav-item nav-item bg-secondary tab active">

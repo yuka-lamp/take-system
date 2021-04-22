@@ -1,7 +1,7 @@
 /*===================================================
  ヘッダー
 ====================================================*/
-.lp__header {
+.header {
   background: $white;
   position: fixed;
   top: 0;
@@ -12,34 +12,49 @@
     position: relative;
   }
 
-  .lp__header__nav {
+  .nav-box {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
-
-  .nav-box a {
-    &:hover {
-      text-decoration: none;
-      transition: .5s;
-      color: $primary!important;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+        transition: 0.5s;
+        color: $primary !important;
+      }
     }
   }
 
   &__wrap {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     margin: 0;
-    padding: 0 1rem;
-    min-height: 80px;
+    padding: 0;
+    min-height: 6rem;
     @include media-breakpoint-down(lg) {
-      min-height: 75px;
+      min-height: 3.75rem;
     }
 
     h1 {
+      display: flex;
+      align-items: center;
+      margin-left: 1.7rem;
+      margin-bottom: 0;
+      @include media-breakpoint-down(lg) {
+        margin-left: 0.750rem;
+      }
       a {
         text-decoration: none;
+        img {
+          margin-bottom: 3px;
+          @include media-breakpoint-down(lg) {
+            width: auto;
+            height: 2rem;
+          }
+        }
       }
     }
   }
@@ -50,19 +65,24 @@
 
     span {
       margin-top: 7px;
+      @include media-breakpoint-down(lg) {
+        font-size: 0.8125rem;
+      }
     }
   }
 
   &__btn {
-    display: block;
+    display: flex;
     @include media-breakpoint-down(lg) {
       display: none;
     }
 
     a {
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      border: 3px solid #FACEBA;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 8rem;
+      height: 100%;
 
       &:hover {
         transition: 0.3s;
@@ -78,27 +98,29 @@
   &__checkbox {
     display: none;
   }
-  // ハンバーガーメニュー
+  // ハンバーガーメニュー[open]
   &__icon {
     position: absolute;
     cursor: pointer;
     display: block;
-    width: 56px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     top: 0;
-    right: 0.5rem;
+    right: 0;
     margin: 0;
+    color: $white;
+    background-color: $secondary;
     z-index: 99;
 
     &-parts,
     &-parts:after,
     &-parts:before {
-      background-color: #000;
+      background-color: $white;
       display: block;
-      width: 24px;
+      width: 1.5rem;
       height: 2px;
       position: absolute;
-      top: 0;
+      top: -0.875rem;
       right: 0;
       left: 0;
       bottom: 0;
@@ -112,19 +134,18 @@
     }
 
     &-parts:before {
-      top: 16px;
+      top: 1rem;
     }
 
     &-parts:after {
-      top: -16px;
+      top: -1rem;
     }
 
     &-text {
-      font-size: 10px;
-      letter-spacing: -2px;
+      font-size: 0.750rem;
       position: absolute;
       width: 100%;
-      bottom: 2px;
+      bottom: .25rem;
       text-align: center;
       font-weight: bold;
     }
@@ -141,7 +162,7 @@
     top: 0;
     right: -100%;
     transition: all 0.3s;
-    padding: 80px 0 0;
+    padding: 3.75rem 0 0;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -151,7 +172,7 @@
       margin: 2rem auto;
     }
   }
-  // ハンバーガーメニュー
+  // ハンバーガーメニュー[close]
   &__checkbox:checked ~ {
     .drawer__menu {
       right: 0;
@@ -175,6 +196,28 @@
       }
     }
   }
+
+  // お申し込みボタン
+  &__entry {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.75rem;
+    height: 3.75rem;
+    top: 0;
+    right: 3.75rem;
+    margin: 0;
+    z-index: 99;
+    &>span {
+      margin-top: 9px;
+    }
+    &-text {
+      font-size: 0.750rem;
+      margin-top: -3px;
+    }
+  }
 }
 /*===================================================
  画面下固定
@@ -185,7 +228,7 @@
   bottom: 0;
   width: 100%;
   background: $white;
-  border-top: 1px solid #F0F0F0;
+  border-top: 1px solid #f0f0f0;
   padding: 10px;
   z-index: 97;
   @include media-breakpoint-up(md) {
@@ -195,6 +238,6 @@
   .ctabtn__item {
     padding: 1rem 0;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
   }
 }

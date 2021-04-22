@@ -6,7 +6,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 </main>
 
 <!-- ▼ いますぐTakeEatsを始めよう！ -->
-<?php if ( is_front_page() || is_home() || is_page(array('features', 'price', 'marketing')) ): //フォーム追加ページ以外 ?>
+<?php if ( is_front_page() || is_home() || is_page(array('features', 'price', 'marketing')) ): //トップページのみ ?>
 
 <!-- ▼ カーブ画像 -->
 <img class="d-block d-md-none mt-4 w-100" src="<?php echo $img_url; ?>cta_bg_sp.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_sp.png 1x, <?php echo $img_url; ?>cta_bg_sp@2x.png 2x">
@@ -15,7 +15,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 
 <div id="toform" class="cta pt-5 pb-5 bg-light">
   <div class="container">
-    <h2 class="f-32 font-weight-bold text-center mb-4">いますぐ<br class="d-block d-md-none">テイクイーツを始めよう！</h2>
+    <h2 class="f-32 font-weight-bold text-center mb-4">いますぐ<br>テイクイーツを始めよう！</h2>
     <!-- <p class="mb-5 text-center">あなたのお店オリジナルの<br>モバイルオーダーサイトを無料で簡単に開設。</p> -->
     <!-- ▼ 電話番号 -->
     <div class="text-center mt-3">
@@ -25,16 +25,16 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
     </div>
     <!-- ▲ 電話番号 -->
     <div class="cta__btn d-md-flex flex-wrap justify-content-center">
-      <!-- ▼ お問い合わせ -->
+      <!-- ▼ お申し込み -->
       <a class="cta__btn-item request text-white bg-primary" href="<?php echo $home; ?>/request/">
         <h3 class="cta__btn-item-ttl f-18 font-weight-bold text-center mb-0">お申し込み</h3>
       </a>
-      <!-- ▲ お問い合わせ -->
-      <!-- ▼ 資料請求 -->
+      <!-- ▲ お申し込み -->
+      <!-- ▼ 相談会で詳しく聞く -->
       <a class="cta__btn-item doc text-primary" href="<?php echo $home; ?>/seminar/">
-        <h3 class="cta__btn-item-ttl f-18 font-weight-bold text-center mb-0">無料相談会を予約</h3>
+        <h3 class="cta__btn-item-ttl f-18 font-weight-bold text-center mb-0">相談会で詳しく聞く</h3>
       </a>
-      <!-- ▲ 資料請求 -->
+      <!-- ▲ 相談会で詳しく聞く -->
     </div>
     <!-- ▼ お問合せフォーム -->
       <div class="cta__form bg-white mt-4">
@@ -92,64 +92,68 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 
 <!-- ▼ フッター -->
 <footer class="footer">
+  <div class="footer__wrap d-flex">
 
-  <div class="footer__main d-block d-lg-flex flex-wrap  justify-content-between align-items-center">
-    <!-- ▼ メインページリンク -->
-    <div class="">
-      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/features/">
-        <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-        機能紹介
-      </a>
-      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/price/">
-        <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-        料金
-      </a>
-      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/marketing/">
-        <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-        集客・販売促進
-      </a>
-      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/work/">
-        <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-        導入事例
-      </a>
-      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/column/">
-        <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-        お役立ちガイド
-      </a>
-      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/request/">
-        <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-        お申し込み
-      </a>
-      <a class="footer__main-item d-block d-lg-inline font-weight-bold text-dark mr-4 f-16" href="<?php echo $home; ?>/systeminfo/">
-        <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-        ニュース
-      </a>
+    <!-- ▼ サービス情報 -->
+    <div class="footer__service">
+      <img src="<?php echo $img_url; ?>logo_white.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>logo_white.png 1x, <?php echo $img_url; ?>logo_white@2x.png 2x">
+      <div class="footer__service__under">
+        <!-- ▼ SNSリンク -->
+        <div class="p-0 mt-4">
+          <a class="text-white" href="https://www.facebook.com/TakeEats.LAMP/" target="_blank" rel="noopener"><i class="ri-facebook-circle-fill ri-2x"></i></a>
+          <a class="text-white mx-3" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="ri-twitter-fill ri-2x"></i></a>
+          <a class="text-white" href="https://www.instagram.com/take.eats_official/" target="_blank" rel="noopener"><i class="ri-instagram-fill ri-2x"></i></a>
+        </div>
+        <!-- ▲ SNSリンク -->
+        <!-- ▼ コピーライト -->
+        <p class="f-10 text-muted mt-4">©2020 <?php bloginfo("name"); ?></p>
+        <!-- ▲ コピーライト -->
+      </div>
     </div>
-    <!-- ▲ メインページリンク -->
-    <div class="p-0 mt-4">
-      <a style="color:#3B5998" class="footer__main-sns" href="https://www.facebook.com/%E3%83%86%E3%82%A4%E3%82%AF%E3%82%A4%E3%83%BC%E3%83%84-100456568372287/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-      <a style="color:#1da1f2" class="footer__main-sns" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-      <a style="color:#c13584" class="footer__main-sns" href="https://www.instagram.com/take.eats_official/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+    <!-- ▲ サービス情報 -->
+
+    <!-- ▼ リンク一覧 -->
+    <div class="footer__link d-md-flex w-100 p-0">
+      <!-- ▼ テイクイーツについて -->
+      <div class="footer__link__takeeats">
+        <p class="footer__link__ttl font-weight-bold text-white mb-4 f-16">テイクイーツについて</p>
+        <div class="d-flex flex-wrap">
+          <div class="footer__link-line">
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/features/">機能紹介</a>
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/price/">料金</a>
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/work/">導入事例</a>
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/column/">お役立ちガイド</a>
+          </div>
+          <div class="footer__link-line">
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/systeminfo/">ニュース</a>
+            <a class="footer__link-line-item" href="<?php echo $home; ?>#toform">お問い合わせ</a>
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/request/">お申し込み</a>
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/seminar/">無料相談会</a>
+          </div>
+          <div class="footer__link-line">
+            <a class="footer__link-line-item" href="https://takeeats.zendesk.com/hc/ja/categories/900000324626-%E9%A3%B2%E9%A3%9F%E5%BA%97%E5%90%91%E3%81%91%E3%83%98%E3%83%AB%E3%83%97/" target="_blank">よくある質問<i class="ri-external-link-line ml-1"></i></a>
+            <!-- <a class="footer__link-line-item" href="<?php echo $home; ?>/" target="_blank">パートナープログラム<i class="ri-external-link-line ml-1"></i></a>
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/marketing/" target="_blank">タク配について<i class="ri-external-link-line ml-1"></i></a>
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/work/" target="_blank">管理画面ログイン<i class="ri-external-link-line ml-1"></i></a> -->
+          </div>
+        </div>
+      </div>
+      <!-- ▲ テイクイーツについて -->
+      <!-- ▼ 運営会社 -->
+      <div class="footer__link__campany">
+        <p class="footer__link__ttl font-weight-bold text-white mb-4 f-16">運営会社</p>
+        <div class="footer__link-line">
+          <a class="footer__link-line-item" href="https://lamp.jp/" target="_blank">株式会社ランプ<i class="ri-external-link-line ml-1"></i></a>
+          <a class="footer__link-line-item" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
+          <a class="footer__link-line-item" href="<?php echo $home; ?>/law/">特定商取引法に基づく表記</a>
+          <a class="footer__link-line-item" href="<?php echo $home; ?>/term/">利用規約</a>
+        </div>
+      </div>
+      <!-- ▲ 運営会社 -->
     </div>
+    <!-- ▲ リンク一覧 -->
+
   </div>
-
-  <div class="d-block d-lg-flex justify-content-between py-4">
-    <!-- ▼ 会社情報リンク -->
-    <div class="footer__link__inner">
-    <p class="font-weight-bold mb-2">企業情報</p>
-    <a class="text-dark mr-4" href="https://takeeats.zendesk.com/hc/ja/categories/900000324626-%E9%A3%B2%E9%A3%9F%E5%BA%97%E5%90%91%E3%81%91%E3%83%98%E3%83%AB%E3%83%97/" target="_blank">飲食店向けヘルプ</a>
-    <a class="text-dark mr-4" href="<?php echo $home; ?>/company/">運営会社</a>
-    <a class="text-dark mr-4" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
-    <br class="d-block d-md-none">
-    <a class="text-dark mr-4" href="<?php echo $home; ?>/law/">特定商取引法に基づく表記</a>
-    <a class="text-dark mr-4" href="<?php echo $home; ?>/term/">利用規約</a>
-    </div>
-    <!-- ▼ 会社情報リンク -->
-    <!-- ▼ コピーライト -->
-    <p class="f-10 text-muted mt-3">©2020 <?php bloginfo("name"); ?></p>
-    <!-- ▲ コピーライト -->
-  </div>
-
 </footer>
 <!-- ▲ フッター -->
 

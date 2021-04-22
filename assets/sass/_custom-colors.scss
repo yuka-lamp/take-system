@@ -1,3 +1,5 @@
+$body-color: #323232;
+
 //メインカラー
 $primary: #EF5D1D;
 $secondary: #FF8811;
@@ -5,13 +7,12 @@ $secondary: #FF8811;
 //サブカラー
 $success: #F9CF41;
 $info: #38ACC1;
-$warning: #276FBF;
+$warning: #3bb273;
 
-//背景
-$light: #FFFAEB;
+//薄いカラー
+$light: #faf7f2;
+$light-gray: #f5f1ef;
+$gray: #e2e2e2;
 
 //注釈テキスト
-$muted: #666666;
-
-//テキストカラー
-$dark: #000000;
+$muted: #e2e2e2;

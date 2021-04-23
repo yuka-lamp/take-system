@@ -16402,7 +16402,6 @@ a:hover {
  フッター
 ====================================================*/
 .footer {
-  margin-top: 5rem;
   padding: 5rem 0;
   background-color: #323232; }
   @media (max-width: 991.98px) {
@@ -16585,7 +16584,7 @@ a:hover {
       display: none; } }
 
 /*===================================================
- ホーム - TakeEatsが選ばれる理由
+ ホーム - テイクイーツが選ばれる理由
 ====================================================*/
 .home__reason__wrap {
   width: 830px;
@@ -17169,6 +17168,13 @@ a:hover {
   #toc_container a {
     color: #323232; }
 
+/*===================================================
+ 関連記事
+====================================================*/
+.column__post {
+  margin: 0 1rem;
+  padding: 3rem 0; }
+
 .faq__list {
   position: relative; }
   .faq__list__inner {
@@ -17519,37 +17525,48 @@ div.acceptance {
 /*===================================================
  事例紹介
 ====================================================*/
-.work .container {
+.work .container,
+.column__post .container {
   max-width: 980px; }
 
-.work .post-list {
+.work .post-list,
+.column__post .post-list {
   display: flex;
   flex-wrap: wrap; }
-  .work .post-list-item {
+  .work .post-list-item,
+  .column__post .post-list-item {
     width: 31.7% !important;
     margin: 0 2% 1.5rem 0 !important; }
     @media (max-width: 991.98px) {
-      .work .post-list-item {
+      .work .post-list-item,
+      .column__post .post-list-item {
         margin: 0 2% 1.5rem 0 !important; } }
     @media (max-width: 767.98px) {
-      .work .post-list-item {
+      .work .post-list-item,
+      .column__post .post-list-item {
         width: 48% !important;
         margin: 0 3% 0.6875rem 0 !important;
         padding-bottom: 0.6875rem; } }
-    .work .post-list-item:nth-child(3n) {
+    .work .post-list-item:nth-child(3n),
+    .column__post .post-list-item:nth-child(3n) {
       margin: 0 0 1.5rem 0 !important; }
       @media (max-width: 767.98px) {
-        .work .post-list-item:nth-child(3n) {
+        .work .post-list-item:nth-child(3n),
+        .column__post .post-list-item:nth-child(3n) {
           margin: 0 3% 0.6875rem 0 !important; } }
     @media (max-width: 767.98px) {
-      .work .post-list-item:nth-child(2n) {
+      .work .post-list-item:nth-child(2n),
+      .column__post .post-list-item:nth-child(2n) {
         margin: 0 0 0.6875rem 0 !important; } }
-    .work .post-list-item-img {
+    .work .post-list-item-img,
+    .column__post .post-list-item-img {
       height: 12rem; }
       @media (max-width: 991.98px) {
-        .work .post-list-item-img {
+        .work .post-list-item-img,
+        .column__post .post-list-item-img {
           height: 8rem; } }
-      .work .post-list-item-img img {
+      .work .post-list-item-img img,
+      .column__post .post-list-item-img img {
         width: 100%;
         height: 100%;
         object-fit: cover; }

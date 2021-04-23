@@ -146,38 +146,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <main>
 
-<!-- ▼ 下層メインビジュアル -->
-<?php if (!is_home() && !is_front_page() && !is_single() && !is_archive()): // 下層ページ
+<?php if (!is_home() && !is_front_page() && !is_single() && !is_archive() && !is_page('column') ):  // 下層ページ
   global $post;
   $ttl = $post->post_title;
   $slug = $post->post_name;
 ?>
 
+<!-- ▼ 下層メインビジュアル -->
 <section class="sec mv__sub">
   <div class="container text-center">
   <h1 class="mv__sub-eng font-weight-bold w-100"><?php echo $slug ?></h1>
   <p class="mv__sub-small font-weight-bold mb-0"><?php the_title(); ?></p>
   </div>
 </section>
+<!-- ▲ 下層メインビジュアル -->
 
-<?php elseif ( is_page('column') || is_singular( 'blog' ) ): /* お役立ちガイド */ ?>
+<?php elseif ( is_page('column') || is_singular( 'blog' ) || is_tax('blog_cat') ): /* お役立ちガイド */ ?>
 
+<!-- ▼ 下層メインビジュアル -->
 <section class="sec mv__sub">
   <div class="container text-center">
     <h1 class="mv__sub-eng font-weight-bold w-100">COLUMN</h1>
     <p class="mv__sub-small font-weight-bold mb-0">お役立ちガイド</p>
   </div>
 </section>
+<!-- ▲ 下層メインビジュアル -->
+<!-- ▼ コラムページ用ナビ -->
+<section class="column__nav">
+  <div class="container">
+    <a class="column__nav__item text-body" href="<?php echo $home; ?>/column/"><i class="ri-home-4-fill text-primary mr-2 ri-xl"></i>お役立ちガイドTOP</a>
+    <a class="column__nav__item text-body" href="<?php echo $home; ?>/blog_cat/attracting/"><i class="ri-flag-fill text-secondary mr-2 ri-xl"></i>集客・販促</a>
+    <a class="column__nav__item text-body" href="<?php echo $home; ?>/blog_cat/basic/"><i class="ri-book-2-fill text-info mr-2 ri-xl"></i>基礎知識</a>
+    <a class="column__nav__item text-body" href="<?php echo $home; ?>/blog_cat/ready/"><i class="ri-lightbulb-fill text-warning mr-2 ri-xl"></i>メニュー開発</a>
+  </div>
+</section>
+<!-- ▲ コラムページ用ナビ -->
 
-<?php elseif ( is_archive('work') ): /* 事例紹介 */ ?>
+<?php elseif ( is_post_type_archive('systeminfo') || is_singular( 'systeminfo' ) ): /* ニュース */ ?>
+  
+<!-- ▼ 下層メインビジュアル -->
+<section class="sec mv__sub">
+  <div class="container text-center">
+    <h1 class="mv__sub-eng font-weight-bold w-100">NEWS</h1>
+    <p class="mv__sub-small font-weight-bold mb-0">ニュース</p>
+  </div>
+</section>
+<!-- ▲ 下層メインビジュアル -->
 
+<?php elseif ( is_post_type_archive('work') ): /* 事例紹介 */ ?>
+
+<!-- ▼ 下層メインビジュアル -->
 <section class="sec mv__sub">
 <div class="container text-center">
   <h1 class="mv__sub-eng font-weight-bold w-100">WORK</h1>
   <p class="mv__sub-small font-weight-bold mb-0">事例紹介</p>
 </div>
 </section>
-
 <!-- ▲ 下層メインビジュアル -->
 
 <!-- ▼ パンくず -->

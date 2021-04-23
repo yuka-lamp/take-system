@@ -79,8 +79,7 @@ get_header(); ?>
 <!-- ▼ 商品お渡しまでの流れ -->
 <div class="home__about">
   <div class="container py-main">
-    <h2 class="f-32 font-weight-bold text-center mb-4">注文受付から<br>商品お渡しまでの流れ</h2>
-    <p class="mb-5 text-center">お客様からの注文を受付てから店頭で<br>商品をお渡しするまでの流れをご紹介いたします。</p>
+    <h2 class="f-32 font-weight-bold text-center mb-4">商品お渡しまでの<br class="d-md-none">3STEP</h2>
 
     <div class="home__about__wrap d-md-flex flex-wrap justify-content-between">
       <!-- ▼ 流れ① -->
@@ -105,33 +104,6 @@ get_header(); ?>
         </div>
       </div>
       <!-- ▲ 流れ② -->
-      <!-- ▼ 流れ③ -->
-      <div class="home__about__item bg-light">
-        <div class="home__about__item-text">
-          <h3 class="home__about__item-ttl f-26 text-center pt-5 text-primary font-weight-bold m-0">店舗へ通知</h3>
-          <p class="f-24 text-center font-weight-bold pt-4">専用タブレットは不要!</p>
-          <p class="text-center pb-4 m-0">店舗の電話番号・メールに直接通知でお知らせします。</p>
-            <!-- ▼ 通知方法 -->
-            <div class="d-flex pb-4">
-              <div class="col-6 pl-0">
-                <div class="text-center">
-                  <img class="" src="<?php echo $img_url; ?>about_3_1.png" alt="電話で通知" srcset="<?php echo $img_url; ?>about_3_1.png 1x, <?php echo $img_url; ?>about_3_1@2x.png 2x">
-                </div>
-                <h4 class="f-16 font-weight-bold text-center text-primary py-3 m-0">電話で通知</h4>
-                <p class="f-12 m-0">お店の電話が鳴り自動音声でお知らせします。</p>
-              </div>
-              <div class="col-6 pl-0">
-                <div class="text-center">
-                  <img class="" src="<?php echo $img_url; ?>about_3_2.png" alt="メールで通知" srcset="<?php echo $img_url; ?>about_3_2.png 1x, <?php echo $img_url; ?>about_3_2@2x.png 2x">
-                </div>
-                <h4 class="f-16 font-weight-bold text-center text-primary py-3 m-0">メールで通知</h4>
-                <p class="f-12 m-0">任意のメールアドレスにお知らせします。</p>
-              </div>
-            </div>
-            <!-- ▲ 通知方法 -->
-        </div>
-      </div>
-      <!-- ▲ 流れ③ -->
       <!-- ▼ 流れ② -->
       <div class="home__about__item bg-light">
         <div class="home__about__item-text">
@@ -183,59 +155,7 @@ get_header(); ?>
 <div class="home__price">
   <div class="container pt-main">
     <h2 class="f-32 font-weight-bold text-center mb-4">料金プラン</h2>
-    <p class="mb-5 text-center">テイクイーツの料金プランをご紹介いたします。</p>
-    <!-- ▼ タブメニュー -->
-    <ul class="home__price__nav nav nav-pills d-flex justify-content-center">
-      <li class="home__price__nav-item nav-item bg-secondary tab active">
-        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold">
-          小・中規模向け
-          <img class="home__price__nav-arrow" src="<?php echo $img_url; ?>arrow_wh.svg" alt="矢印">
-        </a>
-      </li>
-      <li class="home__price__nav-item nav-item bg-info tab">
-        <a class="home__price__nav-link nav-link text-center text-white font-weight-bold">
-          大規模向け
-          <img class="home__price__nav-arrow" src="<?php echo $img_url; ?>arrow_wh.svg" alt="矢印">
-        </a>
-      </li>
-    </ul>
-    <!-- ▲ タブメニュー -->
-    <!-- ▼ タブコンテンツ -->
-    <div class="home__price__content tab-content">
-      <div class="home__price__content-item tab-pane fade content show">
-        <div class="home__price__content-wrap d-block d-md-flex justify-content-center mb-5">
-          <div class="home__price__content-line f-18 font-weight-bold text-center bg-light">
-            <div class="d-flex d-md-block justify-content-between align-items-center w-100">
-              <p class="m-0">初期費用</p>
-              <p class="text-primary f-36 m-0">¥0</p>
-            </div>
-          </div>
-          <div class="home__price__content-line f-18 font-weight-bold text-center bg-light">
-            <div class="d-flex d-md-block justify-content-between align-items-center w-100">
-              <p class="m-0">月額費用</p>
-              <p class="text-primary f-36 m-0">¥0</p>
-            </div>
-          </div>
-          <div class="home__price__content-line f-18 font-weight-bold text-center">
-            <div class="d-flex d-md-block justify-content-between align-items-center w-100">
-              <p class="2line m-0">サービス手数料<br><span class="f-10">(注文金額に対して)</span></p>
-              <p class="f-36 m-0">8%</p>
-            </div>
-          </div>
-        </div>
-        <p class="f-10 text-muted mt-4 mb-0 col-8 col-md-12">
-          ※ クレジットカードでの決済の場合手数料3.6%が別途発生します。
-          <br>※ 売上金を振り込む際に振込手数料¥440が発生いたします。
-        </p>
-      </div>
-      <div class="home__price__content-item tab-pane fade content">
-        <p class="f-18 text-center font-weight-bold">
-          特別プランをご提案いたします。
-          <br>詳しくは<a href="<?php echo $home; ?>#toform">お問い合わせ</a>下さい。
-        </p>
-      </div>
-    </div>
-    <!-- ▲ タブコンテンツ -->
+    <p class="mb-5 text-center">お客様の店舗数やご利用状況に合わせた2つのプランをご用意しております。</p>
   </div>
 </div>
 <!-- ▲ 料金 -->

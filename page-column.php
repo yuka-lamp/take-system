@@ -3,17 +3,6 @@ $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header(); ?>
 
-<!-- ▼ コラムページ用ナビ -->
-<section class="column__nav">
-  <div class="container">
-    <a class="column__nav__item text-body" href="<?php echo $home; ?>"><i class="ri-home-4-fill text-primary mr-2 ri-xl"></i>お役立ちガイドTOP</a>
-    <a class="column__nav__item text-body" href="<?php echo $home; ?>"><i class="ri-flag-fill text-secondary mr-2 ri-xl"></i>集客・販促</a>
-    <a class="column__nav__item text-body" href="<?php echo $home; ?>"><i class="ri-book-2-fill text-info mr-2 ri-xl"></i>基礎知識</a>
-    <a class="column__nav__item text-body" href="<?php echo $home; ?>"><i class="ri-lightbulb-fill text-warning mr-2 ri-xl"></i>メニュー開発</a>
-  </div>
-</section>
-<!-- ▲ コラムページ用ナビ -->
-
 <!-- ▼ 集客・販促 -->
 <section class="column__sec attracting py-main">
   <!-- ▼ カテゴリ説明 -->
@@ -22,7 +11,7 @@ get_header(); ?>
       <p class="text-secondary font-weight-bold">集客・販促</p>
       <h3 class="column__sec__intro-ttl">どうしたら<br>売上アップできる？</h3>
       <p class="f-16">テイクアウトの売上をアップさせるには集客が大切です。<br class="d-none b-md-block">飲食店に欠かせない集客方法について解説します。</p>
-      <a class="d-none d-md-block btn btn-secondary mt-5" href="<?php echo $home; ?>#toform/">すべてみる</a>
+      <a class="d-none d-md-block btn btn-secondary mt-5" href="<?php echo $home; ?>/blog_cat/attracting/">すべてみる</a>
     </div>
     <!-- ▲ カテゴリ説明 -->
     <!-- ▼ 記事一覧 -->
@@ -85,7 +74,7 @@ get_header(); ?>
         <p class="text-info font-weight-bold">基礎知識</p>
         <h3 class="column__sec__intro-ttl">テイクアウトの<br>知識を身に着けよう</h3>
         <p class="f-16">テイクアウトを始める前に知っておきたい知識をまとめました。<br class="d-none b-md-block">これからテイクアウトを始める予定や始めようか迷っている飲食店オーナー様必見の基礎情報です。</p>
-        <a class="d-none d-md-block btn btn-info mt-3" href="<?php echo $home; ?>#toform/">すべてみる</a>
+        <a class="d-none d-md-block btn btn-info mt-3" href="<?php echo $home; ?>/blog_cat/basic/">すべてみる</a>
       </div>
     <!-- ▲ カテゴリ説明 -->
     <!-- ▼ 記事一覧 -->
@@ -124,6 +113,9 @@ get_header(); ?>
           </h3>
           <p class="f-10 text-info font-weight-bold mb-0">
             <?php the_date(); ?> ｜ 
+            <?php foreach ($tarms as $term): ?>
+              <?php echo $term->name; ?>
+            <?php endforeach; ?>
           </p>
         </div>
       </a>
@@ -144,7 +136,7 @@ get_header(); ?>
         <p class="text-warning font-weight-bold">メニュー開発</p>
         <h3 class="column__sec__intro-ttl">メニューで<br>ユーザーの心を掴もう</h3>
         <p class="f-16">店内飲食とは少し違った準備が必要なテイクアウト。<br class="d-none b-md-block">しっかり準備して魅力的なメニューを提供しましょう。</p>
-        <a class="d-none d-md-block btn btn-warning mt-5" href="<?php echo $home; ?>#toform/">すべてみる</a>
+        <a class="d-none d-md-block btn btn-warning mt-5" href="<?php echo $home; ?>/blog_cat/ready/">すべてみる</a>
       </div>
     <!-- ▲ カテゴリ説明 -->
     <!-- ▼ 記事一覧 -->
@@ -183,6 +175,9 @@ get_header(); ?>
           </h3>
           <p class="f-10 text-warning font-weight-bold mb-0">
             <?php the_date(); ?> ｜ 
+            <?php foreach ($tarms as $term): ?>
+              <?php echo $term->name; ?>
+            <?php endforeach; ?>
           </p>
         </div>
       </a>

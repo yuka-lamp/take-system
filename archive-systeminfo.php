@@ -3,16 +3,6 @@ $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header(); ?>
 
-<!-- ▼ メインビジュアル -->
-<section class="sec mv__sub">
-  <div class="container">
-    <h1 class="f-28 font-weight-bold w-100">ニュース</h1>
-    <p class="text-primary font-weight-bold text-center mb-0">news</p>
-  </div>
-</section>
-<!-- ▲ メインビジュアル -->
-
-
 <section class="sec">
 <div class="container">
   <div class="home__case__list">

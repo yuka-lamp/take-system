@@ -8,7 +8,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 <!-- ▼ いますぐTakeEatsを始めよう！ -->
 <?php if ( !is_front_page() && !is_home() && !is_page(array('request', 'seminar')) ): //トップページのみ ?>
 
-<section class="pt-main">
+<section class="pt-main bg-white">
   <div class="container">
     <div class="footer__cta bg-light">
       <h2 class="footer__cta-ttl f-32 font-weight-bold text-center">いますぐ<br class="d-md-none">テイクイーツを始めよう！</h2>
@@ -79,70 +79,72 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 
 
 <!-- ▼ フッター -->
-<footer class="footer">
-  <div class="footer__wrap d-flex">
+<div class="bg-white pt-main">
+  <footer class="footer">
+    <div class="footer__wrap d-flex">
 
-    <!-- ▼ サービス情報 -->
-    <div class="footer__service">
-      <img src="<?php echo $img_url; ?>logo_white.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>logo_white.png 1x, <?php echo $img_url; ?>logo_white@2x.png 2x">
-      <div class="footer__service__under">
-        <!-- ▼ SNSリンク -->
-        <div class="p-0 mt-4">
-          <a class="text-white" href="https://www.facebook.com/TakeEats.LAMP/" target="_blank" rel="noopener"><i class="ri-facebook-circle-fill ri-2x"></i></a>
-          <a class="text-white mx-3" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="ri-twitter-fill ri-2x"></i></a>
-          <a class="text-white" href="https://www.instagram.com/take.eats_official/" target="_blank" rel="noopener"><i class="ri-instagram-fill ri-2x"></i></a>
+      <!-- ▼ サービス情報 -->
+      <div class="footer__service">
+        <img src="<?php echo $img_url; ?>logo_white.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>logo_white.png 1x, <?php echo $img_url; ?>logo_white@2x.png 2x">
+        <div class="footer__service__under">
+          <!-- ▼ SNSリンク -->
+          <div class="p-0 mt-4">
+            <a class="text-white" href="https://www.facebook.com/TakeEats.LAMP/" target="_blank" rel="noopener"><i class="ri-facebook-circle-fill ri-2x"></i></a>
+            <a class="text-white mx-3" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="ri-twitter-fill ri-2x"></i></a>
+            <a class="text-white" href="https://www.instagram.com/take.eats_official/" target="_blank" rel="noopener"><i class="ri-instagram-fill ri-2x"></i></a>
+          </div>
+          <!-- ▲ SNSリンク -->
+          <!-- ▼ コピーライト -->
+          <p class="f-10 text-muted mt-4">©2020 <?php bloginfo("name"); ?></p>
+          <!-- ▲ コピーライト -->
         </div>
-        <!-- ▲ SNSリンク -->
-        <!-- ▼ コピーライト -->
-        <p class="f-10 text-muted mt-4">©2020 <?php bloginfo("name"); ?></p>
-        <!-- ▲ コピーライト -->
       </div>
+      <!-- ▲ サービス情報 -->
+
+      <!-- ▼ リンク一覧 -->
+      <div class="footer__link d-md-flex w-100 p-0">
+        <!-- ▼ テイクイーツについて -->
+        <div class="footer__link__takeeats">
+          <p class="footer__link__ttl font-weight-bold text-white mb-4 f-16">テイクイーツについて</p>
+          <div class="d-flex flex-wrap">
+            <div class="footer__link-line">
+              <a class="footer__link-line-item" href="<?php echo $home; ?>/features/">機能紹介</a>
+              <a class="footer__link-line-item" href="<?php echo $home; ?>/price/">料金</a>
+              <a class="footer__link-line-item" href="<?php echo $home; ?>/work/">導入事例</a>
+              <a class="footer__link-line-item" href="<?php echo $home; ?>/column/">お役立ちガイド</a>
+            </div>
+            <div class="footer__link-line">
+              <a class="footer__link-line-item" href="<?php echo $home; ?>/systeminfo/">ニュース</a>
+              <a class="footer__link-line-item" href="<?php echo $home; ?>#toform">お問い合わせ</a>
+              <a class="footer__link-line-item" href="<?php echo $home; ?>/request/">お申し込み</a>
+              <a class="footer__link-line-item" href="<?php echo $home; ?>/seminar/">無料相談会</a>
+            </div>
+            <div class="footer__link-line">
+              <a class="footer__link-line-item" href="https://takeeats.zendesk.com/hc/ja/categories/900000324626-%E9%A3%B2%E9%A3%9F%E5%BA%97%E5%90%91%E3%81%91%E3%83%98%E3%83%AB%E3%83%97/" target="_blank">よくある質問<i class="ri-external-link-line ml-1"></i></a>
+              <!-- <a class="footer__link-line-item" href="<?php echo $home; ?>/" target="_blank">パートナープログラム<i class="ri-external-link-line ml-1"></i></a>
+              <a class="footer__link-line-item" href="<?php echo $home; ?>/marketing/" target="_blank">タク配について<i class="ri-external-link-line ml-1"></i></a>
+              <a class="footer__link-line-item" href="<?php echo $home; ?>/work/" target="_blank">管理画面ログイン<i class="ri-external-link-line ml-1"></i></a> -->
+            </div>
+          </div>
+        </div>
+        <!-- ▲ テイクイーツについて -->
+        <!-- ▼ 運営会社 -->
+        <div class="footer__link__campany">
+          <p class="footer__link__ttl font-weight-bold text-white mb-4 f-16">運営会社</p>
+          <div class="footer__link-line">
+            <a class="footer__link-line-item" href="https://lamp.jp/" target="_blank">株式会社ランプ<i class="ri-external-link-line ml-1"></i></a>
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/law/">特定商取引法に基づく表記</a>
+            <a class="footer__link-line-item" href="<?php echo $home; ?>/term/">利用規約</a>
+          </div>
+        </div>
+        <!-- ▲ 運営会社 -->
+      </div>
+      <!-- ▲ リンク一覧 -->
+
     </div>
-    <!-- ▲ サービス情報 -->
-
-    <!-- ▼ リンク一覧 -->
-    <div class="footer__link d-md-flex w-100 p-0">
-      <!-- ▼ テイクイーツについて -->
-      <div class="footer__link__takeeats">
-        <p class="footer__link__ttl font-weight-bold text-white mb-4 f-16">テイクイーツについて</p>
-        <div class="d-flex flex-wrap">
-          <div class="footer__link-line">
-            <a class="footer__link-line-item" href="<?php echo $home; ?>/features/">機能紹介</a>
-            <a class="footer__link-line-item" href="<?php echo $home; ?>/price/">料金</a>
-            <a class="footer__link-line-item" href="<?php echo $home; ?>/work/">導入事例</a>
-            <a class="footer__link-line-item" href="<?php echo $home; ?>/column/">お役立ちガイド</a>
-          </div>
-          <div class="footer__link-line">
-            <a class="footer__link-line-item" href="<?php echo $home; ?>/systeminfo/">ニュース</a>
-            <a class="footer__link-line-item" href="<?php echo $home; ?>#toform">お問い合わせ</a>
-            <a class="footer__link-line-item" href="<?php echo $home; ?>/request/">お申し込み</a>
-            <a class="footer__link-line-item" href="<?php echo $home; ?>/seminar/">無料相談会</a>
-          </div>
-          <div class="footer__link-line">
-            <a class="footer__link-line-item" href="https://takeeats.zendesk.com/hc/ja/categories/900000324626-%E9%A3%B2%E9%A3%9F%E5%BA%97%E5%90%91%E3%81%91%E3%83%98%E3%83%AB%E3%83%97/" target="_blank">よくある質問<i class="ri-external-link-line ml-1"></i></a>
-            <!-- <a class="footer__link-line-item" href="<?php echo $home; ?>/" target="_blank">パートナープログラム<i class="ri-external-link-line ml-1"></i></a>
-            <a class="footer__link-line-item" href="<?php echo $home; ?>/marketing/" target="_blank">タク配について<i class="ri-external-link-line ml-1"></i></a>
-            <a class="footer__link-line-item" href="<?php echo $home; ?>/work/" target="_blank">管理画面ログイン<i class="ri-external-link-line ml-1"></i></a> -->
-          </div>
-        </div>
-      </div>
-      <!-- ▲ テイクイーツについて -->
-      <!-- ▼ 運営会社 -->
-      <div class="footer__link__campany">
-        <p class="footer__link__ttl font-weight-bold text-white mb-4 f-16">運営会社</p>
-        <div class="footer__link-line">
-          <a class="footer__link-line-item" href="https://lamp.jp/" target="_blank">株式会社ランプ<i class="ri-external-link-line ml-1"></i></a>
-          <a class="footer__link-line-item" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>
-          <a class="footer__link-line-item" href="<?php echo $home; ?>/law/">特定商取引法に基づく表記</a>
-          <a class="footer__link-line-item" href="<?php echo $home; ?>/term/">利用規約</a>
-        </div>
-      </div>
-      <!-- ▲ 運営会社 -->
-    </div>
-    <!-- ▲ リンク一覧 -->
-
-  </div>
-</footer>
+  </footer>
+</div>
 <!-- ▲ フッター -->
 
 

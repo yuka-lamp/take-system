@@ -3,7 +3,6 @@
 ====================================================*/
 @import "./components/header";
 @import "./components/footer";
-@import "./components/mv";
 @import "./components/breadcrumbs";
 
 /*===================================================
@@ -19,6 +18,7 @@
 /*===================================================
  パーツ
 ====================================================*/
+@import "./components/sub";
 @import "./components/form";
 @import "./components/side";
 @import "./components/postlist";

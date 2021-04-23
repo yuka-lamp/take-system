@@ -16480,32 +16480,6 @@ a:hover {
         left: 0;
         background-color: #fff; }
 
-/*===================================================
- 下層ページ - ページタイトル
-====================================================*/
-.mv__sub {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #faf7f2;
-  margin: 0 auto;
-  padding: 3.5rem; }
-  @media (max-width: 991.98px) {
-    .mv__sub {
-      margin: 0 auto; } }
-  .mv__sub-eng {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    letter-spacing: .4rem;
-    margin-left: .4rem; }
-  .mv__sub-small {
-    color: #666666;
-    font-size: 0.9375rem;
-    letter-spacing: .2rem;
-    margin-top: 0.750rem;
-    margin-left: .2rem; }
-
 #breadcrumbs {
   padding: 1rem 0;
   line-height: 1;
@@ -17129,27 +17103,128 @@ a:hover {
         margin: 1rem 0;
         padding: 5px; }
 
-.price__card {
-  margin: 2rem 0;
-  text-align: center; }
-  @media (max-width: 991.98px) {
-    .price__card {
-      text-align: left; } }
-  @media (max-width: 991.98px) {
-    .price__card img {
-      width: 100%; } }
+/*===================================================
+ 料金プラン
+====================================================*/
+.price__plan__list {
+  width: 48%; }
+  @media (max-width: 767.98px) {
+    .price__plan__list {
+      width: 100%;
+      margin-bottom: 2rem; } }
+  .price__plan__list.ent .price__plan__list__table::before {
+    border-top: 14px solid #38ACC1; }
+  .price__plan__list.ent .price__plan__list__table-check:before {
+    border-right: 5px solid #38ACC1;
+    border-bottom: 5px solid #38ACC1; }
+  .price__plan__list.ent .price__plan__list__table-func-btn {
+    color: #38ACC1;
+    border: 1px solid #38ACC1; }
+    .price__plan__list.ent .price__plan__list__table-func-btn:hover {
+      background-color: #38ACC1;
+      color: #fff;
+      opacity: 1; }
+  .price__plan__list-wrap {
+    padding: 0 2rem; }
+    @media (max-width: 767.98px) {
+      .price__plan__list-wrap {
+        padding: 0 1rem; } }
+  .price__plan__list__table {
+    position: relative;
+    border-radius: 10px; }
+    .price__plan__list__table::before {
+      content: "";
+      position: absolute;
+      top: -2.5rem;
+      left: calc(50% - 14px);
+      border-top: 14px solid #FF8811;
+      border-right: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      border-left: 14px solid transparent; }
+    .price__plan__list__table-box {
+      margin-top: 2.5rem; }
+      @media (max-width: 767.98px) {
+        .price__plan__list__table-box {
+          margin-top: 2rem; } }
+    .price__plan__list__table-name {
+      font-weight: bold;
+      padding: 2rem 0;
+      border-radius: 10px 10px 0 0; }
+    .price__plan__list__table-percent {
+      font-size: 3.25rem;
+      font-weight: bold;
+      line-height: 0.6; }
+      .price__plan__list__table-percent span {
+        font-size: 5.4rem;
+        font-family: "Barlow"; }
+    .price__plan__list__table-check {
+      position: relative;
+      font-size: 1rem;
+      font-weight: bold;
+      padding-left: 2rem;
+      text-align: left;
+      margin-bottom: 0.5rem; }
+      .price__plan__list__table-check:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 6px;
+        width: 0.8125rem;
+        height: 1.25rem;
+        border-right: 5px solid #FF8811;
+        border-bottom: 5px solid #FF8811;
+        transform: rotate(45deg); }
+    .price__plan__list__table-func-ttl span {
+      border-bottom: 2px solid #FF8811; }
+    .price__plan__list__table-func-btn {
+      display: inline-block;
+      margin: 1rem auto 0 auto;
+      color: #FF8811;
+      font-weight: bold;
+      padding: 0.6rem 1.5rem;
+      border: 1px solid #FF8811;
+      border-radius: 10px; }
+      .price__plan__list__table-func-btn:hover {
+        background-color: #FF8811;
+        color: #fff;
+        opacity: 1; }
+    .price__plan__list__table-point {
+      border-top: 2px solid #f5f1ef;
+      margin-top: 2.5rem;
+      padding: 2.5rem 0;
+      text-align: center; }
+      @media (max-width: 767.98px) {
+        .price__plan__list__table-point {
+          text-align: left;
+          margin-top: 2rem;
+          padding: 2rem 0; } }
 
-.price-ttl {
-  box-sizing: border-box;
-  font-size: 1.5rem;
-  background-color: #faf7f2;
-  padding: 0.5em 1em;
-  margin: 3em 0 1em;
-  font-weight: bold; }
-  @media (max-width: 991.98px) {
-    .price-ttl {
-      font-size: 1.3rem; } }
+.price__plan__attn h3 {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin: 2rem 0 1rem 0;
+  padding-left: 0.625rem;
+  border-left: 3px solid #EF5D1D; }
 
+.price__plan__attn ul {
+  list-style: none;
+  padding-left: 0; }
+  .price__plan__attn ul li {
+    position: relative;
+    padding-left: 1.5rem; }
+    .price__plan__attn ul li::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 10px;
+      height: 2px;
+      background-color: #EF5D1D; }
+
+/*===================================================
+ 記事詳細
+====================================================*/
 .column__sec.single .is-fixed {
   position: fixed;
   top: 6rem;
@@ -17388,6 +17463,75 @@ a:hover {
 /*===================================================
  パーツ
 ====================================================*/
+/*===================================================
+ 下層ページ - ページタイトル
+====================================================*/
+.mv__sub {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #faf7f2;
+  margin: 0 auto;
+  padding: 3.5rem; }
+  @media (max-width: 991.98px) {
+    .mv__sub {
+      margin: 0 auto; } }
+  .mv__sub-eng {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin-left: 0.4rem; }
+  .mv__sub-small {
+    color: #666666;
+    font-size: 0.9375rem;
+    letter-spacing: 0.2rem;
+    margin-top: 0.75rem;
+    margin-left: 0.2rem; }
+
+/*===================================================
+ 下層ページ - 導入セクション
+====================================================*/
+.sub__intro {
+  position: relative; }
+  .sub__intro .container {
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    @media (max-width: 991.98px) {
+      .sub__intro .container {
+        display: block;
+        padding: 0 2rem; } }
+  .sub__intro-text {
+    width: 53%; }
+    @media (max-width: 991.98px) {
+      .sub__intro-text {
+        width: 100%; } }
+    .sub__intro-text-ttl {
+      margin: 1.5rem 0 3rem 0;
+      font-weight: bold; }
+      @media (max-width: 991.98px) {
+        .sub__intro-text-ttl {
+          margin: 1.2rem 0 1.5rem 0; } }
+  .sub__intro-img {
+    width: 40%;
+    text-align: center; }
+    @media (max-width: 991.98px) {
+      .sub__intro-img {
+        width: 100%;
+        margin-top: 2rem; } }
+  .sub__intro-bg {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    color: #faf7f2;
+    font-size: 7.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    z-index: -1; }
+
 .form .wpcf7 {
   max-width: 768px;
   margin: 0 auto; }

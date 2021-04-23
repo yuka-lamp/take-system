@@ -1,0 +1,78 @@
+/*===================================================
+ 下層ページ - ページタイトル
+====================================================*/
+.mv__sub {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light;
+  margin: 0 auto;
+  padding: 3.5rem;
+  @include media-breakpoint-down(md) {
+    margin: 0 auto;
+  }
+  &-eng {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin-left: 0.4rem;
+  }
+  &-small {
+    color: $muted;
+    font-size: 0.9375rem;
+    letter-spacing: 0.2rem;
+    margin-top: 0.75rem;
+    margin-left: 0.2rem;
+  }
+}
+/*===================================================
+ 下層ページ - 導入セクション
+====================================================*/
+
+.sub__intro {
+  position: relative;
+  .container {
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media-breakpoint-down(md) {
+      display: block;
+      padding: 0 2rem;
+    }
+  }
+  &-text {
+    width: 53%;
+    
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+    &-ttl {
+      margin: 1.5rem 0 3rem 0;
+      font-weight: bold;
+      @include media-breakpoint-down(md) {
+        margin: 1.2rem 0 1.5rem 0;
+      }
+    }
+  }
+  &-img {
+    width: 40%;
+    text-align: center;
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
+  &-bg {
+    position: absolute;
+    top:3rem;
+    left: 0;
+    color: $light;
+    font-size: 7.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1;
+    z-index: -1;
+  }
+}

@@ -1,116 +1,36 @@
 /*===================================================
-  いますぐTakeEatsを始めよう！
+  フッター - いますぐテイクイーツを始めよう！
 ====================================================*/
-.cta {
-  &__form {
-    width: 90%;
-    margin: 0 auto;
-    padding: 2rem;
-    border-radius: 20px;
-    @include media-breakpoint-down(md) {
-      width: 100%;
-      padding: 1rem;
-    }
-  }
-
-  &__btn {
-    width: 90%;
+.footer__cta {
+  padding: 3rem 0;
+  border-radius: 40px;
+  &-wrap {
+    width: 80%;
     margin: 0 auto;
     @include media-breakpoint-down(md) {
       width: 100%;
     }
-
-    &-item {
-      display: inline-block;
-      border-radius: 50px;
-      width: 40%;
-      margin: 0 0.5rem;
-      padding: 1.5rem 1rem 1.5rem 3rem;
-      text-decoration: none !important;
-      @include media-breakpoint-down(sm) {
-        width: 100%;
-        margin: 0;
-      }
-
-      &-ttl {
-        position: relative;
-
-        &::before {
-          content: "";
-          width: 28px;
-          height: 28px;
-          position: absolute;
-          top: -2px;
-          left: calc(50% - 5.5rem);
-          @include media-breakpoint-down(sm) {
-            top: 0;
-          }
-        }
-      }
-
-      &.request {
-        position: relative;
-        background: $secondary;
-        border-bottom: 7px solid #c74f1b;
-        @include media-breakpoint-down(sm) {
-          margin-bottom: 1rem;
-        }
-        // &::after {
-        //   content: '';
-        //   position: absolute;
-        //   right: 0;
-        //   bottom: 0;
-        //   width: 105px;
-        //   height: 127px;
-        //   background: url("../images/cta_doc.png");
-        //   background-size: cover;
-        // }
-        .cta__btn-item-ttl {
-          &::before {
-            background: url("../images/arrow_wh.svg");
-            background-size: cover;
-          }
-        }
-      }
-
-      &.doc {
-        position: relative;
-        background: $white;
-        border-bottom: 7px solid #f0f0f0;
-
-        &:hover {
-          background-color: #f0f0f0;
-        }
-        // &::after {
-        //   content: '';
-        //   position: absolute;
-        //   right: 0;
-        //   bottom: 0;
-        //   width: 103px;
-        //   height: 110px;
-        //   background: url("../images/cta_woman.png");
-        //   background-size: cover;
-        // }
-        .cta__btn-item-ttl {
-          &::before {
-            background: url("../images/arrow_or.svg");
-            background-size: cover;
-            left: calc(50% - 8rem);
-          }
-        }
-      }
+  }
+  &-ttl {
+    margin-bottom: 3rem;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 1rem;
     }
   }
-
-  &__phone {
-    position: relative;
-    font-size: 32px;
-
-    &:before {
-      content: url("../images/icon_phone.svg");
-      position: absolute;
-      top: 0;
-      left: -2rem;
+  &-btn {
+    border-left: 2px solid $light-gray;
+    a {
+      margin: 0 auto;
+    }
+  }
+  .text-secondary {
+    border: none;
+    span {
+      color: $primary;
+    }
+    &:after {
+      border-left: 3px solid $primary;
+      border-bottom: 3px solid $primary;
     }
   }
 }

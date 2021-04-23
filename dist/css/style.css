@@ -16370,76 +16370,33 @@ a:hover {
     font-size: 1rem; }
 
 /*===================================================
-  いますぐTakeEatsを始めよう！
+  フッター - いますぐテイクイーツを始めよう！
 ====================================================*/
-.cta__form {
-  width: 90%;
-  margin: 0 auto;
-  padding: 2rem;
-  border-radius: 20px; }
-  @media (max-width: 991.98px) {
-    .cta__form {
-      width: 100%;
-      padding: 1rem; } }
-
-.cta__btn {
-  width: 90%;
-  margin: 0 auto; }
-  @media (max-width: 991.98px) {
-    .cta__btn {
-      width: 100%; } }
-  .cta__btn-item {
-    display: inline-block;
-    border-radius: 50px;
-    width: 40%;
-    margin: 0 0.5rem;
-    padding: 1.5rem 1rem 1.5rem 3rem;
-    text-decoration: none !important; }
-    @media (max-width: 767.98px) {
-      .cta__btn-item {
-        width: 100%;
-        margin: 0; } }
-    .cta__btn-item-ttl {
-      position: relative; }
-      .cta__btn-item-ttl::before {
-        content: "";
-        width: 28px;
-        height: 28px;
-        position: absolute;
-        top: -2px;
-        left: calc(50% - 5.5rem); }
-        @media (max-width: 767.98px) {
-          .cta__btn-item-ttl::before {
-            top: 0; } }
-    .cta__btn-item.request {
-      position: relative;
-      background: #FF8811;
-      border-bottom: 7px solid #c74f1b; }
-      @media (max-width: 767.98px) {
-        .cta__btn-item.request {
-          margin-bottom: 1rem; } }
-      .cta__btn-item.request .cta__btn-item-ttl::before {
-        background: url("../images/arrow_wh.svg");
-        background-size: cover; }
-    .cta__btn-item.doc {
-      position: relative;
-      background: #fff;
-      border-bottom: 7px solid #f0f0f0; }
-      .cta__btn-item.doc:hover {
-        background-color: #f0f0f0; }
-      .cta__btn-item.doc .cta__btn-item-ttl::before {
-        background: url("../images/arrow_or.svg");
-        background-size: cover;
-        left: calc(50% - 8rem); }
-
-.cta__phone {
-  position: relative;
-  font-size: 32px; }
-  .cta__phone:before {
-    content: url("../images/icon_phone.svg");
-    position: absolute;
-    top: 0;
-    left: -2rem; }
+.footer__cta {
+  padding: 3rem 0;
+  border-radius: 40px; }
+  .footer__cta-wrap {
+    width: 80%;
+    margin: 0 auto; }
+    @media (max-width: 991.98px) {
+      .footer__cta-wrap {
+        width: 100%; } }
+  .footer__cta-ttl {
+    margin-bottom: 3rem; }
+    @media (max-width: 991.98px) {
+      .footer__cta-ttl {
+        margin-bottom: 1rem; } }
+  .footer__cta-btn {
+    border-left: 2px solid #f5f1ef; }
+    .footer__cta-btn a {
+      margin: 0 auto; }
+  .footer__cta .text-secondary {
+    border: none; }
+    .footer__cta .text-secondary span {
+      color: #EF5D1D; }
+    .footer__cta .text-secondary:after {
+      border-left: 3px solid #EF5D1D;
+      border-bottom: 3px solid #EF5D1D; }
 
 /*===================================================
  フッター
@@ -16951,6 +16908,78 @@ a:hover {
       padding: 0 1.5rem 1.5rem;
       display: none;
       font-size: 0.9rem; }
+
+/*===================================================
+  いますぐテイクイーツを始めよう！
+====================================================*/
+.cta__form {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 20px; }
+  @media (max-width: 991.98px) {
+    .cta__form {
+      width: 100%;
+      padding: 1rem; } }
+
+.cta__btn {
+  width: 90%;
+  margin: 0 auto; }
+  @media (max-width: 991.98px) {
+    .cta__btn {
+      width: 100%; } }
+  .cta__btn-item {
+    display: inline-block;
+    border-radius: 50px;
+    width: 40%;
+    margin: 0 0.5rem;
+    padding: 1.5rem 1rem 1.5rem 3rem;
+    text-decoration: none !important; }
+    @media (max-width: 767.98px) {
+      .cta__btn-item {
+        width: 100%;
+        margin: 0; } }
+    .cta__btn-item-ttl {
+      position: relative; }
+      .cta__btn-item-ttl::before {
+        content: "";
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: -2px;
+        left: calc(50% - 5.5rem); }
+        @media (max-width: 767.98px) {
+          .cta__btn-item-ttl::before {
+            top: 0; } }
+    .cta__btn-item.request {
+      position: relative;
+      background: #FF8811;
+      border-bottom: 7px solid #c74f1b; }
+      @media (max-width: 767.98px) {
+        .cta__btn-item.request {
+          margin-bottom: 1rem; } }
+      .cta__btn-item.request .cta__btn-item-ttl::before {
+        background: url("../images/arrow_wh.svg");
+        background-size: cover; }
+    .cta__btn-item.doc {
+      position: relative;
+      background: #fff;
+      border-bottom: 7px solid #f0f0f0; }
+      .cta__btn-item.doc:hover {
+        background-color: #f0f0f0; }
+      .cta__btn-item.doc .cta__btn-item-ttl::before {
+        background: url("../images/arrow_or.svg");
+        background-size: cover;
+        left: calc(50% - 8rem); }
+
+.cta__phone {
+  position: relative;
+  font-size: 32px; }
+  .cta__phone:before {
+    content: url("../images/icon_phone.svg");
+    position: absolute;
+    top: 0;
+    left: -2rem; }
 
 .features h3 {
   display: block;

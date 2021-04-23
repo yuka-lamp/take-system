@@ -5,6 +5,7 @@ $img_url = get_template_directory_uri().'/dist/images/';
 
 get_header(); ?>
 
+<!-- ▼ 導入 -->
 <section class="sub__intro pt-main">
     <div class="container">
         <div class="sub__intro-text">
@@ -18,6 +19,7 @@ get_header(); ?>
         <p class="sub__intro-bg">Get started<br>for free</p>
     </div>
 </section>
+<!-- ▲ 導入 -->
 
 <section class="price__plan pt-main">
     <div class="container">

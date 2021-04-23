@@ -16955,153 +16955,25 @@ a:hover {
     top: 0;
     left: -2rem; }
 
-.features h3 {
-  display: block;
-  text-align: center;
-  font-size: 1.4rem;
-  margin: 1rem 0 2rem;
-  font-weight: bold; }
-
-.features p {
-  font-size: 0.85rem;
-  margin: 0; }
-
-.features__about {
-  margin: 3rem 0; }
-  @media (min-width: 992px) {
-    .features__about {
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
-  .features__about img {
-    margin: 0 auto;
-    display: block; }
-    @media (min-width: 992px) {
-      .features__about img {
-        margin: 0; } }
-  .features__about-txt {
-    margin: 2rem 0 0; }
-    @media (min-width: 992px) {
-      .features__about-txt {
-        width: 40%;
-        margin: 0 0 0 3rem; } }
-    .features__about-txt h3 {
-      font-size: 1.6rem;
-      font-weight: bold;
-      margin: 0;
-      text-align: center;
-      line-height: 1.5; }
-    .features__about-txt p {
-      font-size: 0.85rem;
-      margin: 1rem 0; }
-    .features__about-txt a {
-      display: block;
-      border-radius: 10rem;
-      border: 4px solid #FF8811;
-      margin: 0 auto;
-      padding: 1.2rem 0;
-      max-width: 320px;
-      font-size: 1rem;
-      text-align: center;
-      color: #FF8811;
-      font-weight: bold;
-      text-decoration: none !important;
-      transition: 0.3s ease-in-out; }
-      .features__about-txt a:hover {
-        background: #FF8811;
-        color: #fff; }
-
-.features__flow .container {
-  padding: 1.5rem 2rem;
-  border-radius: 10px; }
-
-@media (min-width: 992px) {
-  .features__flow__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline; } }
-
-@media (min-width: 992px) {
-  .features__flow__wrap-inner {
-    width: 23.5%; } }
-
-.features__flow__wrap-inner .ttl {
-  font-size: 1rem;
-  font-weight: bold;
-  max-width: 200px;
-  padding: 6px 1rem;
-  margin: 1rem auto;
-  text-align: center;
-  position: relative;
-  z-index: 2; }
-
-.features__main .container {
-  padding: 1.5rem 1rem;
-  border-radius: 10px; }
-  @media (min-width: 992px) {
-    .features__main .container {
-      padding: 1.5rem 4rem; } }
-
-.features__main__wrap {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .features__main__wrap-inner {
-    width: 47%; }
-    @media (min-width: 992px) {
-      .features__main__wrap-inner {
-        width: 14%; } }
-    .features__main__wrap-inner img {
-      display: block;
-      margin: 0 auto; }
-    .features__main__wrap-inner p {
-      font-size: 1rem;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 1rem; }
-
-.features__main__support {
-  position: relative;
-  background-color: #fff;
-  padding: 1.5rem 2rem;
-  border-radius: 10px;
-  margin: 0 auto; }
-  @media (min-width: 992px) {
-    .features__main__support {
-      width: 80%; } }
-  .features__main__support:before {
-    content: '+';
-    width: 57px;
-    height: 57px;
+/*===================================================
+  機能紹介
+====================================================*/
+.sub__intro.features {
+  position: relative; }
+  .sub__intro.features:after {
+    content: '';
     position: absolute;
-    top: -23.5px;
-    left: calc(50% - 28.5px);
-    background: #FF8811;
-    border-radius: 10rem;
-    color: #fff;
-    font-size: 2.2rem;
-    text-align: center; }
-  @media (min-width: 992px) {
-    .features__main__support__wrap {
-      display: flex;
-      justify-content: space-between; } }
-  .features__main__support__wrap-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem; }
-    @media (min-width: 992px) {
-      .features__main__support__wrap-inner {
-        width: 48%;
-        margin: 0; } }
-    .features__main__support__wrap-inner-txt {
-      width: 48%; }
-      .features__main__support__wrap-inner-txt p.bg-white {
-        font-size: 1rem;
-        font-weight: bold;
-        text-align: center;
-        margin: 1rem 0;
-        padding: 5px; }
+    top: 15%;
+    right: 0;
+    max-width: 722px;
+    width: 48%;
+    max-height: 527.59px;
+    height: 90%;
+    background-image: url("../images/features_intro@2x.png");
+    background-size: cover; }
+    @media (max-width: 991.98px) {
+      .sub__intro.features:after {
+        display: none; } }
 
 /*===================================================
  料金プラン
@@ -17504,7 +17376,7 @@ a:hover {
         display: block;
         padding: 0 2rem; } }
   .sub__intro-text {
-    width: 53%; }
+    width: 45%; }
     @media (max-width: 991.98px) {
       .sub__intro-text {
         width: 100%; } }

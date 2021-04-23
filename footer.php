@@ -6,7 +6,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 </main>
 
 <!-- ▼ いますぐTakeEatsを始めよう！ -->
-<?php if ( is_front_page() || is_home() || is_page(array('features', 'price', 'marketing')) ): //トップページのみ ?>
+<?php if ( !is_front_page() && !is_home() && !is_page(array('request', 'seminar')) ): //トップページのみ ?>
 
 <!-- ▼ カーブ画像 -->
 <img class="d-block d-md-none mt-4 w-100" src="<?php echo $img_url; ?>cta_bg_sp.png" alt="背景" srcset="<?php echo $img_url; ?>cta_bg_sp.png 1x, <?php echo $img_url; ?>cta_bg_sp@2x.png 2x">

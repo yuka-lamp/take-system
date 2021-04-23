@@ -17128,34 +17128,63 @@ a:hover {
   z-index: -1;
   width: 28%; }
 
-.column__sec__inner {
-  font-size: 0.875rem;
+@media (max-width: 991.98px) {
+  .column__sec.single .column__sec article {
+    width: 100%; } }
+
+.column__sec__inner .single-thumbnail {
+  border-radius: 40px;
+  overflow: hidden; }
+
+.column__sec__inner h1 {
+  font-size: 2.125rem;
+  line-height: 1.4; }
+  @media (max-width: 991.98px) {
+    .column__sec__inner h1 {
+      font-size: 1.3125rem; } }
+
+.column__sec__inner p {
+  font-size: 0.9375rem;
   line-height: 1.7; }
-  .column__sec__inner h2,
-  .column__sec__inner h3,
-  .column__sec__inner h4 {
-    font-weight: bold;
-    margin: 2em 0 1em; }
-  .column__sec__inner h2 {
-    background-color: #faf7f2;
-    padding: 1rem;
-    border-left: solid 3px #dc3545;
-    font-size: 1.4rem; }
-  .column__sec__inner h3 {
-    padding-left: 1em;
-    border-left: solid 3px #dc3545;
-    font-size: 1.125rem; }
-  .column__sec__inner h4 {
-    font-size: 1rem; }
-  .column__sec__inner p {
-    margin-bottom: 1em; }
-  .column__sec__inner table {
-    border-collapse: collapse;
-    margin: 1rem 0; }
-    .column__sec__inner table th,
-    .column__sec__inner table td {
-      padding: 1em;
-      border: solid 1px #faf7f2; }
+
+.column__sec__inner h2,
+.column__sec__inner h3,
+.column__sec__inner h4 {
+  font-weight: bold;
+  margin: 2em 0 1em; }
+
+.column__sec__inner h2 {
+  background-color: #faf7f2;
+  padding: 1rem;
+  font-size: 1.8275rem; }
+  @media (max-width: 991.98px) {
+    .column__sec__inner h2 {
+      font-size: 1.25rem; } }
+
+.column__sec__inner h3 {
+  padding-left: 1em;
+  border-left: solid 3px #dc3545;
+  font-size: 1.375rem; }
+  @media (max-width: 991.98px) {
+    .column__sec__inner h3 {
+      font-size: 1.125rem; } }
+
+.column__sec__inner h4 {
+  font-size: 1rem; }
+
+.column__sec__inner p {
+  margin-bottom: 1em; }
+
+.column__sec__inner table {
+  border-collapse: collapse;
+  margin: 1rem 0; }
+  .column__sec__inner table th,
+  .column__sec__inner table td {
+    padding: 1em;
+    border: solid 1px #faf7f2; }
+
+.column__sec__inner .wp-block-image {
+  margin-bottom: 1em; }
 
 #toc_container {
   padding: 1rem 2rem !important;
@@ -17425,7 +17454,7 @@ div.acceptance {
     padding: 0 1rem; }
     @media (max-width: 991.98px) {
       .post-list-item-text {
-        padding: 0 .5rem; } }
+        padding: 0 0.5rem; } }
   .post-list-item-ttl {
     font-size: 0.875rem;
     font-weight: bold;
@@ -17434,6 +17463,51 @@ div.acceptance {
     @media (max-width: 991.98px) {
       .post-list-item-ttl {
         margin: 1rem 0 0.6875rem 0 !important; } }
+  .post-list-item-tag span {
+    display: inline-block;
+    border: 1px solid #EF5D1D;
+    border-radius: 1rem;
+    padding: 0 0.5rem;
+    margin-right: 2px;
+    margin-bottom: 5px; }
+
+/*===================================================
+ 事例紹介
+====================================================*/
+.work .container {
+  max-width: 980px; }
+
+.work .post-list {
+  display: flex;
+  flex-wrap: wrap; }
+  .work .post-list-item {
+    width: 31.7% !important;
+    margin: 0 2% 1.5rem 0 !important; }
+    @media (max-width: 991.98px) {
+      .work .post-list-item {
+        margin: 0 2% 1.5rem 0 !important; } }
+    @media (max-width: 767.98px) {
+      .work .post-list-item {
+        width: 48% !important;
+        margin: 0 3% 0.6875rem 0 !important;
+        padding-bottom: 0.6875rem; } }
+    .work .post-list-item:nth-child(3n) {
+      margin: 0 0 1.5rem 0 !important; }
+      @media (max-width: 767.98px) {
+        .work .post-list-item:nth-child(3n) {
+          margin: 0 3% 0.6875rem 0 !important; } }
+    @media (max-width: 767.98px) {
+      .work .post-list-item:nth-child(2n) {
+        margin: 0 0 0.6875rem 0 !important; } }
+    .work .post-list-item-img {
+      height: 12rem; }
+      @media (max-width: 991.98px) {
+        .work .post-list-item-img {
+          height: 8rem; } }
+      .work .post-list-item-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
 
 .wp-pagenavi {
   display: block;

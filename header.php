@@ -160,13 +160,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<?php elseif ( is_archive('blog') || is_singular( 'blog' ) ): /* 事業詳細の場合 */ ?>
+<?php elseif ( is_page('column') || is_singular( 'blog' ) ): /* お役立ちガイド */ ?>
 
 <section class="sec mv__sub">
   <div class="container text-center">
     <h1 class="mv__sub-eng font-weight-bold w-100">COLUMN</h1>
     <p class="mv__sub-small font-weight-bold mb-0">お役立ちガイド</p>
   </div>
+</section>
+
+<?php elseif ( is_archive('work') ): /* 事例紹介 */ ?>
+
+<section class="sec mv__sub">
+<div class="container text-center">
+  <h1 class="mv__sub-eng font-weight-bold w-100">WORK</h1>
+  <p class="mv__sub-small font-weight-bold mb-0">事例紹介</p>
+</div>
 </section>
 
 <!-- ▲ 下層メインビジュアル -->

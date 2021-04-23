@@ -9,13 +9,13 @@
     padding-bottom: 1rem;
     border-radius: 20px;
     @include media-breakpoint-down(md) {
-      width: 48%!important;
-      margin: 0 3% 0.6875rem 0!important;
+      width: 48% !important;
+      margin: 0 3% 0.6875rem 0 !important;
       padding-bottom: 0.6875rem;
     }
     &:nth-child(2n) {
       @include media-breakpoint-down(md) {
-      margin: 0 0 0.6875rem 0!important;
+        margin: 0 0 0.6875rem 0 !important;
       }
     }
     &-img {
@@ -35,7 +35,7 @@
     &-text {
       padding: 0 1rem;
       @include media-breakpoint-down(md) {
-        padding: 0 .5rem;
+        padding: 0 0.5rem;
       }
     }
     &-ttl {
@@ -44,8 +44,67 @@
       color: $body-color;
       margin: 1rem 0;
       @include media-breakpoint-down(md) {
-        margin:  1rem 0 0.6875rem 0!important;
+        margin: 1rem 0 0.6875rem 0 !important;
+      }
+    }
+    &-tag {
+      span {
+        display: inline-block;
+        border: 1px solid $primary;
+        border-radius: 1rem;
+        padding: 0 0.5rem;
+        margin-right: 2px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+/*===================================================
+ 事例紹介
+====================================================*/
+.work {
+  .container {
+    max-width: 980px;
+  }
+  .post-list {
+    display: flex;
+    flex-wrap: wrap;
+    &-item {
+      width: 31.7% !important;
+      margin: 0 2% 1.5rem 0 !important;
+      @include media-breakpoint-down(md) {
+        margin: 0 2% 1.5rem 0 !important;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 48% !important;
+        margin: 0 3% 0.6875rem 0 !important;
+        padding-bottom: 0.6875rem;
+      }
+      //PC時 一番左の右余白をなくす
+      &:nth-child(3n) {
+        margin: 0 0 1.5rem 0 !important;
+        @include media-breakpoint-down(sm) {
+          margin: 0 3% 0.6875rem 0 !important;
         }
+      }
+      //スマホ時 一番左の右余白をなくす
+      &:nth-child(2n) {
+        @include media-breakpoint-down(sm) {
+          margin: 0 0 0.6875rem 0 !important;
+        }
+      }
+      &-img {
+        height: 12rem;
+        @include media-breakpoint-down(md) {
+          height: 8rem;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
     }
   }
 }

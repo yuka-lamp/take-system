@@ -18,12 +18,12 @@ get_header(); ?>
 <section class="column__sec attracting py-main">
   <!-- ▼ カテゴリ説明 -->
   <div class="column__sec__wrap">
-      <div class="column__sec__intro">
-        <p class="text-secondary font-weight-bold">集客・販促</p>
-        <h3 class="column__sec__intro-ttl">どうしたら<br>売上アップできる？</h3>
-        <p class="f-16">テイクアウトの売上をアップさせるには集客が大切です。<br class="d-none b-md-block">飲食店に欠かせない集客方法について解説します。</p>
-        <a class="d-none d-md-block btn btn-secondary mt-5" href="<?php echo $home; ?>#toform/">すべてみる</a>
-      </div>
+    <div class="column__sec__intro">
+      <p class="text-secondary font-weight-bold">集客・販促</p>
+      <h3 class="column__sec__intro-ttl">どうしたら<br>売上アップできる？</h3>
+      <p class="f-16">テイクアウトの売上をアップさせるには集客が大切です。<br class="d-none b-md-block">飲食店に欠かせない集客方法について解説します。</p>
+      <a class="d-none d-md-block btn btn-secondary mt-5" href="<?php echo $home; ?>#toform/">すべてみる</a>
+    </div>
     <!-- ▲ カテゴリ説明 -->
     <!-- ▼ 記事一覧 -->
     <article class="column__sec__lists">
@@ -43,13 +43,14 @@ get_header(); ?>
       ];
       $my_posts = get_posts($args);
       foreach ($my_posts as $post):
-      setup_postdata($post);
-      $id = get_the_ID();
-      $thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
-      $ttl = get_the_title();
-      $tarms = get_the_terms($post->ID, 'blog_cat');
-      $permalink = get_the_permalink();
+          setup_postdata($post);
+          $id = get_the_ID();
+          $thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
+          $ttl = get_the_title();
+          $permalink = get_the_permalink();
+          $tarms = get_the_terms(get_the_ID(), 'blog_cat');
       ?>
+      
       <!-- ▼ ループするコンテンツ -->
       <a class="post-list-item" href="<?php echo $permalink; ?>">
         <div class="post-list-item-img">
@@ -61,6 +62,9 @@ get_header(); ?>
           </h3>
           <p class="f-10 text-secondary font-weight-bold mb-0">
             <?php the_date(); ?> ｜ 
+            <?php foreach ($tarms as $term): ?>
+              <?php echo $term->name; ?>
+            <?php endforeach; ?>
           </p>
         </div>
       </a>

@@ -1,146 +1,108 @@
+/*===================================================
+ お役立ちガイド
+====================================================*/
 .column {
-  &__step {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: nowrap;
-
-    & > a {
-      display: block;
-      width: 33%;
-      text-align: center;
-      padding: 1.6rem 0 1rem;
-      border: 1px solid #f0f0f0;
-
-      &:hover {
-        opacity: 0.7;
-        text-decoration: none;
+  //ナビ
+  &__nav {
+    border-bottom: 1px solid $light-gray;
+    .container {
+      display: flex;
+      justify-content: center;
+      @include media-breakpoint-down(sm) {
+        display: block;
+        height: 4.6rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
       }
+    }
 
-      & > span {
+    &__item {
+      position: relative;
+      display: inline-block;
+      padding: 1.8rem 2.5rem 1.8rem 3.75rem;
+      @include media-breakpoint-down(md) {
+        padding: 1.8rem 1.5rem;
+      }
+      &::after {
+        display: none;
+        content: "";
+        width: 80%;
+        height: 3px;
+        position: absolute;
+        left: 10%;
+        bottom: 0;
+        background-color: $primary;
+      }
+      &:hover {
+        .column__nav__item::after {
+          display: block;
+        }
+      }
+      i {
+        position: absolute;
+        top: 40%;
+        left: 1.8rem;
+        @include media-breakpoint-down(md) {
+          left: 0;
+        }
+      }
+    }
+  }
+  //セクション
+  &__sec {
+    &.basic {
+      .post-list-item {
+        background-color: $white;
+      }
+    }
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        padding: 0 1rem;
+      }
+      @include media-breakpoint-down(sm) {
         display: block;
       }
-
-      & > .fas {
-        color: $muted;
-        margin-top: 6px;
+    }
+    &__intro {
+      width: 35%;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        margin-bottom: 6rem;
       }
-    }
-
-    &-no {
-      color: $secondary;
-      font-weight: bold;
-      margin-bottom: 6px;
-    }
-
-    &-ttl {
-      color: $body-color;
-      font-weight: bold;
-    }
-  }
-
-  &__cat {
-    .container {
-      max-width: 768px;
-      margin: 0 auto;
-    }
-
-    &.step1 {
-      background-color: #fefff1;
-    }
-
-    &.step2 {
-      background-color: #fdffe2;
-    }
-
-    &.step3 {
-      background-color: #fcffcc;
-    }
-
-    &-thumbnail {
-      text-align: center;
-    }
-
-    &__step {
-      position: relative;
-      text-align: center;
-      background-color: $white;
-      padding: 1rem;
-      border-radius: 20px 20px 0 0;
-
-      &-no {
-        color: $secondary;
-        font-weight: bold;
-        line-height: 1;
-        font-size: 1.5rem;
-        margin-top: -2rem;
-        margin-bottom: 6px;
-
-        & > span {
-          display: block;
-          font-size: $font-size-sm;
-        }
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 2rem;
       }
-
       &-ttl {
-        font-size: 1rem;
+        font-size: 2.25rem;
+        line-height: 1.8;
         font-weight: bold;
-        margin: 1.5rem auto;
-      }
-
-      &-txt {
-        font-size: $font-size-sm;
-        margin: 0;
+        margin: 1.5rem 0 3rem 0;
+        @include media-breakpoint-down(md) {
+          font-size: 1.875rem;
+          margin: 1.2rem 0 1.5rem 0;
+        }
       }
     }
-  }
-
-  &__lists {
-    padding-top: 2rem;
-    background: $white;
-    border-radius: 0 0 20px 20px;
-
-    &__post {
-      border-top: solid 1px $light;
-      border-bottom: solid 1px $light;
-
-      &-link {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        padding: 1rem;
-        color: $body-color;
-
-        &:hover {
-          color: $body-color;
-          opacity: .3;
-          transition: .3s;
-          text-decoration: none;
-        }
+    article {
+      width: 60%;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        justify-content: start;
       }
-
-      &:last-child {
-        margin-bottom: 0;
+      .post-list-item {
+        width: 47%;
+        margin: 0 0 1rem 3%;
       }
-
-      &-thumbnail {
-        width: 90px;
-
-        img {
-          width: 100%;
-        }
-      }
-
-      &-ttl {
-        width: calc(100% - 110px);
-        margin: 0;
-        font-size: 1rem;
-
-        a {
-          color: $body-color;
-        }
-      }
+      
     }
   }
 }

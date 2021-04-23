@@ -2,140 +2,34 @@
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header(); ?>
-<section class="sec">
-<div class="container">
-<div class="column__step">
-<a href="#step1" class="smooth-scroll">
-<span class="column__step-no">STEP 01</span>
-<span class="column__step-ttl">まずは知識を<br class="d-block d-md-none">身に着けよう</span>
-<i class="fas fa-chevron-down"></i>
-</a>
-<a href="#step2" class="smooth-scroll">
-<span class="column__step-no">STEP 02</span>
-<span class="column__step-ttl">提供する<br class="d-block d-md-none">準備をしよう</span>
-<i class="fas fa-chevron-down"></i>
-</a>
-<a href="#step3" class="smooth-scroll">
-<span class="column__step-no">STEP 03</span>
-<span class="column__step-ttl">コツを掴んで<br class="d-block d-md-none">集客しよう</span>
-<i class="fas fa-chevron-down"></i>
-</a>
-</div>
-<!-- .column__step -->
-</div>
-</section>
 
-<section id="step1" class="py-5 column__cat step1">
+<!-- ▼ コラムページ用ナビ -->
+<section class="column__nav">
   <div class="container">
-    <div class="column__cat-thumbnail">
-      <img src="<?php echo $wp_url; ?>/dist/images/column_img_1.png" alt="まずは知識を身に着けよう" srcset="<?php echo $wp_url; ?>/dist/images/column_img_1.png 1x, <?php echo $wp_url; ?>/dist/images/column_img_1@2x.png 2x">
-    </div>
-    <div class="column__cat__step">
-      <p class="column__cat__step-no"><span>STEP</span>01</p>
-      <h2 class="column__cat__step-ttl">まずは知識を身に着けよう</h2>
-      <p class="column__cat__step-txt text-lg-center text-left">テイクアウトを始める前に知っておきたい知識をまとめました。<br>これからテイクアウトを始める予定や始めようか迷っている飲食店オーナー様必見の基礎情報です。</p>
-    </div>
-
-    <div class="column__lists">
-    <?php
-    $args = [
-        'posts_per_page' => -1,
-        'post_type' => 'blog',
-        'orderby' => 'date',
-        'order' => 'ASC',
-        'tax_query' => [
-          [
-            'taxonomy' => 'blog_cat',
-            'field' => 'slug',
-            'terms' => 'basic',
-          ]
-        ]
-    ];
-    $my_posts = get_posts($args);
-    foreach ($my_posts as $post):
-    setup_postdata($post);
-    $id = get_the_ID();
-    $thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
-    $ttl = get_the_title();
-    $permalink = get_the_permalink();
-    ?>
-    <article class="column__lists__post">
-      <a class="column__lists__post-link" href="<?php echo $permalink; ?>">
-        <div class="column__lists__post-thumbnail">
-          <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
-        </div>
-        <h3 class="column__lists__post-ttl"><?php echo $ttl; ?></h3>
-      </a>
-    </article>
-    <?php endforeach; wp_reset_postdata(); ?>
-    </div>
-    <!-- .column__lists -->
+    <a class="column__nav__item text-body" href="<?php echo $home; ?>"><i class="ri-home-4-fill text-primary mr-2 ri-xl"></i>お役立ちガイドTOP</a>
+    <a class="column__nav__item text-body" href="<?php echo $home; ?>"><i class="ri-flag-fill text-secondary mr-2 ri-xl"></i>集客・販促</a>
+    <a class="column__nav__item text-body" href="<?php echo $home; ?>"><i class="ri-book-2-fill text-info mr-2 ri-xl"></i>基礎知識</a>
+    <a class="column__nav__item text-body" href="<?php echo $home; ?>"><i class="ri-lightbulb-fill text-warning mr-2 ri-xl"></i>メニュー開発</a>
   </div>
 </section>
+<!-- ▲ コラムページ用ナビ -->
 
-<section id="step2" class="py-5 column__cat step2">
-  <div class="container">
-    <div class="column__cat-thumbnail">
-      <img src="<?php echo $wp_url; ?>/dist/images/column_img_2.png" alt="提供する準備をしよう" srcset="<?php echo $wp_url; ?>/dist/images/column_img_2.png 1x, <?php echo $wp_url; ?>/dist/images/column_img_2@2x.png 2x">
-    </div>
-    <div class="column__cat__step">
-      <p class="column__cat__step-no"><span>STEP</span>02</p>
-      <h2 class="column__cat__step-ttl">提供する準備をしよう</h2>
-      <p class="column__cat__step-txt text-lg-center text-left">店内飲食とは少し違った準備が必要なテイクアウト。<br>しっかり準備して魅力的なメニューを提供しましょう。</p>
-    </div>
-
-    <div class="column__lists">
-    <?php
-    $args = [
-        'posts_per_page' => -1,
-        'post_type' => 'blog',
-        'orderby' => 'date',
-        'order' => 'ASC',
-        'tax_query' => [
-          [
-            'taxonomy' => 'blog_cat',
-            'field' => 'slug',
-            'terms' => 'ready',
-          ]
-        ]
-    ];
-    $my_posts = get_posts($args);
-    foreach ($my_posts as $post):
-    setup_postdata($post);
-    $id = get_the_ID();
-    $thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
-    $ttl = get_the_title();
-    $permalink = get_the_permalink();
-    ?>
-    <article class="column__lists__post">
-      <a class="column__lists__post-link" href="<?php echo $permalink; ?>">
-        <div class="column__lists__post-thumbnail">
-          <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
-        </div>
-        <h3 class="column__lists__post-ttl"><?php echo $ttl; ?></h3>
-      </a>
-    </article>
-    <?php endforeach; wp_reset_postdata(); ?>
-    </div>
-    <!-- .column__lists -->
-  </div>
-</section>
-
-<section id="step3" class="py-5 column__cat step3">
-  <div class="container">
-    <div class="column__cat-thumbnail">
-      <img src="<?php echo $wp_url; ?>/dist/images/column_img_3.png" alt="コツを掴んで集客しよう" srcset="<?php echo $wp_url; ?>/dist/images/column_img_3.png 1x, <?php echo $wp_url; ?>/dist/images/column_img_3@2x.png 2x">
-    </div>
-    <div class="column__cat__step">
-      <p class="column__cat__step-no"><span>STEP</span>03</p>
-      <h2 class="column__cat__step-ttl">コツを掴んで集客しよう</h2>
-      <p class="column__cat__step-txt text-lg-center text-left">テイクアウトの売上をアップさせるには集客が大切です。<br>飲食店に欠かせない集客方法について解説します。</p>
-    </div>
-
-    <div class="column__lists">
+<!-- ▼ 集客・販促 -->
+<section class="column__sec attracting py-main">
+  <!-- ▼ カテゴリ説明 -->
+  <div class="column__sec__wrap">
+      <div class="column__sec__intro">
+        <p class="text-secondary font-weight-bold">集客・販促</p>
+        <h3 class="column__sec__intro-ttl">どうしたら<br>売上アップできる？</h3>
+        <p class="f-16">テイクアウトの売上をアップさせるには集客が大切です。<br class="d-none b-md-block">飲食店に欠かせない集客方法について解説します。</p>
+        <a class="d-none d-md-block btn btn-secondary mt-5" href="<?php echo $home; ?>#toform/">すべてみる</a>
+      </div>
+    <!-- ▲ カテゴリ説明 -->
+    <!-- ▼ 記事一覧 -->
+    <article class="column__sec__lists">
       <?php
       $args = [
-          'posts_per_page' => -1,
+          'posts_per_page' => 4,
           'post_type' => 'blog',
           'orderby' => 'date',
           'order' => 'ASC',
@@ -153,19 +47,148 @@ get_header(); ?>
       $id = get_the_ID();
       $thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
       $ttl = get_the_title();
+      $tarms = get_the_terms($post->ID, 'blog_cat');
       $permalink = get_the_permalink();
       ?>
-      <article class="column__lists__post">
-        <a class="column__lists__post-link" href="<?php echo $permalink; ?>">
-          <div class="column__lists__post-thumbnail">
-            <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
-          </div>
-          <h3 class="column__lists__post-ttl"><?php echo $ttl; ?></h3>
-        </a>
-      </article>
+      <!-- ▼ ループするコンテンツ -->
+      <a class="post-list-item" href="<?php echo $permalink; ?>">
+        <div class="post-list-item-img">
+          <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
+        </div>
+        <div class="post-list-item-text">
+          <h3 class="post-list-item-ttl">
+          <?php echo mb_substr($post->post_title, 0, 30).'…'; ?>
+          </h3>
+          <p class="f-10 text-secondary font-weight-bold mb-0">
+            <?php the_date(); ?> ｜ 
+          </p>
+        </div>
+      </a>
+      <!-- ▲ ループするコンテンツ -->
       <?php endforeach; wp_reset_postdata(); ?>
-    </div>
-    <!-- .column__lists -->
+    <!-- ▲ 記事一覧 -->
+    </article>
+    <a class="d-block d-md-none btn btn-secondary mt-3" href="<?php echo $home; ?>#toform/">すべてみる</a>
   </div>
 </section>
+<!-- ▲ 集客・販促 -->
+
+<!-- ▼ 基礎知識 -->
+<section class="column__sec basic column__cat py-main bg-light">
+  <!-- ▼ カテゴリ説明 -->
+  <div class="column__sec__wrap">
+      <div class="column__sec__intro">
+        <p class="text-info font-weight-bold">基礎知識</p>
+        <h3 class="column__sec__intro-ttl">テイクアウトの<br>知識を身に着けよう</h3>
+        <p class="f-16">テイクアウトを始める前に知っておきたい知識をまとめました。<br class="d-none b-md-block">これからテイクアウトを始める予定や始めようか迷っている飲食店オーナー様必見の基礎情報です。</p>
+        <a class="d-none d-md-block btn btn-info mt-3" href="<?php echo $home; ?>#toform/">すべてみる</a>
+      </div>
+    <!-- ▲ カテゴリ説明 -->
+    <!-- ▼ 記事一覧 -->
+    <article class="column__sec__lists">
+      <?php
+      $args = [
+          'posts_per_page' => 4,
+          'post_type' => 'blog',
+          'orderby' => 'date',
+          'order' => 'ASC',
+          'tax_query' => [
+            [
+              'taxonomy' => 'blog_cat',
+              'field' => 'slug',
+              'terms' => 'basic',
+            ]
+          ]
+      ];
+      $my_posts = get_posts($args);
+      foreach ($my_posts as $post):
+      setup_postdata($post);
+      $id = get_the_ID();
+      $thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
+      $ttl = get_the_title();
+      $tarms = get_the_terms($post->ID, 'blog_cat');
+      $permalink = get_the_permalink();
+      ?>
+      <!-- ▼ ループするコンテンツ -->
+      <a class="post-list-item" href="<?php echo $permalink; ?>">
+        <div class="post-list-item-img">
+          <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
+        </div>
+        <div class="post-list-item-text">
+          <h3 class="post-list-item-ttl">
+          <?php echo mb_substr($post->post_title, 0, 30).'…'; ?>
+          </h3>
+          <p class="f-10 text-info font-weight-bold mb-0">
+            <?php the_date(); ?> ｜ 
+          </p>
+        </div>
+      </a>
+      <!-- ▲ ループするコンテンツ -->
+      <?php endforeach; wp_reset_postdata(); ?>
+    <!-- ▲ 記事一覧 -->
+    </article>
+    <a class="d-block d-md-none btn btn-info mt-3" href="<?php echo $home; ?>#toform/">すべてみる</a>
+  </div>
+</section>
+<!-- ▲ 基礎知識 -->
+
+<!-- ▼ メニュー開発 -->
+<section class="column__sec ready column__cat py-main">
+  <!-- ▼ カテゴリ説明 -->
+  <div class="column__sec__wrap">
+      <div class="column__sec__intro">
+        <p class="text-warning font-weight-bold">メニュー開発</p>
+        <h3 class="column__sec__intro-ttl">メニューで<br>ユーザーの心を掴もう</h3>
+        <p class="f-16">店内飲食とは少し違った準備が必要なテイクアウト。<br class="d-none b-md-block">しっかり準備して魅力的なメニューを提供しましょう。</p>
+        <a class="d-none d-md-block btn btn-warning mt-5" href="<?php echo $home; ?>#toform/">すべてみる</a>
+      </div>
+    <!-- ▲ カテゴリ説明 -->
+    <!-- ▼ 記事一覧 -->
+    <article class="column__sec__lists">
+      <?php
+      $args = [
+          'posts_per_page' => 4,
+          'post_type' => 'blog',
+          'orderby' => 'date',
+          'order' => 'ASC',
+          'tax_query' => [
+            [
+              'taxonomy' => 'blog_cat',
+              'field' => 'slug',
+              'terms' => 'ready',
+            ]
+          ]
+      ];
+      $my_posts = get_posts($args);
+      foreach ($my_posts as $post):
+      setup_postdata($post);
+      $id = get_the_ID();
+      $thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
+      $ttl = get_the_title();
+      $tarms = get_the_terms($post->ID, 'blog_cat');
+      $permalink = get_the_permalink();
+      ?>
+      <!-- ▼ ループするコンテンツ -->
+      <a class="post-list-item" href="<?php echo $permalink; ?>">
+        <div class="post-list-item-img">
+          <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
+        </div>
+        <div class="post-list-item-text">
+          <h3 class="post-list-item-ttl">
+          <?php echo mb_substr($post->post_title, 0, 30).'…'; ?>
+          </h3>
+          <p class="f-10 text-warning font-weight-bold mb-0">
+            <?php the_date(); ?> ｜ 
+          </p>
+        </div>
+      </a>
+      <!-- ▲ ループするコンテンツ -->
+      <?php endforeach; wp_reset_postdata(); ?>
+    <!-- ▲ 記事一覧 -->
+    </article>
+    <a class="d-block d-md-none btn btn-warning mt-3" href="<?php echo $home; ?>#toform/">すべてみる</a>
+  </div>
+</section>
+<!-- ▲ メニュー開発 -->
+
 <?php get_footer();

@@ -51,41 +51,23 @@ $(function ($) {
     $(".content").removeClass("show").eq(index).addClass("show"); // showクラスを消して、contentクラスのindex番目にshowクラスを追加
   })
 
-  // スムーススクロール
-  // $(".smooth").on("click", function () {
-  //   var speed = 500;
-  //   var href = $(this).attr("href");
-  //   var target = $(href == "#" || href == "" ? "html" : href);
-  //   var position = target.offset().top - 100;
-  //   $("html, body").animate({ scrollTop: position }, speed, "swing");
-  //   return false;
-  // });
-
-  // スクロールイベント
-  // $(window).on("scroll", function () {
-  //   let s = $(window).scrollTop();
-  //   if (s > 300) {
-  //     $(".header .navbar").addClass("scroll");
-  //   } else {
-  //     $(".header .navbar").removeClass("scroll");
-  //   }
-  // });
-
   // seo
   $(".ac dt").on("click", function() {
     $(this).next().slideToggle();
   });
 
-  // faq
-  $(".faq__list__inner-ttl").on("click", function () {
-    $(this).next(".faq__list__inner-ans").slideToggle();
-    $(this).toggleClass("active");
-  });
-});
+  var $win = $(window),
+      $main = $('main'),
+      $nav = $('.scroll-flex'),
+      fixedClass = 'is-fixed';
 
-// // ウインドウがリサイズする度にチェック
-// $(window).resize(function(){
-// 	checkBreakPoint();
-// });
-// // 初回チェック
-// checkBreakPoint();
+  $win.on('load scroll', function() {
+    var value = $(this).scrollTop();
+    if ( value > 280 ) {
+      $nav.addClass(fixedClass);
+    } else {
+      $nav.removeClass(fixedClass);
+    }
+  });
+
+});

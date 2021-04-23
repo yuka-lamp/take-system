@@ -8,142 +8,35 @@ $ttl = get_the_title();
 $permalink = get_the_permalink();
 ?>
 
-<div class="column-container">
-<div class="container">
-<div class="row">
-
-<div class="col-lg-8 mb-lg-0 mb-5">
-<article>
-<div class="single-thumbnail mb-4">
-<img src="<?php echo $thumbnail ?>" alt="<?php echo $ttl; ?>">
-</div>
-<h1 class="font-weight-bold"><?php echo $ttl; ?></h1>
-<p class="mt-3 mb-5 small"><?php the_time('Y.m.d'); ?></p>
-<div class="single">
-<?php the_content(); ?>
-</div>
-</article>
-</div>
-
-<div class="col-lg-4">
-<div id="sidebar">
-<div class="side__blog mb-4">
-<h3><span class="text-secondary mr-2">STEP 01</span>まずは知識を身に着けよう</h3>
-<div class="column__lists mt-3">
-<?php
-$args = [
-    'posts_per_page' => -1,
-    'post_type' => 'blog',
-    'orderby' => 'date',
-    'order' => 'ASC',
-    'tax_query' => [
-      [
-        'taxonomy' => 'blog_cat',
-        'field' => 'slug',
-        'terms' => 'basic',
-      ]
-    ]
-];
-$my_posts = get_posts($args);
-foreach ($my_posts as $post):
-setup_postdata($post);
-$id = get_the_ID();
-$thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
-$ttl = get_the_title();
-$permalink = get_the_permalink();
-?>
-<article class="column__lists__post">
-  <a class="column__lists__post-link" href="<?php echo $permalink; ?>">
-    <div class="column__lists__post-thumbnail">
-      <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
+<section class="column__sec py-main single">
+  <div class="column__sec">
+    <div class="column__sec__wrap">
+      <!-- ▼ カテゴリ説明 -->
+      <div class="column__sec__intro">
+        <div class="scroll-flex">
+        <p class="text-secondary font-weight-bold">集客・販促</p>
+        <h3 class="column__sec__intro-ttl">どうしたら<br>売上アップできる？</h3>
+        <p class="f-16">テイクアウトの売上をアップさせるには集客が大切です。<br class="d-none b-md-block">飲食店に欠かせない集客方法について解説します。</p>
+        <a class="d-none d-md-block btn btn-secondary mt-5" href="<?php echo $home; ?>#toform/">すべての記事をみる</a>
+        </div>
+      </div>
+      <!-- ▲ カテゴリ説明 -->
+      <!-- ▼ 本文 -->
+      <article class="column__sec__inner">
+        <div class="single-thumbnail mb-4">
+        <img src="<?php echo $thumbnail ?>" alt="<?php echo $ttl; ?>">
+        </div>
+        <h1 class="font-weight-bold"><?php echo $ttl; ?></h1>
+        <p class="mt-3 mb-5 small"><?php the_time('Y.m.d'); ?></p>
+        <div class="single">
+        <?php the_content(); ?>
+        </div>
+      </article>
+      <!-- ▲ 本文 -->
     </div>
-    <h3 class="column__lists__post-ttl"><?php echo $ttl; ?></h3>
-  </a>
-</article>
-<?php endforeach; wp_reset_postdata(); ?>
-</div>
-<!-- .column__lists -->
-</div>
-<div class="side__blog mb-4">
-<h3><span class="text-secondary mr-2">STEP 02</span>提供する準備をしよう</h3>
-<div class="column__lists mt-3">
-<?php
-$args = [
-    'posts_per_page' => -1,
-    'post_type' => 'blog',
-    'orderby' => 'date',
-    'order' => 'ASC',
-    'tax_query' => [
-      [
-        'taxonomy' => 'blog_cat',
-        'field' => 'slug',
-        'terms' => 'ready',
-      ]
-    ]
-];
-$my_posts = get_posts($args);
-foreach ($my_posts as $post):
-setup_postdata($post);
-$id = get_the_ID();
-$thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
-$ttl = get_the_title();
-$permalink = get_the_permalink();
-?>
-<article class="column__lists__post">
-  <a class="column__lists__post-link" href="<?php echo $permalink; ?>">
-    <div class="column__lists__post-thumbnail">
-      <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
-    </div>
-    <h3 class="column__lists__post-ttl"><?php echo $ttl; ?></h3>
-  </a>
-</article>
-<?php endforeach; wp_reset_postdata(); ?>
-</div>
-<!-- .column__lists -->
-</div>
-<div class="side__blog">
-<h3><span class="text-secondary mr-2">STEP 03</span>コツを掴んで集客しよう</h3>
-<div class="column__lists mt-3">
-<?php
-$args = [
-    'posts_per_page' => -1,
-    'post_type' => 'blog',
-    'orderby' => 'date',
-    'order' => 'ASC',
-    'tax_query' => [
-      [
-        'taxonomy' => 'blog_cat',
-        'field' => 'slug',
-        'terms' => 'attracting',
-      ]
-    ]
-];
-$my_posts = get_posts($args);
-foreach ($my_posts as $post):
-setup_postdata($post);
-$id = get_the_ID();
-$thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
-$ttl = get_the_title();
-$permalink = get_the_permalink();
-?>
-<article class="column__lists__post">
-  <a class="column__lists__post-link" href="<?php echo $permalink; ?>">
-    <div class="column__lists__post-thumbnail">
-      <img src="<?php echo $thumbnail; ?>" alt="<?php echo $ttl; ?>">
-    </div>
-    <h3 class="column__lists__post-ttl"><?php echo $ttl; ?></h3>
-  </a>
-</article>
-<?php endforeach; wp_reset_postdata(); ?>
-</div>
-<!-- .column__lists -->
-</div>
-</div>
-</div>
+  </div>
+</section>
 
-</div>
-</div>
-</div>
 <?php
 endwhile;
 endif;

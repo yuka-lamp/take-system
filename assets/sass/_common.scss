@@ -5,7 +5,7 @@ body {
   font-family: "Lato", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   font-size: .875rem;
   font-feature-settings: "palt";
-  letter-spacing: .02;
+  letter-spacing: .03rem;
   line-height: 1.75;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   -webkit-font-smoothing: antialiased;
@@ -61,25 +61,25 @@ p {
 }
 
 .py-main {
-  padding-top: 6.5rem;
-  padding-bottom: 6.5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   @include media-breakpoint-down(md) {
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
 .pt-main {
-  padding-top: 6.5rem;
+  padding-top: 6rem;
   @include media-breakpoint-down(md) {
-    padding-top: 3.5rem;
+    padding-top: 3rem;
   }
 }
 
 .pb-main {
-  padding-bottom: 6.5rem;
+  padding-bottom: 6rem;
   @include media-breakpoint-down(md) {
-    padding-bottom: 3.5rem;
+    padding-bottom: 3rem;
   }
 }
 /*===================================================
@@ -167,50 +167,42 @@ p {
 /*===================================================
  リンク
 ====================================================*/
-.btn {
-  line-height: 1;
-  padding: 1em 3em;
-  border-radius: 5em;
-  font-weight: bold;
-  font-size: 0.9rem;
-
-  &-outline {
-    &-primary {
-      position: relative;
-      background-color: $secondary;
-      color: $white;
-      box-sizing: border-box;
-      padding: 20px 0 20px 20px;
-      width: 200px;
-      text-align: center;
-      border-radius: 5px;
-      border-width: 2px;
-      border: none;
-      font-size: 1rem;
-
-      &::after {
-        content: "\f138";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        position: absolute;
-        left: 15px;
-        bottom: calc(50% - 10px);
-        font-size: 20px;
-        color: $white;
-      }
-    }
-
-    &-danger {
-      border-radius: 0.5rem;
-      border-width: 2px;
-    }
-
-    &-dark {
-      border-radius: 0.5rem;
-      border-width: 2px;
-    }
+a {
+  &:hover {
+    text-decoration: none;
+    opacity: .6;
   }
 }
+.btn {
+  position: relative;
+  padding: 1.5rem 0;
+  max-width: 20rem;
+  border-radius: 5em;
+  color: $white;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  @include media-breakpoint-down(md) {
+    margin: auto;
+  }
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: calc(50% - 4.5px);
+    right: 2rem;
+    border-left: 3px solid $white;
+    border-bottom: 3px solid $white;
+    transform: rotate(-135deg);
+  }
+}
+
+/*===================================================
+ 見出し
+====================================================*/
 
 .ttl {
   &-h2 {
@@ -240,41 +232,7 @@ p {
     }
   }
 }
-/*===================================================
- 下層ページ - ページタイトル
-====================================================*/
-.mv__sub {
-  width: 93%;
-  height: 170px;
-  border-radius: 20px;
-  background: $light;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @include media-breakpoint-down(md) {
-    margin: 0 auto;
-  }
-  h1 {
-    text-align: center;
-  }
-}
 
-.sub {
-  &__ttl {
-    margin-bottom: 2rem;
-    h2 {
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
-    img {
-      display: block;
-      margin: 0 auto 1rem auto;
-      width: 30px;
-      height: auto;
-    }
-  }
-}
 /*===================================================
  お問い合わせ・資料請求ボタン
 ====================================================*/

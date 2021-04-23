@@ -34,7 +34,7 @@
     margin: 0;
     padding: 0;
     min-height: 6rem;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(sm) {
       min-height: 3.75rem;
     }
 
@@ -44,7 +44,7 @@
       margin-left: 1.7rem;
       margin-bottom: 0;
       @include media-breakpoint-down(lg) {
-        margin-left: 0.750rem;
+        margin-left: 0.75rem;
       }
       a {
         text-decoration: none;
@@ -111,6 +111,10 @@
     color: $white;
     background-color: $secondary;
     z-index: 99;
+    @include media-breakpoint-up(md) {
+      width: 6rem;
+      height: 6rem;
+    }
 
     &-parts,
     &-parts:after,
@@ -142,12 +146,15 @@
     }
 
     &-text {
-      font-size: 0.750rem;
+      font-size: 0.75rem;
       position: absolute;
       width: 100%;
-      bottom: .25rem;
+      bottom: 0.25rem;
       text-align: center;
       font-weight: bold;
+      @include media-breakpoint-up(md) {
+        bottom: 1.25rem;
+      }
     }
   }
   // ドロワーするコンテンツ
@@ -167,9 +174,16 @@
     display: flex;
     justify-content: center;
     z-index: 98;
+    @include media-breakpoint-up(md) {
+      padding: 6rem 0 0;
+    }
 
     &__wrap {
       margin: 2rem auto;
+    }
+
+    &__item {
+      min-width: 20rem;
     }
   }
   // ハンバーガーメニュー[close]
@@ -204,17 +218,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none!important;
     width: 3.75rem;
     height: 3.75rem;
     top: 0;
     right: 3.75rem;
     margin: 0;
     z-index: 99;
-    &>span {
+    
+    @include media-breakpoint-up(md) {
+      width: 6rem;
+      height: 6rem;
+      right: 6rem;
+    }
+    & > span {
       margin-top: 9px;
     }
     &-text {
-      font-size: 0.750rem;
+      font-size: 0.75rem;
       margin-top: -3px;
     }
   }

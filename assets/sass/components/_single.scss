@@ -1,44 +1,48 @@
-.column {
-  &-container {
-    h1 {
-      font-size: 1.6rem;
+.column__sec {
+  &.single {
+    .is-fixed {
+      position: fixed;
+      top: 6rem;
+      left: 10%;
+      z-index: -1;
+      width: 28%;
     }
   }
-}
 
-.single {
-  font-size: $font-size-sm;
-  line-height: 1.7;
-  h2,
-  h3,
-  h4 {
-    font-weight: bold;
-    margin: 2em 0 1em;
-  }
-  h2 {
-    background-color: $light;
-    padding: 1rem;
-    border-left: solid 3px $danger;
-    font-size: 1.4rem;
-  }
-  h3 {
-    padding-left: 1em;
-    border-left: solid 3px $danger;
-    font-size: 1.125rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  p {
-    margin-bottom: 1em;
-  }
-  table {
-    border-collapse: collapse;
-    margin: 1rem 0;
-    th,
-    td {
-      padding: 1em;
-      border: solid 1px $light;
+  &__inner {
+    font-size: $font-size-sm;
+    line-height: 1.7;
+    h2,
+    h3,
+    h4 {
+      font-weight: bold;
+      margin: 2em 0 1em;
+    }
+    h2 {
+      background-color: $light;
+      padding: 1rem;
+      border-left: solid 3px $danger;
+      font-size: 1.4rem;
+    }
+    h3 {
+      padding-left: 1em;
+      border-left: solid 3px $danger;
+      font-size: 1.125rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 1rem 0;
+      th,
+      td {
+        padding: 1em;
+        border: solid 1px $light;
+      }
     }
   }
 }

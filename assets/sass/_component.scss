@@ -1,17 +1,25 @@
-// 共通
+/*===================================================
+ 共通
+====================================================*/
 @import "./components/header";
 @import "./components/footer";
+@import "./components/mv";
 @import "./components/breadcrumbs";
-// ページ
+
+/*===================================================
+ ページ
+====================================================*/
 @import "./components/home";
 @import "./components/features";
 @import "./components/price";
-@import "./components/form";
-@import "./components/flow";
 @import "./components/single";
 @import "./components/faq";
 @import "./components/column";
+
+/*===================================================
+ パーツ
+====================================================*/
+@import "./components/form";
 @import "./components/side";
-@import "./components/marketing";
-@import "./components/event";
+@import "./components/postlist";
 @import "./components/pagenation";

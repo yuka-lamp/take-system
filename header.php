@@ -106,29 +106,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="drawer__menu">
       <div class="drawer__menu__wrap">
         <!-- ▼ ページリンク -->
-        <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/features/">
+        <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/features/">
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           機能紹介
         </a>
-        <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/price/">
+        <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/price/">
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           料金
         </a>
-        <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/work/">
+        <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/work/">
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           導入事例
         </a>
-        <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/column/">
+        <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/column/">
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           お役立ちガイド
         </a>
-        <a class="d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/seminar/">
+        <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/seminar/">
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           無料相談会
         </a>
-        <a class="btn btn-secondary bg-secondary text-white font-weight-bold mt-2" href="<?php echo $home; ?>#toform/">
-          <i class="ri-mail-fill ri-1x mr-2"></i>
+        <a class="d-block btn btn-secondary mt-5" href="<?php echo $home; ?>#toform/">
           お問い合わせ
+        </a>
+        <a class="d-block btn btn-primary mt-2" href="<?php echo $home; ?>#toform/">
+          無料お申し込み
         </a>
         
         <!-- ▲ ページリンク -->
@@ -141,24 +143,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </header>
 
-<!-- ▼ [画面下固定] お問い合わせ ・ 無料相談会 -->
-<!-- <?php if ( is_front_page() || is_home() || is_page(array('features', 'price', 'marketing')) ): //フォーム追加ページ以外 ?>
-
-<div class="fix-under ctabtn">
-  <div class="ctabtn__wrap d-flex w-100">
-    <a class="ctabtn__item col-6 bg-secondary text-white font-weight-bold" href="<?php echo $home; ?>/seminar/">
-      <i class="fas fa-chalkboard"></i>
-      無料相談会
-    </a>
-    <a class="ctabtn__item col-6 bg-primary text-white font-weight-bold" href="<?php echo $home; ?>#toform/">
-      <i class="fas fa-headset"></i>
-      お問い合わせ
-    </a>
-  </div>
-</div>
-
-<?php endif; ?> -->
-<!-- ▲ [画面下固定] お問い合わせ ・ 無料相談会 -->
 
 <main>
 
@@ -166,13 +150,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <?php if (!is_home() && !is_front_page() && !is_single() && !is_archive()): // 下層ページ
   global $post;
   $ttl = $post->post_title;
-  $slug = $post->post_name;?>
+  $slug = $post->post_name;
+?>
+
 <section class="sec mv__sub">
-  <div class="container">
-  <h1 class="f-28 font-weight-bold w-100"><?php the_title(); ?></h1>
-  <p class="text-primary font-weight-bold text-center mb-0"><?php echo $slug ?></p>
+  <div class="container text-center">
+  <h1 class="mv__sub-eng font-weight-bold w-100"><?php echo $slug ?></h1>
+  <p class="mv__sub-small font-weight-bold mb-0"><?php the_title(); ?></p>
   </div>
 </section>
+
+<?php elseif ( is_archive('blog') || is_singular( 'blog' ) ): /* 事業詳細の場合 */ ?>
+
+<section class="sec mv__sub">
+  <div class="container text-center">
+    <h1 class="mv__sub-eng font-weight-bold w-100">COLUMN</h1>
+    <p class="mv__sub-small font-weight-bold mb-0">お役立ちガイド</p>
+  </div>
+</section>
+
 <!-- ▲ 下層メインビジュアル -->
 
 <!-- ▼ パンくず -->

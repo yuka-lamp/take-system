@@ -16387,7 +16387,7 @@ a:hover {
       .footer__cta-ttl {
         margin-bottom: 1rem; } }
   .footer__cta-btn {
-    border-left: 2px solid #f5f1ef; }
+    border-left: 2px solid #F2EDEA; }
     .footer__cta-btn a {
       margin: 0 auto; }
   .footer__cta .text-secondary {
@@ -16597,10 +16597,14 @@ a:hover {
       width: 90%; } }
 
 .home__reason__item {
+  width: 49%;
   margin-bottom: 1.3rem;
-  padding: 0; }
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  background-color: #faf7f2; }
   @media (max-width: 991.98px) {
     .home__reason__item {
+      width: 100%;
       margin-bottom: 1rem; } }
   .home__reason__item-ttl span {
     border-bottom: 2px solid #EF5D1D;
@@ -16609,64 +16613,77 @@ a:hover {
 /*===================================================
  ホーム - 商品お渡しまでの流れ
 ====================================================*/
-.home__about__item {
-  position: relative;
-  margin-bottom: 1rem;
-  border-radius: 40px;
-  width: 48%;
-  margin-top: 1rem; }
+.home__about {
+  border-radius: 100px;
+  margin: 0 1rem; }
   @media (max-width: 991.98px) {
-    .home__about__item {
-      margin-bottom: 1rem;
-      width: 100%;
-      margin-top: 2rem; } }
-  .home__about__item:nth-child(2):before {
-    content: "02"; }
-  @media (min-width: 992px) {
-    .home__about__item:nth-child(2):after {
-      transform: rotate(-45deg);
-      top: auto;
-      bottom: -37px;
-      left: -76px; } }
-  .home__about__item:nth-child(3):before {
-    content: "03"; }
-  .home__about__item:nth-child(4):before {
-    content: "04"; }
-  .home__about__item:nth-child(4):after {
-    display: none; }
-  .home__about__item:before {
-    content: "01";
-    position: absolute;
-    top: -12px;
-    left: 0;
-    color: #fff;
-    background: #EF5D1D;
-    border-radius: 50% 50%;
-    width: 68px;
-    height: 68px;
-    font-size: 26px;
-    font-weight: bold;
-    line-height: 2.1;
-    text-align: center;
-    padding-top: 7px;
-    z-index: 1; }
-  .home__about__item:after {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 11px;
-    top: calc(50% - 5.5px);
-    right: -60px;
-    background: #f0f0f0;
-    z-index: -1; }
+    .home__about {
+      border-radius: 50px;
+      margin: 0; } }
+  .home__about .container {
+    width: 70%;
+    margin: 0 auto; }
     @media (max-width: 991.98px) {
-      .home__about__item:after {
-        transform: rotate(90deg);
-        top: auto;
-        bottom: -60px;
-        left: calc(50% - 60px); } }
-  .home__about__item-text {
-    padding: 0 2rem; }
+      .home__about .container {
+        width: 90%; } }
+  .home__about__item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5rem;
+    padding: 3rem 3rem 3rem 6rem;
+    border-radius: 40px; }
+    @media (max-width: 767.98px) {
+      .home__about__item {
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        padding: 4rem 1rem 2rem 1rem; } }
+    .home__about__item-ttl {
+      margin-bottom: 3rem; }
+      @media (max-width: 767.98px) {
+        .home__about__item-ttl {
+          margin-bottom: 2rem;
+          text-align: center; } }
+    .home__about__item-num {
+      position: absolute;
+      top: 30%;
+      left: -2%;
+      color: #EF5D1D;
+      padding-left: 4.375rem;
+      font-weight: bold;
+      transform: rotate(90deg); }
+      @media (max-width: 767.98px) {
+        .home__about__item-num {
+          top: 4%;
+          left: -13%;
+          transform: rotate(0); } }
+      .home__about__item-num:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        position: absolute;
+        width: 3.25rem;
+        height: 2px;
+        background: #EF5D1D; }
+    .home__about__item:after {
+      content: "";
+      position: absolute;
+      right: calc(50% - 1.25rem);
+      bottom: -3rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-left: 8px solid #F2EDEA;
+      border-bottom: 8px solid #F2EDEA;
+      transform: rotate(-45deg); }
+      @media (max-width: 767.98px) {
+        .home__about__item:after {
+          width: 2rem;
+          height: 2rem;
+          bottom: -2rem; } }
+    .home__about__item:last-child {
+      margin-bottom: 0; }
+      .home__about__item:last-child:after {
+        display: none; }
 
 /*===================================================
  ホーム - 導入事例
@@ -16825,7 +16842,7 @@ a:hover {
     .home__flow__step-item:last-child::after {
       display: none; }
     .home__flow__step-item::before {
-      content: '';
+      content: "";
       position: absolute;
       top: -2rem;
       left: calc(50% - 5px);
@@ -16837,7 +16854,7 @@ a:hover {
         .home__flow__step-item::before {
           display: none; } }
     .home__flow__step-item::after {
-      content: '';
+      content: "";
       position: absolute;
       top: -1.65rem;
       left: 50%;
@@ -17061,7 +17078,7 @@ a:hover {
         color: #fff;
         opacity: 1; }
     .price__plan__list__table-point {
-      border-top: 2px solid #f5f1ef;
+      border-top: 2px solid #F2EDEA;
       margin-top: 2.5rem;
       padding: 2.5rem 0;
       text-align: center; }
@@ -17253,7 +17270,7 @@ a:hover {
  お役立ちガイド
 ====================================================*/
 .column__nav {
-  border-bottom: 1px solid #f5f1ef; }
+  border-bottom: 1px solid #F2EDEA; }
   .column__nav .container {
     display: flex;
     justify-content: center; }

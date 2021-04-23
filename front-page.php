@@ -31,43 +31,43 @@ get_header(); ?>
 <!-- ▲ メインビジュアル -->
 
 <!-- ▼ テイクイーツが選ばれる理由 -->
-<div class="home__reason bg-light">
+<div class="home__reason">
   <div class="container py-main">
     <h2 class="f-32 font-weight-bold text-center mb-5">テイクイーツが<br class="d-block d-md-none">選ばれる理由</h2>
-    <div class="home__reason__wrap d-md-flex flex-wrap">
+    <div class="home__reason__wrap d-md-flex justify-content-between flex-wrap">
       <!-- ▼ 理由① -->
-      <div class="home__reason__item d-flex align-items-center col-md-6 mt-4">
-        <img class="" src="<?php echo $img_url; ?>reason_free.png" alt="初期費用・月額費用が無料で利用できる" srcset="<?php echo $img_url; ?>reason_free.png 1x, <?php echo $img_url; ?>reason_free@2x.png 2x">
-        <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
+      <div class="home__reason__item d-flex align-items-center mt-4">
+        <img src="<?php echo $img_url; ?>reason_free.png" alt="初期費用・月額費用が無料で利用できる" srcset="<?php echo $img_url; ?>reason_free.png 1x, <?php echo $img_url; ?>reason_free@2x.png 2x">
+        <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-4">
           初期・月額・導入費用が
           <br><span>完全無料</span>で利用できる
         </h3>
       </div>
       <!-- ▲ 理由① -->
       <!-- ▼ 理由② -->
-      <div class="home__reason__item d-flex align-items-center col-md-6 mt-4">
-        <img class="" src="<?php echo $img_url; ?>reason_up.png" alt="注文のデジタル化で売上アップ！" srcset="<?php echo $img_url; ?>reason_up.png 1x, <?php echo $img_url; ?>reason_up@2x.png 2x">
-        <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
+      <div class="home__reason__item d-flex align-items-center mt-4">
+        <img src="<?php echo $img_url; ?>reason_up.png" alt="注文のデジタル化で売上アップ！" srcset="<?php echo $img_url; ?>reason_up.png 1x, <?php echo $img_url; ?>reason_up@2x.png 2x">
+        <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-4">
           WEB予約を導入で
           <br><span>売上アップ</span>！
         </h3>
       </div>
       <!-- ▲ 理由② -->
       <!-- ▼ 理由③ -->
-      <div class="home__reason__item d-flex align-items-center col-md-6">
-        <img class="" src="<?php echo $img_url; ?>reason_tablet.png" alt="タブレット不要！スマホだけでも運用可能" srcset="<?php echo $img_url; ?>reason_tablet.png 1x, <?php echo $img_url; ?>reason_tablet@2x.png 2x">
-        <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
+      <div class="home__reason__item d-flex align-items-center">
+        <img src="<?php echo $img_url; ?>reason_tablet.png" alt="タブレット不要！スマホだけでも運用可能" srcset="<?php echo $img_url; ?>reason_tablet.png 1x, <?php echo $img_url; ?>reason_tablet@2x.png 2x">
+        <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-4">
           専用タブレット不要!
           <br><span>スペースを取らず</span>運用
         </h3>
       </div>
       <!-- ▲ 理由③ -->
       <!-- ▼ 理由④ -->
-      <div class="home__reason__item d-flex align-items-center col-md-6 mt-4">
-        <img class="" src="<?php echo $img_url; ?>reason_line.png" alt="お店もお客様も安心の並ばない注文" srcset="<?php echo $img_url; ?>reason_line.png 1x, <?php echo $img_url; ?>reason_line@2x.png 2x">
-        <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-3">
-          お客様も安心で嬉しい
-          <br><span>並ばずに</span>受け取り
+      <div class="home__reason__item d-flex align-items-center">
+        <img src="<?php echo $img_url; ?>reason_line.png" alt="お店もお客様も安心の並ばない注文" srcset="<?php echo $img_url; ?>reason_line.png 1x, <?php echo $img_url; ?>reason_line@2x.png 2x">
+        <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-4">
+          お客様を<span>並ばせずに</span>
+          <br>商品を受け渡し
         </h3>
       </div>
       <!-- ▲ 理由④ -->
@@ -77,41 +77,44 @@ get_header(); ?>
 <!-- ▲ テイクイーツが選ばれる理由 -->
 
 <!-- ▼ 商品お渡しまでの流れ -->
-<div class="home__about">
+<div class="home__about bg-light">
   <div class="container py-main">
-    <h2 class="f-32 font-weight-bold text-center mb-4">商品お渡しまでの<br class="d-md-none">3STEP</h2>
+    <h2 class="f-32 font-weight-bold text-center mb-5">商品お渡しまでの<br class="d-md-none">3STEP</h2>
 
     <div class="home__about__wrap d-md-flex flex-wrap justify-content-between">
       <!-- ▼ 流れ① -->
-      <div class="home__about__item bg-light">
-        <div class="home__about__item-text">
-          <h3 class="home__about__item-ttl f-26 text-center pt-5 text-primary font-weight-bold m-0">店舗独自の<br>予約サイトへ流入</h3>
-          <p class="text-center py-4 m-0">店舗独自の予約サイトを開設できます。<br>SNSやチラシなどからの流入増加をサポートいたします!</p>
+      <div class="home__about__item bg-white d-md-flex align-items-center justify-content-between">
+        <p class="home__about__item-num">STEP 01</p>
+        <div class="home__about__item-text col-md-6">
+          <h3 class="home__about__item-ttl f-32 text-primary font-weight-bold mb-0">注文がはいる</h3>
+          <p class="home__about__item-text py-4 m-0">会員登録やアプリのインストールの必要ない注文サイトからお客様が注文をします。</p>
         </div>
         <div class="text-center">
-          <img class="" src="<?php echo $img_url; ?>about_1.png" alt="サイト流入" srcset="<?php echo $img_url; ?>about_1.png 1x, <?php echo $img_url; ?>about_1@2x.png 2x">
+          <img src="<?php echo $img_url; ?>about_1.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_1.png 1x, <?php echo $img_url; ?>about_1@2x.png 2x">
         </div>
       </div>
       <!-- ▲ 流れ① -->
       <!-- ▼ 流れ② -->
-      <div class="home__about__item bg-light">
-        <div class="home__about__item-text">
-          <h3 class="home__about__item-ttl f-26 text-center pt-5 text-primary font-weight-bold m-0">メニューを選択して<br>30秒で予約/決済</h3>
-          <p class="text-center py-4 m-0">お客様には会員登録やアプリの<br class="d-none d-md-block">インストールをすることなく注文いただけます。</p>
+      <div class="home__about__item bg-white d-md-flex align-items-center justify-content-between">
+        <p class="home__about__item-num">STEP 02</p>
+        <div class="home__about__item-text col-md-6">
+          <h3 class="home__about__item-ttl f-32 text-primary font-weight-bold mb-0">店舗に通知がくる</h3>
+          <p class="home__about__item-text py-4 m-0">専用タブレットは必要ありません。店舗やオーナー様の電話番号・メールに直接通知でお知らせします。</p>
         </div>
         <div class="text-center">
-          <img class="" src="<?php echo $img_url; ?>about_2.png" alt="予約 / 決済" srcset="<?php echo $img_url; ?>about_2.png 1x, <?php echo $img_url; ?>about_2@2x.png 2x">
+          <img src="<?php echo $img_url; ?>about_2.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_2.png 1x, <?php echo $img_url; ?>about_2@2x.png 2x">
         </div>
       </div>
       <!-- ▲ 流れ② -->
       <!-- ▼ 流れ② -->
-      <div class="home__about__item bg-light">
-        <div class="home__about__item-text">
-          <h3 class="home__about__item-ttl f-26 text-center pt-5 text-primary font-weight-bold m-0"> 商品のお渡し</h3>
-          <p class="text-center py-4 m-0">予定の時間に受け取りにきたお客様に<br>商品をお渡しします。</p>
+      <div class="home__about__item bg-white d-md-flex align-items-center justify-content-between">
+        <p class="home__about__item-num">STEP 03</p>
+        <div class="home__about__item-text col-md-6">
+          <h3 class="home__about__item-ttl f-32 text-primary font-weight-bold mb-0">受け渡し</h3>
+          <p class="home__about__item-text py-4 m-0">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
         </div>
         <div class="text-center">
-          <img class="" src="<?php echo $img_url; ?>about_4.png" alt="受け渡し" srcset="<?php echo $img_url; ?>about_4.png 1x, <?php echo $img_url; ?>about_4@2x.png 2x">
+          <img src="<?php echo $img_url; ?>about_3.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_3.png 1x, <?php echo $img_url; ?>about_3@2x.png 2x">
         </div>
       </div>
       <!-- ▲ 流れ② -->
@@ -122,7 +125,7 @@ get_header(); ?>
 <!-- ▲ 商品お渡しまでの流れ -->
 
 <!-- ▼ 導入店舗 -->
-<div class="home__case bg-success py-5">
+<div class="home__case bg-light py-5 mt-5">
   <div class="home__case__wrap container pt-5 bg-white pl-0 pr-0 text-center">
     <h2 class="home__case__ttl f-32 font-weight-bold  mb-3 d-flex align-items-center justify-content-center">全国<span>700</span>店舗で導入</h2>
     <p class="mb-5">カフェやレストランを始め、<br class="d-block d-md-none">専門店やスイーツ店など幅広いお店で<br>ご利用いただいております。</p>

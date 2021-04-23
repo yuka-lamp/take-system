@@ -125,9 +125,13 @@
   }
 
   &__item {
+    width: 49%;
     margin-bottom: 1.3rem;
-    padding: 0;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    background-color: $light;
     @include media-breakpoint-down(md) {
+      width: 100%;
       margin-bottom: 1rem;
     }
 
@@ -143,86 +147,86 @@
  ホーム - 商品お渡しまでの流れ
 ====================================================*/
 .home__about {
+  border-radius: 100px;
+  margin: 0 1rem;
+  @include media-breakpoint-down(md) {
+    border-radius: 50px;
+    margin: 0;
+  }
+  .container {
+    width: 70%;
+    margin: 0 auto;
+    @include media-breakpoint-down(md) {
+      width: 90%;
+    }
+  }
   &__item {
     position: relative;
-    margin-bottom: 1rem;
+    width: 100%;
+    margin-bottom: 5rem;
+    padding: 3rem 3rem 3rem 6rem;
     border-radius: 40px;
-    width: 48%;
-    margin-top: 1rem;
-    @include media-breakpoint-down(md) {
-      margin-bottom: 1rem;
-      width: 100%;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 3rem;
       margin-top: 2rem;
+      padding: 4rem 1rem 2rem 1rem;
     }
 
-    &:nth-child(2) {
-      &:before {
-        content: "02";
-      }
-
-      &:after {
-        @include media-breakpoint-up(lg) {
-          transform: rotate(-45deg);
-          top: auto;
-          bottom: -37px;
-          left: -76px;
-        }
+    &-ttl {
+      margin-bottom: 3rem;
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 2rem;
+        text-align: center;
       }
     }
 
-    &:nth-child(3) {
-      &:before {
-        content: "03";
-      }
-    }
-
-    &:nth-child(4) {
-      &:before {
-        content: "04";
-      }
-
-      &:after {
-        display: none;
-      }
-    }
-
-    &:before {
-      content: "01";
+    &-num {
       position: absolute;
-      top: -12px;
-      left: 0;
-      color: $white;
-      background: $primary;
-      border-radius: 50% 50%;
-      width: 68px;
-      height: 68px;
-      font-size: 26px;
+      top: 30%;
+      left: -2%;
+      color: $primary;
+      padding-left: 4.375rem;
       font-weight: bold;
-      line-height: 2.1;
-      text-align: center;
-      padding-top: 7px;
-      z-index: 1;
+      transform: rotate(90deg);
+      @include media-breakpoint-down(sm) {
+        top: 4%;
+        left: -13%;
+        transform: rotate(0);
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        position: absolute;
+        width: 3.25rem;
+        height: 2px;
+        background: $primary;
+      }
     }
 
     &:after {
       content: "";
       position: absolute;
-      width: 120px;
-      height: 11px;
-      top: calc(50% - 5.5px);
-      right: -60px;
-      background: #f0f0f0;
-      z-index: -1;
-      @include media-breakpoint-down(md) {
-        transform: rotate(90deg);
-        top: auto;
-        bottom: -60px;
-        left: calc(50% - 60px);
+      right: calc(50% - 1.25rem);
+      bottom: -3rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-left: 8px solid $light-gray;
+      border-bottom: 8px solid $light-gray;
+      transform: rotate(-45deg);
+      @include media-breakpoint-down(sm) {
+        width: 2rem;
+        height: 2rem;
+        bottom: -2rem;
       }
     }
-
-    &-text {
-      padding: 0 2rem;
+    &:last-child {
+      margin-bottom: 0;
+      &:after {
+        display: none;
+      }
     }
   }
 }
@@ -424,12 +428,11 @@
       }
 
       &-num {
-        
         @include media-breakpoint-down(md) {
           position: absolute;
-        display: block;
-        left: -4rem;
-        text-align: center;
+          display: block;
+          left: -4rem;
+          text-align: center;
         }
       }
 
@@ -440,7 +443,7 @@
       }
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: -2rem;
         left: calc(50% - 5px);
@@ -454,7 +457,7 @@
       }
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: -1.65rem;
         left: 50%;

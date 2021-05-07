@@ -63,9 +63,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a class="d-inline-block font-weight-bold text-dark f-14 mr-5 py-3" href="<?php echo $home; ?>/column/">
         お役立ちガイド
       </a>
-      <a class="d-inline-block font-weight-bold text-dark f-14" href="<?php echo $home; ?>/seminar/">
-        無料相談会
-      </a>
+      <!-- <a class="d-inline-block font-weight-bold text-dark f-14" href="<?php echo $home; ?>//">
+        管理画面ログイン
+      </a> -->
     </div>
     <div class="header__btn">
       <a class="header__btn-item btn-secondary font-weight-bold text-center text-white" href="<?php echo $home; ?>#toform">
@@ -122,10 +122,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           お役立ちガイド
         </a>
-        <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/seminar/">
+        <!-- <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>//">
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-          無料相談会
-        </a>
+          管理画面ログイン
+        </a> -->
         <a class="d-block btn btn-secondary mt-5" href="<?php echo $home; ?>#toform/">
           お問い合わせ
         </a>

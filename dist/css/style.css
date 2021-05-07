@@ -16034,58 +16034,58 @@ p {
   line-height: 145%; }
 
 .f-36 {
-  font-size: 36px; }
+  font-size: 2.25rem; }
   @media (max-width: 991.98px) {
     .f-36 {
-      font-size: 26px; } }
+      font-size: 1.625rem; } }
 
 .f-32 {
-  font-size: 32px; }
+  font-size: 2rem; }
   @media (max-width: 991.98px) {
     .f-32 {
-      font-size: 26px; } }
+      font-size: 1.625rem; } }
 
 .f-28 {
-  font-size: 28px; }
+  font-size: 1.75rem; }
   @media (max-width: 991.98px) {
     .f-28 {
-      font-size: 22px; } }
+      font-size: 1.375rem; } }
 
 .f-26 {
-  font-size: 26px; }
+  font-size: 1.625rem; }
   @media (max-width: 991.98px) {
     .f-26 {
-      font-size: 20px; } }
+      font-size: 1.25rem; } }
 
 .f-24 {
-  font-size: 24px; }
+  font-size: 1.5rem; }
   @media (max-width: 991.98px) {
     .f-24 {
-      font-size: 18px; } }
+      font-size: 1.125rem; } }
 
 .f-20 {
-  font-size: 20px; }
+  font-size: 1.25rem; }
   @media (max-width: 991.98px) {
     .f-20 {
-      font-size: 18px; } }
+      font-size: 1.125rem; } }
 
 .f-18 {
-  font-size: 18px; }
+  font-size: 1.125rem; }
   @media (max-width: 991.98px) {
     .f-18 {
-      font-size: 16px; } }
+      font-size: 1rem; } }
 
 .f-16 {
   font-size: 1rem; }
 
 .f-14 {
-  font-size: 14px; }
+  font-size: 0.875rem; }
 
 .f-12 {
-  font-size: 12px; }
+  font-size: 0.750rem; }
 
 .f-10 {
-  font-size: 10px; }
+  font-size: 0.625rem; }
 
 .lh-1 {
   line-height: 1; }
@@ -16121,6 +16121,14 @@ a:hover {
     border-left: 3px solid #fff;
     border-bottom: 3px solid #fff;
     transform: rotate(-135deg); }
+  .btn-border {
+    border: 2px solid #EF5D1D;
+    color: #EF5D1D !important; }
+    .btn-border:after {
+      border-left: 3px solid #EF5D1D;
+      border-bottom: 3px solid #EF5D1D; }
+  .btn-center {
+    margin: 0 auto; }
 
 /*===================================================
  見出し
@@ -16386,6 +16394,15 @@ a:hover {
     @media (max-width: 991.98px) {
       .footer__cta-ttl {
         margin-bottom: 1rem; } }
+  .footer__cta-phone-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #EF5D1D;
+    border-radius: 50%;
+    margin-right: 5px; }
   .footer__cta-btn {
     border-left: 2px solid #F2EDEA; }
     .footer__cta-btn a {
@@ -16403,7 +16420,7 @@ a:hover {
 ====================================================*/
 .footer {
   padding: 5rem 0;
-  background-color: #323232; }
+  background-color: #F2EDEA; }
   @media (max-width: 991.98px) {
     .footer {
       padding: 3rem 0; } }
@@ -16429,6 +16446,20 @@ a:hover {
       @media (max-width: 991.98px) {
         .footer__service__under {
           position: relative; } }
+    .footer__service__sns a {
+      display: inline-flex;
+      align-items: center;
+      justify-items: center;
+      vertical-align: middle;
+      text-align: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background-color: #fff;
+      line-height: 3rem;
+      font-size: 1.25rem; }
+      .footer__service__sns a i {
+        margin: 0 auto; }
   .footer__link {
     width: 75%;
     margin-left: 3rem;
@@ -16460,16 +16491,13 @@ a:hover {
     .footer__link-line-item {
       position: relative;
       display: block;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
       padding-left: 2rem;
       font-weight: bold;
-      color: #e2e2e2;
+      color: #323232;
       text-decoration: none !important; }
-      @media (max-width: 991.98px) {
-        .footer__link-line-item {
-          margin-bottom: 1.5rem; } }
       .footer__link-line-item:hover {
-        color: #fff; }
+        color: #323232; }
       .footer__link-line-item::after {
         content: "";
         width: 8px;
@@ -16477,7 +16505,7 @@ a:hover {
         position: absolute;
         top: calc(50% - 1px);
         left: 0;
-        background-color: #fff; }
+        background-color: #323232; }
 
 #breadcrumbs {
   padding: 1rem 0;
@@ -16496,92 +16524,80 @@ a:hover {
  ホーム - MV
 ====================================================*/
 .home__mv-wrap {
-  display: flex;
-  margin-top: 80px; }
-  @media (max-width: 767.98px) {
-    .home__mv-wrap {
-      display: block;
-      margin-top: 0; } }
-  @media (max-width: 1199.98px) {
-    .home__mv-wrap {
-      margin-top: 0; } }
+  display: block;
+  margin-top: 0; }
 
 .home__mv__text {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  min-height: 570px; }
-  @media (max-width: 767.98px) {
+  width: 80%;
+  min-height: auto;
+  margin: 0 auto;
+  justify-content: left;
+  padding: 1rem 1.5rem 1.5rem; }
+  @media (max-width: 991.98px) {
     .home__mv__text {
-      width: 100%;
-      min-height: auto;
-      margin-bottom: 0;
-      justify-content: left;
-      padding: 1rem 1.5rem 1.5rem; } }
+      width: 100%; } }
+  .home__mv__text-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0 3.5em 0; }
+    @media (max-width: 991.98px) {
+      .home__mv__text-wrap {
+        display: block;
+        padding: 2rem 0 0 0; } }
   .home__mv__text-ttl {
-    margin-bottom: 1rem; }
-    @media (max-width: 767.98px) {
+    width: 55%;
+    font-size: 2.25rem;
+    margin-bottom: 0; }
+    @media (max-width: 991.98px) {
       .home__mv__text-ttl {
-        margin-bottom: 0; } }
+        width: 100%; } }
     .home__mv__text-ttl span {
       border-bottom: 4px solid #F9CF41; }
   .home__mv__text p {
-    width: 323px; }
+    width: 38%; }
+    @media (max-width: 991.98px) {
+      .home__mv__text p {
+        width: 100%;
+        margin-top: 2rem; } }
   .home__mv__text::after {
     content: "";
+    position: absolute;
+    left: 1.5rem;
+    bottom: -8rem;
+    width: 150px;
+    height: 151px;
     background: url("../images/mv_stamp_pc.png");
     background-size: cover;
-    position: absolute;
-    right: 1.5rem;
-    bottom: 1.5rem;
-    width: 140px;
-    height: 141px; }
-    @media (max-width: 767.98px) {
+    z-index: 97; }
+    @media (max-width: 991.98px) {
       .home__mv__text::after {
-        left: 1.5rem;
-        right: auto;
-        bottom: -6rem;
         width: 100px;
-        height: 101px;
-        z-index: 97; } }
+        height: 101px; } }
 
 .home__mv__photo {
-  width: 50%;
-  min-height: 570px; }
-  @media (max-width: 767.98px) {
+  position: relative;
+  width: 100%;
+  min-height: 320px; }
+  @media (max-width: 991.98px) {
     .home__mv__photo {
-      position: relative;
-      width: 100%;
-      min-height: 320px;
       padding-top: 1.5rem; } }
-  @media (max-width: 767.98px) {
-    .home__mv__photo::after {
-      content: "";
-      background: url("../images/mv_iphone_pc.png");
-      background-size: cover;
-      position: absolute;
-      right: 1rem;
-      bottom: 1.5rem;
-      width: 161px;
-      height: 320px; } }
   .home__mv__photo-bg {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
-    height: 100%;
+    height: 425px;
     background: url("../images/mv_bg_pc.png");
     background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    background-size: cover; }
     @media (max-width: 767.98px) {
       .home__mv__photo-bg {
-        justify-content: flex-end;
-        height: 250px; } }
-  @media (max-width: 767.98px) {
-    .home__mv__photo img {
-      display: none; } }
+        background: url("../images/mv_bg_sp.png");
+        background-position: center;
+        background-size: cover; } }
+  .home__mv__photo img {
+    display: none; }
 
 /*===================================================
  ホーム - テイクイーツが選ばれる理由
@@ -16602,7 +16618,7 @@ a:hover {
   padding: 2rem 1rem;
   border-radius: 10px;
   background-color: #faf7f2; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 767.98px) {
     .home__reason__item {
       width: 100%;
       margin-bottom: 1rem; } }
@@ -16621,65 +16637,48 @@ a:hover {
       border-radius: 50px;
       margin: 0; } }
   .home__about .container {
-    width: 70%;
+    max-width: 90%;
     margin: 0 auto; }
     @media (max-width: 991.98px) {
       .home__about .container {
-        width: 90%; } }
+        max-width: 100%; } }
   .home__about__item {
     position: relative;
     width: 100%;
-    margin-bottom: 5rem;
-    padding: 3rem 3rem 3rem 6rem;
+    padding: 4rem 2.5rem;
     border-radius: 40px; }
+    .home__about__item-wrap {
+      border: 4px solid #f0f0f0; }
     @media (max-width: 767.98px) {
       .home__about__item {
         margin-bottom: 3rem;
         margin-top: 2rem;
         padding: 4rem 1rem 2rem 1rem; } }
     .home__about__item-ttl {
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      text-align: center; }
       @media (max-width: 767.98px) {
         .home__about__item-ttl {
-          margin-bottom: 2rem;
-          text-align: center; } }
-    .home__about__item-num {
-      position: absolute;
-      top: 30%;
-      left: -2%;
-      color: #EF5D1D;
-      padding-left: 4.375rem;
-      font-weight: bold;
-      transform: rotate(90deg); }
-      @media (max-width: 767.98px) {
-        .home__about__item-num {
-          top: 4%;
-          left: -13%;
-          transform: rotate(0); } }
-      .home__about__item-num:after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        position: absolute;
-        width: 3.25rem;
-        height: 2px;
-        background: #EF5D1D; }
+          margin-bottom: 2rem; } }
     .home__about__item:after {
       content: "";
       position: absolute;
-      right: calc(50% - 1.25rem);
-      bottom: -3rem;
-      width: 2.5rem;
-      height: 2.5rem;
+      top: 24%;
+      right: -0.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
       border-left: 8px solid #F2EDEA;
       border-bottom: 8px solid #F2EDEA;
-      transform: rotate(-45deg); }
+      transform: rotate(-135deg);
+      z-index: 1; }
       @media (max-width: 767.98px) {
         .home__about__item:after {
           width: 2rem;
           height: 2rem;
-          bottom: -2rem; } }
+          top: auto;
+          left: calc(50% - 0.75rem);
+          bottom: -2rem;
+          transform: rotate(-45deg); } }
     .home__about__item:last-child {
       margin-bottom: 0; }
       .home__about__item:last-child:after {
@@ -16716,6 +16715,7 @@ a:hover {
 
 .home__case__inner {
   width: 80%;
+  border-radius: 40px;
   margin: 0 auto; }
   @media (max-width: 991.98px) {
     .home__case__inner {
@@ -16844,12 +16844,12 @@ a:hover {
     .home__flow__step-item::before {
       content: "";
       position: absolute;
-      top: -2rem;
+      top: -1.9rem;
       left: calc(50% - 5px);
       width: 10px;
       height: 10px;
       border-radius: 5px;
-      background-color: #F9CF41; }
+      background-color: #EF5D1D; }
       @media (max-width: 991.98px) {
         .home__flow__step-item::before {
           display: none; } }
@@ -16860,11 +16860,11 @@ a:hover {
       left: 50%;
       width: 110%;
       height: 2px;
-      background-color: #F9CF41; }
+      background-color: #EF5D1D; }
       @media (max-width: 991.98px) {
         .home__flow__step-item::after {
-          top: 3.12rem;
-          left: -2.812rem;
+          top: 2.7rem;
+          left: -3.2rem;
           width: 2px;
           height: 40%; } }
 
@@ -16974,9 +16974,9 @@ a:hover {
 /*===================================================
   機能紹介
 ====================================================*/
-.sub__intro.features {
+.features.sub__intro {
   position: relative; }
-  .sub__intro.features:after {
+  .features.sub__intro:after {
     content: '';
     position: absolute;
     top: 15%;
@@ -16988,8 +16988,26 @@ a:hover {
     background-image: url("../images/features_intro@2x.png");
     background-size: cover; }
     @media (max-width: 991.98px) {
-      .sub__intro.features:after {
+      .features.sub__intro:after {
         display: none; } }
+
+.features-ttl {
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 3rem;
+  padding: 1.5rem 0; }
+
+.features__system {
+  width: 85%;
+  margin: 0 auto; }
+  .features__system-item {
+    width: 31%;
+    margin-bottom: 2rem; }
+    @media (max-width: 991.98px) {
+      .features__system-item {
+        width: 49%; } }
+    @media (max-width: 767.98px) {
+      .features__system-item {
+        width: 100%; } }
 
 /*===================================================
  料金プラン
@@ -17345,7 +17363,7 @@ a:hover {
 .column__sec article {
   width: 60%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-wrap: wrap; }
   @media (max-width: 767.98px) {
     .column__sec article {
@@ -17353,7 +17371,12 @@ a:hover {
       justify-content: start; } }
   .column__sec article .post-list-item {
     width: 47%;
-    margin: 0 0 1rem 3%; }
+    margin: 0 0 1rem 2%; }
+
+.column__post .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0; }
 
 /*===================================================
  パーツ

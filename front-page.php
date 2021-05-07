@@ -11,12 +11,11 @@ get_header(); ?>
       <div class="home__mv__text-wrap">
         <h2 class="home__mv__text-ttl font-weight-bold f-36">
           お店独自の
-          <br>モバイルオーダーで
+          <br class="d-md-none">モバイルオーダーで
           <br><span>売上アップ！</span>
         </h2>
-        <p class="d-none d-md-block mt-5">
-          高機能なテイクイーツは初期費用・導入費無料！
-          <br>あなたのお店でもいますぐモバイルオーダーをスタート。
+        <p class="f-16 mb-0 font-weight-bold">高機能なテイクイーツは初期・導入費用無料！
+          <br>あなたのお店でも、<br class="d-md-none">いますぐモバイルオーダーをスタート。
         </p>
       </div>
     </div>
@@ -33,7 +32,7 @@ get_header(); ?>
 <!-- ▼ テイクイーツが選ばれる理由 -->
 <div class="home__reason">
   <div class="container py-main">
-    <h2 class="f-32 font-weight-bold text-center mb-5">テイクイーツが<br class="d-block d-md-none">選ばれる理由</h2>
+    <h2 class="f-32 font-weight-bold text-center mb-4">テイクイーツが<br class="d-block d-md-none">選ばれる理由</h2>
     <div class="home__reason__wrap d-md-flex justify-content-between flex-wrap">
       <!-- ▼ 理由① -->
       <div class="home__reason__item d-flex align-items-center mt-4">
@@ -77,60 +76,118 @@ get_header(); ?>
 <!-- ▲ テイクイーツが選ばれる理由 -->
 
 <!-- ▼ 商品お渡しまでの流れ -->
-<div class="home__about bg-light">
-  <div class="container py-main">
+<div class="home__about">
+  <div class="container pb-main">
     <h2 class="f-32 font-weight-bold text-center mb-5">商品お渡しまでの<br class="d-md-none">3STEP</h2>
 
-    <div class="home__about__wrap d-md-flex flex-wrap justify-content-between">
-      <!-- ▼ 流れ① -->
-      <div class="home__about__item bg-white d-md-flex align-items-center justify-content-between">
-        <p class="home__about__item-num">STEP 01</p>
-        <div class="home__about__item-text col-md-6">
-          <h3 class="home__about__item-ttl f-32 text-primary font-weight-bold mb-0">注文がはいる</h3>
-          <p class="home__about__item-text py-4 m-0">会員登録やアプリのインストールの必要ない注文サイトからお客様が注文をします。</p>
+    <div class="home__about__wrap">
+      <div class="home__about__item-wrap d-md-flex flex-wrap  justify-content-between">
+        <!-- ▼ 流れ① -->
+        <div class="home__about__item col-md-4">
+          <div class="home__about__item-text">
+            <h3 class="home__about__item-ttl f-28 text-primary font-weight-bold mb-0">注文がはいる</h3>
+            <p class="home__about__item-text py-4 m-0">会員登録やアプリのインストール不要の注文サイトからお客様が注文をします。</p>
+          </div>
+          <div class="text-center">
+            <img src="<?php echo $img_url; ?>about_1.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_1.png 1x, <?php echo $img_url; ?>about_1@2x.png 2x">
+          </div>
         </div>
-        <div class="text-center">
-          <img src="<?php echo $img_url; ?>about_1.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_1.png 1x, <?php echo $img_url; ?>about_1@2x.png 2x">
+        <!-- ▲ 流れ① -->
+        <!-- ▼ 流れ② -->
+        <div class="home__about__item col-md-4">
+          <div class="home__about__item-text">
+            <h3 class="home__about__item-ttl f-28 text-primary font-weight-bold mb-0">通知がくる</h3>
+            <p class="home__about__item-text py-4 m-0">店舗やオーナー様の電話番号・メールに直接通知でお知らせします。</p>
+          </div>
+          <div class="text-center">
+            <img src="<?php echo $img_url; ?>about_2.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_2.png 1x, <?php echo $img_url; ?>about_2@2x.png 2x">
+          </div>
         </div>
+        <!-- ▲ 流れ② -->
+        <!-- ▼ 流れ③ -->
+        <div class="home__about__item col-md-4">
+          <div class="home__about__item-text">
+            <h3 class="home__about__item-ttl f-28 text-primary font-weight-bold mb-0">受け渡し</h3>
+            <p class="home__about__item-text py-4 m-0">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
+          </div>
+          <div class="text-center">
+            <img src="<?php echo $img_url; ?>about_3.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_3.png 1x, <?php echo $img_url; ?>about_3@2x.png 2x">
+          </div>
+        </div>
+        <!-- ▲ 流れ③ -->
       </div>
-      <!-- ▲ 流れ① -->
-      <!-- ▼ 流れ② -->
-      <div class="home__about__item bg-white d-md-flex align-items-center justify-content-between">
-        <p class="home__about__item-num">STEP 02</p>
-        <div class="home__about__item-text col-md-6">
-          <h3 class="home__about__item-ttl f-32 text-primary font-weight-bold mb-0">店舗に通知がくる</h3>
-          <p class="home__about__item-text py-4 m-0">専用タブレットは必要ありません。店舗やオーナー様の電話番号・メールに直接通知でお知らせします。</p>
-        </div>
-        <div class="text-center">
-          <img src="<?php echo $img_url; ?>about_2.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_2.png 1x, <?php echo $img_url; ?>about_2@2x.png 2x">
-        </div>
-      </div>
-      <!-- ▲ 流れ② -->
-      <!-- ▼ 流れ② -->
-      <div class="home__about__item bg-white d-md-flex align-items-center justify-content-between">
-        <p class="home__about__item-num">STEP 03</p>
-        <div class="home__about__item-text col-md-6">
-          <h3 class="home__about__item-ttl f-32 text-primary font-weight-bold mb-0">受け渡し</h3>
-          <p class="home__about__item-text py-4 m-0">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
-        </div>
-        <div class="text-center">
-          <img src="<?php echo $img_url; ?>about_3.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_3.png 1x, <?php echo $img_url; ?>about_3@2x.png 2x">
-        </div>
-      </div>
-      <!-- ▲ 流れ② -->
     </div>
 
+    <!-- ▼ 機能一覧紹介 -->
+    <div class="features__system pt-4 my-5 d-md-flex flex-wrap justify-content-between">
+      <!-- ▼ POS連携 -->
+      <div class="features__system-item">
+        <div class="d-flex align-items-center">
+          <img class="mr-3" src="<?php echo $img_url; ?>system_pos.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>system_pos.png 1x, <?php echo $img_url; ?>system_pos@2x.png 2x">
+          <h3 class="f-20 font-weight-bold">POS連携</h3>
+        </div>
+        <p class="mt-2">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
+      </div>
+      <!-- ▲ POS連携 -->
+      <!-- ▼ POS連携 -->
+      <div class="features__system-item">
+        <div class="d-flex align-items-center">
+          <img class="mr-3" src="<?php echo $img_url; ?>system_pos.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>system_pos.png 1x, <?php echo $img_url; ?>system_pos@2x.png 2x">
+          <h3 class="f-20 font-weight-bold">POS連携</h3>
+        </div>
+        <p class="mt-2">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
+      </div>
+      <!-- ▲ POS連携 -->
+      <!-- ▼ POS連携 -->
+      <div class="features__system-item">
+        <div class="d-flex align-items-center">
+          <img class="mr-3" src="<?php echo $img_url; ?>system_pos.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>system_pos.png 1x, <?php echo $img_url; ?>system_pos@2x.png 2x">
+          <h3 class="f-20 font-weight-bold">POS連携</h3>
+        </div>
+        <p class="mt-2">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
+      </div>
+      <!-- ▲ POS連携 -->
+      <!-- ▼ POS連携 -->
+      <div class="features__system-item">
+        <div class="d-flex align-items-center">
+          <img class="mr-3" src="<?php echo $img_url; ?>system_pos.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>system_pos.png 1x, <?php echo $img_url; ?>system_pos@2x.png 2x">
+          <h3 class="f-20 font-weight-bold">POS連携</h3>
+        </div>
+        <p class="mt-2">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
+      </div>
+      <!-- ▲ POS連携 -->
+      <!-- ▼ POS連携 -->
+      <div class="features__system-item">
+        <div class="d-flex align-items-center">
+          <img class="mr-3" src="<?php echo $img_url; ?>system_pos.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>system_pos.png 1x, <?php echo $img_url; ?>system_pos@2x.png 2x">
+          <h3 class="f-20 font-weight-bold">POS連携</h3>
+        </div>
+        <p class="mt-2">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
+      </div>
+      <!-- ▲ POS連携 -->
+      <!-- ▼ POS連携 -->
+      <div class="features__system-item">
+        <div class="d-flex align-items-center">
+          <img class="mr-3" src="<?php echo $img_url; ?>system_pos.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>system_pos.png 1x, <?php echo $img_url; ?>system_pos@2x.png 2x">
+          <h3 class="f-20 font-weight-bold">POS連携</h3>
+        </div>
+        <p class="mt-2">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
+      </div>
+      <!-- ▲ POS連携 -->
+    </div>
+
+    <a class="btn btn-border btn-center d-block" href="<?php echo $home; ?>/features/">機能一覧へ</a>
   </div>
 </div>
 <!-- ▲ 商品お渡しまでの流れ -->
 
 <!-- ▼ 導入店舗 -->
 <div class="home__case bg-light py-5 mt-5">
-  <div class="home__case__wrap container pt-5 bg-white pl-0 pr-0 text-center">
+  <div class="home__case__wrap container text-center">
     <h2 class="home__case__ttl f-32 font-weight-bold  mb-3 d-flex align-items-center justify-content-center">全国<span>700</span>店舗で導入</h2>
     <p class="mb-5">カフェやレストランを始め、<br class="d-block d-md-none">専門店やスイーツ店など幅広いお店で<br>ご利用いただいております。</p>
     <!-- ▼ ロゴ -->
-    <div class="home__case__inner d-flex flex-wrap justify-content-center">
+    <div class="home__case__inner bg-white d-flex flex-wrap justify-content-center align-items-center">
       <?php
       $args = [
           'posts_per_page' => -1,
@@ -148,8 +205,10 @@ get_header(); ?>
       ?>
       <img class="home__case__item" src="<?php echo $logo ?>" alt="<?php echo $company ?>" srcset="<?php echo $logo ?> 1x, <?php echo $logo_2x ?> 2x">
       <?php endforeach; wp_reset_postdata(); ?>
+      aaa
     </div>
     <!-- ▲ ロゴ -->
+    <a class="btn btn-border btn-center d-block my-5" href="<?php echo $home; ?>/work/">事例紹介へ</a>
   </div>
 </div>
 <!-- ▲ 導入店舗 -->
@@ -159,6 +218,7 @@ get_header(); ?>
   <div class="container pt-main">
     <h2 class="f-32 font-weight-bold text-center mb-4">料金プラン</h2>
     <p class="mb-5 text-center">お客様の店舗数やご利用状況に合わせた2つのプランをご用意しております。</p>
+    <a class="btn btn-border btn-center d-block my-5" href="<?php echo $home; ?>/price/">詳細をみる</a>
   </div>
 </div>
 <!-- ▲ 料金 -->
@@ -166,32 +226,32 @@ get_header(); ?>
 <!-- ▼ 導入までの流れ -->
 <div class="home__flow pt-main">
   <div class="container">
-    <h2 class="f-32 font-weight-bold text-center mb-5">導入までの流れ</h2>
+    <h2 class="f-32 font-weight-bold text-center mb-4">導入までの流れ</h2>
     <p class="f-18 font-weight-bold text-center mb-2">最短<span class="f-24 px-1">1日</span>でスタート！</p>
     <!-- ▼ 図 -->
     <div class="home__flow__step p-0">
       <div class="home__flow__step-item">
-        <p class="home__flow__step-item-num f-24 lh-1 font-weight-bold"><span class="d-block f-16">STEP</span>01</p>
+        <p class="home__flow__step-item-num f-20 text-primary lh-1 font-weight-bold"><span class="d-block f-12">STEP</span>01</p>
         <p class="d-block f-20 font-weight-bold pt-2">お申し込み</p>
         <p class="text-left">お申し込みフォームの必須項目に入力しお申し込みください。</p>
       </div>
       <div class="home__flow__step-item">
-        <p class="home__flow__step-item-num f-24 lh-1 font-weight-bold"><span class="d-block f-16">STEP</span>02</p>
+        <p class="home__flow__step-item-num f-20 text-primary lh-1 font-weight-bold"><span class="d-block f-12">STEP</span>02</p>
         <p class="d-block f-20 font-weight-bold pt-2">アカウント発行</p>
         <p class="text-left">お客様専用のオーダーサイトを発行しログインID・PASSをお送りします。</p>
       </div>
       <div class="home__flow__step-item">
-        <p class="home__flow__step-item-num f-24 lh-1 font-weight-bold"><span class="d-block f-16">STEP</span>03</p>
+        <p class="home__flow__step-item-num f-20 text-primary lh-1 font-weight-bold"><span class="d-block f-12">STEP</span>03</p>
         <p class="d-block f-20 font-weight-bold pt-2">初期設定</p>
         <p class="text-left">営業時間や店舗の登録など設定を行います。</p>
       </div>
       <div class="home__flow__step-item">
-        <p class="home__flow__step-item-num f-24 lh-1 font-weight-bold"><span class="d-block f-16">STEP</span>04</p>
+        <p class="home__flow__step-item-num f-20 text-primary lh-1 font-weight-bold"><span class="d-block f-12">STEP</span>04</p>
         <p class="d-block f-20 font-weight-bold pt-2">メニュー登録</p>
         <p class="text-left">管理画面からメニューやオプションを登録し、公開に向けて準備をします。</p>
       </div>
       <div class="home__flow__step-item">
-        <p class="home__flow__step-item-num f-24 lh-1 font-weight-bold"><span class="d-block f-16">STEP</span>05</p>
+        <p class="home__flow__step-item-num f-20 text-primary lh-1 font-weight-bold"><span class="d-block f-12">STEP</span>05</p>
         <p class="d-block f-20 font-weight-bold pt-2">ご利用スタート</p>
         <p class="text-left">準備が整いましたらサイトを公開し注文の受付が始まります！</p>
       </div>
@@ -214,7 +274,10 @@ get_header(); ?>
     <!-- ▼ 電話番号 -->
     <div class="text-center mt-3">
       <p class="f-16 text-primary font-weight-bold mb-1">カスタマーサポートセンター</p>
-      <a class="cta__phone f-32 font-weight-bold" href="tel:0120538205">0120-538-205</a>
+      <a class="footer__cta-phone f-32 font-weight-bold" href="tel:0120538205">
+        <span class="footer__cta-phone-icon"><i class="ri-phone-fill ri-xs text-white"></i></span>
+        0120-538-205
+      </a>
       <p class="f-12 text-muted mb-4">受付時間｜10:00~18:00（土日・祝除く）</p>
     </div>
     <!-- ▲ 電話番号 -->

@@ -5,7 +5,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 
 </main>
 
-<!-- ▼ いますぐTakeEatsを始めよう！ -->
+<!-- ▼ いますぐテイクイーツを始めよう！ -->
 <?php if ( !is_front_page() && !is_home() && !is_page(array('request', 'seminar')) ): //トップページのみ ?>
 
 <section class="pt-main bg-white">
@@ -17,7 +17,10 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
           <!-- ▼ 電話番号 -->
           <div class="text-center">
             <p class="f-16 text-primary font-weight-bold mb-1">カスタマーサポートセンター</p>
-            <a class="cta__phone f-32 font-weight-bold" href="tel:0120538205">0120-538-205</a>
+            <a class="footer__cta-phone f-32 font-weight-bold" href="tel:0120538205">
+              <span class="footer__cta-phone-icon"><i class="ri-phone-fill ri-xs text-white"></i></span>
+              0120-538-205
+            </a>
             <p class="f-12 text-muted mb-4">受付時間｜10:00~18:00（土日・祝除く）</p>
           </div>
           <!-- ▲ 電話番号 -->
@@ -40,7 +43,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 </section>
 
 <?php endif; ?>
-<!-- ▲ いますぐTakeEatsを始めよう！ -->
+<!-- ▲ いますぐテイクイーツを始めよう！ -->
 
 <!-- ▼ seoテキスト -->
 <?php if (  is_front_page() ||  is_home() ) : ?>
@@ -85,13 +88,13 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 
       <!-- ▼ サービス情報 -->
       <div class="footer__service">
-        <img src="<?php echo $img_url; ?>logo_white.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>logo_white.png 1x, <?php echo $img_url; ?>logo_white@2x.png 2x">
+        <img src="<?php echo $img_url; ?>logo.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>logo.png 1x, <?php echo $img_url; ?>logo@2x.png 2x">
         <div class="footer__service__under">
           <!-- ▼ SNSリンク -->
-          <div class="p-0 mt-4">
-            <a class="text-white" href="https://www.facebook.com/TakeEats.LAMP/" target="_blank" rel="noopener"><i class="ri-facebook-circle-fill ri-2x"></i></a>
-            <a class="text-white mx-3" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="ri-twitter-fill ri-2x"></i></a>
-            <a class="text-white" href="https://www.instagram.com/take.eats_official/" target="_blank" rel="noopener"><i class="ri-instagram-fill ri-2x"></i></a>
+          <div class="footer__service__sns p-0 mt-4">
+            <a style="color: #3B5998" href="https://www.facebook.com/TakeEats.LAMP/" target="_blank" rel="noopener"><i class="ri-facebook-circle-fill ri-lg"></i></a>
+            <a style="color: #1da1f2" class="mx-3" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="ri-twitter-fill ri-lg"></i></a>
+            <a style="color: #c13584" href="https://www.instagram.com/take.eats_official/" target="_blank" rel="noopener"><i class="ri-instagram-fill ri-lg"></i></a>
           </div>
           <!-- ▲ SNSリンク -->
           <!-- ▼ コピーライト -->
@@ -105,7 +108,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
       <div class="footer__link d-md-flex w-100 p-0">
         <!-- ▼ テイクイーツについて -->
         <div class="footer__link__takeeats">
-          <p class="footer__link__ttl font-weight-bold text-white mb-4 f-16">テイクイーツについて</p>
+          <p class="footer__link__ttl font-weight-bold text-muted mb-4 f-16">テイクイーツについて</p>
           <div class="d-flex flex-wrap">
             <div class="footer__link-line">
               <a class="footer__link-line-item" href="<?php echo $home; ?>/features/">機能紹介</a>
@@ -130,7 +133,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
         <!-- ▲ テイクイーツについて -->
         <!-- ▼ 運営会社 -->
         <div class="footer__link__campany">
-          <p class="footer__link__ttl font-weight-bold text-white mb-4 f-16">運営会社</p>
+          <p class="footer__link__ttl font-weight-bold text-muted mb-4 f-16">運営会社</p>
           <div class="footer__link-line">
             <a class="footer__link-line-item" href="https://lamp.jp/" target="_blank">株式会社ランプ<i class="ri-external-link-line ml-1"></i></a>
             <a class="footer__link-line-item" href="<?php echo $home; ?>/privacy-policy/">プライバシーポリシー</a>

@@ -3,36 +3,38 @@
 ====================================================*/
 .home__mv {
   &-wrap {
-    display: flex;
-    margin-top: 80px;
-    @include media-breakpoint-down(sm) {
-      display: block;
-      margin-top: 0;
-    }
-    @include media-breakpoint-down(lg) {
-      margin-top: 0;
-    }
+    display: block;
+    margin-top: 0;
   }
 
   &__text {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    min-height: 570px;
-    @include media-breakpoint-down(sm) {
+    width: 80%;
+    min-height: auto;
+    margin: 0 auto;
+    justify-content: left;
+    padding: 1rem 1.5rem 1.5rem;
+    @include media-breakpoint-down(md) {
       width: 100%;
-      min-height: auto;
-      margin-bottom: 0;
-      justify-content: left;
-      padding: 1rem 1.5rem 1.5rem;
+    }
+
+    &-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 0 3.5em 0;
+      @include media-breakpoint-down(md) {
+        display: block;
+        padding: 2rem 0 0 0;
+      }
     }
 
     &-ttl {
-      margin-bottom: 1rem;
-      @include media-breakpoint-down(sm) {
-        margin-bottom: 0;
+      width: 55%;
+      font-size: 2.25rem;
+      margin-bottom: 0;
+      @include media-breakpoint-down(md) {
+        width: 100%;
       }
 
       span {
@@ -41,71 +43,56 @@
     }
 
     p {
-      width: 323px;
+      width: 38%;
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-top: 2rem;
+      }
     }
 
     &::after {
       content: "";
+      position: absolute;
+      left: 1.5rem;
+      bottom: -8rem;
+      width: 150px;
+      height: 151px;
       background: url("../images/mv_stamp_pc.png");
       background-size: cover;
-      position: absolute;
-      right: 1.5rem;
-      bottom: 1.5rem;
-      width: 140px;
-      height: 141px;
-      @include media-breakpoint-down(sm) {
-        left: 1.5rem;
-        right: auto;
-        bottom: -6rem;
+      z-index: 97;
+      @include media-breakpoint-down(md) {
         width: 100px;
         height: 101px;
-        z-index: 97;
       }
     }
   }
 
   &__photo {
-    width: 50%;
-    min-height: 570px;
-    @include media-breakpoint-down(sm) {
-      position: relative;
-      width: 100%;
-      min-height: 320px;
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+    @include media-breakpoint-down(md) {
       padding-top: 1.5rem;
     }
 
-    &::after {
-      @include media-breakpoint-down(sm) {
-        content: "";
-        background: url("../images/mv_iphone_pc.png");
-        background-size: cover;
-        position: absolute;
-        right: 1rem;
-        bottom: 1.5rem;
-        width: 161px;
-        height: 320px;
-      }
-    }
-
     &-bg {
+      display: flex;
+      justify-content: flex-end;
       width: 100%;
-      height: 100%;
+      height: 425px;
       background: url("../images/mv_bg_pc.png");
       background-position: center;
       background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
       @include media-breakpoint-down(sm) {
-        justify-content: flex-end;
-        height: 250px;
+        background: url("../images/mv_bg_sp.png");
+        background-position: center;
+        background-size: cover;
       }
     }
 
     img {
-      @include media-breakpoint-down(sm) {
-        display: none;
-      }
+      display: none;
     }
   }
 }
@@ -130,7 +117,7 @@
     padding: 2rem 1rem;
     border-radius: 10px;
     background-color: $light;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
       width: 100%;
       margin-bottom: 1rem;
     }
@@ -154,17 +141,19 @@
     margin: 0;
   }
   .container {
-    width: 70%;
+    max-width: 90%;
     margin: 0 auto;
     @include media-breakpoint-down(md) {
-      width: 90%;
+      max-width: 100%;
     }
   }
   &__item {
+    &-wrap {
+      border: 4px solid #f0f0f0;
+    }
     position: relative;
     width: 100%;
-    margin-bottom: 5rem;
-    padding: 3rem 3rem 3rem 6rem;
+    padding: 4rem 2.5rem;
     border-radius: 40px;
 
     @include media-breakpoint-down(sm) {
@@ -175,51 +164,30 @@
 
     &-ttl {
       margin-bottom: 3rem;
+      text-align: center;
       @include media-breakpoint-down(sm) {
         margin-bottom: 2rem;
-        text-align: center;
-      }
-    }
-
-    &-num {
-      position: absolute;
-      top: 30%;
-      left: -2%;
-      color: $primary;
-      padding-left: 4.375rem;
-      font-weight: bold;
-      transform: rotate(90deg);
-      @include media-breakpoint-down(sm) {
-        top: 4%;
-        left: -13%;
-        transform: rotate(0);
-      }
-      &:after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        position: absolute;
-        width: 3.25rem;
-        height: 2px;
-        background: $primary;
       }
     }
 
     &:after {
       content: "";
       position: absolute;
-      right: calc(50% - 1.25rem);
-      bottom: -3rem;
-      width: 2.5rem;
-      height: 2.5rem;
+      top: 24%;
+      right: -0.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
       border-left: 8px solid $light-gray;
       border-bottom: 8px solid $light-gray;
-      transform: rotate(-45deg);
+      transform: rotate(-135deg);
+      z-index: 1;
       @include media-breakpoint-down(sm) {
         width: 2rem;
         height: 2rem;
+        top: auto;
+        left: calc(50% - 0.75rem);
         bottom: -2rem;
+        transform: rotate(-45deg);
       }
     }
     &:last-child {
@@ -270,6 +238,7 @@
 
   &__inner {
     width: 80%;
+    border-radius: 40px;
     margin: 0 auto;
     @include media-breakpoint-down(md) {
       width: 100%;
@@ -445,12 +414,12 @@
       &::before {
         content: "";
         position: absolute;
-        top: -2rem;
+        top: -1.9rem;
         left: calc(50% - 5px);
         width: 10px;
         height: 10px;
         border-radius: 5px;
-        background-color: $success;
+        background-color: $primary;
         @include media-breakpoint-down(md) {
           display: none;
         }
@@ -463,10 +432,10 @@
         left: 50%;
         width: 110%;
         height: 2px;
-        background-color: $success;
+        background-color: $primary;
         @include media-breakpoint-down(md) {
-          top: 3.12rem;
-          left: -2.812rem;
+          top: 2.7rem;
+          left: -3.2rem;
           width: 2px;
           height: 40%;
         }

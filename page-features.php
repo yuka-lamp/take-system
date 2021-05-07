@@ -18,19 +18,56 @@ get_header(); ?>
     </div>
     <div class="sub__intro-img d-lg-none mt-5 pt-3">
             <img class="" src="<?php echo $img_url; ?>features_intro.png" alt="タブレット不要！スマホだけでも運用可能" srcset="<?php echo $img_url; ?>features_intro.png 1x, <?php echo $img_url; ?>features_intro@2x.png 2x">
-        </div>
+    </div>
 </section>
 <!-- ▲ 導入 -->
 
 <!-- ▼ 機能一覧 -->
 <section class="sec features pt-main">
     <div class="container">
-    <h2 class="font-weight-bold text-center f-36 mb-4">機能一覧</h2>
-    <!-- ▼ 機能一覧 -->
-    <div>
-        <a href="#">商品管理</a>
-    </div>
-    <!-- ▲ 機能一覧 -->
+        <h2 class="font-weight-bold text-center f-36 mb-4">機能一覧</h2>
+
+        <!-- ▼ ページ内リンク -->
+        <div>
+            <a href="#">商品管理</a>
+        </div>
+        <!-- ▲ ページ内リンク -->
+
+        <!-- ▼ 商品管理 -->
+        <div id="1">
+            <h2 class="features-ttl f-26 font-weight-bold">商品管理</h2>
+            <div class="features__system d-md-flex flex-wrap justify-content-between">
+                <!-- ▼ POS連携 -->
+                <div class="features__system-item">
+                    <div class="d-flex align-items-center">
+                    <img class="mr-3" src="<?php echo $img_url; ?>system_pos.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>system_pos.png 1x, <?php echo $img_url; ?>system_pos@2x.png 2x">
+                    <h3 class="f-20 font-weight-bold">POS連携</h3>
+                    </div>
+                    <p class="mt-2">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
+                </div>
+                <!-- ▲ POS連携 -->
+                <!-- ▼ POS連携 -->
+                <div class="features__system-item">
+                    <div class="d-flex align-items-center">
+                    <img class="mr-3" src="<?php echo $img_url; ?>system_pos.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>system_pos.png 1x, <?php echo $img_url; ?>system_pos@2x.png 2x">
+                    <h3 class="f-20 font-weight-bold">POS連携</h3>
+                    </div>
+                    <p class="mt-2">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
+                </div>
+                <!-- ▲ POS連携 -->
+                <!-- ▼ POS連携 -->
+                <div class="features__system-item">
+                    <div class="d-flex align-items-center">
+                    <img class="mr-3" src="<?php echo $img_url; ?>system_pos.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>system_pos.png 1x, <?php echo $img_url; ?>system_pos@2x.png 2x">
+                    <h3 class="f-20 font-weight-bold">POS連携</h3>
+                    </div>
+                    <p class="mt-2">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
+                </div>
+                <!-- ▲ POS連携 -->   
+            </div>
+        </div>
+        <!-- ▲ 商品管理 -->
+     
     </div>
 </section>
 <!-- ▲ 機能一覧 -->

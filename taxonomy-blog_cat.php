@@ -37,7 +37,7 @@ get_header(); ?>
         </a>
         <!-- ▲ ループするコンテンツ -->
         <?php endwhile; endif; ?>
-        <div class="text-center">
+        <div class="text-center w-100">
             <?php wp_pagenavi(); ?>
         </div>
     </div>

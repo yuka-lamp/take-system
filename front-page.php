@@ -32,10 +32,10 @@ get_header(); ?>
 <!-- ▼ テイクイーツが選ばれる理由 -->
 <div class="home__reason">
   <div class="container py-main">
-    <h2 class="f-32 font-weight-bold text-center mb-4">テイクイーツが<br class="d-block d-md-none">選ばれる理由</h2>
+    <h2 class="f-32 font-weight-bold text-center mb-5">テイクイーツが<br class="d-block d-md-none">選ばれる理由</h2>
     <div class="home__reason__wrap d-md-flex justify-content-between flex-wrap">
       <!-- ▼ 理由① -->
-      <div class="home__reason__item d-flex align-items-center mt-4">
+      <div class="home__reason__item d-flex align-items-center">
         <img src="<?php echo $img_url; ?>reason_free.png" alt="初期費用・月額費用が無料で利用できる" srcset="<?php echo $img_url; ?>reason_free.png 1x, <?php echo $img_url; ?>reason_free@2x.png 2x">
         <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-4">
           初期・月額・導入費用が
@@ -44,7 +44,7 @@ get_header(); ?>
       </div>
       <!-- ▲ 理由① -->
       <!-- ▼ 理由② -->
-      <div class="home__reason__item d-flex align-items-center mt-4">
+      <div class="home__reason__item d-flex align-items-center">
         <img src="<?php echo $img_url; ?>reason_up.png" alt="注文のデジタル化で売上アップ！" srcset="<?php echo $img_url; ?>reason_up.png 1x, <?php echo $img_url; ?>reason_up@2x.png 2x">
         <h3 class="home__reason__item-ttl f-24 font-weight-bold ml-4">
           WEB予約を導入で
@@ -81,12 +81,12 @@ get_header(); ?>
     <h2 class="f-32 font-weight-bold text-center mb-5">商品お渡しまでの<br class="d-md-none">3STEP</h2>
 
     <div class="home__about__wrap">
-      <div class="home__about__item-wrap d-md-flex flex-wrap  justify-content-between">
+      <div class="home__about__item-wrap">
         <!-- ▼ 流れ① -->
-        <div class="home__about__item col-md-4">
+        <div class="home__about__item">
           <div class="home__about__item-text">
-            <h3 class="home__about__item-ttl f-28 text-primary font-weight-bold mb-0">注文がはいる</h3>
-            <p class="home__about__item-text py-4 m-0">会員登録やアプリのインストール不要の注文サイトからお客様が注文をします。</p>
+            <h3 class="home__about__item-ttl f-28 text-primary font-weight-bold">注文がはいる</h3>
+            <p class="home__about__item-text pt-4 pb-3 m-0">会員登録やアプリのインストール不要の注文サイトからお客様が注文をします。</p>
           </div>
           <div class="text-center">
             <img src="<?php echo $img_url; ?>about_1.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_1.png 1x, <?php echo $img_url; ?>about_1@2x.png 2x">
@@ -94,10 +94,10 @@ get_header(); ?>
         </div>
         <!-- ▲ 流れ① -->
         <!-- ▼ 流れ② -->
-        <div class="home__about__item col-md-4">
+        <div class="home__about__item">
           <div class="home__about__item-text">
-            <h3 class="home__about__item-ttl f-28 text-primary font-weight-bold mb-0">通知がくる</h3>
-            <p class="home__about__item-text py-4 m-0">店舗やオーナー様の電話番号・メールに直接通知でお知らせします。</p>
+            <h3 class="home__about__item-ttl f-28 text-primary font-weight-bold">通知がくる</h3>
+            <p class="home__about__item-text pt-4 pb-3 m-0">店舗やオーナー様の電話番号・メールに直接通知でお知らせします。</p>
           </div>
           <div class="text-center">
             <img src="<?php echo $img_url; ?>about_2.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_2.png 1x, <?php echo $img_url; ?>about_2@2x.png 2x">
@@ -105,10 +105,10 @@ get_header(); ?>
         </div>
         <!-- ▲ 流れ② -->
         <!-- ▼ 流れ③ -->
-        <div class="home__about__item col-md-4">
+        <div class="home__about__item">
           <div class="home__about__item-text">
-            <h3 class="home__about__item-ttl f-28 text-primary font-weight-bold mb-0">受け渡し</h3>
-            <p class="home__about__item-text py-4 m-0">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
+            <h3 class="home__about__item-ttl f-28 text-primary font-weight-bold">受け渡し</h3>
+            <p class="home__about__item-text pt-4 pb-3 m-0">料理の準備を進め予定の時間に受け取りにきたお客様に商品をお渡しします。</p>
           </div>
           <div class="text-center">
             <img src="<?php echo $img_url; ?>about_3.png" alt="注文がはいる" srcset="<?php echo $img_url; ?>about_3.png 1x, <?php echo $img_url; ?>about_3@2x.png 2x">
@@ -227,7 +227,9 @@ get_header(); ?>
 <div class="home__flow pt-main">
   <div class="container">
     <h2 class="f-32 font-weight-bold text-center mb-4">導入までの流れ</h2>
-    <p class="f-18 font-weight-bold text-center mb-2">最短<span class="f-24 px-1">1日</span>でスタート！</p>
+    <div class="text-center">
+      <p class="home__flow__comment font-weight-bold text-center mb-2">最短<span>1日</span>でスタート！</p>
+    </div>
     <!-- ▼ 図 -->
     <div class="home__flow__step p-0">
       <div class="home__flow__step-item">

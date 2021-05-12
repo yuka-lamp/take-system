@@ -26,13 +26,39 @@
     margin-bottom: 3rem;
     padding: 1.5rem 0;
   }
-  &__menu {
-    
-  }
+
   // 機能一覧
   &__system {
     width: 85%;
-    margin: 0 auto;
+    margin: 3rem auto 1rem auto!important;
+    @include media-breakpoint-down(md) {
+      margin: 1rem auto!important;
+    }
+    &__nav {
+      display: block;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      overflow-x: scroll;
+      white-space: nowrap !important;
+      -webkit-overflow-scrolling: touch;
+      text-align: center;
+      margin: 3rem 0;
+      &-item {
+        color: $primary;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid $primary;
+        margin-right: 7px;
+        padding: 8px 1.5rem;
+        &:hover {
+          background: $primary;
+          color: $white;
+          opacity: 1;
+        }
+      }
+    }
     &-item {
       width: 31%;
       margin-bottom: 2rem;
@@ -41,6 +67,7 @@
       }
       @include media-breakpoint-down(sm) {
         width: 100%;
+        margin-bottom: 1.3rem;
       }
     }
   }

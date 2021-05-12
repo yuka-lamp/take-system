@@ -28,13 +28,29 @@ get_header(); ?>
         <h2 class="font-weight-bold text-center f-36 mb-4">機能一覧</h2>
 
         <!-- ▼ ページ内リンク -->
-        <div>
-            <a href="#">商品管理</a>
+        <div class="features__system__nav">
+            <a class="features__system__nav-item d-inline-block" href="#shohin">
+                商品管理
+                <i class="ri-arrow-down-s-line ri-lg d-block"></i>
+            </a>
+            <a class="features__system__nav-item d-inline-block" href="#shohin">
+                商品管理
+                <i class="ri-arrow-down-s-line ri-lg d-block"></i>
+            </a>
+            <a class="features__system__nav-item d-inline-block" href="#shohin">
+                商品管理
+                <i class="ri-arrow-down-s-line ri-lg d-block"></i>
+            </a>
+            <a class="features__system__nav-item d-inline-block" href="#shohin">
+                商品管理
+                <i class="ri-arrow-down-s-line ri-lg d-block"></i>
+            </a>
+
         </div>
         <!-- ▲ ページ内リンク -->
 
         <!-- ▼ 商品管理 -->
-        <div id="1">
+        <div id="shohin">
             <h2 class="features-ttl f-26 font-weight-bold">商品管理</h2>
             <div class="features__system d-md-flex flex-wrap justify-content-between">
                 <!-- ▼ POS連携 -->

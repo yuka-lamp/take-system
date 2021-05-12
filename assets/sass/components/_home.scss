@@ -35,6 +35,7 @@
       margin-bottom: 0;
       @include media-breakpoint-down(md) {
         width: 100%;
+        line-height: 160%;
       }
 
       span {
@@ -63,6 +64,7 @@
       @include media-breakpoint-down(md) {
         width: 100px;
         height: 101px;
+        bottom: -6rem;
       }
     }
   }
@@ -106,9 +108,6 @@
     @include media-breakpoint-down(md) {
       width: 100%;
     }
-    @include media-breakpoint-down(sm) {
-      width: 90%;
-    }
   }
 
   &__item {
@@ -119,7 +118,8 @@
     background-color: $light;
     @include media-breakpoint-down(sm) {
       width: 100%;
-      margin-bottom: 1rem;
+      margin-bottom: 6px;
+      padding: 1rem;
     }
 
     &-ttl {
@@ -140,6 +140,24 @@
     border-radius: 50px;
     margin: 0;
   }
+  &__wrap {
+    border: 4px solid #f0f0f0;
+    border-radius: 40px;
+    // スクロールバー
+    &::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 4px;
+      background: #eaeff4;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background: #dee2e6;
+    }
+  }
   .container {
     max-width: 90%;
     margin: 0 auto;
@@ -148,26 +166,64 @@
     }
   }
   &__item {
-    &-wrap {
-      border: 4px solid #f0f0f0;
-    }
     position: relative;
-    width: 100%;
+    width: 33%;
     padding: 4rem 2.5rem;
     border-radius: 40px;
-
     @include media-breakpoint-down(sm) {
-      margin-bottom: 3rem;
-      margin-top: 2rem;
-      padding: 4rem 1rem 2rem 1rem;
+      display: inline-block;
+      width: 270px;
+      padding: 3rem 2rem 2rem 2rem;
+    }
+    &:nth-child(2) {
+      .home__about__item-ttl {
+        &::after {
+          content: "02";
+        }
+      }
+    }
+    &:nth-child(3) {
+      .home__about__item-ttl {
+        &::after {
+          content: "03";
+        }
+      }
+    }
+    &-wrap {
+      display: flex;
+      align-items: center;
+      @include media-breakpoint-down(sm) {
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        overflow-x: scroll;
+        white-space: nowrap !important;
+        -webkit-overflow-scrolling: touch;
+      }
     }
 
     &-ttl {
-      margin-bottom: 3rem;
+      position: relative;
+      margin-bottom: 1rem;
       text-align: center;
-      @include media-breakpoint-down(sm) {
-        margin-bottom: 2rem;
+      &::after {
+        content: "01";
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: -2rem;
+        left: 0;
+        text-align: center;
+        font-size: 5rem;
+        color: $light;
+        font-weight: bold;
+        z-index: -1;
       }
+    }
+
+    p {
+      white-space: break-spaces;
     }
 
     &:after {
@@ -181,14 +237,6 @@
       border-bottom: 8px solid $light-gray;
       transform: rotate(-135deg);
       z-index: 1;
-      @include media-breakpoint-down(sm) {
-        width: 2rem;
-        height: 2rem;
-        top: auto;
-        left: calc(50% - 0.75rem);
-        bottom: -2rem;
-        transform: rotate(-45deg);
-      }
     }
     &:last-child {
       margin-bottom: 0;
@@ -206,7 +254,7 @@
     width: 80%;
     border-radius: 40px;
     @include media-breakpoint-down(md) {
-      width: 94%;
+      width: 100%;
     }
   }
 
@@ -348,9 +396,6 @@
       }
     }
 
-    &-wrap {
-    }
-
     &-line {
       width: 30%;
       margin: 0 5px;
@@ -377,13 +422,38 @@
  ホーム - 導入までの流れ
 ====================================================*/
 .home__flow {
+  &__comment {
+    position: relative;
+    display: inline-block;
+    background-color: $light;
+    font-size: 1.125rem;
+    margin: 0 auto;
+    padding: 6px 3rem;
+    border-radius: 3rem;
+
+    span {
+      font-size: 1.5rem;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: calc(50% - 13px);
+      bottom: -10px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 11px 13px 0 13px;
+      border-color: $light transparent transparent transparent;
+    }
+  }
   &__step {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 3rem;
     @include media-breakpoint-down(md) {
-      margin-top: 1rem;
+      width: 90%;
+      margin: 1rem auto 0 auto;
     }
 
     &-item {

@@ -2,7 +2,7 @@
  全体
 ====================================================*/
 body {
-  font-family: "Lato", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "Lato", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: .875rem;
   font-feature-settings: "palt";
   letter-spacing: .03rem;
@@ -112,7 +112,7 @@ p {
 .f-28 {
   font-size: 1.75rem;
   @include media-breakpoint-down(md) {
-    font-size: 1.375rem;
+    font-size: 1.625rem;
   }
 }
 

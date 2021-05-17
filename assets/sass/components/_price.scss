@@ -63,7 +63,7 @@
           line-height: 0.6;
           span {
             font-size: 5.4rem;
-            font-family: "Barlow";
+            font-family: "Barlow" , "Noto Sans JP", sans-serif;;
           }
         }
         &-check {
@@ -110,7 +110,7 @@
         &-point {
           border-top: 2px solid $light-gray;
           margin-top: 2.5rem;
-          padding: 2.5rem 0;
+          padding: 2.5rem 1rem;
           text-align: center;
           @include media-breakpoint-down(sm) {
             text-align: left;

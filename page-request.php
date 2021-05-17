@@ -5,7 +5,7 @@ $img_url = get_template_directory_uri().'/dist/images/';
 get_header(); the_post(); ?>
 <section class="sec form">
 <div class="container">
-<p class="text-md-center font-weight-bold mb-5">送信内容を確認させていただき、担当者よりご連絡させていただきます。
+<p class="text-md-center font-weight-bold mb-5">送信内容を確認し、担当者より順次ご連絡致します。
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 <script>

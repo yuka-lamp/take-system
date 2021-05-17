@@ -18,7 +18,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
           <div class="text-center">
             <p class="f-16 text-primary font-weight-bold mb-1">カスタマーサポートセンター</p>
             <a class="footer__cta-phone f-32 font-weight-bold" href="tel:0120538205">
-              <span class="footer__cta-phone-icon"><i class="ri-phone-fill ri-xs text-white"></i></span>
+              <span class="footer__cta-phone-icon"><i class="ri-phone-fill ri-md"></i></span>
               0120-538-205
             </a>
             <p class="f-12 text-muted mb-4">受付時間｜10:00~18:00（土日・祝除く）</p>

@@ -14,7 +14,7 @@ get_header(); ?>
             <p class="f-16">スマホ、パソコンやタブレットなど端末問わずご利用いただけるので、店舗のスタイルに合わせてお選びいただけます。スマホ、パソコンやタブレットなど端末問わずご利用いただけるので、店舗のスタイルに合わせてお選びいただけます。スマホ、パソコンやタブレットなど端末問わずご利用いただけるので、店舗のスタイルに合わせてお選びいただけます。</p>
             <a class="btn btn-primary d-block mt-5" href="https://system.take-eats.jp/demo-admin/" target="_blank">デモページで体験</a>
         </div>
-        <p class="sub__intro-bg">Management<br>screen</p>
+        <p class="sub__intro-bg">Restaurant<br>Dashboard</p>
     </div>
     <div class="sub__intro-img d-lg-none mt-5 pt-3">
             <img class="" src="<?php echo $img_url; ?>features_intro.png" alt="タブレット不要！スマホだけでも運用可能" srcset="<?php echo $img_url; ?>features_intro.png 1x, <?php echo $img_url; ?>features_intro@2x.png 2x">

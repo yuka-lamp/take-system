@@ -6,25 +6,24 @@ get_header(); ?>
 
 <!-- ▼ メインビジュアル -->
 <div class="home__mv">
-  <div class="home__mv-wrap">
-    <div class="home__mv__text">
+  <div class="home__mv-wrap d-md-flex">
+    <div class="home__mv__text text-center">
       <div class="home__mv__text-wrap">
         <h2 class="home__mv__text-ttl font-weight-bold f-36">
           テイクアウト特化の<br>
           予約・決済システムなら<br>
-          <span>テイクイーツ</span>
+          <img class="mt-2" src="<?php echo $img_url; ?>ttl_logo.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>ttl_logo.png 1x, <?php echo $img_url; ?>ttl_logo@2x.png 2x">
         </h2>
-        <p class="f-16 mb-0 font-weight-bold">お店ごとにカスタマイズできる注文サイトを開設して、テイクアウト・デリバリー（一部エリア）の注文をオンライン受付。
+        <p class="text-muted">お店ごとにカスタマイズできる注文サイトを開設して、
+          <br>テイクアウト・デリバリーの注文をオンライン受付。
           <br>店舗運営の効率化と販路拡大を支援します。
         </p>
       </div>
     </div>
     <div class="home__mv__photo">
       <div class="home__mv__photo-bg">
-        <img class="" src="<?php echo $img_url; ?>mv_iphone_pc.png" alt="タブレット不要！スマホだけでも運用可能" srcset="<?php echo $img_url; ?>mv_iphone_pc.png 1x, <?php echo $img_url; ?>mv_iphone_pc@2x.png 2x" style="width: 180px; height: auto;">
       </div>
     </div>
-
   </div>
 </div>
 <!-- ▲ メインビジュアル -->

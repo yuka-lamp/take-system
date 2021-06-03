@@ -25,31 +25,43 @@ $(window).on("load resize", function () {
 
 $(function ($) {
   // slick
-  $(".home__system__slide").slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    arrows: true,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
-  });
+  // $(".home__system__slide").slick({
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 5000,
+  //   arrows: true,
+  //   dots: true,
+  //   responsive: [
+  //     {
+  //       breakpoint: 768,
+  //       settings: {
+  //         slidesToShow: 2,
+  //       },
+  //     },
+  //   ],
+  // });
 
-  // front-page.php - タブ切り替え
-  let tabs = $(".tab"); // tabのクラスを全て取得し、変数tabsに配列で定義
-  $(".tab").on("click", function() { // tabをクリックしたらイベント発火
-    $(".active").removeClass("active"); // activeクラスを消す
-    $(this).addClass("active"); // クリックした箇所にactiveクラスを追加
-    const index = tabs.index(this); // クリックした箇所がタブの何番目か判定し、定数indexとして定義
-    $(".content").removeClass("show").eq(index).addClass("show"); // showクラスを消して、contentクラスのindex番目にshowクラスを追加
-  })
+  // step
+  function sliderSetting(){
+    var width = $(window).width();
+    if(width <= 750){
+      $('.home__about__list').not('.slick-initialized').slick({
+        slidesToShow: 1.2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: true,
+      });
+        } else {
+          $('.slide.slick-initialized').slick('unslick');
+      }
+    }
+    sliderSetting();
+    $(window).resize( function() {
+      sliderSetting();
+    });
 
   // seo
   $(".ac dt").on("click", function() {

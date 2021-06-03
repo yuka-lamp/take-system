@@ -1,110 +1,157 @@
 /*===================================================
  ホーム - MV
 ====================================================*/
+
 .home__mv {
   position: relative;
-  &::after {
-    content: "Reservation system";
+  background-color: $light;
+  overflow: hidden;
+  z-index: 1;
+
+  // 下の切り抜き
+  &::before {
+    content: "";
     position: absolute;
-    width: 3rem;
-    left: -1.5rem;
-    bottom: -6rem;
-    color: #faf7f2;
-    font-size: 7.5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    line-height: 1;
-    z-index: -1;
-    @include media-breakpoint-down(md) {
-      width: 100%;
-      overflow: hidden;
-      top: 0;
-      left: 0;
-      bottom: auto;
-    }
-  }
-  &-wrap {
-    display: block;
-    margin-top: 0;
-    align-items: center;
-    padding: 3rem 2rem;
-    @include media-breakpoint-down(md) {
-      padding: 3rem 1rem;
+    right: 0;
+    bottom: 0;
+    background: url("../images/mv_wave_pc@2x.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 130px;
+    z-index: 1;
+
+    @include media-breakpoint-down(sm) {
+      height: 47px;
+      background: url("../images/mv_wave_sp@2x.png");
+      background-size: cover;
+      background-position: center;
+      transform: translate(0, 1px);
     }
   }
 
-  &__text {
-    width: 45%;
-    @include media-breakpoint-down(md) {
+  // 背景のスマホ
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../images/mv_iphone_pc@2x.png");
+    background-size: cover;
+    width: 55%;
+    height: 100%;
+    border-bottom: 2px solid #fff;
+    z-index: 0;
+
+    @include media-breakpoint-down(sm) {
+      position: inherit;
+      display: block;
       width: 100%;
+      height: 350px;
+      background: url("../images/mv_iphone_sp@2x.png");
+      background-size: cover;
+      background-position: top;
+      margin-top: -3rem;
+      z-index: -1;
     }
-    position: relative;
-    min-height: auto;
+  }
+
+  // 外枠
+  &__container {
+    width: 85%;
+    min-height: 730px;
     margin: 0 auto;
-    justify-content: left;
+
+    @include media-breakpoint-down(lg) {
+      width: 100%;
+      padding: 0 1rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+      min-height: auto;
+    }
+  }
+
+  // テキストエリア
+  &__text {
+    width: 40%;
+    margin-bottom: 3rem;
+    z-index: 2;
+
+    @include media-breakpoint-down(lg) {
+      width: 50%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      padding-top: 3rem;
+    }
 
     &-ttl {
-      font-size: 2.25rem;
-      margin-bottom: 0;
-      line-height: 160%;
-      @include media-breakpoint-down(md) {
-        font-size: 1.625rem;
-        line-height: 160%;
-      }
+      line-height: 175%;
 
-      img {
-        width: 19rem;
-        @include media-breakpoint-down(md) {
-          width: 14.5rem;
-        }
+      @include media-breakpoint-down(sm) {
+        font-size: 1.125rem;
       }
     }
 
-    p {
-      margin-top: 3rem;
-      margin-bottom: 0;
-      font-size: 0.8125rem;
-      line-height: 240%;
-      @include media-breakpoint-down(md) {
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        line-height: 180%;
+    &-logo {
+      @include media-breakpoint-down(sm) {
+        width: 278px;
+      }
+    }
+
+    .btn {
+      min-width: 334px;
+
+      @include media-breakpoint-down(sm) {
+        min-width: 100%;
       }
     }
   }
 
-  &__photo {
-    position: relative;
-    width: 55%;
-    min-height: 345px;
-    @include media-breakpoint-down(md) {
-      width: 100%;
-      padding-top: 1.5rem;
+  // ポイント3つ
+  &__point {
+    margin: 3rem;
+    @include media-breakpoint-down(sm) {
+      margin: 2rem;
     }
-
-    &-bg {
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-      height: 530px;
-      background: url("../images/mv_bg_pc.png");
-      background-position: center;
-      background-size: cover;
-      border-radius: 40px;
+    p {
+      font-size: 0.8125rem;
 
       @include media-breakpoint-down(sm) {
-        background: url("../images/mv_bg_sp.png");
-        background-position: center;
-        background-size: cover;
-        height: 345px;
+        font-size: 0.625rem;
+      }
+
+      &:nth-child(2) {
+        border-left: 1px solid $gray;
+        border-right: 1px solid $gray;
       }
     }
 
     img {
-      display: none;
+      margin: .2rem 0;
+    }
+
+  }
+
+  // パターン
+  &__pattern {
+    &-1 {
+      position: absolute;
+      top: 0;
+      left: 34%;
+    }
+
+    &-2 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
     }
   }
 }
+
 /*===================================================
  ホーム - テイクイーツが選ばれる理由
 ====================================================*/
@@ -112,6 +159,7 @@
   &__wrap {
     width: 830px;
     margin: 0 auto;
+
     @include media-breakpoint-down(md) {
       width: 100%;
     }
@@ -122,7 +170,7 @@
     margin-bottom: 1.3rem;
     padding: 2rem;
     border-radius: 10px;
-    background-color: $light;
+
     @include media-breakpoint-down(sm) {
       width: 100%;
       margin-bottom: 6px;
@@ -137,122 +185,145 @@
     }
   }
 }
+
 /*===================================================
  ホーム - 商品お渡しまでの流れ
 ====================================================*/
 .home__about {
-  border-radius: 100px;
-  margin: 0 1rem;
-  @include media-breakpoint-down(md) {
-    border-radius: 50px;
-    margin: 0;
+  position: relative;
+  margin-left: 2rem;
+  padding-top: 8rem;
+  border-radius: 40px 0 0 40px;
+
+  @include media-breakpoint-down(sm) {
+    margin-left: 0;
+    padding: 6rem 0 1rem 0;
+    border-radius: 0;
   }
+
+  .container {
+    max-width: 100%;
+    padding: 0 0 0 10%;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: -2.5rem;
+    left: 12%;
+
+    @include media-breakpoint-down(sm) {
+      top: -1.5rem;
+      left: 1rem;
+    }
+  }
+
   &__wrap {
-    border: 4px solid #f0f0f0;
-    border-radius: 40px;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 3rem;
+
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 0;
+    }
+
     // スクロールバー
     &::-webkit-scrollbar {
+      display: block;
       height: 8px;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
     }
 
     &::-webkit-scrollbar-track {
       border-radius: 4px;
-      background: #eaeff4;
+      background: $white;
     }
 
     &::-webkit-scrollbar-thumb {
       border-radius: 4px;
-      background: #dee2e6;
+      background: $gray;
     }
   }
-  .container {
-    max-width: 90%;
-    margin: 0 auto;
-    @include media-breakpoint-down(md) {
-      max-width: 100%;
-    }
-  }
-  &__item {
-    position: relative;
-    width: 33%;
-    padding: 4rem 2.5rem;
-    border-radius: 40px;
+
+  &__list {
+    width: max-content;
+    height: auto;
+
     @include media-breakpoint-down(sm) {
-      display: inline-block;
-      width: 270px;
-      padding: 3rem 2rem 2rem 2rem;
+      display: block;
+      width: 100%;
+      height: auto;
     }
-    &:nth-child(2) {
-      .home__about__item-ttl {
-        &::after {
-          content: "02";
-        }
-      }
-    }
-    &:nth-child(3) {
-      .home__about__item-ttl {
-        &::after {
-          content: "03";
-        }
-      }
-    }
-    &-wrap {
-      display: flex;
-      align-items: center;
-      @include media-breakpoint-down(sm) {
-        display: block;
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-        overflow-x: scroll;
-        white-space: nowrap !important;
-        -webkit-overflow-scrolling: touch;
-      }
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 380px;
+    padding: 0 1rem;
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 1.5rem;
+      transform: translateX(-15rem);
     }
 
     &-ttl {
-      position: relative;
-      margin-bottom: 1rem;
-      text-align: center;
-      &::after {
-        content: "01";
-        display: block;
-        width: 100%;
-        position: absolute;
-        top: -2rem;
-        left: 0;
-        text-align: center;
-        font-size: 5rem;
-        color: $light;
-        font-weight: bold;
-        z-index: -1;
-      }
+      margin: .8rem 0;
+    }
+
+    img {
+      margin-bottom: 2rem;
     }
 
     p {
       white-space: break-spaces;
     }
 
-    &:after {
-      content: "";
-      position: absolute;
-      top: 24%;
-      right: -0.5rem;
-      width: 1.5rem;
-      height: 1.5rem;
-      border-left: 8px solid $light-gray;
-      border-bottom: 8px solid $light-gray;
-      transform: rotate(-135deg);
-      z-index: 1;
-    }
     &:last-child {
       margin-bottom: 0;
+
       &:after {
         display: none;
       }
     }
   }
+
+  // スライドショードット
+  .slick-dots {
+    bottom: 0;
+
+    li {
+      width: 24%;
+      height: 8px;
+      margin: 0;
+      background-color: $white;
+    }
+  }
+
+  .slick-dots li.slick-active {
+    background-color: $gray;
+    z-index: 2;
+  }
+
+  .slick-dots li button:before {
+    display: none;
+  }
+
+  .slick-dotted.slick-slider {
+    padding-bottom: 4rem;
+    margin-bottom: 0;
+  }
+
 }
+
 /*===================================================
  ホーム - 導入事例
 ====================================================*/
@@ -260,31 +331,54 @@
   &__wrap {
     width: 80%;
     border-radius: 40px;
+
     @include media-breakpoint-down(md) {
       width: 100%;
     }
   }
 
   &__ttl {
-    color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 
-    &:before {
-      content: url("../images/case_leaf_r.png");
+    @include media-breakpoint-down(sm) {
       display: block;
-      margin-top: 10px;
-      margin-right: 7px;
     }
 
-    &:after {
-      content: url("../images/case_leaf_l.png");
-      display: block;
-      margin-top: 10px;
-      margin-left: 7px;
+    &-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+
+      @include media-breakpoint-down(sm) {
+        align-items: end;
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        width: 28px;
+        height: 68px;
+        margin-right: 10px;
+        background: url("../images/case_leaf_r.png");
+        background-size: cover;
+        transform: translateY(20px);
+      }
+
+      &:after {
+        display: block;
+        margin-left: 10px;
+        background: url("../images/case_leaf_l.png");
+        background-size: cover;
+      }
     }
 
-    span {
+    &-num {
       font-size: 50px;
-      padding: 0 3px;
+      padding: 0 5px;
+
       @include media-breakpoint-down(md) {
         font-size: 40px;
       }
@@ -295,8 +389,11 @@
     width: 80%;
     border-radius: 40px;
     margin: 0 auto;
+    padding: 3.5rem 2rem 2rem 2rem;
+
     @include media-breakpoint-down(md) {
       width: 100%;
+      padding: 3.5rem 1rem 2rem 1rem;
     }
 
     &-img {
@@ -305,7 +402,9 @@
   }
 
   &__item {
-    margin: 0 1.375rem 2rem 1.375rem;
+    margin: 0 1rem 1.8rem 1rem;
+    height: 40px;
+
     @include media-breakpoint-down(md) {
       max-width: 26%;
       height: auto;
@@ -313,173 +412,113 @@
     }
   }
 }
+
 /*===================================================
  ホーム - 料金
 ====================================================*/
 .home__price {
-  &__nav {
-    cursor: pointer;
+  &__point {
+    width: 80%;
+    font-size: 18px;
+    margin: 0 auto 3rem auto;
+    padding: .5rem 1rem;
+    border-radius: 3rem;
+    justify-content: center;
+    align-items: center;
 
-    &-item {
-      width: 170px;
-      border-radius: 10px 10px 0 0;
-      margin: 0 5px 0 0;
-      border-bottom: 2px solid $white;
-      @include media-breakpoint-down(md) {
-        width: auto;
-        margin: 0 1% 0 0;
-      }
-
-      &.active {
-        border: none;
-      }
-
-      img {
-        transform: rotate(90deg);
-      }
-    }
-
-    &-link {
-      border-radius: 0 !important;
-
-      &.active {
-        border-radius: 10px 10px 0 0 !important;
-      }
+    @include media-breakpoint-down(md) {
+      width: 100%;
     }
   }
 
-  &__content {
-    &-item {
-      position: relative;
-      width: 80%;
-      margin: 0 auto;
-      padding: 2rem;
-      display: none;
+  &__plan {
+    width: 80%;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+
+    &-wrap {
+      width: 66%;
+
       @include media-breakpoint-down(md) {
         width: 100%;
-        padding: 1.5rem 1rem 1rem;
       }
 
-      &.show {
-        display: block;
-        border-radius: 40px;
-      }
+      &>div {
+        width: 46%;
 
-      &:nth-child(1) {
-        border: 8px solid $secondary;
-      }
-
-      &:nth-child(2) {
-        border: 8px solid $info;
-
-        p {
-          background: $light;
-          border-radius: 40px;
-          margin: 0 0 3rem;
-          padding: 2rem 0;
-          @include media-breakpoint-down(md) {
-            margin: 0 0 5rem;
-          }
-
-          a {
-            text-decoration: underline;
-          }
-        }
-      }
-
-      &:after {
-        content: "";
-        position: absolute;
-        right: 1.5rem;
-        bottom: 0;
-        background: url("../images/price_woman.png");
-        background-size: cover;
-        width: 118.7px;
-        height: 146px;
         @include media-breakpoint-down(md) {
-          width: 98px;
-          height: 120px;
+          width: 49%;
         }
       }
     }
 
-    &-line {
+    &-item {
       width: 30%;
-      margin: 0 5px;
-      padding: 2.5rem 0 2rem;
-      border-radius: 30px;
-      line-height: 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      border-radius: 20px;
+
       @include media-breakpoint-down(md) {
         width: 100%;
-        padding: 0.5rem 1.5rem;
-        margin-bottom: 5px;
-        border-radius: 40px;
+        margin-bottom: 1rem;
       }
 
-      &:last-child {
-        border: 3px solid $light;
+      &-ttl {
+        padding: 1.5rem;
+        border-radius: 20px 20px 0 0;
+      }
+
+      &-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 130px;
+        padding: 1.5rem;
+
+        img {
+          width: 57px;
+          height: auto;
+        }
+
+        .percent {
+          font-size: 56px;
+          line-height: 0;
+
+          @include media-breakpoint-down(md) {
+            line-height: 1;
+          }
+        }
       }
     }
   }
 }
+
 /*===================================================
  ホーム - 導入までの流れ
 ====================================================*/
-.home__flow {
-  &__comment {
-    position: relative;
-    display: inline-block;
-    background-color: $light;
-    font-size: 1.125rem;
-    margin: 0 auto;
-    padding: 6px 3rem;
-    border-radius: 3rem;
 
-    span {
-      font-size: 1.5rem;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      left: calc(50% - 13px);
-      bottom: -10px;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 11px 13px 0 13px;
-      border-color: $light transparent transparent transparent;
-    }
-  }
+.home__flow {
   &__step {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 3rem;
-    @include media-breakpoint-down(md) {
-      width: 90%;
-      margin: 1rem auto 0 auto;
+    margin-top: 4rem;
+
+    &-list {
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
     }
 
     &-item {
       position: relative;
+      width: 30%;
+      padding: 5rem 1rem 2rem 1rem;
       text-align: center;
-      width: 19%;
-      @include media-breakpoint-down(md) {
-        width: 100%;
-        margin-left: 4rem;
-        text-align: left;
-      }
+      border-radius: 20px;
 
-      &-num {
-        @include media-breakpoint-down(md) {
-          position: absolute;
-          display: block;
-          left: -4rem;
-          text-align: center;
-        }
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        margin-bottom: 3rem;
       }
 
       &:last-child {
@@ -488,38 +527,125 @@
         }
       }
 
-      &::before {
+      &::after {
         content: "";
         position: absolute;
-        top: -1.9rem;
-        left: calc(50% - 5px);
-        width: 10px;
-        height: 10px;
-        border-radius: 5px;
-        background-color: $primary;
-        @include media-breakpoint-down(md) {
+        top: 50%;
+        right: -10%;
+        display: block;
+        width: 22px;
+        height: 22px;
+        transform: rotate(45deg);
+        border-top: 2px solid $gray;
+        border-right: 2px solid $gray;
+
+        @include media-breakpoint-down(sm) {
           display: none;
         }
       }
 
-      &::after {
-        content: "";
+      h3 {
+        font-size: 1.375rem;
+      }
+
+      &-num {
         position: absolute;
-        top: -1.65rem;
-        left: 50%;
-        width: 110%;
-        height: 2px;
-        background-color: $primary;
-        @include media-breakpoint-down(md) {
-          top: 2.7rem;
-          left: -3.2rem;
-          width: 2px;
-          height: 40%;
+        top: -2rem;
+        left: calc(50% - 45px);
+        width: 90px;
+        height: 90px;
+        font-weight: bold;
+        line-height: 1;
+        padding: 1.2rem 0;
+        background-color: $white;
+        border-radius: 50%;
+        border: 6px solid $light;
+        text-align: center;
+
+        span {
+          font-size: 1.625rem;
         }
       }
     }
   }
 }
+
+/*===================================================
+ ホーム - サポート
+====================================================*/
+
+.home__support {
+  position: relative;
+  padding: 3rem 0;
+
+  @include media-breakpoint-down(md) {
+    padding: 3rem 0 9.735rem 0;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: calc(50% - 1.5625rem);
+    width: 3.4375rem;
+    height: 3.4375rem;
+    transform: rotate(45deg);
+    background-color: $light;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    bottom: 0;
+    width: 8rem;
+    height: 9.375rem;
+    background-image: url(../images/support_woman.png);
+    background-size: cover;
+
+    @include media-breakpoint-down(md) {
+      left: calc(50% - 5rem);
+    }
+  }
+
+  &__list {
+    width: 90%;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+
+    &-item {
+      position: relative;
+      display: inline-block;
+      background-color: $white;
+      border-radius: 3rem;
+      padding: .6rem 1.5rem;
+      margin-right: 1rem;
+      line-height: 2.5;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: .8rem;
+        background-image: url('../images/support_icon.png');
+        background-size: cover;
+        transform: translateY(6px);
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding: .6rem 1rem;
+        margin-right: 2px;
+        letter-spacing: -1px;
+      }
+    }
+  }
+}
+
 /*===================================================
  ホーム - SEOテキスト
 ====================================================*/
@@ -527,6 +653,7 @@
   &__table {
     width: 80%;
     margin: 0 auto;
+
     @include media-breakpoint-down(md) {
       width: 100%;
     }
@@ -561,15 +688,42 @@
     }
   }
 }
+
 /*===================================================
   いますぐテイクイーツを始めよう！
 ====================================================*/
 .cta {
+  position: relative;
+  margin-top: calc(5rem + 128px);
+
+  @include media-breakpoint-down(md) {
+    margin-top: calc(5rem + 105px);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -128px;
+    left: calc(50% - 170px);
+    width: 340px;
+    height: 128px;
+    background-image: url('../images/cta_icon.png');
+    background-size: cover;
+
+    @include media-breakpoint-down(md) {
+      width: 280px;
+      height: 105px;
+      top: -105px;
+      left: calc(50% - 140px);
+    }
+  }
+
   &__form {
     width: 90%;
     margin: 0 auto;
     padding: 2rem;
     border-radius: 20px;
+
     @include media-breakpoint-down(md) {
       width: 100%;
       padding: 1rem;
@@ -579,68 +733,28 @@
   &__btn {
     width: 90%;
     margin: 0 auto;
+
     @include media-breakpoint-down(md) {
       width: 100%;
     }
 
     &-item {
       display: inline-block;
-      border-radius: 50px;
+      border-radius: 10px;
       width: 40%;
       margin: 0 0.5rem;
-      padding: 1.5rem 1rem 1.5rem 3rem;
+      padding: 1.5rem 0;
       text-decoration: none !important;
+      text-align: center;
+
       @include media-breakpoint-down(sm) {
         width: 100%;
         margin: 0;
       }
 
-      &-ttl {
-        position: relative;
-
-        &::before {
-          content: "";
-          width: 28px;
-          height: 28px;
-          position: absolute;
-          top: -2px;
-          left: calc(50% - 5.5rem);
-          @include media-breakpoint-down(sm) {
-            top: 0;
-          }
-        }
-      }
-
-      &.request {
-        position: relative;
-        background: $secondary;
-        border-bottom: 7px solid #c74f1b;
-        @include media-breakpoint-down(sm) {
-          margin-bottom: 1rem;
-        }
-        .cta__btn-item-ttl {
-          &::before {
-            background: url("../images/arrow_wh.svg");
-            background-size: cover;
-          }
-        }
-      }
-
-      &.doc {
-        position: relative;
-        background: $white;
-        border-bottom: 7px solid #f0f0f0;
-
-        &:hover {
-          background-color: #f0f0f0;
-        }
-        .cta__btn-item-ttl {
-          &::before {
-            background: url("../images/arrow_or.svg");
-            background-size: cover;
-            left: calc(50% - 8rem);
-          }
-        }
+      &.btn-white {
+        background-color: $white;
+        color: $body-color;
       }
     }
   }
@@ -664,11 +778,14 @@
 .news {
   width: 70%;
   margin: 0 auto;
+
   @include media-breakpoint-down(lg) {
     width: 100%;
   }
+
   &__list {
     border-radius: 40px;
+
     a {
       padding: 0 2rem;
     }

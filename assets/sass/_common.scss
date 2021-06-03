@@ -9,6 +9,8 @@ body {
   line-height: 1.75;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   -webkit-font-smoothing: antialiased;
+  background: url("../images/bg_pattern.png");
+  background-size: contain;
 }
 
 * {
@@ -86,13 +88,16 @@ p {
  テキスト
 ====================================================*/
 .f-10,
+.f-12,
 .f-14,
-.f-18,
-.f-24,
-.f-26,
-.f-32,
+.f-16,
+.f-24
+.f-28 {
+  line-height: 165%;
+}
+
 .f-36 {
-  line-height: 145%;
+  line-height: 175%;
 }
 
 .f-36 {
@@ -102,24 +107,10 @@ p {
   }
 }
 
-.f-32 {
-  font-size: 2rem;
-  @include media-breakpoint-down(md) {
-    font-size: 1.625rem;
-  }
-}
-
 .f-28 {
   font-size: 1.75rem;
   @include media-breakpoint-down(md) {
     font-size: 1.625rem;
-  }
-}
-
-.f-26 {
-  font-size: 1.625rem;
-  @include media-breakpoint-down(md) {
-    font-size: 1.25rem;
   }
 }
 
@@ -134,13 +125,6 @@ p {
   font-size: 1.25rem;
   @include media-breakpoint-down(md) {
     font-size: 1.125rem;
-  }
-}
-
-.f-18 {
-  font-size: 1.125rem;
-  @include media-breakpoint-down(md) {
-    font-size: 1rem
   }
 }
 
@@ -209,6 +193,12 @@ a {
   &-center {
     margin: 0 auto;
   }
+  &-white {
+    &:after {
+      border-left: 3px solid $primary;
+      border-bottom: 3px solid $primary;
+    }
+  }
 }
 
 /*===================================================
@@ -260,4 +250,12 @@ a {
     padding: 1.5rem 2rem;
     white-space: nowrap;
   }
+}
+
+/*===================================================
+ 影
+====================================================*/
+
+.shadow {
+  box-shadow: 0px 0px 26px -9px rgba(0,0,0,0.2)!important;
 }

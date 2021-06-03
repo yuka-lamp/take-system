@@ -17,7 +17,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
           <!-- ▼ 電話番号 -->
           <div class="text-center">
             <p class="f-16 text-primary font-weight-bold mb-1">カスタマーサポートセンター</p>
-            <a class="footer__cta-phone f-32 font-weight-bold" href="tel:0120538205">
+            <a class="footer__cta-phone f-36 font-weight-bold" href="tel:0120538205">
               <span class="footer__cta-phone-icon"><i class="ri-phone-fill ri-md"></i></span>
               0120-538-205
             </a>
@@ -44,42 +44,6 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 
 <?php endif; ?>
 <!-- ▲ いますぐテイクイーツを始めよう！ -->
-
-<!-- ▼ seoテキスト -->
-<?php if (  is_front_page() ||  is_home() ) : ?>
-
-<section class="seo pt-main">
-  <div class="container">
-    <h2 class="f-32 font-weight-bold text-center mb-4">よくあるご質問</h2>
-    <p class="mb-5 text-center">お客様から多く寄せられるご質問を<br>ご紹介いたします。</p>
-    <div class="seo__table">
-      <dl class="seo__table-item ac bg-light mb-2">
-        <dt class="seo__table-item-q font-weight-bold">始めるのに費用はかかりますか？</dt>
-        <dd class="seo__table-item-a">初期導入費や月額利用料、導入費用などすべて0円です。<br>お客様からご注文が入り決済された際に【サービス手数料】が発生致します。</dd>
-      </dl>
-      <dl class="seo__table-item ac bg-light mb-2">
-        <dt class="seo__table-item-q font-weight-bold">モバイルオーダーとは何ですか？</dt>
-        <dd class="seo__table-item-a">モバイルオーダーは、お客様がスマートフォンを利用してメニューの注文・決済ができるシステムのことです。利用するお客様にとって、自宅や移動中などいつでもどこでも注文や予約を行うことができる便利なシステムです。<br>システムを導入することで、注文の受付から商品の準備、提供といった店内のオペレーションを効率化することもできます。</dd>
-      </dl>
-      <dl class="seo__table-item ac bg-light mb-2">
-        <dt class="seo__table-item-q font-weight-bold">モバイルオーダーの事前予約以外のメリットは何ですか？</dt>
-        <dd class="seo__table-item-a">モバイルオーダーは、ピークタイムの混雑や行列の解消に利用することができます。また、モバイルオーダーで事前決済を行うことで、テイクアウト（お持ち帰り）の課題であった無断キャンセルを防止することができます。<br>食品ロスや収益化の観点からもモバイルオーダーの仕組みを利用した事前決済は有効です。</dd>
-      </dl>
-      <dl class="seo__table-item ac bg-light mb-2">
-        <dt class="seo__table-item-q font-weight-bold">モバイルオーダーは小規模店舗でも利用できますか？</dt>
-        <dd class="seo__table-item-a">小規模店舗の飲食店様も利用可能です。<br>モバイルオーダーは、すでに顧客が多く店舗数が多い飲食店だけでなく、小規模な飲食店でも利用できます。<br>モバイルオーダーを導入することで注文履歴や顧客管理をデータで行うことができ、店舗運営の効率化にも繋がります。<br>少ない人数でお店を回している場合や、オーナーが一人で運営している場合、また、最近増えている一箇所で多店舗を運営するセントラルキッチンやゴーストレストランなどの業態でも便利に使うことができます。</dd>
-      </dl>
-      <dl class="seo__table-item ac bg-light mb-2">
-        <dt class="seo__table-item-q font-weight-bold">テイクアウトの需要について知りたいです。</dt>
-        <dd class="seo__table-item-a">新型コロナウイルスの感染者が増え始めた2020年3月後半あたりから「テイクアウト」や「お持ち帰り」の検索需要が増加しています。外食を避ける傾向から、家や職場の近くでテイクアウト（お持ち帰り）ができるお店を探す人が増えており、全国の都道府県で一度目の緊急事態宣言が発令された2020年4月には通常の約10倍にまで検索数が伸びています。<br>新しい生活様式も提示される中で、3密を避けて食事ができるテイクアウト（お持ち帰り）はこれからも注目されるでしょう。</dd>
-      </dl>
-    </div>
-  </div>
-</section>
-
-<?php endif; ?>
-<!-- ▲ seoテキスト -->
-
 
 <!-- ▼ フッター -->
 <div class="bg-white pt-main">

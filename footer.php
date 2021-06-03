@@ -11,7 +11,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 <section class="pt-main bg-white">
   <div class="container">
     <div class="footer__cta bg-light">
-      <h2 class="footer__cta-ttl f-32 font-weight-bold text-center">いますぐ<br class="d-md-none">テイクイーツを始めよう！</h2>
+      <h2 class="footer__cta-ttl f-28 font-weight-bold text-center">いますぐ<br class="d-md-none">テイクイーツを始めよう！</h2>
       <div class="footer__cta-wrap d-md-flex">
         <div class="col-md-6">
           <!-- ▼ 電話番号 -->
@@ -26,14 +26,14 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
           <!-- ▲ 電話番号 -->
         </div>
         <div class="col-md-6 footer__cta-btn text-center">
-          <a class="btn btn-primary d-block mb-2" href="<?php echo $home; ?>/request/">
+          <a class="btn btn-primary d-block mb-2" href="<?php echo $home; ?>#toform">
             <span class="d-block">
-              無料お申し込み
+              <span class="bg-white text-primary p-1 mr-2">無料</span>まずは資料請求
             </span>
           </a>
-          <a class="btn btn-primary d-block text-secondary bg-white" href="<?php echo $home; ?>#toform">
+          <a class="btn btn-primary d-block text-secondary bg-white" href="<?php echo $home; ?>/request/">
             <span class="d-block"> 
-              導入のご相談はこちら
+              お申し込み
             </span>
           </a>
         </div>

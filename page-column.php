@@ -61,7 +61,7 @@ get_header(); ?>
       <?php endforeach; wp_reset_postdata(); ?>
     <!-- ▲ 記事一覧 -->
     </article>
-    <a class="d-block d-md-none btn btn-secondary mt-3" href="<?php echo $home; ?>#toform/">すべてみる</a>
+    <a class="d-block d-md-none btn btn-secondary mt-3" href="<?php echo $home; ?>/blog_cat/basic/">すべてみる</a>
   </div>
 </section>
 <!-- ▲ 集客・販促 -->
@@ -74,7 +74,7 @@ get_header(); ?>
         <p class="text-info font-weight-bold">基礎知識</p>
         <h3 class="column__sec__intro-ttl">テイクアウトの<br>知識を身に着けよう</h3>
         <p class="f-16">テイクアウトを始める前に知っておきたい知識をまとめました。<br class="d-none b-md-block">これからテイクアウトを始める予定や始めようか迷っている飲食店オーナー様必見の基礎情報です。</p>
-        <a class="d-none d-md-block btn btn-info mt-3" href="<?php echo $home; ?>/blog_cat/basic/">すべてみる</a>
+        <a class="d-none d-md-block btn btn-info mt-5" href="<?php echo $home; ?>/blog_cat/basic/">すべてみる</a>
       </div>
     <!-- ▲ カテゴリ説明 -->
     <!-- ▼ 記事一覧 -->
@@ -123,7 +123,7 @@ get_header(); ?>
       <?php endforeach; wp_reset_postdata(); ?>
     <!-- ▲ 記事一覧 -->
     </article>
-    <a class="d-block d-md-none btn btn-info mt-3" href="<?php echo $home; ?>#toform/">すべてみる</a>
+    <a class="d-block d-md-none btn btn-info mt-3" href="<?php echo $home; ?>/blog_cat/basic/">すべてみる</a>
   </div>
 </section>
 <!-- ▲ 基礎知識 -->
@@ -185,7 +185,7 @@ get_header(); ?>
       <?php endforeach; wp_reset_postdata(); ?>
     <!-- ▲ 記事一覧 -->
     </article>
-    <a class="d-block d-md-none btn btn-warning mt-3" href="<?php echo $home; ?>#toform/">すべてみる</a>
+    <a class="d-block d-md-none btn btn-warning mt-3" href="<?php echo $home; ?>/blog_cat/ready/">すべてみる</a>
   </div>
 </section>
 <!-- ▲ メニュー開発 -->

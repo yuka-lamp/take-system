@@ -299,14 +299,14 @@ get_header(); ?>
     </div>
     <!-- ▲ 電話番号 -->
     <!-- ▼ ボタン -->
-    <div class="cta__btn d-flex flex-wrap justify-content-center">
+    <!-- <div class="cta__btn d-flex flex-wrap justify-content-center">
       <a class="cta__btn-item btn btn-white mb-3" href="<?php echo $home; ?>/#toform">
         <span class="bg-primary text-white p-1 mr-2">無料</span>まずは資料請求
       </a>
       <a class="cta__btn-item btn btn-primary mb-3" href="<?php echo $home; ?>/request/">
         お申し込み
       </a>
-    </div>
+    </div> -->
     <!-- ▲ ボタン -->
     <!-- ▼ お問い合せフォーム -->
       <div class="cta__form bg-white mt-4">

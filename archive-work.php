@@ -3,9 +3,9 @@ $home = esc_url(home_url());
 $wp_url = get_template_directory_uri();
 get_header(); ?>
 
-<section class="sec work">
+<section class="work">
   <div class="container">
-    <p class="text-center mb-5 f-16"><span>ジャンル・エリアを問わず多くのお店でご利用いただいております。<br>クリックで各店舗の注文サイトをご覧いただけます。</span></p>
+    <p class="text-center mb-5 f-14"><span>ジャンル・エリアを問わず多くのお店でご利用いただいております。<br>クリックで各店舗の注文サイトをご覧いただけます。</span></p>
     <div class="post-list">
     <?php
     if (have_posts()): while (have_posts()): the_post();

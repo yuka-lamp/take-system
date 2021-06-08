@@ -11,8 +11,8 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 <section class="pt-main bg-white">
   <div class="container">
     <div class="footer__cta bg-light">
-      <h2 class="footer__cta-ttl f-28 font-weight-bold text-center">いますぐ<br class="d-md-none">テイクイーツを始めよう！</h2>
-      <div class="footer__cta-wrap d-md-flex">
+      <h2 class="footer__cta-ttl f-28 font-weight-bold text-center mb-5">いますぐ<br class="d-md-none">テイクイーツを始めよう！</h2>
+      <div class="footer__cta-wrap d-md-flex align-items-center">
         <div class="col-md-6">
           <!-- ▼ 電話番号 -->
           <div class="text-center">

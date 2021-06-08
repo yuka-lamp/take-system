@@ -165,7 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <?php elseif ( is_page('column') || is_singular( 'blog' ) || is_tax('blog_cat') ): /* お役立ちガイド */ ?>
 
 <!-- ▼ 下層メインビジュアル -->
-<section class="sec mv__sub">
+<section class="sec mv__sub mb-0">
   <div class="container text-center">
     <h1 class="mv__sub-eng font-weight-bold w-100">COLUMN</h1>
     <p class="mv__sub-small font-weight-bold mb-0">お役立ちガイド</p>

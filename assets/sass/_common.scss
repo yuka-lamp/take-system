@@ -98,12 +98,16 @@ p {
 .f-12,
 .f-14,
 .f-16,
-.f-24 .f-28 {
-  line-height: 165%;
+.f-18,
+.f-20,
+.f-24,
+.f-28 {
+  line-height: 165% !important;
 }
 
+.f-32,
 .f-36 {
-  line-height: 175%;
+  line-height: 175% !important;
 }
 
 .f-36 {
@@ -111,6 +115,14 @@ p {
 
   @include media-breakpoint-down(md) {
     font-size: 1.625rem;
+  }
+}
+
+.f-32 {
+  font-size: 2rem;
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.875rem;
   }
 }
 
@@ -140,6 +152,7 @@ p {
 
 .f-18 {
   font-size: 1.125rem;
+
   @include media-breakpoint-down(md) {
     font-size: 1rem;
   }
@@ -206,7 +219,7 @@ a {
   }
 
   &.rounded {
-    border-radius: 10px!important;
+    border-radius: 10px !important;
   }
 
   &-border {
@@ -265,6 +278,29 @@ a {
           font-size: 1.75rem;
         }
       }
+    }
+  }
+
+  &-line {
+    position: relative;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: $light-gray;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: -1;
+    }
+
+    h2 {
+      display: inline;
+      background-color: $white;
+      padding: 0 3rem;
     }
   }
 }

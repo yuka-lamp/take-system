@@ -26,16 +26,12 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
           <!-- ▲ 電話番号 -->
         </div>
         <div class="col-md-6 footer__cta-btn text-center">
-          <a class="btn btn-primary d-block mb-2" href="<?php echo $home; ?>#toform">
-            <span class="d-block">
-              <span class="bg-white text-primary p-1 mr-2">無料</span>まずは資料請求
-            </span>
-          </a>
-          <a class="btn btn-primary d-block text-secondary bg-white" href="<?php echo $home; ?>/request/">
-            <span class="d-block"> 
-              お申し込み
-            </span>
-          </a>
+        <a class="w-100 btn btn-primary f-16 text-center rounded shadow px-5 mb-3 mx-2" href="<?php echo $home; ?>/consultation/">
+          <span class="bg-white text-primary p-1 mr-2">無料</span>まずはオンライン相談</h3>
+        </a>
+        <a class="w-100 btn btn-white f-16 text-center rounded shadow px-5 mb-3 mx-2" href="<?php echo $home; ?>/request/">
+          お申し込み
+        </a>
         </div>
       </div>
     </div>
@@ -56,9 +52,9 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
         <div class="footer__service__under">
           <!-- ▼ SNSリンク -->
           <div class="footer__service__sns p-0 mt-4">
+            <a style="color: #1da1f2" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="ri-twitter-fill ri-lg"></i></a>
+            <a style="color: #c13584" class="mx-3" href="https://www.instagram.com/take.eats_official/" target="_blank" rel="noopener"><i class="ri-instagram-fill ri-lg"></i></a>
             <a style="color: #3B5998" href="https://www.facebook.com/TakeEats.LAMP/" target="_blank" rel="noopener"><i class="ri-facebook-circle-fill ri-lg"></i></a>
-            <a style="color: #1da1f2" class="mx-3" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="ri-twitter-fill ri-lg"></i></a>
-            <a style="color: #c13584" href="https://www.instagram.com/take.eats_official/" target="_blank" rel="noopener"><i class="ri-instagram-fill ri-lg"></i></a>
           </div>
           <!-- ▲ SNSリンク -->
           <!-- ▼ コピーライト -->
@@ -84,13 +80,14 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
               <a class="footer__link-line-item" href="<?php echo $home; ?>/systeminfo/">ニュース</a>
               <a class="footer__link-line-item" href="<?php echo $home; ?>#toform">お問い合わせ</a>
               <a class="footer__link-line-item" href="<?php echo $home; ?>/request/">お申し込み</a>
-              <a class="footer__link-line-item" href="<?php echo $home; ?>/seminar/">無料相談会</a>
+              <a class="footer__link-line-item" href="<?php echo $home; ?>/consultation/">無料相談会</a>
             </div>
             <div class="footer__link-line">
+              <a class="footer__link-line-item" href="https://media.take-eats.jp/" target="_blank">テイクイーツ注文<i class="ri-external-link-line ml-1"></i></a>
               <a class="footer__link-line-item" href="https://takeeats.zendesk.com/hc/ja/categories/900000324626-%E9%A3%B2%E9%A3%9F%E5%BA%97%E5%90%91%E3%81%91%E3%83%98%E3%83%AB%E3%83%97/" target="_blank">よくある質問<i class="ri-external-link-line ml-1"></i></a>
-              <!-- <a class="footer__link-line-item" href="<?php echo $home; ?>/" target="_blank">パートナープログラム<i class="ri-external-link-line ml-1"></i></a>
-              <a class="footer__link-line-item" href="<?php echo $home; ?>/marketing/" target="_blank">タク配について<i class="ri-external-link-line ml-1"></i></a>
-              <a class="footer__link-line-item" href="<?php echo $home; ?>/work/" target="_blank">管理画面ログイン<i class="ri-external-link-line ml-1"></i></a> -->
+              <!-- <a class="footer__link-line-item" href="<?php echo $home; ?>/" target="_blank">パートナープログラム<i class="ri-external-link-line ml-1"></i></a> -->
+              <a class="footer__link-line-item" href="https://takuhai.take-eats.jp/" target="_blank">タク配について<i class="ri-external-link-line ml-1"></i></a>
+              <!-- <a class="footer__link-line-item" href="<?php echo $home; ?>/work/" target="_blank">管理画面ログイン<i class="ri-external-link-line ml-1"></i></a> -->
             </div>
           </div>
         </div>

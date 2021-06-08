@@ -24,6 +24,7 @@ body {
 
 main {
   position: relative;
+
   @include media-breakpoint-up(xl) {
     margin-top: 80px;
   }
@@ -52,11 +53,13 @@ table {
 p {
   font-size: 14px;
 }
+
 /*===================================================
  余白
 ====================================================*/
 .sec {
   padding: 4rem 0;
+
   @include media-breakpoint-down(md) {
     padding: 2.5rem 0;
   }
@@ -65,6 +68,7 @@ p {
 .py-main {
   padding-top: 6rem;
   padding-bottom: 6rem;
+
   @include media-breakpoint-down(md) {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -73,6 +77,7 @@ p {
 
 .pt-main {
   padding-top: 6rem;
+
   @include media-breakpoint-down(md) {
     padding-top: 3rem;
   }
@@ -80,10 +85,12 @@ p {
 
 .pb-main {
   padding-bottom: 6rem;
+
   @include media-breakpoint-down(md) {
     padding-bottom: 3rem;
   }
 }
+
 /*===================================================
  テキスト
 ====================================================*/
@@ -91,8 +98,7 @@ p {
 .f-12,
 .f-14,
 .f-16,
-.f-24
-.f-28 {
+.f-24 .f-28 {
   line-height: 165%;
 }
 
@@ -102,6 +108,7 @@ p {
 
 .f-36 {
   font-size: 2.25rem;
+
   @include media-breakpoint-down(md) {
     font-size: 1.625rem;
   }
@@ -109,6 +116,7 @@ p {
 
 .f-28 {
   font-size: 1.75rem;
+
   @include media-breakpoint-down(md) {
     font-size: 1.625rem;
   }
@@ -116,6 +124,7 @@ p {
 
 .f-24 {
   font-size: 1.5rem;
+
   @include media-breakpoint-down(md) {
     font-size: 1.125rem;
   }
@@ -123,8 +132,16 @@ p {
 
 .f-20 {
   font-size: 1.25rem;
+
   @include media-breakpoint-down(md) {
     font-size: 1.125rem;
+  }
+}
+
+.f-18 {
+  font-size: 1.125rem;
+  @include media-breakpoint-down(md) {
+    font-size: 1rem;
   }
 }
 
@@ -154,12 +171,15 @@ p {
 a {
   &:hover {
     text-decoration: none;
+    transition: 0.3s;
     opacity: .6;
   }
 }
+
 .btn {
   position: relative;
   padding: 1.5rem 0;
+  min-width: 18.75rem;
   max-width: 20rem;
   border-radius: 5em;
   color: $white;
@@ -167,9 +187,11 @@ a {
   line-height: 1;
   font-weight: bold;
   letter-spacing: 0.1rem;
+
   @include media-breakpoint-down(md) {
     margin: auto;
   }
+
   &:after {
     content: '';
     display: inline-block;
@@ -182,18 +204,29 @@ a {
     border-bottom: 3px solid $white;
     transform: rotate(-135deg);
   }
+
+  &.rounded {
+    border-radius: 10px!important;
+  }
+
   &-border {
     border: 2px solid $primary;
-    color: $primary!important;
+    color: $primary !important;
+
     &:after {
       border-left: 3px solid $primary;
-    border-bottom: 3px solid $primary;
+      border-bottom: 3px solid $primary;
     }
   }
+
   &-center {
     margin: 0 auto;
   }
+
   &-white {
+    color: $body-color;
+    background-color: $white;
+
     &:after {
       border-left: 3px solid $primary;
       border-bottom: 3px solid $primary;
@@ -217,6 +250,7 @@ a {
         font-weight: bold;
         text-transform: uppercase;
         margin-bottom: 1rem;
+
         @include media-breakpoint-down(md) {
           font-size: 1rem;
         }
@@ -226,6 +260,7 @@ a {
         display: block;
         font-weight: bold;
         font-size: 1.5rem;
+
         @include media-breakpoint-down(md) {
           font-size: 1.75rem;
         }
@@ -240,12 +275,14 @@ a {
 
 .ctabtn {
   display: flex;
+
   &__wrap {
     border-radius: 8px;
     overflow: hidden;
   }
+
   &__item {
-    text-decoration: none!important;
+    text-decoration: none !important;
     text-align: center;
     padding: 1.5rem 2rem;
     white-space: nowrap;
@@ -257,5 +294,5 @@ a {
 ====================================================*/
 
 .shadow {
-  box-shadow: 0px 0px 26px -9px rgba(0,0,0,0.2)!important;
+  box-shadow: 0px 0px 26px -9px rgba(0, 0, 0, 0.2) !important;
 }

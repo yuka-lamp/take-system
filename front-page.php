@@ -28,13 +28,13 @@ get_header(); ?>
             <span class="d-block">でカスタマイズ</span>
           </p>
           <p class="text-center f-13 font-weight-bold col-4 mb-0">
-            <span class="d-block">業界最低基準</span>
+            <span class="d-block">申し込みから</span>
             <img src="<?php echo $img_url; ?>mv_point_8.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>mv_point_8.png 1x, <?php echo $img_url; ?>mv_point_8@2x.png 2x">
-            <span class="d-block">サービス手数料</span>
+            <span class="d-block">で開設</span>
           </p>
         </div>
-        <a class="btn btn-primary f-16 text-center rounded px-5" href="<?php echo $home; ?>/#toform">
-          <span class="bg-white text-primary p-1 mr-2">無料</span>まずは資料請求</h3>
+        <a class="btn btn-primary f-16 text-center rounded px-5" href="<?php echo $home; ?>/consultation/">
+          <span class="bg-white text-primary p-1 mr-2">無料</span>まずはオンライン相談</h3>
         </a>
         </div>
       </div>
@@ -147,7 +147,7 @@ get_header(); ?>
     </div>
   </div>
   <div class="py-5">
-    <a class="btn btn-border btn-center d-block" href="<?php echo $home; ?>/features/">詳細をみる</a>
+    <a class="btn btn-border btn-center d-block" href="<?php echo $home; ?>/features/">機能一覧をみる</a>
   </div>
 </div>
 <!-- ▲ 商品お渡しまでの流れ -->
@@ -194,44 +194,43 @@ get_header(); ?>
       <span>初期・月額費用が無料だから<br class="d-md-none">気軽に始められる！</span>
     </p>
 
-    <div class="home__price__plan d-md-flex justify-content-between">
-      <div class="home__price__plan-wrap d-flex justify-content-between">
+    <div class="price__plan d-md-flex justify-content-between">
+      <div class="price__plan-wrap d-flex justify-content-between">
         <!-- ▼ 初期費用 -->
-        <div class="home__price__plan-item p-0 text-center bg-white shadow">
-          <h3 class="home__price__plan-item-ttl bg-secondary text-white f-24 font-weight-bold">初期費用</h3>
-          <div class="home__price__plan-item-content">
+        <div class="price__plan-item p-0 text-center bg-white shadow">
+          <h3 class="price__plan-item-ttl bg-secondary text-white f-20 font-weight-bold">初期費用</h3>
+          <div class="price__plan-item-content">
             <img src="<?php echo $img_url; ?>¥0.svg" alt="¥0">
           </div>
         </div>
         <!-- ▲ 初期費用 -->
         <!-- ▼ 月額費用 -->
-        <div class="home__price__plan-item p-0 text-center bg-white shadow">
-          <h3 class="home__price__plan-item-ttl bg-secondary text-white f-24 font-weight-bold">月額費用</h3>
-          <div class="home__price__plan-item-content">
+        <div class="price__plan-item p-0 text-center bg-white shadow">
+          <h3 class="price__plan-item-ttl bg-secondary text-white f-20 font-weight-bold">月額費用</h3>
+          <div class="price__plan-item-content">
             <img src="<?php echo $img_url; ?>¥0.svg" alt="¥0">
           </div>
         </div>
         <!-- ▲ 月額費用 -->
       </div>
       <!-- ▼ サービス手数料 -->
-      <div class="home__price__plan-item p-0 text-center bg-white shadow">
-          <h3 class="home__price__plan-item-ttl bg-primary text-white f-24 font-weight-bold">サービス手数料</h3>
-          <div class="home__price__plan-item-content text-center">
+      <div class="price__plan-item p-0 text-center bg-white shadow">
+          <h3 class="price__plan-item-ttl bg-primary text-white f-20 font-weight-bold">サービス手数料</h3>
+          <div class="price__plan-item-content text-center">
             <div>
               <p class="font-weight-bold mb-0">１回の注文につき</p>
-              <p class="text-primary font-weight-bold mb-0"><spam class="percent">8</span><span class="f-36">%</span></p>
+              <p class="text-primary font-weight-bold mb-0"><span class="percent">8</span><span class="f-36">%</span></p>
             </div>
           </div>
         </div>
         <!-- ▲ サービス手数料 -->
     </div>
-
     <div class="mt-5 py-3">
       <a href="<?php echo $home; ?>/price/">
         <img class="shadow mx-auto d-block" src="<?php echo $img_url; ?>plan_banner.png" alt="特別プランをご用意しております" srcset="<?php echo $img_url; ?>plan_banner.png 1x, <?php echo $img_url; ?>plan_banner@2x.png 2x">
       </a>
     </div>
-    <a class="btn btn-border btn-center d-block my-5" href="<?php echo $home; ?>/price/">詳しくはこちら</a>
+    <a class="btn btn-border btn-center d-block my-5" href="<?php echo $home; ?>/price/">料金プランをみる</a>
   </div>
 </div>
 <!-- ▲ 料金 -->
@@ -286,7 +285,7 @@ get_header(); ?>
 <!-- ▼ お問い合わせ -->
 <div id="toform" class="cta pt-5 pb-5 bg-light">
   <div class="container">
-    <h2 class="f-32 font-weight-bold text-center mb-4">いますぐ<br>テイクイーツを始めよう！</h2>
+    <h2 class="f-28 font-weight-bold text-center mb-4">いますぐ<br>テイクイーツを始めよう！</h2>
     <!-- <p class="mb-5 text-center">あなたのお店オリジナルの<br>モバイルオーダーサイトを無料で簡単に開設。</p> -->
     <!-- ▼ 電話番号 -->
     <div class="text-center mt-3">
@@ -299,18 +298,18 @@ get_header(); ?>
     </div>
     <!-- ▲ 電話番号 -->
     <!-- ▼ ボタン -->
-    <!-- <div class="cta__btn d-flex flex-wrap justify-content-center">
-      <a class="cta__btn-item btn btn-white mb-3" href="<?php echo $home; ?>/#toform">
-        <span class="bg-primary text-white p-1 mr-2">無料</span>まずは資料請求
-      </a>
-      <a class="cta__btn-item btn btn-primary mb-3" href="<?php echo $home; ?>/request/">
-        お申し込み
-      </a>
-    </div> -->
+    <div class="cta__btn d-flex flex-wrap justify-content-center">
+        <a class="btn btn-primary f-16 text-center rounded shadow px-5 mb-3 mx-2" href="<?php echo $home; ?>/consultation/">
+          <span class="bg-white text-primary p-1 mr-2">無料</span>まずはオンライン相談</h3>
+        </a>
+        <a class="btn btn-white f-16 text-center rounded shadow px-5 mb-3 mx-2" href="<?php echo $home; ?>/request/">
+          お申し込み
+        </a>
+    </div>
     <!-- ▲ ボタン -->
     <!-- ▼ お問い合せフォーム -->
       <div class="cta__form bg-white mt-4">
-        <h2 class="f-26 font-weight-bold text-center my-4">お問い合わせ</h2>
+        <h2 class="f-24 font-weight-bold text-center my-4">お問い合わせ</h2>
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
         <script>
           hbspt.forms.create({

@@ -68,18 +68,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </a> -->
     </div>
     <div class="header__btn">
-      <a class="header__btn-item btn-secondary font-weight-bold text-center text-white" href="<?php echo $home; ?>#toform">
+     <a class="header__btn-item btn-secondary font-weight-bold text-center text-white" href="<?php echo $home; ?>/request/">
+        <span class="d-block"> 
+        <i class="ri-quill-pen-fill ri-2x d-block"></i>
+          お申し込み
+        </span>
+      </a>
+      <a class="header__btn-item btn-primary font-weight-bold text-center text-white" href="<?php echo $home; ?>#toform">
         <span class="d-block">
         <i class="ri-mail-fill ri-2x d-block"></i>
           お問い合わせ
         </span>
       </a>
-      <a class="header__btn-item btn-primary font-weight-bold text-center text-white" href="<?php echo $home; ?>/request/">
-        <span class="d-block"> 
-        <i class="ri-quill-pen-fill ri-2x d-block"></i>
-          無料お申し込み
-        </span>
-      </a>
+      
     </div>
     <!-- ▲ PCのみリンクボタン -->
 
@@ -88,10 +89,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- ▼ スマホメニュー -->
   <div class="drawer d-xl-none">
     <!-- ▼ お申し込みボタン -->
-    <a class="drawer__entry btn-primary font-weight-bold text-center text-white" href="<?php echo $home; ?>/request/">
+    <a class="drawer__entry btn-secondary font-weight-bold text-center text-white" href="<?php echo $home; ?>/request/">
       <span class="d-block"> 
       <i class="ri-quill-pen-fill ri-xl mb-1"></i>
-        <span class="drawer__entry-text d-block font-weight-bold">無料申込</span>
+        <span class="drawer__entry-text d-block font-weight-bold">申し込み</span>
       </span>
     </a> 
     <!-- ▲ お申し込みボタン -->
@@ -126,11 +127,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           管理画面ログイン
         </a> -->
-        <a class="d-block btn btn-secondary mt-5" href="<?php echo $home; ?>#toform/">
+        <a class="d-block btn btn-secondary mt-5" href="<?php echo $home; ?>#toform">
           お問い合わせ
         </a>
-        <a class="d-block btn btn-primary mt-2" href="<?php echo $home; ?>#toform/">
-          無料お申し込み
+        <a class="d-block btn btn-primary mt-2" href="<?php echo $home; ?>/request/">
+          お申し込み
         </a>
         
         <!-- ▲ ページリンク -->

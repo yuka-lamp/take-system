@@ -83,3 +83,8 @@ $(function ($) {
   });
 
 });
+
+// メニューをクリックで閉じる
+$('.drawer__menu__wrap a').on('click', function(event) {
+  $('.drawer__checkbox').trigger('click');
+});

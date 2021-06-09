@@ -8,7 +8,7 @@ get_header(); ?>
 <!-- ▼ 基本プラン -->
 <section class="price__plan pb-main">
     <div class="container">
-        <div class="price__plan-img text-center pb-4">
+        <div class="price__plan-img text-center pb-4 col-12">
             <img src="<?php echo $img_url; ?>plan_ttl.png" alt="テイクイーツは¥0で始められる" srcset="<?php echo $img_url; ?>plan_ttl.png 1x, <?php echo $img_url; ?>plan_ttl@2x.png 2x">
         </div>
         <div class="price__plan d-md-flex justify-content-between pt-5">    

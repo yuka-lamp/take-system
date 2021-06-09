@@ -21,7 +21,7 @@ get_header(); ?>
 <!-- ▲ 導入 -->
 
 <!-- ▼ 機能一覧 -->
-<section class="features pb-main">
+<section class="features">
     <div class="container">
         <!-- ▼ ページ内リンク -->
         <div class="features__system__nav">
@@ -45,6 +45,8 @@ get_header(); ?>
             </a>
         </div>
         <!-- ▲ ページ内リンク -->
+
+        <p class="text-center pt-3 pb-5"><span class="tag">Pro</span> … 複数店舗で導入したい方におすすめ</p>
 
         <!-- ▼ 基本機能 -->
         <div id="basic">

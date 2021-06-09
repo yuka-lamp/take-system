@@ -49,8 +49,9 @@
 
         &:hover {
           background-color: $primary;
-          color: $white!important;
+          color: $white !important;
           opacity: 1;
+          margin: 0 .5rem 0 0;
         }
       }
 
@@ -87,8 +88,8 @@
       text-align: center;
 
       @include media-breakpoint-down(md) {
-        width: 47.5%;
-        margin: 0 5% 1rem 0;
+        width: 48%;
+        margin: 0 4% 1rem 0;
         padding: 0.875rem 1rem 1.25rem 1rem;
       }
 
@@ -103,11 +104,11 @@
       }
 
       img {
-        width: 80px;
+        width: 5rem;
         height: auto;
 
         @include media-breakpoint-down(md) {
-          width: 65px;
+          width: 4rem;
         }
       }
 
@@ -130,11 +131,12 @@
         color: $white;
         font-size: 0.625rem;
         font-weight: bold;
-        line-height: 1!important;
+        line-height: 1 !important;
         margin: 0 0 0 5px;
         padding: 4px;
         text-transform: uppercase;
         transform: translateY(-2px);
+
         @include media-breakpoint-down(md) {
           padding: 2px 4px;
         }
@@ -165,16 +167,101 @@
         }
 
         &::after {
-          content: '- リリース予定 -';
+          content: 'リリース予定';
           position: absolute;
           left: 0;
-          bottom: .5rem;
+          bottom: calc(50% - 1rem);
           width: 100%;
           color: $muted;
           font-size: 0.875rem;
           text-align: center;
-          opacity: 1;
+          opacity: .2;
+          font-size: 1.5rem;
+          font-weight: bold;
+          transform: rotate(-15deg);
         }
+      }
+    }
+  }
+}
+
+/*===================================================
+  機能紹介 - 詳細
+====================================================*/
+
+.system-list {
+  .column__sec__inner h2 {
+    background-color: $white;
+  }
+
+  &__intro {
+    &-img {
+      width: 5rem;
+      height: auto;
+
+      @include media-breakpoint-down(md) {
+        width: 4rem;
+      }
+    }
+
+    &-text {
+      text-align: center;
+
+      @include media-breakpoint-down(md) {
+        text-align: left;
+      }
+    }
+  }
+
+  &__point {
+
+    &-item {
+      width: 32%;
+      padding: 2rem;
+
+      @include media-breakpoint-down(md) {
+        padding: 1.5rem 1rem;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      &-img {
+        width: 9.375rem;
+        height: 9.375rem;
+        margin: 0 auto 1rem auto;
+
+        @include media-breakpoint-down(md) {
+          width: 5.5rem;
+          height: 5.5rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+          margin: 0;
+        }
+
+      }
+
+      &-ttl {
+        text-align: center;
+
+        @include media-breakpoint-down(sm) {
+          padding-left: 1rem;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__sec {
+    &-inner {
+      width: 860px !important;
+      margin: 0 auto;
+
+      @include media-breakpoint-down(lg) {
+        width: 100% !important;
       }
     }
   }

@@ -15958,7 +15958,7 @@ body {
   font-family: "Lato", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: .875rem;
   font-feature-settings: "palt";
-  letter-spacing: .03rem;
+  letter-spacing: .05rem;
   line-height: 1.75;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   -webkit-font-smoothing: antialiased;
@@ -16169,6 +16169,9 @@ a:hover {
   position: relative;
   text-align: center;
   margin-bottom: 4rem; }
+  @media (max-width: 991.98px) {
+    .ttl-line {
+      margin-bottom: 2rem; } }
   .ttl-line::after {
     content: '';
     width: 100%;
@@ -17123,7 +17126,8 @@ a:hover {
       .features__system__nav-item:hover {
         background-color: #EF5D1D;
         color: #fff !important;
-        opacity: 1; }
+        opacity: 1;
+        margin: 0 .5rem 0 0; }
     .features__system__nav::-webkit-scrollbar {
       display: block;
       height: 4px; }
@@ -17146,8 +17150,8 @@ a:hover {
     text-align: center; }
     @media (max-width: 991.98px) {
       .features__system-item {
-        width: 47.5%;
-        margin: 0 5% 1rem 0;
+        width: 48%;
+        margin: 0 4% 1rem 0;
         padding: 0.875rem 1rem 1.25rem 1rem; } }
     .features__system-item:nth-child(4n) {
       margin: 0 0 2rem 0; }
@@ -17155,11 +17159,11 @@ a:hover {
       .features__system-item:nth-child(2n) {
         margin: 0 0 1rem 0; } }
     .features__system-item img {
-      width: 80px;
+      width: 5rem;
       height: auto; }
       @media (max-width: 991.98px) {
         .features__system-item img {
-          width: 65px; } }
+          width: 4rem; } }
     .features__system-item p {
       color: #666666;
       font-size: 0.750rem;
@@ -17200,15 +17204,72 @@ a:hover {
       .features__system-item.release .features__system-item-wrap {
         opacity: 0.4; }
       .features__system-item.release::after {
-        content: '- リリース予定 -';
+        content: 'リリース予定';
         position: absolute;
         left: 0;
-        bottom: .5rem;
+        bottom: calc(50% - 1rem);
         width: 100%;
         color: #666666;
         font-size: 0.875rem;
         text-align: center;
-        opacity: 1; }
+        opacity: .2;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transform: rotate(-15deg); }
+
+/*===================================================
+  機能紹介 - 詳細
+====================================================*/
+.system-list .column__sec__inner h2 {
+  background-color: #fff; }
+
+.system-list__intro-img {
+  width: 5rem;
+  height: auto; }
+  @media (max-width: 991.98px) {
+    .system-list__intro-img {
+      width: 4rem; } }
+
+.system-list__intro-text {
+  text-align: center; }
+  @media (max-width: 991.98px) {
+    .system-list__intro-text {
+      text-align: left; } }
+
+.system-list__point-item {
+  width: 32%;
+  padding: 2rem; }
+  @media (max-width: 991.98px) {
+    .system-list__point-item {
+      padding: 1.5rem 1rem; } }
+  @media (max-width: 767.98px) {
+    .system-list__point-item {
+      width: 100%;
+      margin-bottom: 1rem; } }
+  .system-list__point-item-img {
+    width: 9.375rem;
+    height: 9.375rem;
+    margin: 0 auto 1rem auto; }
+    @media (max-width: 991.98px) {
+      .system-list__point-item-img {
+        width: 5.5rem;
+        height: 5.5rem; } }
+    @media (max-width: 767.98px) {
+      .system-list__point-item-img {
+        margin: 0; } }
+  .system-list__point-item-ttl {
+    text-align: center; }
+    @media (max-width: 767.98px) {
+      .system-list__point-item-ttl {
+        padding-left: 1rem;
+        text-align: left; } }
+
+.system-list__sec-inner {
+  width: 860px !important;
+  margin: 0 auto; }
+  @media (max-width: 1199.98px) {
+    .system-list__sec-inner {
+      width: 100% !important; } }
 
 /*===================================================
  料金プラン

@@ -127,11 +127,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
           管理画面ログイン
         </a> -->
-        <a class="d-block btn btn-secondary mt-5" href="<?php echo $home; ?>#toform">
-          お問い合わせ
-        </a>
-        <a class="d-block btn btn-primary mt-2" href="<?php echo $home; ?>/request/">
+        <a class="d-block btn btn-secondary mt-5" href="<?php echo $home; ?>/request/">
           お申し込み
+        </a>
+        <a class="d-block btn btn-primary mt-2" href="<?php echo $home; ?>#toform">
+          お問い合わせ
         </a>
         
         <!-- ▲ ページリンク -->

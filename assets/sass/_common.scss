@@ -5,7 +5,7 @@ body {
   font-family: "Lato", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: .875rem;
   font-feature-settings: "palt";
-  letter-spacing: .03rem;
+  letter-spacing: .05rem;
   line-height: 1.75;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   -webkit-font-smoothing: antialiased;
@@ -285,6 +285,9 @@ a {
     position: relative;
     text-align: center;
     margin-bottom: 4rem;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 2rem;
+    }
 
     &::after {
       content: '';

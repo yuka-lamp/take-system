@@ -34,7 +34,7 @@ get_header(); ?>
       foreach ($my_posts as $post):
           setup_postdata($post);
           $id = get_the_ID();
-          $thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
+          $thumbnail = get_the_post_thumbnail_url($id, 'medium');
           $ttl = get_the_title();
           $permalink = get_the_permalink();
           $tarms = get_the_terms(get_the_ID(), 'blog_cat');
@@ -97,7 +97,7 @@ get_header(); ?>
       foreach ($my_posts as $post):
       setup_postdata($post);
       $id = get_the_ID();
-      $thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
+      $thumbnail = get_the_post_thumbnail_url($id, 'medium');
       $ttl = get_the_title();
       $tarms = get_the_terms($post->ID, 'blog_cat');
       $permalink = get_the_permalink();
@@ -159,7 +159,7 @@ get_header(); ?>
       foreach ($my_posts as $post):
       setup_postdata($post);
       $id = get_the_ID();
-      $thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
+      $thumbnail = get_the_post_thumbnail_url($id, 'medium');
       $ttl = get_the_title();
       $tarms = get_the_terms($post->ID, 'blog_cat');
       $permalink = get_the_permalink();

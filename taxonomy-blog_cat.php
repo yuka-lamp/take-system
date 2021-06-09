@@ -7,7 +7,7 @@ get_header(); ?>
     <div class="container">
         <?php if (have_posts()): while (have_posts()): the_post();
         $id = get_the_ID();
-        $thumbnail = get_the_post_thumbnail_url($id, 'thumbnail');
+        $thumbnail = get_the_post_thumbnail_url($id, 'medium');
         $ttl = get_the_title();
         $tarms = get_the_terms($post->ID, 'blog_cat');
         $permalink = get_the_permalink();

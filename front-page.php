@@ -299,10 +299,10 @@ get_header(); ?>
     <!-- ▲ 電話番号 -->
     <!-- ▼ ボタン -->
     <div class="cta__btn d-flex flex-wrap justify-content-center">
-        <a class="btn btn-primary f-16 text-center rounded shadow px-5 mb-3 mx-2" href="<?php echo $home; ?>/consultation/">
+        <a class="btn btn-primary f-16 text-center rounded shadow px-5 mb-3 mx-2 w-100" href="<?php echo $home; ?>/consultation/">
           <span class="bg-white text-primary p-1 mr-2">無料</span>まずはオンライン相談</h3>
         </a>
-        <a class="btn btn-white f-16 text-center rounded shadow px-5 mb-3 mx-2" href="<?php echo $home; ?>/request/">
+        <a class="btn btn-white f-16 text-center rounded shadow px-5 mb-3 mx-2 w-100" href="<?php echo $home; ?>/request/">
           お申し込み
         </a>
     </div>

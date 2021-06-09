@@ -9,8 +9,8 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 <?php if ( !is_front_page() && !is_home() && !is_page(array('request', 'seminar')) ): //トップページのみ ?>
 
 <section class="pt-main bg-white">
-  <div class="container">
-    <div class="footer__cta bg-light">
+  <div class="footer__cta container bg-light">
+    <div class="">
       <h2 class="footer__cta-ttl f-28 font-weight-bold text-center mb-5">いますぐ<br class="d-md-none">テイクイーツを始めよう！</h2>
       <div class="footer__cta-wrap d-md-flex align-items-center">
         <div class="col-md-6">

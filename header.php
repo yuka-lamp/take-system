@@ -44,7 +44,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1 class="">
       <a class="header__inner" href="<?php echo $home; ?>">
         <img src="<?php echo $img_url; ?>logo.png" alt="<?php bloginfo("name"); ?>" srcset="<?php echo $img_url; ?>logo.png 1x, <?php echo $img_url; ?>logo@2x.png 2x">
-        <span class="text-body f-14 font-weight-bold ml-1">飲食店向け</span>
       </a>
     </h1>
     <!-- ▲ ロゴ -->
@@ -156,8 +155,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ▼ 下層メインビジュアル -->
 <section class="sec mv__sub">
   <div class="container text-center">
-  <h1 class="mv__sub-eng font-weight-bold w-100"><?php echo $slug ?></h1>
-  <p class="mv__sub-small font-weight-bold mb-0"><?php the_title(); ?></p>
+  <h1 class="mv__sub-main font-weight-bold w-100"><?php the_title(); ?></h1>
+  <p class="mv__sub-small font-weight-bold mb-0"><?php echo $slug ?></p>
   </div>
 </section>
 <!-- ▲ 下層メインビジュアル -->
@@ -167,8 +166,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ▼ 下層メインビジュアル -->
 <section class="sec mv__sub mb-0">
   <div class="container text-center">
-    <h1 class="mv__sub-eng font-weight-bold w-100">COLUMN</h1>
-    <p class="mv__sub-small font-weight-bold mb-0">お役立ちガイド</p>
+    <h1 class="mv__sub-main font-weight-bold w-100">お役立ちガイド</h1>
+    <p class="mv__sub-small font-weight-bold mb-0">COLUMN</p>
   </div>
 </section>
 <!-- ▲ 下層メインビジュアル -->
@@ -188,8 +187,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ▼ 下層メインビジュアル -->
 <section class="sec mv__sub">
   <div class="container text-center">
-    <h1 class="mv__sub-eng font-weight-bold w-100">NEWS</h1>
-    <p class="mv__sub-small font-weight-bold mb-0">ニュース</p>
+    <h1 class="mv__sub-main font-weight-bold w-100">ニュース</h1>
+    <p class="mv__sub-small font-weight-bold mb-0">NEWS</p>
   </div>
 </section>
 <!-- ▲ 下層メインビジュアル -->
@@ -199,8 +198,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ▼ 下層メインビジュアル -->
 <section class="sec mv__sub">
 <div class="container text-center">
-  <h1 class="mv__sub-eng font-weight-bold w-100">WORK</h1>
-  <p class="mv__sub-small font-weight-bold mb-0">事例紹介</p>
+  <h1 class="mv__sub-main font-weight-bold w-100">事例紹介</h1>
+  <p class="mv__sub-small font-weight-bold mb-0">WORK</p>
 </div>
 </section>
 <!-- ▲ 下層メインビジュアル -->

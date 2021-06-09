@@ -2,6 +2,12 @@
   フッター - いますぐテイクイーツを始めよう！
 ====================================================*/
 .footer__cta {
+  .container {
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
+  }
+  
   padding: 3rem 0;
   border-radius: 40px;
   &-wrap {
@@ -30,6 +36,9 @@
   }
   &-btn {
     border-left: 2px solid $light-gray;
+    @include media-breakpoint-down(sm) {
+      border-left: 0 solid $light-gray;
+    }
     a {
       margin: 0 auto;
     }

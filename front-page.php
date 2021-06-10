@@ -99,7 +99,7 @@ get_header(); ?>
 <!-- ▼ 商品お渡しまでの流れ -->
 <div class="home__about bg-light pt-main">
   <div class="container">
-    <h2 class="f-36 font-weight-bold mb-5">配達完了までの<br>4ステップ</h2>
+    <h2 class="f-36 font-weight-bold mb-5">受け渡しまでの<br>4ステップ</h2>
 
     <div class="home__about__wrap">
       <div class="home__about__list">
@@ -225,7 +225,7 @@ get_header(); ?>
         </div>
         <!-- ▲ サービス手数料 -->
     </div>
-    <div class="mt-5 py-3">
+    <div class="home__price__special mt-5 py-3">
       <a href="<?php echo $home; ?>/price/">
         <img class="shadow mx-auto d-block" src="<?php echo $img_url; ?>plan_banner.png" alt="特別プランをご用意しております" srcset="<?php echo $img_url; ?>plan_banner.png 1x, <?php echo $img_url; ?>plan_banner@2x.png 2x">
       </a>

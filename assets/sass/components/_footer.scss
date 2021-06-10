@@ -7,22 +7,31 @@
       padding: 0;
     }
   }
-  
+
   padding: 3rem 0;
   border-radius: 40px;
+
+  @include media-breakpoint-down(lg) {
+    border-radius: 0;
+  }
+
   &-wrap {
     width: 80%;
     margin: 0 auto;
+
     @include media-breakpoint-down(lg) {
       width: 100%;
     }
   }
+
   &-ttl {
     margin-bottom: 3rem;
+
     @include media-breakpoint-down(lg) {
       margin-bottom: 1rem;
     }
   }
+
   &-phone {
     &-icon {
       display: inline-flex;
@@ -34,32 +43,40 @@
       transform: translate(0, 5px);
     }
   }
+
   &-btn {
     border-left: 2px solid $light-gray;
+
     @include media-breakpoint-down(sm) {
       border-left: 0 solid $light-gray;
     }
+
     a {
       margin: 0 auto;
     }
   }
+
   .text-secondary {
     border: none;
+
     span {
       color: $primary;
     }
+
     &:after {
       border-left: 3px solid $primary;
       border-bottom: 3px solid $primary;
     }
   }
 }
+
 /*===================================================
  フッター
 ====================================================*/
 .footer {
   padding: 5rem 0;
   background-color: $light-gray;
+
   @include media-breakpoint-down(lg) {
     padding: 3rem 0;
   }
@@ -67,6 +84,7 @@
   &__wrap {
     width: 90%;
     margin: 0 auto;
+
     @include media-breakpoint-down(lg) {
       margin: 0 auto 60px;
       flex-wrap: wrap;
@@ -78,18 +96,22 @@
   &__service {
     position: relative;
     width: 25%;
+
     @include media-breakpoint-down(lg) {
       width: 100%;
       text-align: center;
       margin: 3rem 0 0 0;
     }
+
     &__under {
       position: absolute;
       bottom: 0;
+
       @include media-breakpoint-down(lg) {
         position: relative;
       }
     }
+
     &__sns {
       a {
         display: inline-flex;
@@ -103,6 +125,7 @@
         background-color: $white;
         line-height: 3rem;
         font-size: 1.25rem;
+
         i {
           margin: 0 auto;
         }
@@ -115,25 +138,33 @@
     width: 75%;
     margin-left: 3rem;
     justify-content: flex-end;
+
     @include media-breakpoint-down(lg) {
       justify-content: center;
       margin-left: 0;
     }
+
     @include media-breakpoint-down(sm) {
       width: 100%;
     }
+
     &__takeeats {
       margin-right: 3rem;
+
       @include media-breakpoint-down(sm) {
         margin-right: 0;
       }
+
       .footer__link-line {
         margin-right: 4rem;
+
         &:last-child {
           margin-right: 0;
         }
+
         @include media-breakpoint-down(sm) {
           margin-right: 0;
+
           &:nth-child(1),
           &:nth-child(3) {
             margin-right: 3rem;
@@ -141,11 +172,13 @@
         }
       }
     }
+
     &__ttl {
       @include media-breakpoint-down(sm) {
         margin-top: 1.5rem;
       }
     }
+
     &-line {
       &-item {
         position: relative;
@@ -155,9 +188,11 @@
         font-weight: bold;
         color: $body-color;
         text-decoration: none !important;
+
         &:hover {
           color: $body-color;
         }
+
         &::after {
           content: "";
           width: 8px;

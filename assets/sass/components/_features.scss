@@ -11,6 +11,25 @@
       max-width: 100%;
       padding: 0 1rem;
     }
+
+    //PROタグ
+    .tag {
+      display: inline-block;
+      background-color: $info;
+      border-radius: 5px;
+      color: $white;
+      font-size: 0.625rem;
+      font-weight: bold;
+      line-height: 1 !important;
+      margin: 0 0 0 5px;
+      padding: 4px;
+      text-transform: uppercase;
+      transform: translateY(-2px);
+
+      @include media-breakpoint-down(md) {
+        padding: 2px 4px;
+      }
+    }
   }
 
   // 機能一覧
@@ -124,24 +143,6 @@
         transform: translateY(2px);
       }
 
-      .tag {
-        display: inline-block;
-        background-color: $info;
-        border-radius: 5px;
-        color: $white;
-        font-size: 0.625rem;
-        font-weight: bold;
-        line-height: 1 !important;
-        margin: 0 0 0 5px;
-        padding: 4px;
-        text-transform: uppercase;
-        transform: translateY(-2px);
-
-        @include media-breakpoint-down(md) {
-          padding: 2px 4px;
-        }
-      }
-
       //有料オプション
       &.paid {
         &::before {
@@ -168,14 +169,13 @@
 
         &::after {
           content: 'リリース予定';
-          position: absolute;
-          left: 0;
-          bottom: .5rem;
+          display: block;
           width: 100%;
           color: $muted;
           text-align: center;
           font-size: 0.875rem;
           font-weight: bold;
+          margin: .5rem 0 0 0;
         }
       }
     }

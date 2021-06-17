@@ -8,7 +8,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 <!-- ▼ いますぐテイクイーツを始めよう！ -->
 <?php if ( !is_front_page() && !is_home() && !is_page(array('request', 'seminar')) ): //トップページのみ ?>
 
-<section class="pt-main bg-white">
+<section class="pt-main">
   <div class="footer__cta container bg-light">
     <div class="">
       <h2 class="footer__cta-ttl f-28 font-weight-bold text-center mb-5">いますぐ<br class="d-md-none">テイクイーツを始めよう！</h2>
@@ -42,7 +42,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
 <!-- ▲ いますぐテイクイーツを始めよう！ -->
 
 <!-- ▼ フッター -->
-<div class="bg-white pt-main">
+<div class="pt-main">
   <footer class="footer">
     <div class="footer__wrap d-flex">
 
@@ -54,7 +54,7 @@ $img_url = get_template_directory_uri().'/dist/images/'; ?>
           <div class="footer__service__sns p-0 mt-4">
             <a style="color: #1da1f2" href="https://twitter.com/take_eats" target="_blank" rel="noopener"><i class="ri-twitter-fill ri-lg"></i></a>
             <a style="color: #c13584" class="mx-3" href="https://www.instagram.com/take.eats_official/" target="_blank" rel="noopener"><i class="ri-instagram-fill ri-lg"></i></a>
-            <a style="color: #3B5998" href="https://www.facebook.com/TakeEats.LAMP/" target="_blank" rel="noopener"><i class="ri-facebook-circle-fill ri-lg"></i></a>
+            <a style="color: #1877f2" href="https://www.facebook.com/TakeEats.LAMP/" target="_blank" rel="noopener"><i class="ri-facebook-circle-fill ri-lg"></i></a>
           </div>
           <!-- ▲ SNSリンク -->
           <!-- ▼ コピーライト -->

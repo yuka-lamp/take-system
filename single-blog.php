@@ -2,6 +2,7 @@
 <?php
 if (have_posts()):
 while (have_posts()): the_post();
+$home = esc_url(home_url());
 $id = get_the_ID();
 $thumbnail = get_the_post_thumbnail_url($id, 'large');
 $ttl = get_the_title();

@@ -2,13 +2,14 @@
  記事詳細
 ====================================================*/
 .column__sec {
+  position: relative;
+  overflow: visible;
   &.single {
-    .is-fixed {
-      position: fixed;
+    .scroll-flex {
+      position: sticky;
+      position: -webkit-sticky;
       top: 6rem;
-      left: 10%;
-      z-index: -1;
-      width: 28%;
+      left: 0;
     }
     .column__sec article {
       @include media-breakpoint-down(md) {

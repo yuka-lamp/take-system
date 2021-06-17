@@ -158,7 +158,7 @@ get_header(); ?>
     <div class="home__case__ttl-wrap">
       <h2 class="home__case__ttl f-28 font-weight-bold  mb-3"><span class="d-block d-sm-inline">全国</span><span class="home__case__ttl-num text-primary">1,000</span>店舗で導入</h2>
     </div>
-    <p class="my-4">カフェやレストランをはじめとして、<br class="d-md-none">幅広いジャンルのお店で<br>ご利用いただいております。</p>
+    <p class="my-4">テイクアウト需要の高い、<br>多店舗展開する店舗様にご利用いただいています。</p>
     <!-- ▼ ロゴ -->
     <div class="home__case__inner bg-white d-flex flex-wrap justify-content-center align-items-center shadow">
       <?php

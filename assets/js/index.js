@@ -73,14 +73,14 @@ $(function ($) {
       $nav = $('.scroll-flex'),
       fixedClass = 'is-fixed';
 
-  $win.on('load scroll', function() {
-    var value = $(this).scrollTop();
-    if ( value > 280 ) {
-      $nav.addClass(fixedClass);
-    } else {
-      $nav.removeClass(fixedClass);
-    }
-  });
+  // $win.on('load scroll', function() {
+  //   var value = $(this).scrollTop();
+  //   if ( value > 280 ) {
+  //     $nav.addClass(fixedClass);
+  //   } else {
+  //     $nav.removeClass(fixedClass);
+  //   }
+  // });
 
 });
 

@@ -17169,6 +17169,14 @@ a:hover {
     .features__system-item i {
       display: inline-block;
       transform: translateY(2px); }
+    .features__system-item .release-text {
+      display: block;
+      width: 100%;
+      color: #666666;
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: bold;
+      margin: .5rem 0 0 0; }
     .features__system-item.paid::before {
       content: '';
       position: absolute;
@@ -17185,15 +17193,6 @@ a:hover {
       filter: grayscale(100%); }
       .features__system-item.release .features__system-item-wrap {
         opacity: 0.4; }
-      .features__system-item.release::after {
-        content: 'リリース予定';
-        display: block;
-        width: 100%;
-        color: #666666;
-        text-align: center;
-        font-size: 0.875rem;
-        font-weight: bold;
-        margin: .5rem 0 0 0; }
 
 /*===================================================
   機能紹介 - 詳細

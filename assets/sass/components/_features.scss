@@ -143,6 +143,16 @@
         transform: translateY(2px);
       }
 
+      .release-text {
+        display: block;
+        width: 100%;
+        color: $muted;
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: bold;
+        margin: .5rem 0 0 0;
+      }
+
       //有料オプション
       &.paid {
         &::before {
@@ -165,17 +175,6 @@
 
         .features__system-item-wrap {
           opacity: 0.4;
-        }
-
-        &::after {
-          content: 'リリース予定';
-          display: block;
-          width: 100%;
-          color: $muted;
-          text-align: center;
-          font-size: 0.875rem;
-          font-weight: bold;
-          margin: .5rem 0 0 0;
         }
       }
     }

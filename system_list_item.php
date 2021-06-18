@@ -5,6 +5,7 @@ $company = get_the_title();
 $icon = get_field('icon');
 $ttl = get_the_title();
 $text = get_field('text');
+$release_day = get_field('release_day');
 ?>
 <!-- ▼ ループするコンテンツ -->
 <?php if( get_field('single') === "yes：はい"): //詳細ページがある場合?> 
@@ -23,6 +24,9 @@ $text = get_field('text');
             <?php echo $text ?>
             <p class="text-primary mt-2 mb-0">詳しくはこちら<i class="ri-arrow-right-s-line"></i></p>
         </div>
+        <?php if( get_field('release') === "yes：はい"): //リリース前の場合?>
+            <p class="release-text"><?php echo $release_day ?>リリース予定</p>
+        <?php endif; ?>
     </a>
 <?php else: //詳細ページがない場合?>
     <div class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow">
@@ -39,6 +43,9 @@ $text = get_field('text');
             </h3>
             <?php echo $text ?>
         </div>
+        <?php if( get_field('release') === "yes：はい"): //リリース前の場合?>
+            <p class="release-text"><?php echo $release_day ?>リリース予定</p>
+        <?php endif; ?>
     </div>
 <?php endif; ?>
 <!-- ▲ ループするコンテンツ -->

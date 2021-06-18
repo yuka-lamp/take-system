@@ -14,7 +14,7 @@ get_header(); ?>
         <div class="price__plan d-md-flex justify-content-between pt-5">    
             <!-- ▼ 初期費用 -->
             <div class="price__plan-item p-0 text-center bg-white shadow">
-            <h3 class="price__plan-item-ttl bg-secondary text-white f-20 font-weight-bold"><span>無料</span>初期費用</h3>
+            <h3 class="price__plan-item-ttl bg-secondary text-white f-20 font-weight-bold">初期費用<span class="ml-2">無料</span></h3>
             <div class="price__plan-item-content">
                 <ul class="price__plan-item-list">
                     <li class="font-weight-bold text-center bg-light">サイト制作</li>
@@ -26,7 +26,7 @@ get_header(); ?>
             <!-- ▲ 初期費用 -->
             <!-- ▼ 月額費用 -->
             <div class="price__plan-item p-0 text-center bg-white shadow">
-            <h3 class="price__plan-item-ttl bg-secondary text-white f-20 font-weight-bold"><span>無料</span>月額費用</h3>
+            <h3 class="price__plan-item-ttl bg-secondary text-white f-20 font-weight-bold">月額費用<span class="ml-2">無料</span></h3>
             <div class="price__plan-item-content">
                 <ul class="price__plan-item-list">
                     <li class="font-weight-bold text-center bg-light">システム保守運用</li>
@@ -53,8 +53,8 @@ get_header(); ?>
 </section>
 <!-- ▲ 基本プラン -->
 
-<!-- ▼ 基本プラン -->
-<section class="price__special py-main">
+<!-- ▼ 特別プラン -->
+<section id="special" class="price__special py-main">
     <div class="container">
         <h2 class="price__special-ttl font-weight-bold text-center f-32 mb-4"><span>特別プラン</span>を<br>ご用意しております</h2> 
         <div class="d-sm-flex justify-content-center px-3">
@@ -85,7 +85,7 @@ get_header(); ?>
         </div>
     </div>
 </section>
-<!-- ▲ 基本プラン -->
+<!-- ▲ 特別プラン -->
 
 <section class="price__attn pt-5">
     <div class="container">

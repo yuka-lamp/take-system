@@ -161,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 <!-- ▲ 下層メインビジュアル -->
 
-<?php elseif ( is_page('column') || is_singular( 'blog' ) || is_tax('blog_cat') ): /* お役立ちガイド */ ?>
+<?php elseif ( is_page('column') || is_post_type_archive('blog') || is_singular( 'blog' ) || is_tax('blog_cat') ): /* お役立ちガイド */ ?>
 
 <!-- ▼ 下層メインビジュアル -->
 <section class="sec mv__sub mb-0">
@@ -174,10 +174,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ▼ コラムページ用ナビ -->
 <section class="column__nav">
   <div class="container">
-    <a class="column__nav__item text-body" href="<?php echo $home; ?>/column/"><i class="ri-home-4-fill text-primary mr-2 ri-xl"></i>お役立ちガイドTOP</a>
-    <a class="column__nav__item text-body" href="<?php echo $home; ?>/blog_cat/attracting/"><i class="ri-flag-fill text-secondary mr-2 ri-xl"></i>集客・販促</a>
-    <a class="column__nav__item text-body" href="<?php echo $home; ?>/blog_cat/basic/"><i class="ri-book-2-fill text-info mr-2 ri-xl"></i>基礎知識</a>
-    <a class="column__nav__item text-body" href="<?php echo $home; ?>/blog_cat/ready/"><i class="ri-lightbulb-fill text-warning mr-2 ri-xl"></i>メニュー開発</a>
+    <div class="column__nav__list">
+      <a class="column__nav__item text-body" id="top" href="<?php echo $home; ?>/column/#top"><i class="ri-home-4-fill text-muted mr-2 ri-xl"></i>お役立ちガイドTOP</a>
+      <a class="column__nav__item text-body" id="blog" href="<?php echo $home; ?>/blog/#blog"><i class="ri-profile-fill text-primary  mr-2 ri-xl"></i>ALL</a>
+      <a class="column__nav__item text-body" id="attracting" href="<?php echo $home; ?>/blog_cat/attracting/#attracting"><i class="ri-flag-fill text-secondary mr-2 ri-xl"></i>集客・販促</a>
+      <a class="column__nav__item text-body" id="basic" href="<?php echo $home; ?>/blog_cat/basic/#basic"><i class="ri-book-2-fill text-info mr-2 ri-xl"></i>基礎知識</a>
+      <a class="column__nav__item text-body" id="ready" href="<?php echo $home; ?>/blog_cat/ready/#ready"><i class="ri-lightbulb-fill text-warning mr-2 ri-xl"></i>メニュー開発</a>
+    </div>
   </div>
 </section>
 <!-- ▲ コラムページ用ナビ -->
@@ -198,15 +201,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ▼ 下層メインビジュアル -->
 <section class="sec mv__sub">
 <div class="container text-center">
-  <h1 class="mv__sub-main font-weight-bold w-100">事例紹介</h1>
+  <h1 class="mv__sub-main font-weight-bold w-100">導入事例</h1>
   <p class="mv__sub-small font-weight-bold mb-0">WORK</p>
 </div>
 </section>
 <!-- ▲ 下層メインビジュアル -->
 
-<!-- ▼ パンくず -->
 <?php
-if (function_exists('yoast_breadcrumb')) {
-    yoast_breadcrumb('<div id="breadcrumbs" class="container">', '</div>');
-}
 endif;

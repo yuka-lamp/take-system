@@ -83,11 +83,11 @@ if (function_exists('yoast_breadcrumb')) {
             </div>
             <div class="footer__link-line">
             <a class="footer__link-line-item" href="https://takeeats.zendesk.com/hc/ja/categories/900000324626-%E9%A3%B2%E9%A3%9F%E5%BA%97%E5%90%91%E3%81%91%E3%83%98%E3%83%AB%E3%83%97/" target="_blank">よくある質問<i class="ri-external-link-line ml-1"></i></a>
-              <a class="footer__link-line-item" href="https://media.take-eats.jp/" target="_blank">テイクイーツ注文<i class="ri-external-link-line ml-1"></i></a>
-              <!-- <a class="footer__link-line-item" href="<?php echo $home; ?>/" target="_blank">パートナープログラム<i class="ri-external-link-line ml-1"></i></a> -->
-              <a class="footer__link-line-item" href="https://takuhai.take-eats.jp/" target="_blank">タク配<i class="ri-external-link-line ml-1"></i></a>
-              <!-- <a class="footer__link-line-item" href="<?php echo $home; ?>/work/" target="_blank">管理画面ログイン<i class="ri-external-link-line ml-1"></i></a> -->
-              <a class="footer__link-line-item" href="https://lamp.jp/" target="_blank">運営会社<i class="ri-external-link-line ml-1"></i></a>
+            <a class="footer__link-line-item" href="https://media.take-eats.jp/" target="_blank">テイクイーツ注文<i class="ri-external-link-line ml-1"></i></a>
+            <!-- <a class="footer__link-line-item" href="<?php echo $home; ?>/" target="_blank">パートナープログラム<i class="ri-external-link-line ml-1"></i></a> -->
+            <a class="footer__link-line-item" href="https://takuhai.take-eats.jp/" target="_blank">タク配<i class="ri-external-link-line ml-1"></i></a>
+            <!-- <a class="footer__link-line-item" href="<?php echo $home; ?>/work/" target="_blank">管理画面ログイン<i class="ri-external-link-line ml-1"></i></a> -->
+            <a class="footer__link-line-item" href="https://lamp.jp/" target="_blank">運営会社<i class="ri-external-link-line ml-1"></i></a>
             </div>
           </div>
           <!-- ▲ リンクリスト -->

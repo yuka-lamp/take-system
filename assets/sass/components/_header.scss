@@ -166,11 +166,11 @@
     height: 100vh;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    top: 0;
+    top: 3.75rem;
     right: -100%;
     transition: all 0.3s;
-    padding: 3.75rem 0 0;
     margin: 0;
+    padding: 1rem 0 0 0;
     display: flex;
     justify-content: center;
     z-index: 98;
@@ -179,11 +179,25 @@
     }
 
     &__wrap {
-      margin: 2rem auto;
+      margin: 0 auto;
     }
 
     &__item {
+      position: relative;
       min-width: 20rem;
+      padding: 1rem 0;
+      border-bottom: 1px solid $gray;
+      &::after {
+        content: "";
+        position: absolute;
+        top: calc(50% - 4.5px);
+        right: 1.5rem;
+        width: 9px;
+        height: 9px;
+        border-top: 2px solid $primary;
+        border-right: 2px solid $primary;
+        transform: rotate(45deg);
+      }
     }
   }
   // ハンバーガーメニュー[close]

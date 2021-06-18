@@ -104,36 +104,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- ▲ ハンバーガーメニュー -->
     <!-- ▼ ドロワーするコンテンツ -->
     <div class="drawer__menu">
-      <div class="drawer__menu__wrap">
+      <div class="drawer__menu__wrap w-100">
         <!-- ▼ ページリンク -->
-        <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/features/">
-          <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-          機能紹介
+        <a class="drawer__menu__item d-block font-weight-bold text-dark f-16" href="<?php echo $home; ?>/features/">
+          <div class="container">機能紹介</div>
         </a>
-        <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/price/">
-          <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-          料金
+        <a class="drawer__menu__item d-block font-weight-bold text-dark f-16" href="<?php echo $home; ?>/price/">
+          <div class="container">料金</div>
         </a>
-        <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/work/">
-          <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-          導入事例
+        <a class="drawer__menu__item d-block font-weight-bold text-dark f-16" href="<?php echo $home; ?>/work/">
+          <div class="container">導入事例</div>
         </a>
-        <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>/column/">
-          <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-          お役立ちガイド
+        <a class="drawer__menu__item d-block font-weight-bold text-dark f-16" href="<?php echo $home; ?>/column/">
+          <div class="container">お役立ちガイド</div>
         </a>
-        <!-- <a class="drawer__menu__item d-block font-weight-bold text-dark mb-4 f-16" href="<?php echo $home; ?>//">
-          <img class="mr-2" src="<?php echo $img_url; ?>/arrow_or.svg" alt="矢印">
-          管理画面ログイン
-        </a> -->
-        <a class="d-block btn btn-secondary mt-5" href="<?php echo $home; ?>/request/">
-          お申し込み
+        <a class="drawer__menu__item d-block font-weight-bold text-dark f-16" href="<?php echo $home; ?>/contact/">
+          <div class="container">お問い合わせ</div>
         </a>
-        <a class="d-block btn btn-primary mt-2" href="<?php echo $home; ?>#toform">
-          お問い合わせ
-        </a>
-        
         <!-- ▲ ページリンク -->
+
+        <!-- ▼ リンク小 -->
+        <div class="container py-4">
+          <a class="d-block f-14 text-muted font-weight-bold mx-0 my-2" href="https://media.take-eats.jp/" target="_blank">テイクイーツ注文<i class="ri-external-link-line ml-1"></i></a>
+          <!-- <a class="d-block f-14 text-muted font-weight-bold mx-3" href="<?php echo $home; ?>/" target="_blank">パートナープログラム<i class="ri-external-link-line ml-1"></i></a> -->
+          <a class="d-block f-14 text-muted font-weight-bold mx-0 my-2" href="https://takuhai.take-eats.jp/" target="_blank">タク配<i class="ri-external-link-line ml-1"></i></a>
+        </div>
+        
+        <!-- ▲ リンク小 -->
+
       </div>
     </div>
     <!-- ▲ ドロワーするコンテンツ -->

@@ -13,12 +13,9 @@
     margin: 0 auto 5rem auto;
   }
   &-main {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     letter-spacing: 0.4rem;
     margin-left: 0.4rem;
-    @include media-breakpoint-down(md) {
-      font-size: 2rem;
-    }
   }
   &-small {
     color: $muted;

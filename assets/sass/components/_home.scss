@@ -194,13 +194,12 @@
 .home__about {
   position: relative;
   margin-left: 2rem;
-  padding-top: 8rem;
+  padding-top: 5rem;
   border-radius: 40px 0 0 40px;
 
   @include media-breakpoint-down(sm) {
-    margin-left: 0;
-    padding: 6rem 0 1rem 0;
-    border-radius: 0;
+    margin: 0 0 0 1rem;
+    padding: 3rem 0 1rem 0;
   }
 
   .container {
@@ -228,7 +227,7 @@
     overflow-x: scroll;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 3rem;
+    padding: 3rem 0;
 
     @include media-breakpoint-down(sm) {
       padding-bottom: 0;
@@ -238,15 +237,15 @@
     &::-webkit-scrollbar {
       display: block;
       height: 8px;
-
       @include media-breakpoint-down(sm) {
-        display: none;
+        margin: 0 1rem;
       }
     }
 
     &::-webkit-scrollbar-track {
       border-radius: 4px;
       background: $white;
+      margin: 0 1rem;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -273,8 +272,8 @@
     padding: 0 1rem;
 
     @include media-breakpoint-down(sm) {
-      padding: 0 1.5rem;
-      transform: translateX(-15rem);
+      width: 280px;
+      padding: 0 0 3rem 1rem;
     }
 
     &-ttl {
@@ -283,6 +282,7 @@
 
     img {
       margin-bottom: 2rem;
+      border-radius: 9.5%;
     }
 
     p {
@@ -298,32 +298,6 @@
     }
   }
 
-  // スライドショードット
-  .slick-dots {
-    bottom: 0;
-
-    li {
-      width: 24%;
-      height: 8px;
-      margin: 0;
-      background-color: $white;
-    }
-  }
-
-  .slick-dots li.slick-active {
-    background-color: $gray;
-    z-index: 2;
-  }
-
-  .slick-dots li button:before {
-    display: none;
-  }
-
-  .slick-dotted.slick-slider {
-    padding-bottom: 4rem;
-    margin-bottom: 0;
-  }
-
 }
 
 /*===================================================
@@ -336,6 +310,7 @@
 
     @include media-breakpoint-down(md) {
       width: 100%;
+      border-radius: 0;
     }
   }
 

@@ -19,8 +19,8 @@ $permalink = get_the_permalink();
           <div class="scroll-flex">
             <p class="text-secondary font-weight-bold">集客・販促</p>
             <h3 class="column__sec__intro-ttl">どうしたら<br>売上アップできる？</h3>
-            <p class="f-16">テイクアウトの売上をアップさせるには集客が大切です。<br class="d-none b-md-block">飲食店に欠かせない集客方法について解説します。</p>
-            <a class="d-none d-md-block btn btn-secondary mt-5" href="<?php echo $home; ?>/blog_cat/attracting/">すべての記事をみる</a>
+            <p class="text-muted">テイクアウトの売上をアップさせるには集客が大切です。<br class="d-none b-md-block">飲食店に欠かせない集客方法について解説します。</p>
+            <a class="d-none d-md-block btn btn-secondary mt-5" href="<?php echo $home; ?>/blog_cat/attracting/">集客・販促の記事をみる</a>
           </div>
         </div>
         <!-- ▲ 集客・販促 --> 
@@ -30,8 +30,8 @@ $permalink = get_the_permalink();
           <div class="scroll-flex">
             <p class="text-info font-weight-bold">基礎知識</p>
             <h3 class="column__sec__intro-ttl">テイクアウトの<br>知識を身に着けよう</h3>
-            <p class="f-16">テイクアウトを始める前に知っておきたい知識をまとめました。<br class="d-none b-md-block">これからテイクアウトを始める予定や始めようか迷っている飲食店オーナー様必見の基礎情報です。</p>
-            <a class="d-none d-md-block btn btn-info mt-3" href="<?php echo $home; ?>/blog_cat/basic/">すべてみる</a>
+            <p class="text-muted">テイクアウトを始める前に知っておきたい知識をまとめました。<br class="d-none b-md-block">これからテイクアウトを始める予定や始めようか迷っている飲食店オーナー様必見の基礎情報です。</p>
+            <a class="d-none d-md-block btn btn-info mt-3" href="<?php echo $home; ?>/blog_cat/basic/">基礎知識の記事をみる</a>
           </div>
        </div>
        <!-- ▲ 基礎知識 -->
@@ -41,8 +41,8 @@ $permalink = get_the_permalink();
           <div class="scroll-flex">
             <p class="text-warning font-weight-bold">メニュー開発</p>
             <h3 class="column__sec__intro-ttl">メニューで<br>ユーザーの心を掴もう</h3>
-            <p class="f-16">店内飲食とは少し違った準備が必要なテイクアウト。<br class="d-none b-md-block">しっかり準備して魅力的なメニューを提供しましょう。</p>
-            <a class="d-none d-md-block btn btn-warning mt-5" href="<?php echo $home; ?>/blog_cat/ready/">すべてみる</a>
+            <p class="text-muted">店内飲食とは少し違った準備が必要なテイクアウト。<br class="d-none b-md-block">しっかり準備して魅力的なメニューを提供しましょう。</p>
+            <a class="d-none d-md-block btn btn-warning mt-5" href="<?php echo $home; ?>/blog_cat/ready/">メニュー開発の記事をみる</a>
           </div>
         </div>
        <!-- ▲ メニュー開発 -->

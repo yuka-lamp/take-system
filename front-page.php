@@ -226,7 +226,7 @@ get_header(); ?>
         <!-- ▲ サービス手数料 -->
     </div>
     <div class="home__price__special mt-5 py-3">
-      <a href="<?php echo $home; ?>/price/">
+      <a href="<?php echo $home; ?>/price/#special">
         <img class="shadow mx-auto d-block" src="<?php echo $img_url; ?>plan_banner.png" alt="特別プランをご用意しております" srcset="<?php echo $img_url; ?>plan_banner.png 1x, <?php echo $img_url; ?>plan_banner@2x.png 2x">
       </a>
     </div>

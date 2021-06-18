@@ -9,9 +9,8 @@ get_header(); ?>
 <section class="sub__intro features mb-5">
     <div class="container d-md-flex align-items-center">
         <div class="col-md-6">
-            <p class="text-primary font-weight-bold mb-3">管理画面について</p>
             <h2 class="sub__intro-text-ttl f-36 font-weight-bold mb-4">お店にあった<br>お好みのカスタマイズを</h2>
-            <p class="f-14">店舗の営業形態や数に合わせて、<br>オリジナルの予約サイトを作成しましょう！</p>
+            <p class="f-14">店舗の営業形態や数に合わせて、<br>オリジナルの注文サイトを作成しましょう！</p>
         </div>
         <div class="col-md-6">
             <img class="" src="<?php echo $img_url; ?>features_intro.png" alt="タブレット不要！スマホだけでも運用可能" srcset="<?php echo $img_url; ?>features_intro.png 1x, <?php echo $img_url; ?>features_intro@2x.png 2x">
@@ -65,48 +64,8 @@ get_header(); ?>
                 $my_posts = get_posts($args);
                 foreach ($my_posts as $post):
                 setup_postdata($post);
-                $id = get_the_ID();
-                $company = get_the_title(); 
-                $icon = get_field('icon');
-                $ttl = get_the_title();
-                $text = get_field('text');
                 ?>
-                    <!-- ▼ ループするコンテンツ -->
-                    <?php if( get_field('single') === "yes：はい"): //詳細ページがある場合?> 
-                        <a class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow" href="<?php the_permalink(); ?>">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                                <p class="text-primary mt-2 mb-0">詳しくはこちら<i class="ri-arrow-right-s-line"></i></p>
-                            </div>
-                        </a>
-                    <?php else: //詳細ページがない場合?>
-                        <div class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                            </div>
-                        </div>
-                    <?php endif; ?>
-                    <!-- ▲ ループするコンテンツ -->
+                <?php include('system_list_item.php'); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
                 </div>
             </div>
@@ -136,42 +95,7 @@ get_header(); ?>
                 $text = get_field('text');
                 $term = get_the_terms( $id, 'system_list_tag' );
                 ?>
-                    <!-- ▼ ループするコンテンツ -->
-                    <?php if( get_field('single') === "yes：はい"): //詳細ページがある場合?> 
-                        <a class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow" href="<?php the_permalink(); ?>">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                                <p class="text-primary mt-2 mb-0">詳しくはこちら<i class="ri-arrow-right-s-line"></i></p>
-                            </div>
-                        </a>
-                    <?php else: //詳細ページがない場合?>
-                        <div class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                            </div>
-                        </div>
-                    <?php endif; ?>
-                    <!-- ▲ ループするコンテンツ -->
+                <?php include('system_list_item.php'); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
                 </div>
             </div>
@@ -201,42 +125,7 @@ get_header(); ?>
                 $text = get_field('text');
                 $term = get_the_terms( $id, 'system_list_tag' );
                 ?>
-                    <!-- ▼ ループするコンテンツ -->
-                    <?php if( get_field('single') === "yes：はい"): //詳細ページがある場合?> 
-                        <a class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow" href="<?php the_permalink(); ?>">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                                <p class="text-primary mt-2 mb-0">詳しくはこちら<i class="ri-arrow-right-s-line"></i></p>
-                            </div>
-                        </a>
-                    <?php else: //詳細ページがない場合?>
-                        <div class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                            </div>
-                        </div>
-                    <?php endif; ?>
-                    <!-- ▲ ループするコンテンツ -->
+                <?php include('system_list_item.php'); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
                 </div>
             </div>
@@ -266,42 +155,7 @@ get_header(); ?>
                 $text = get_field('text');
                 $term = get_the_terms( $id, 'system_list_tag' );
                 ?>
-                    <!-- ▼ ループするコンテンツ -->
-                    <?php if( get_field('single') === "yes：はい"): //詳細ページがある場合?> 
-                        <a class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow" href="<?php the_permalink(); ?>">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                                <p class="text-primary mt-2 mb-0">詳しくはこちら<i class="ri-arrow-right-s-line"></i></p>
-                            </div>
-                        </a>
-                    <?php else: //詳細ページがない場合?>
-                        <div class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                            </div>
-                        </div>
-                    <?php endif; ?>
-                    <!-- ▲ ループするコンテンツ -->
+                <?php include('system_list_item.php'); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
                 </div>
             </div>
@@ -331,42 +185,7 @@ get_header(); ?>
                 $text = get_field('text');
                 $term = get_the_terms( $id, 'system_list_tag' );
                 ?>
-                    <!-- ▼ ループするコンテンツ -->
-                    <?php if( get_field('single') === "yes：はい"): //詳細ページがある場合?> 
-                        <a class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow" href="<?php the_permalink(); ?>">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                                <p class="text-primary mt-2 mb-0">詳しくはこちら<i class="ri-arrow-right-s-line"></i></p>
-                            </div>
-                        </a>
-                    <?php else: //詳細ページがない場合?>
-                        <div class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                            </div>
-                        </div>
-                    <?php endif; ?>
-                    <!-- ▲ ループするコンテンツ -->
+                 <?php include('system_list_item.php'); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
                 </div>
             </div>
@@ -396,42 +215,7 @@ get_header(); ?>
                 $text = get_field('text');
                 $term = get_the_terms( $id, 'system_list_tag' );
                 ?>
-                    <!-- ▼ ループするコンテンツ -->
-                    <?php if( get_field('single') === "yes：はい"): //詳細ページがある場合?> 
-                        <a class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow" href="<?php the_permalink(); ?>">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                                <p class="text-primary mt-2 mb-0">詳しくはこちら<i class="ri-arrow-right-s-line"></i></p>
-                            </div>
-                        </a>
-                    <?php else: //詳細ページがない場合?>
-                        <div class="features__system-item f-12 text-muted<?php if( get_field('paid') === "yes：はい"): //有料オプションの場合?> paid<?php endif; ?><?php if( get_field('release') === "yes：はい"): //リリース前の場合?> release<?php endif; ?> bg-white shadow">
-                            <div class="features__system-item-wrap">
-                                <img src="<?php echo $icon ?>" alt="<?php echo $ttl ?>">
-                                <h3 class="f-18 font-weight-bold text-body my-3">
-                                <?php echo $ttl ?>
-                                <?php if ($terms = get_the_terms($post->ID, 'system_list_tag')) {
-                                        foreach ( $terms as $term ) {
-                                        echo '<span class="tag">' , esc_html($term->name) , '</span>';
-                                        }
-                                    }
-                                ?>
-                                </h3>
-                                <?php echo $text ?>
-                            </div>
-                        </div>
-                    <?php endif; ?>
-                    <!-- ▲ ループするコンテンツ -->
+                <?php include('system_list_item.php'); ?>
                 <?php endforeach; wp_reset_postdata(); ?>
                 </div>
             </div>

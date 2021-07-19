@@ -1,45 +1,17 @@
-# WPテンプレートテーマ「irori」
-すべて基礎になるWordPressテーマ。
+# テイクイーツ
 
-## 開発準備
+テイクアウト特化の予約・決済システム
 
-■ ステップ1：ファイルダウンロード
+## 本番環境
 
-```
-git clone https://github.com/LAMP-Develop/irori.git
-```
+- ディレクトリ：`www/take_eats_system/wp/`
+- Web サーバ：Apache/2.4.48
+- PHP：7.4.20
+- DB：MySQL5.7
 
-■ ステップ2：必要なパッケージインストール
+## 開発環境（ローカル）
 
-```
-npm install
-```
+### Local by Flywheel
 
-■ ステップ3：インストールしたパッケージの実行
-
-```
-npm run dev
-```
-
-■ おまけ1：画像の圧縮
-
-```
-npm run imgmin
-```
-
-■ おまけ2：公開前全圧縮
-
-```
-npm run build
-```
-
-## インストール済みパッケージ
-
-- jQuery
-- Bootstrap
-- popper.js
-- Fontawesome# take-eats
-# take-system
-# take-system
-# take-system
-# take-system
+- PHP：7.4.1
+- DB：MySQL8.0

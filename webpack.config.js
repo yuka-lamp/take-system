@@ -1,57 +1,56 @@
-const path = require('path');
-const webpack = require('webpack');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const webpack = require("webpack");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MODE = "development";
+const enabledSourceMap = MODE === "development";
 
-module.exports = (env, argv) => ({
-  entry: './assets/js/index.js',
+module.exports = {
+  mode: MODE,
+  entry: "./src/js/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist/js'),
-    filename: 'bundle.js',
-  },
-  optimization: {
-    minimizer: [
-      new TerserPlugin({}),
-      new OptimizeCssAssetsPlugin({})
-    ]
+    path: `${__dirname}/dist`,
+    filename: "js/bundle.js",
   },
   module: {
-    rules: [{
-      test: /\.js$/,
-      use: [{
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env']
-        }
-      }],
-      exclude: /node_modules/,
-    }, {
-      test: /\.(sa|sc|c)ss$/,
-      use: [
-        MiniCssExtractPlugin.loader,
-        {
-          loader: 'css-loader',
-          options: {
-            url: false,
-            sourceMap: true
-          }
-        },
-        'sass-loader'
-      ]
-    }]
+    rules: [
+      {
+        test: /\.scss/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          {
+            loader: "css-loader",
+            options: {
+              url: false,
+              sourceMap: enabledSourceMap,
+              importLoaders: 2,
+            },
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: enabledSourceMap,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(gif|png|jpg|svg)$/,
+        type: "dist/images",
+      },
+    ],
   },
   plugins: [
     new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      Popper: ['popper.js', 'default']
+      $: "jquery",
+      jQuery: "jquery",
+      Popper: ["popper.js", "default"],
     }),
     new MiniCssExtractPlugin({
-      filename: '../css/style.css'
-    })
+      filename: "css/style.css",
+    }),
   ],
   performance: {
-    hints: false
-  }
-});
+    hints: false,
+  },
+};

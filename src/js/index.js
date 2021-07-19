@@ -3,7 +3,6 @@ import "../sass/app.scss";
 
 // JSインポート
 import "bootstrap";
-import videojs from "video.js";
 import slick from "slick-carousel";
 
 $(window).on("load", function () {
@@ -24,19 +23,14 @@ $(window).on("load resize", function () {
 });
 
 $(function ($) {
-
   // seo
-  $(".ac dt").on("click", function() {
+  $(".ac dt").on("click", function () {
     $(this).next().slideToggle();
   });
-
-    $(".column__nav__list").scrollLeft(40);
-
-
+  $(".column__nav__list").scrollLeft(40);
 });
 
 // メニューをクリックで閉じる
-$('.drawer__menu__wrap a').on('click', function(event) {
-  $('.drawer__checkbox').trigger('click');
+$(".drawer__menu__wrap a").on("click", function (event) {
+  $(".drawer__checkbox").trigger("click");
 });
-
